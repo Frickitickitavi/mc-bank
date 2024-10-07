@@ -45,6 +45,21 @@
     const placedSubrooms = countPlacedSubrooms(room, todoPath);
     const totalSubrooms = countTotalSubrooms(room, todoPath);
 
-    return <div className="todo-stats">Floor: {floorName} || Placed: {isPlaced(room.name, floors[floorName]) ? "✅" : "❌"} || Subrooms: <span className={`todo-subrooms-${placedSubrooms === totalSubrooms ? 'good' : 'bad'}`}>{placedSubrooms}/{totalSubrooms}</span></div>
+    return (
+        <div>
+            <div className="todo-stats">
+                Floor: {floorName} ||
+                Placed: {isPlaced(room.name, floors[floorName]) ? "✅" : "❌"} ||
+                Subrooms: <span className={`todo-subrooms-${placedSubrooms === totalSubrooms ? 'good' : 'bad'}`}>{placedSubrooms}/{totalSubrooms}</span>
+            </div>
+            <br/>
+            <div className="todo-stats">
+                Chests: {room.chests?.length ?? 0} ||
+                Utilities: {room.utilities?.length ?? 0} ||
+                Silos: {room.chests?.filter(c => c.silo && c.silo > 0).length ?? 0} ||
+                Shortcuts: {room.shortcuts?.length ?? 0 }
+            </div>
+        </div>
+    );
 }
 

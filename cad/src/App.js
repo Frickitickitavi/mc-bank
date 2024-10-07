@@ -31,6 +31,8 @@ function App() {
         Global: [<Beacon x={50} y={50} config={config} />]
     });
 
+    const [hallways, setHallways] = useState([]);
+
     const [path, setPath] = useState(null);
 
     useEffect(() => {
