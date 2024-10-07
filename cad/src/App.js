@@ -38,7 +38,7 @@ function App() {
             .then(r => r.text())
             .then(t => {
                 const data = JSON.parse(t);
-                setPath([data]);
+                setPath([{ name: "", subrooms: [data] }]);
             })
     }, []);
 
