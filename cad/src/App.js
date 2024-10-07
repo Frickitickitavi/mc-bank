@@ -21,8 +21,8 @@ function App() {
     // A-G contain Rooms and Hallways
     // Global contains Beacons and Districts
     const [floors, setFloors] = useState({
-        A: [<Room x={5} y={10} w={15} h={20} />], // depth 0
-        B: [], // depth 1
+        A: [<Room x={5} y={10} w={15} h={20} room={{ name: "Main Lobby" }} />], // depth 0
+        B: [<Room x={39} y={50} w={50} h={30} room={{ name: "Items" }} /> ], // depth 1
         C: [], // depth 2
         D: [], // depth 3 w/o 4
         E: [], // depth 3 w/ 4

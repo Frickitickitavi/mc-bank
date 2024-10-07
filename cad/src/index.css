@@ -60,3 +60,11 @@ code {
     float: left;
     padding-top: 5px;
 }
+
+.todo-subrooms-good {
+    color: lightgreen;
+}
+
+.todo-subrooms-bad {
+    color: orangered;
+}
