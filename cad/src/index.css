@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.canvas {
+    border: 2px solid black;
+    
+}
+
+.editor {
+    
+}
+
+.options, .todo-explorer {
+    display: inline-block;
+    vertical-align: top;
+    background: gray;
+    padding: 15px;
+    height: 570px;
+    border: 2px solid black;
+    font-size: 16px;
+    min-width: 250px;
+}
+
+
+.options {
+    text-align: left;
+}
+
+.todo-name {
+    float: left;
+}
+
+
+.todo-buttons {
+    float: right;
+}
+
+.todo-path {
+    font-size: 10px;
+}
+
+.todo-path-display {
+    float: left;
+}
+
+.todo-stats {
+    display: block;
+    font-size: 10px;
+    float: left;
+    padding-top: 5px;
+}
