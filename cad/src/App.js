@@ -11,10 +11,13 @@ function App() {
 
     const [config, setConfig] = useState(
         {
+            activeFloor: "A",
             showBeacons: true,
             showBeaconZones: true,
             showBlockGrid: true,
-            showChunkGrid: true
+            showChunkGrid: true,
+            layersAbove: 1,
+            layersBelow: 1
         }
     );
 
@@ -23,7 +26,7 @@ function App() {
     const [floors, setFloors] = useState({
         A: [<Room x={5} y={10} w={15} h={20} room={{ name: "Main Lobby" }} />], // depth 0
         B: [<Room x={39} y={50} w={50} h={30} room={{ name: "Items" }} /> ], // depth 1
-        C: [], // depth 2
+        C: [<Room x={100} y={100} w={40} h={20} room={{ name: "Brewing" }} />], // depth 2
         D: [], // depth 3 w/o 4
         E: [], // depth 3 w/ 4
         F: [], // depth 4
@@ -44,26 +47,13 @@ function App() {
             })
     }, []);
 
-    const [activeFloor, setActiveFloor] = useState("A");
-
-    
-
-
-    const boxes = [];
-    for (const structure of floors[activeFloor]) {
-      boxes.push(structure);
-    }
-    for (const structure of floors.Global) {
-        boxes.push(structure);
-    }
-
   return (
     <div className="App">
         <header className="App-header">
               <div>
-                <TodoExplorer floors={floors} activeFloor={activeFloor} setActiveFloor={setActiveFloor} path={path} setPath={setPath} config={config} />
-                <Canvas boxes={boxes} config={config} />
-                <Options config={config} updateConfig={setConfig} activeFloor={activeFloor} setActiveFloor={setActiveFloor} />
+                <TodoExplorer floors={floors} path={path} setPath={setPath} config={config} />
+                  <Canvas floors={floors} config={config} />
+                <Options config={config} updateConfig={setConfig} />
             </div>
       </header>
     </div>

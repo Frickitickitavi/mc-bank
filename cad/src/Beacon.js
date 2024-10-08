@@ -6,7 +6,7 @@ export default function Beacon({ x, y, config }) {
     }
 
     if (config.showBeaconZones) {
-        beacon.push(<rect x={x - 50} y={y - 50} width={100} height={100} fill="yellow" fillOpacity="0.1" />);
+        beacon.push(<rect x={x - 50} y={y - 50} width={100} height={100} fill="yellow" fillOpacity={0.05} />);
     }
 
     return beacon;

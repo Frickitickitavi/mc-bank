@@ -1,4 +1,33 @@
-export default function Canvas({ boxes, config }) {
+export default function Canvas({ floors, config }) {
+    const iterableFloorNames = ["A", "B", "C", "D", "E", "F", "G"]
+    var floorIdx = iterableFloorNames.indexOf(config.activeFloor);
+
+    const boxes = [];
+    for (const structure of floors[config.activeFloor]) {
+        boxes.push(structure);
+    }
+
+    var lowerFloorsToDraw = config.layersBelow;
+    while (lowerFloorsToDraw > 0 && ++floorIdx < iterableFloorNames.length) {
+        for (const structure of floors[iterableFloorNames[floorIdx]]) {
+            boxes.push({ ...structure, props: { ...structure.props, fillOpacity: 1/(2*Math.abs(floorIdx - iterableFloorNames.indexOf(config.activeFloor))) } });
+        }
+        lowerFloorsToDraw--;
+    }
+
+    floorIdx = iterableFloorNames.indexOf(config.activeFloor);
+    var upperFloorsToDraw = config.layersAbove;
+    while (upperFloorsToDraw > 0 && --floorIdx >= 0) {
+        for (const structure of floors[iterableFloorNames[floorIdx]]) {
+            boxes.push({ ...structure, props: { ...structure.props, fillOpacity: 1 / (2 * Math.abs(floorIdx - iterableFloorNames.indexOf(config.activeFloor))) } });
+        }
+        upperFloorsToDraw--;
+    }
+
+    for (const structure of floors.Global) {
+        boxes.push(structure);
+    }
+
     function Grid({ showBlockGrid, showChunkGrid }) {
         const grids = [];
 

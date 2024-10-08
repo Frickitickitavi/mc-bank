@@ -1,6 +1,12 @@
-export default function FloorSelector({ activeFloor, setActiveFloor }) {
-    
+export default function FloorSelector({ config, updateConfig }) {
+
+    const activeFloor = config.activeFloor;
+
     const floorNames = ["A", "B", "C", "D", "E", "F", "G"]
+
+    function setActiveFloor(newFloor) {
+        updateConfig({ ...config, activeFloor: newFloor });
+    }
 
     function FloorButton({ floor }) {
         return <button onClick={() => setActiveFloor(floor)}>
