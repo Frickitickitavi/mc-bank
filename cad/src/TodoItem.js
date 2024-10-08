@@ -1,6 +1,6 @@
 import TodoStats from './TodoStats';
 
-export default function TodoItem({ floors, todoPath, setPath }) {
+export default function TodoItem({ bankContents, todoPath, setPath }) {
     const room = todoPath[todoPath.length - 1];
 
     return <div className="todo-item">
@@ -19,7 +19,7 @@ export default function TodoItem({ floors, todoPath, setPath }) {
             </span>
         </div>
         <br />
-        <TodoStats floors={floors} todoPath={todoPath} />
+        <TodoStats bankContents={bankContents} todoPath={todoPath} />
         <div>_____________________________________</div>
     </div>
 }

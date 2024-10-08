@@ -1,4 +1,4 @@
-﻿export default function TodoStats({ floors, todoPath }) {
+﻿export default function TodoStats({ bankContents, todoPath }) {
     function isPlaced(roomName, floor) {
         return floor.some(r => r.props.room.name === roomName);
     }
@@ -6,17 +6,17 @@
     function determineFloor(todoPath) {
         switch (todoPath.length - 2) {
             case 0:
-                return "A";
+                return 0;
             case 1:
-                return "B";
+                return 1;
             case 2:
-                return "C";
+                return 2;
             case 3:
-                return todoPath[todoPath.length - 1].subrooms ? "E" : "D";
+                return todoPath[todoPath.length - 1].subrooms ? 4 : 3;
             case 4:
-                return "F";
+                return 5;
             case 5:
-                return "G";
+                return 6;
 
         }
     }
@@ -30,7 +30,7 @@
     }
 
     function countSubroomsRecursively(room, placedOnly, recursivePath) {
-        const filter = placedOnly ? (sr) => isPlaced(sr.name, floors[determineFloor(recursivePath.concat(sr))]) : (sr) => true;
+        const filter = placedOnly ? (sr) => isPlaced(sr.name, bankContents.floors[determineFloor(recursivePath.concat(sr))]) : (sr) => true;
 
         var accum = room.subrooms?.filter(filter).length ?? 0
         for (const sr of (room.subrooms ?? [])) {
@@ -41,15 +41,15 @@
 
 
     const room = todoPath[todoPath.length - 1];
-    const floorName = determineFloor(todoPath);
+    const floor = determineFloor(todoPath);
     const placedSubrooms = countPlacedSubrooms(room, todoPath);
     const totalSubrooms = countTotalSubrooms(room, todoPath);
 
     return (
         <div>
             <div className="todo-stats">
-                Floor: {floorName} ||
-                Placed: {isPlaced(room.name, floors[floorName]) ? "✅" : "❌"} ||
+                Floor: {bankContents.floorNumToName(floor)} ||
+                Placed: {isPlaced(room.name, bankContents.floors[floor]) ? "✅" : "❌"} ||
                 Subrooms: <span className={`todo-subrooms-${placedSubrooms === totalSubrooms ? 'good' : 'bad'}`}>{placedSubrooms}/{totalSubrooms}</span>
             </div>
             <br/>

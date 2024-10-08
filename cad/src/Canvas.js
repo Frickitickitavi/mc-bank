@@ -1,30 +1,28 @@
-export default function Canvas({ floors, config }) {
-    const iterableFloorNames = ["A", "B", "C", "D", "E", "F", "G"]
-    var floorIdx = iterableFloorNames.indexOf(config.activeFloor);
-
+export default function Canvas({ bankContents, config }) {
     const boxes = [];
-    for (const structure of floors[config.activeFloor]) {
+    for (const structure of bankContents.floors[config.activeFloor]) {
         boxes.push(structure);
     }
 
+    var floorIdx = config.activeFloor;
     var lowerFloorsToDraw = config.layersBelow;
-    while (lowerFloorsToDraw > 0 && ++floorIdx < iterableFloorNames.length) {
-        for (const structure of floors[iterableFloorNames[floorIdx]]) {
-            boxes.push({ ...structure, props: { ...structure.props, fillOpacity: 1/(2*Math.abs(floorIdx - iterableFloorNames.indexOf(config.activeFloor))) } });
+    while (lowerFloorsToDraw > 0 && ++floorIdx < bankContents.floors.length) {
+        for (const structure of bankContents.floors[floorIdx]) {
+            boxes.push({ ...structure, props: { ...structure.props, fillOpacity: 1/(2*Math.abs(floorIdx - config.activeFloor)) } });
         }
         lowerFloorsToDraw--;
     }
 
-    floorIdx = iterableFloorNames.indexOf(config.activeFloor);
+    floorIdx = config.activeFloor;
     var upperFloorsToDraw = config.layersAbove;
     while (upperFloorsToDraw > 0 && --floorIdx >= 0) {
-        for (const structure of floors[iterableFloorNames[floorIdx]]) {
-            boxes.push({ ...structure, props: { ...structure.props, fillOpacity: 1 / (2 * Math.abs(floorIdx - iterableFloorNames.indexOf(config.activeFloor))) } });
+        for (const structure of bankContents.floors[floorIdx]) {
+            boxes.push({ ...structure, props: { ...structure.props, fillOpacity: 1 / (2 * Math.abs(floorIdx - config.activeFloor)) } });
         }
         upperFloorsToDraw--;
     }
 
-    for (const structure of floors.Global) {
+    for (const structure of bankContents.global) {
         boxes.push(structure);
     }
 

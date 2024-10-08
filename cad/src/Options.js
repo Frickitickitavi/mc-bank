@@ -1,6 +1,6 @@
 import FloorSelector from './FloorSelector';
 
-export default function Options({ config, updateConfig, activeFloor, setActiveFloor }) {
+export default function Options({ floorNumToName, config, updateConfig, activeFloor, setActiveFloor }) {
     function OptionCheckbox({ label, option }) {
         return (
             <div>
@@ -44,7 +44,7 @@ export default function Options({ config, updateConfig, activeFloor, setActiveFl
 
     return (
         <span className="options">
-            <FloorSelector config={config} updateConfig={updateConfig} />
+            <FloorSelector floorNumToName={floorNumToName} config={config} updateConfig={updateConfig} />
             <OptionCheckbox label="Show block grid" option="showBlockGrid" />
             <OptionCheckbox label="Show chunk grid" option="showChunkGrid" />
             <OptionCheckbox label="Show beacons" option="showBeacons" />

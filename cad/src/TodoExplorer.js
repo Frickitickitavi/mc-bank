@@ -2,7 +2,7 @@
 import TodoItem from './TodoItem';
 
 
-export default function TodoExplorer({ floors, activeFloor, setActiveFloor, path, setPath }) {
+export default function TodoExplorer({ bankContents, config, path, setPath }) {
     if (!path) return <span className="todo-explorer">Loading...</span>;    
 
     return <span className="todo-explorer">
@@ -16,6 +16,6 @@ export default function TodoExplorer({ floors, activeFloor, setActiveFloor, path
             {"<"}
         </button> <span className="todo-path">{path.length > 1 ? path.map(r => r.name).join('/') : '/'}</span></div>
         <div>_____________________________________</div>
-        {path[path.length - 1].subrooms.map(room => <TodoItem floors={floors} todoPath={path.concat(room)} setPath={setPath} />)  }
+        {path[path.length - 1].subrooms.map(room => <TodoItem bankContents={bankContents} todoPath={path.concat(room)} setPath={setPath} />)  }
     </span>
 }

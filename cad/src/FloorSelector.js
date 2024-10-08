@@ -1,8 +1,6 @@
-export default function FloorSelector({ config, updateConfig }) {
+export default function FloorSelector({ floorNumToName, config, updateConfig }) {
 
     const activeFloor = config.activeFloor;
-
-    const floorNames = ["A", "B", "C", "D", "E", "F", "G"]
 
     function setActiveFloor(newFloor) {
         updateConfig({ ...config, activeFloor: newFloor });
@@ -11,25 +9,17 @@ export default function FloorSelector({ config, updateConfig }) {
     function FloorButton({ floor }) {
         return <button onClick={() => setActiveFloor(floor)}>
             {activeFloor === floor ? "(" : ""}
-            {floor}
+            {floorNumToName(floor)}
             {activeFloor === floor ? ")" : ""}
         </button>;
     }
 
     function decrementFloor(active) {
-        if (active === floorNames[0]) {
-            setActiveFloor(floorNames[floorNames.length - 1]);
-            return;
-        }
-        setActiveFloor(floorNames[floorNames.indexOf(active) - 1]);
+        setActiveFloor(Math.max(activeFloor - 1, 0));
     }
 
     function incrementFloor(active) {
-        if (active === floorNames[floorNames.length - 1]) {
-            setActiveFloor(floorNames[0]);
-            return;
-        }
-        setActiveFloor(floorNames[floorNames.indexOf(active) + 1]);
+        setActiveFloor(Math.min(activeFloor + 1, 6));
     }
 
     return (
@@ -37,13 +27,13 @@ export default function FloorSelector({ config, updateConfig }) {
             <div>Active Floor:</div>
             <div>
                 <button onClick={() => decrementFloor(activeFloor)}>-</button>
-                <FloorButton floor="A" />
-                <FloorButton floor="B" />
-                <FloorButton floor="C" />
-                <FloorButton floor="D" />
-                <FloorButton floor="E" />
-                <FloorButton floor="F" />
-                <FloorButton floor="G" />
+                <FloorButton floor={0} />
+                <FloorButton floor={1} />
+                <FloorButton floor={2} />
+                <FloorButton floor={3} />
+                <FloorButton floor={4} />
+                <FloorButton floor={5} />
+                <FloorButton floor={6} />
                 <button onClick={() => incrementFloor(activeFloor)}>+</button>
             </div>
         </>
