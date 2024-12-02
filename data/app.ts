@@ -708,10 +708,6 @@ const bank: Room = {
                                     signName: "Dark Oak Logs"
                                 },
                                 {
-                                    name: "Pale Oak Log",
-                                    signName: "Pale Oak Logs"
-                                },
-                                {
                                     name: "Mangrove Log",
                                     signName: "Mangrove Logs"
                                 },
