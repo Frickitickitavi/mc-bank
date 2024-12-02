@@ -9,6 +9,8 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "bankcad", "cad\bankcad.espr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5573921E-E43C-4450-B47D-59B451230C98}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "data", "data\data.esproj", "{7F7DFE20-9E40-4E9D-99B0-B10086E41576}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,12 @@ Global
 		{20485EEF-1341-4FFB-ADF3-DA850C109AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20485EEF-1341-4FFB-ADF3-DA850C109AF3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20485EEF-1341-4FFB-ADF3-DA850C109AF3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7F7DFE20-9E40-4E9D-99B0-B10086E41576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7DFE20-9E40-4E9D-99B0-B10086E41576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7DFE20-9E40-4E9D-99B0-B10086E41576}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7F7DFE20-9E40-4E9D-99B0-B10086E41576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7DFE20-9E40-4E9D-99B0-B10086E41576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7DFE20-9E40-4E9D-99B0-B10086E41576}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
