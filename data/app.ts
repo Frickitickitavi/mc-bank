@@ -179,6 +179,10 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Ancient Debris"
+                                },
+                                {
+                                    name: "Resin Clump",
+                                    signName: "Resin Clumps"
                                 }
                             ]
                         },
@@ -272,7 +276,18 @@ const bank: Room = {
                                 {
                                     name: "Block of Amethyst",
                                     signName: "Amethyst Blocks"
+                                },
+                                {
+                                    name: "Block of Resin",
+                                    signName: "Resin Blocks"
+                                },
+                                {
+                                    name: "Resin Bricks",
+                                },
+                                {
+                                    name: "Chiseled Resin Bricks",
                                 }
+
                             ],
                             subrooms: [
                                 {
@@ -708,6 +723,10 @@ const bank: Room = {
                                     signName: "Dark Oak Logs"
                                 },
                                 {
+                                    name: "Pale Oak Log",
+                                    signName: "Pale Oak Logs"
+                                },
+                                {
                                     name: "Mangrove Log",
                                     signName: "Mangrove Logs"
                                 },
@@ -757,6 +776,10 @@ const bank: Room = {
                                     signName: "Stripped Dark Oak Logs"
                                 },
                                 {
+                                    name: "Stripped Pale Oak Log",
+                                    signName: "Stripped Pale Oak Logs"
+                                },
+                                {
                                     name: "Stripped Mangrove Log",
                                     signName: "Stripped Mangrove Logs"
                                 },
@@ -798,6 +821,9 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Dark Oak Planks"
+                                },
+                                {
+                                    name: "Pale Oak Planks"
                                 },
                                 {
                                     name: "Mangrove Planks"
@@ -843,6 +869,9 @@ const bank: Room = {
                                     name: "Dark Oak Wood"
                                 },
                                 {
+                                    name: "Pale Oak Wood"
+                                },
+                                {
                                     name: "Mangrove Wood"
                                 },
                                 {
@@ -876,6 +905,9 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Stripped Dark Oak Wood"
+                                },
+                                {
+                                    name: "Stripped Pale Oak Wood"
                                 },
                                 {
                                     name: "Stripped Mangrove Wood"
@@ -1001,6 +1033,10 @@ const bank: Room = {
                                 {
                                     name: "Tuff Brick Wall",
                                     signName: "Tuff Brick Walls"
+                                },
+                                {
+                                    name: "Resin Brick Wall",
+                                    signName: "Resin Brick Walls"
                                 }
                             ]
                         },
@@ -1034,6 +1070,10 @@ const bank: Room = {
                                         {
                                             name: "Dark Oak Trapdoor",
                                             signName: "Dark Oak Trapdoors"
+                                        },
+                                        {
+                                            name: "Pale Oak Trapdoor",
+                                            signName: "Pale Oak Trapdoors"
                                         },
                                         {
                                             name: "Crimson Trapdoor",
@@ -1129,6 +1169,10 @@ const bank: Room = {
                                     signName: "Dark Oak Fences"
                                 },
                                 {
+                                    name: "Pale Oak Fence",
+                                    signName: "Pale Oak Fences"
+                                },
+                                {
                                     name: "Crimson Fence",
                                     signName: "Crimson Fences"
                                 },
@@ -1191,6 +1235,10 @@ const bank: Room = {
                                         {
                                             name: "Dark Oak Door",
                                             signName: "Dark Oak Doors"
+                                        },
+                                        {
+                                            name: "Pale Oak Door",
+                                            signName: "Pale Oak Doors"
                                         },
                                         {
                                             name: "Crimson Door",
@@ -1284,6 +1332,10 @@ const bank: Room = {
                                 {
                                     name: "Dark Oak Fence Gate",
                                     signName: "Dark Oak Fence Gates"
+                                },
+                                {
+                                    name: "Pale Oak Fence Gate",
+                                    signName: "Pale Oak Fence Gates"
                                 },
                                 {
                                     name: "Crimson Fence Gate",
@@ -1505,6 +1557,10 @@ const bank: Room = {
                                             signName: "Dark Oak Slabs"
                                         },
                                         {
+                                            name: "Pale Oak Slab",
+                                            signName: "Pale Oak Slabs"
+                                        },
+                                        {
                                             name: "Crimson Slab",
                                             signName: "Crimson Slabs"
                                         },
@@ -1577,6 +1633,10 @@ const bank: Room = {
                                         {
                                             name: "Mud Brick Slab",
                                             signName: "Mud Brick Slabs"
+                                        },
+                                        {
+                                            name: "Resin Brick Slab",
+                                            signName: "Resin Brick Slabs"
                                         }
                                     ]
                                 }
@@ -1731,6 +1791,9 @@ const bank: Room = {
                                             name: "Dark Oak Stairs"
                                         },
                                         {
+                                            name: "Pale Oak Stairs"
+                                        },
+                                        {
                                             name: "Crimson Stairs"
                                         },
                                         {
@@ -1783,6 +1846,9 @@ const bank: Room = {
                                         },
                                         {
                                             name: "Mud Brick Stairs"
+                                        },
+                                        {
+                                            name: "Resin Brick Stairs"
                                         }
                                     ]
                                 }
@@ -1833,6 +1899,10 @@ const bank: Room = {
                                 {
                                     name: "Dark Oak Sapling",
                                     signName: "Dark Oak Saplings"
+                                },
+                                {
+                                    name: "Pale Oak Sapling",
+                                    signName: "Pale Oak Saplings"
                                 },
                                 {
                                     name: "Mangrove Propagule",
@@ -1894,6 +1964,9 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Dark Oak Leaves"
+                                },
+                                {
+                                    name: "Pale Oak Leaves"
                                 },
                                 {
                                     name: "Mangrove Leaves"
@@ -2001,6 +2074,14 @@ const bank: Room = {
                                 {
                                     name: "Torchflower",
                                     signName: "Torchflowers"
+                                },
+                                {
+                                    name: "Open Eyeblossom",
+                                    signName: "Open Eyeblossoms"
+                                },
+                                {
+                                    name: "Closed Eyeblossom",
+                                    signName: "Closed Eyeblossoms"
                                 }
                             ]
                         },
@@ -2243,8 +2324,19 @@ const bank: Room = {
                                     signName: "Moss Blocks"
                                 },
                                 {
+                                    name: "Pale Moss Block",
+                                    signName: "Pale Moss Blocks"
+                                },
+                                {
                                     name: "Moss Carpet",
                                     signName: "Moss Carpets"
+                                },
+                                {
+                                    name: "Pale Moss Carpet",
+                                    signName: "Pale Moss Carpets"
+                                },
+                                {
+                                    name: "Pale Hanging Moss"
                                 },
                                 {
                                     name: "Mangrove Roots"
@@ -2638,9 +2730,13 @@ const bank: Room = {
                             shortcuts: [
                                 {
                                     room: "Other Plants",
+                                    description: "(Pale) Moss Carpets",
                                     items: [
                                         {
                                             name: "Moss Carpet"
+                                        },
+                                        {
+                                            name: "Pale Moss Carpet"
                                         }
                                     ]
                                 }
@@ -3497,6 +3593,10 @@ const bank: Room = {
                                             signName: "Dark Oak Buttons"
                                         },
                                         {
+                                            name: "Pale Oak Button",
+                                            signName: "Pale Oak Buttons"
+                                        },
+                                        {
                                             name: "Crimson Button",
                                             signName: "Crimson Buttons"
                                         },
@@ -3552,6 +3652,10 @@ const bank: Room = {
                                         {
                                             name: "Dark Oak Pressure Plate",
                                             signName: "Dark Oak Pressure Plates"
+                                        },
+                                        {
+                                            name: "Pale Oak Pressure Plate",
+                                            signName: "Pale Oak Pressure Plates"
                                         },
                                         {
                                             name: "Crimson Pressure Plate",
@@ -4177,6 +4281,14 @@ const bank: Room = {
                                     signName: "Dark Oak Boats with Chests"
                                 },
                                 {
+                                    name: "Pale Oak Boat",
+                                    signName: "Pale Oak Boats"
+                                },
+                                {
+                                    name: "Pale Oak Boat with Chest",
+                                    signName: "Pale Oak Boats with Chests"
+                                },
+                                {
                                     name: "Crimson Boat",
                                     signName: "Crimson Boats"
                                 },
@@ -4433,6 +4545,10 @@ const bank: Room = {
                                             signName: "Dark Oak Signs"
                                         },
                                         {
+                                            name: "Pale Oak Sign",
+                                            signName: "Pale Oak Signs"
+                                        },
+                                        {
                                             name: "Mangrove Sign",
                                             signName: "Mangrove Signs"
                                         },
@@ -4475,6 +4591,10 @@ const bank: Room = {
                                         {
                                             name: "Dark Oak Hanging Sign",
                                             signName: "Dark Oak Hanging Signs"
+                                        },
+                                        {
+                                            name: "Pale Oak Hanging Sign",
+                                            signName: "Pale Oak Hanging Signs"
                                         },
                                         {
                                             name: "Mangrove Hanging Sign",
@@ -4602,6 +4722,10 @@ const bank: Room = {
                                 {
                                     name: "Turtle Egg",
                                     signName: "Turtle Eggs"
+                                },
+                                {
+                                    name: "Creaking Heart",
+                                    signName: "Creaking Hearts"
                                 }
                             ]
                         }
@@ -7024,6 +7148,10 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Flint"
+                                },
+                                {
+                                    name: "Resin Brick",
+                                    signName: "Resin Bricks"
                                 }
                             ]
                         },
