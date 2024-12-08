@@ -2730,7 +2730,7 @@ const bank: Room = {
                             shortcuts: [
                                 {
                                     room: "Other Plants",
-                                    description: "(Pale) Moss Carpets",
+                                    description: "Moss Carpets",
                                     items: [
                                         {
                                             name: "Moss Carpet"
