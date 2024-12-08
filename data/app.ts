@@ -5076,7 +5076,7 @@ const bank: Room = {
                                         {
                                             name: "Potion of Strength",
                                             modifier: "Strength (8:00)",
-                                            signName: "Strength Extended 8:00"
+                                            signName: "Strength 8:00"
                                         },
                                         {
                                             name: "Potion of Strength",
@@ -5096,32 +5096,32 @@ const bank: Room = {
                                         {
                                             name: "Potion of Leaping",
                                             modifier: "Jump Boost (3:00)",
-                                            signName: "Jump Boost 3:00"
+                                            signName: "Leaping 3:00"
                                         },
                                         {
                                             name: "Potion of Leaping",
                                             modifier: "Jump Boost (8:00)",
-                                            signName: "Jump Boost 8:00"
+                                            signName: "Leaping 8:00"
                                         },
                                         {
                                             name: "Potion of Leaping",
                                             modifier: "Jump Boost II (1:30)",
-                                            signName: "Jump Boost II"
+                                            signName: "Leaping II"
                                         },
                                         {
                                             name: "Potion of Swiftness",
                                             modifier: "Speed (3:00)",
-                                            signName: "Speed 3:00"
+                                            signName: "Swiftness 3:00"
                                         },
                                         {
                                             name: "Potion of Swiftness",
                                             modifier: "Speed (8:00)",
-                                            signName: "Speed 8:00"
+                                            signName: "Swiftness 8:00"
                                         },
                                         {
                                             name: "Potion of Swiftness",
                                             modifier: "Speed II (1:30)",
-                                            signName: "Speed II"
+                                            signName: "Swiftness II"
                                         },
                                         {
                                             name: "Potion of Water Breathing",
@@ -5178,7 +5178,7 @@ const bank: Room = {
                                         {
                                             name: "Potion of the Turtle Master",
                                             modifier: "Slowness IV (0:40)\nResistance III (0:40)",
-                                            signName: "Turtle Master Extended 0:40"
+                                            signName: "Turtle Master 0:40"
                                         },
                                         {
                                             name: "Potion of the Turtle Master",
@@ -5333,32 +5333,32 @@ const bank: Room = {
                                         {
                                             name: "Splash Potion of Leaping",
                                             modifier: "Jump Boost (2:15)",
-                                            signName: "Jump Boost 2:15"
+                                            signName: "Leaping 2:15"
                                         },
                                         {
                                             name: "Splash Potion of Leaping",
                                             modifier: "Jump Boost (6:00)",
-                                            signName: "Jump Boost 6:00"
+                                            signName: "Leaping 6:00"
                                         },
                                         {
                                             name: "Splash Potion of Leaping",
                                             modifier: "Jump Boost II (1:07)",
-                                            signName: "Jump Boost II"
+                                            signName: "Leaping II"
                                         },
                                         {
                                             name: "Splash Potion of Swiftness",
                                             modifier: "Speed (2:15)",
-                                            signName: "Speed 2:15"
+                                            signName: "Swiftness 2:15"
                                         },
                                         {
                                             name: "Splash Potion of Swiftness",
                                             modifier: "Speed (6:00)",
-                                            signName: "Speed 6:00"
+                                            signName: "Swiftness 6:00"
                                         },
                                         {
                                             name: "Splash Potion of Swiftness",
                                             modifier: "Speed II (1:07)",
-                                            signName: "Speed II"
+                                            signName: "Swiftness II"
                                         },
                                         {
                                             name: "Splash Potion of Water Breathing",
@@ -5574,32 +5574,32 @@ const bank: Room = {
                                         {
                                             name: "Lingering Potion of Leaping",
                                             modifier: "Jump Boost (0:45)",
-                                            signName: "Jump Boost 0:45"
+                                            signName: "Leaping 0:45"
                                         },
                                         {
                                             name: "Lingering Potion of Leaping",
                                             modifier: "Jump Boost (2:00)",
-                                            signName: "Jump Boost 2:00"
+                                            signName: "Leaping 2:00"
                                         },
                                         {
                                             name: "Lingering Potion of Leaping",
                                             modifier: "Jump Boost II (0:22)",
-                                            signName: "Jump Boost II"
+                                            signName: "Leaping II"
                                         },
                                         {
                                             name: "Lingering Potion of Swiftness",
                                             modifier: "Speed (0:45)",
-                                            signName: "Speed 0:45"
+                                            signName: "Swiftness 0:45"
                                         },
                                         {
                                             name: "Lingering Potion of Swiftness",
                                             modifier: "Speed (2:00)",
-                                            signName: "Speed 2:00"
+                                            signName: "Swiftness 2:00"
                                         },
                                         {
                                             name: "Lingering Potion of Swiftness",
                                             modifier: "Speed II (0:22)",
-                                            signName: "Speed II"
+                                            signName: "Swiftness II"
                                         },
                                         {
                                             name: "Lingering Potion of Water Breathing",
