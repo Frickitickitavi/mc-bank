@@ -5041,27 +5041,27 @@ const bank: Room = {
                                         {
                                             name: "Potion of Healing",
                                             modifier: "Instant Health II",
-                                            signName: "Healing"
+                                            signName: "Healing II"
                                         },
                                         {
                                             name: "Potion of Fire Resistance",
                                             modifier: "Fire Resistance (3:00)",
-                                            signName: "Fire Resistance"
+                                            signName: "Fire Resistance 3:00"
                                         },
                                         {
                                             name: "Potion of Fire Resistance",
                                             modifier: "Fire Resistance (8:00)",
-                                            signName: "Fire Resistance Extended"
+                                            signName: "Fire Resistance 8:00"
                                         },
                                         {
                                             name: "Potion of Regeneration",
                                             modifier: "Regeneration (0:45)",
-                                            signName: "Regeneration"
+                                            signName: "Regeneration 0:45"
                                         },
                                         {
                                             name: "Potion of Regeneration",
                                             modifier: "Regeneration (2:00)",
-                                            signName: "Regeneration Extended"
+                                            signName: "Regeneration 2:00"
                                         },
                                         {
                                             name: "Potion of Regeneration",
@@ -5071,12 +5071,12 @@ const bank: Room = {
                                         {
                                             name: "Potion of Strength",
                                             modifier: "Strength (3:00)",
-                                            signName: "Strength"
+                                            signName: "Strength 3:00"
                                         },
                                         {
                                             name: "Potion of Strength",
                                             modifier: "Strength (8:00)",
-                                            signName: "Strength Extended"
+                                            signName: "Strength Extended 8:00"
                                         },
                                         {
                                             name: "Potion of Strength",
@@ -5086,72 +5086,72 @@ const bank: Room = {
                                         {
                                             name: "Potion of Night Vision",
                                             modifier: "Night Vision (3:00)",
-                                            signName: "Night Vision"
+                                            signName: "Night Vision 3:00"
                                         },
                                         {
                                             name: "Potion of Night Vision",
                                             modifier: "Night Vision (8:00)",
-                                            signName: "Night Vision Extended"
+                                            signName: "Night Vision 8:00"
                                         },
                                         {
                                             name: "Potion of Leaping",
-                                            modifier: "Leaping (3:00)",
-                                            signName: "Leaping"
+                                            modifier: "Jump Boost (3:00)",
+                                            signName: "Jump Boost 3:00"
                                         },
                                         {
                                             name: "Potion of Leaping",
-                                            modifier: "Leaping (8:00)",
-                                            signName: "Leaping Extended"
+                                            modifier: "Jump Boost (8:00)",
+                                            signName: "Jump Boost 8:00"
                                         },
                                         {
                                             name: "Potion of Leaping",
-                                            modifier: "Leaping II (1:30)",
-                                            signName: "Leaping II"
+                                            modifier: "Jump Boost II (1:30)",
+                                            signName: "Jump Boost II"
                                         },
                                         {
                                             name: "Potion of Swiftness",
-                                            modifier: "Swiftness (3:00)",
-                                            signName: "Swiftness"
+                                            modifier: "Speed (3:00)",
+                                            signName: "Speed 3:00"
                                         },
                                         {
                                             name: "Potion of Swiftness",
-                                            modifier: "Swiftness (8:00)",
-                                            signName: "Swiftness Extended"
+                                            modifier: "Speed (8:00)",
+                                            signName: "Speed 8:00"
                                         },
                                         {
                                             name: "Potion of Swiftness",
-                                            modifier: "Swiftness II (1:30)",
-                                            signName: "Swiftness II"
+                                            modifier: "Speed II (1:30)",
+                                            signName: "Speed II"
                                         },
                                         {
                                             name: "Potion of Water Breathing",
                                             modifier: "Water Breathing (3:00)",
-                                            signName: "Water Breathing"
+                                            signName: "Water Breathing 3:00"
                                         },
                                         {
                                             name: "Potion of Water Breathing",
                                             modifier: "Water Breathing (8:00)",
-                                            signName: "Water Breathing Extended"
+                                            signName: "Water Breathing 8:00"
                                         },
                                         {
                                             name: "Potion of Invisibility",
                                             modifier: "Invisibility (3:00)",
-                                            signName: "Invisibility"
+                                            signName: "Invisibility 3:00"
                                         },
                                         {
                                             name: "Potion of Invisibility",
                                             modifier: "Invisibility (8:00)",
-                                            signName: "Invisibility Extended"
+                                            signName: "Invisibility 8:00"
                                         },
                                         {
                                             name: "Potion of Slow Falling",
                                             modifier: "Slow Falling (1:30)",
-                                            signName: "Slow Falling"
+                                            signName: "Slow Falling 1:30"
                                         },
                                         {
                                             name: "Potion of Slow Falling",
                                             modifier: "Slow Falling (4:00)",
-                                            signName: "Slow Falling Extended"
+                                            signName: "Slow Falling 4:00"
                                         }
                                     ]
                                 },
@@ -5172,13 +5172,13 @@ const bank: Room = {
                                         },
                                         {
                                             name: "Potion of the Turtle Master",
-                                            modifier: "Slowness IV (0:20)\\nResistance III (0:20)",
-                                            signName: "Turtle Master"
+                                            modifier: "Slowness IV (0:20)\nResistance III (0:20)",
+                                            signName: "Turtle Master 0:20"
                                         },
                                         {
                                             name: "Potion of the Turtle Master",
-                                            modifier: "Slowness IV (0:40)\\nResistance III (0:40)",
-                                            signName: "Turtle Master Extended"
+                                            modifier: "Slowness IV (0:40)\nResistance III (0:40)",
+                                            signName: "Turtle Master Extended 0:40"
                                         },
                                         {
                                             name: "Potion of the Turtle Master",
@@ -5187,18 +5187,22 @@ const bank: Room = {
                                         },
                                         {
                                             name: "Potion of Infestation",
+                                            modifier: "Infested",
                                             signName: "Infestation"
                                         },
                                         {
                                             name: "Potion of Oozing",
+                                            modifier: "Oozing",
                                             signName: "Oozing"
                                         },
                                         {
                                             name: "Potion of Weaving",
+                                            modifier: "Weaving",
                                             signName: "Weaving"
                                         },
                                         {
                                             name: "Potion of Wind Charging",
+                                            modifier: "Wind Charged",
                                             signName: "Wind Charging"
                                         }
                                     ]
@@ -5209,12 +5213,12 @@ const bank: Room = {
                                         {
                                             name: "Potion of Poison",
                                             modifier: "Poison (0:45)",
-                                            signName: "Poison"
+                                            signName: "Poison 0:45"
                                         },
                                         {
                                             name: "Potion of Poison",
                                             modifier: "Poison (2:00)",
-                                            signName: "Poison Extended"
+                                            signName: "Poison 2:00"
                                         },
                                         {
                                             name: "Potion of Poison",
@@ -5224,22 +5228,22 @@ const bank: Room = {
                                         {
                                             name: "Potion of Weakness",
                                             modifier: "Weakness (1:30)",
-                                            signName: "Weakness"
+                                            signName: "Weakness 1:30"
                                         },
                                         {
                                             name: "Potion of Weakness",
                                             modifier: "Weakness (4:00)",
-                                            signName: "Weakness Extended"
+                                            signName: "Weakness 4:00"
                                         },
                                         {
                                             name: "Potion of Slowness",
                                             modifier: "Slowness (1:30)",
-                                            signName: "Slowness"
+                                            signName: "Slowness 1:30"
                                         },
                                         {
                                             name: "Potion of Slowness",
                                             modifier: "Slowness (4:00)",
-                                            signName: "Slowness Extended"
+                                            signName: "Slowness 4:00"
                                         },
                                         {
                                             name: "Potion of Slowness",
@@ -5274,27 +5278,27 @@ const bank: Room = {
                                         {
                                             name: "Splash Potion of Healing",
                                             modifier: "Instant Health II",
-                                            signName: "Healing"
+                                            signName: "Healing II"
                                         },
                                         {
                                             name: "Splash Potion of Fire Resistance",
                                             modifier: "Fire Resistance (2:15)",
-                                            signName: "Fire Resistance"
+                                            signName: "Fire Resistance 2:15"
                                         },
                                         {
                                             name: "Splash Potion of Fire Resistance",
                                             modifier: "Fire Resistance (6:00)",
-                                            signName: "Fire Resistance Extended"
+                                            signName: "Fire Resistance 6:00"
                                         },
                                         {
                                             name: "Splash Potion of Regeneration",
                                             modifier: "Regeneration (0:33)",
-                                            signName: "Regeneration"
+                                            signName: "Regeneration 0:33"
                                         },
                                         {
                                             name: "Splash Potion of Regeneration",
                                             modifier: "Regeneration (1:30)",
-                                            signName: "Regeneration Extended"
+                                            signName: "Regeneration 1:30"
                                         },
                                         {
                                             name: "Splash Potion of Regeneration",
@@ -5304,12 +5308,12 @@ const bank: Room = {
                                         {
                                             name: "Splash Potion of Strength",
                                             modifier: "Strength (2:15)",
-                                            signName: "Strength"
+                                            signName: "Strength 2:15"
                                         },
                                         {
                                             name: "Splash Potion of Strength",
                                             modifier: "Strength (6:00)",
-                                            signName: "Strength Extended"
+                                            signName: "Strength 6:00"
                                         },
                                         {
                                             name: "Splash Potion of Strength",
@@ -5319,72 +5323,72 @@ const bank: Room = {
                                         {
                                             name: "Splash Potion of Night Vision",
                                             modifier: "Night Vision (2:15)",
-                                            signName: "Night Vision"
+                                            signName: "Night Vision 2:15"
                                         },
                                         {
                                             name: "Splash Potion of Night Vision",
                                             modifier: "Night Vision (6:00)",
-                                            signName: "Night Vision Extended"
+                                            signName: "Night Vision 6:00"
                                         },
                                         {
                                             name: "Splash Potion of Leaping",
-                                            modifier: "Leaping (2:15)",
-                                            signName: "Leaping"
+                                            modifier: "Jump Boost (2:15)",
+                                            signName: "Jump Boost 2:15"
                                         },
                                         {
                                             name: "Splash Potion of Leaping",
-                                            modifier: "Leaping (6:00)",
-                                            signName: "Leaping Extended"
+                                            modifier: "Jump Boost (6:00)",
+                                            signName: "Jump Boost 6:00"
                                         },
                                         {
                                             name: "Splash Potion of Leaping",
-                                            modifier: "Leaping II (1:07)",
-                                            signName: "Leaping II"
+                                            modifier: "Jump Boost II (1:07)",
+                                            signName: "Jump Boost II"
                                         },
                                         {
                                             name: "Splash Potion of Swiftness",
-                                            modifier: "Swiftness (2:15)",
-                                            signName: "Swiftness"
+                                            modifier: "Speed (2:15)",
+                                            signName: "Speed 2:15"
                                         },
                                         {
                                             name: "Splash Potion of Swiftness",
-                                            modifier: "Swiftness (6:00)",
-                                            signName: "Swiftness Extended"
+                                            modifier: "Speed (6:00)",
+                                            signName: "Speed 6:00"
                                         },
                                         {
                                             name: "Splash Potion of Swiftness",
-                                            modifier: "Swiftness II (1:07)",
-                                            signName: "Swiftness II"
+                                            modifier: "Speed II (1:07)",
+                                            signName: "Speed II"
                                         },
                                         {
                                             name: "Splash Potion of Water Breathing",
                                             modifier: "Water Breathing (2:15)",
-                                            signName: "Water Breathing"
+                                            signName: "Water Breathing 2:15"
                                         },
                                         {
                                             name: "Splash Potion of Water Breathing",
                                             modifier: "Water Breathing (6:00)",
-                                            signName: "Water Breathing Extended"
+                                            signName: "Water Breathing 6:00"
                                         },
                                         {
                                             name: "Splash Potion of Invisibility",
                                             modifier: "Invisibility (2:15)",
-                                            signName: "Invisibility"
+                                            signName: "Invisibility 2:15"
                                         },
                                         {
                                             name: "Splash Potion of Invisibility",
                                             modifier: "Invisibility (6:00)",
-                                            signName: "Invisibility Extended"
+                                            signName: "Invisibility 6:00"
                                         },
                                         {
                                             name: "Splash Potion of Slow Falling",
                                             modifier: "Slow Falling (1:07)",
-                                            signName: "Slow Falling"
+                                            signName: "Slow Falling 1:07"
                                         },
                                         {
                                             name: "Splash Potion of Slow Falling",
                                             modifier: "Slow Falling (3:00)",
-                                            signName: "Slow Falling Extended"
+                                            signName: "Slow Falling 3:00"
                                         }
                                     ]
                                 },
@@ -5409,33 +5413,37 @@ const bank: Room = {
                                         },
                                         {
                                             name: "Splash Potion of the Turtle Master",
-                                            modifier: "Slowness IV (0:15)\\nResistance III (0:15)",
-                                            signName: "Turtle Master"
+                                            modifier: "Slowness IV (0:15)\nResistance III (0:15)",
+                                            signName: "Turtle Master 0:15"
                                         },
                                         {
                                             name: "Splash Potion of the Turtle Master",
-                                            modifier: "Slowness IV (0:30)\\nResistance III (0:30)",
-                                            signName: "Turtle Master Extended"
+                                            modifier: "Slowness IV (0:30)\nResistance III (0:30)",
+                                            signName: "Turtle Master 0:30"
                                         },
                                         {
                                             name: "Splash Potion of the Turtle Master",
-                                            modifier: "Slowness VI (0:15)\\nResistance IV (0:15)",
+                                            modifier: "Slowness VI (0:15)\nResistance IV (0:15)",
                                             signName: "Turtle Master II"
                                         },
                                         {
                                             name: "Splash Potion of Infestation",
+                                            modifier: "Infested",
                                             signName: "Infestation"
                                         },
                                         {
                                             name: "Splash Potion of Oozing",
+                                            modifier: "Oozing",
                                             signName: "Oozing"
                                         },
                                         {
                                             name: "Splash Potion of Weaving",
+                                            modifier: "Weaving",
                                             signName: "Weaving"
                                         },
                                         {
                                             name: "Splash Potion of Wind Charging",
+                                            modifier: "Wind Charged",
                                             signName: "Wind Charging"
                                         }
                                     ]
@@ -5446,12 +5454,12 @@ const bank: Room = {
                                         {
                                             name: "Splash Potion of Poison",
                                             modifier: "Poison (0:33)",
-                                            signName: "Poison"
+                                            signName: "Poison 0:33"
                                         },
                                         {
                                             name: "Splash Potion of Poison",
                                             modifier: "Poison (1:30)",
-                                            signName: "Poison Extended"
+                                            signName: "Poison 1:30"
                                         },
                                         {
                                             name: "Splash Potion of Poison",
@@ -5461,22 +5469,22 @@ const bank: Room = {
                                         {
                                             name: "Splash Potion of Weakness",
                                             modifier: "Weakness (1:07)",
-                                            signName: "Weakness"
+                                            signName: "Weakness 1:07"
                                         },
                                         {
                                             name: "Splash Potion of Weakness",
                                             modifier: "Weakness (3:00)",
-                                            signName: "Weakness Extended"
+                                            signName: "Weakness 3:00"
                                         },
                                         {
                                             name: "Splash Potion of Slowness",
                                             modifier: "Slowness (1:07)",
-                                            signName: "Slowness"
+                                            signName: "Slowness 1:07"
                                         },
                                         {
                                             name: "Splash Potion of Slowness",
                                             modifier: "Slowness (3:00)",
-                                            signName: "Slowness Extended"
+                                            signName: "Slowness 3:00"
                                         },
                                         {
                                             name: "Splash Potion of Slowness",
@@ -5511,27 +5519,27 @@ const bank: Room = {
                                         {
                                             name: "Lingering Potion of Healing",
                                             modifier: "Instant Health II",
-                                            signName: "Healing"
+                                            signName: "Healing II"
                                         },
                                         {
                                             name: "Lingering Potion of Fire Resistance",
                                             modifier: "Fire Resistance (0:45)",
-                                            signName: "Fire Resistance"
+                                            signName: "Fire Resistance 0:45"
                                         },
                                         {
                                             name: "Lingering Potion of Fire Resistance",
                                             modifier: "Fire Resistance (2:00)",
-                                            signName: "Fire Resistance Extended"
+                                            signName: "Fire Resistance 2:00"
                                         },
                                         {
                                             name: "Lingering Potion of Regeneration",
                                             modifier: "Regeneration (0:11)",
-                                            signName: "Regeneration"
+                                            signName: "Regeneration 0:11"
                                         },
                                         {
                                             name: "Lingering Potion of Regeneration",
                                             modifier: "Regeneration (0:30)",
-                                            signName: "Regeneration Extended"
+                                            signName: "Regeneration 0:30"
                                         },
                                         {
                                             name: "Lingering Potion of Regeneration",
@@ -5541,12 +5549,12 @@ const bank: Room = {
                                         {
                                             name: "Lingering Potion of Strength",
                                             modifier: "Strength (0:45)",
-                                            signName: "Strength"
+                                            signName: "Strength 0:45"
                                         },
                                         {
                                             name: "Lingering Potion of Strength",
                                             modifier: "Strength (2:00)",
-                                            signName: "Strength Extended"
+                                            signName: "Strength 2:00"
                                         },
                                         {
                                             name: "Lingering Potion of Strength",
@@ -5556,72 +5564,72 @@ const bank: Room = {
                                         {
                                             name: "Lingering Potion of Night Vision",
                                             modifier: "Night Vision (0:45)",
-                                            signName: "Night Vision"
+                                            signName: "Night Vision 0:45"
                                         },
                                         {
                                             name: "Lingering Potion of Night Vision",
                                             modifier: "Night Vision (2:00)",
-                                            signName: "Night Vision Extended"
+                                            signName: "Night Vision 2:00"
                                         },
                                         {
                                             name: "Lingering Potion of Leaping",
-                                            modifier: "Leaping (0:45)",
-                                            signName: "Leaping"
+                                            modifier: "Jump Boost (0:45)",
+                                            signName: "Jump Boost 0:45"
                                         },
                                         {
                                             name: "Lingering Potion of Leaping",
-                                            modifier: "Leaping (2:00)",
-                                            signName: "Leaping Extended"
+                                            modifier: "Jump Boost (2:00)",
+                                            signName: "Jump Boost 2:00"
                                         },
                                         {
                                             name: "Lingering Potion of Leaping",
-                                            modifier: "Leaping II (0:22)",
-                                            signName: "Leaping II"
+                                            modifier: "Jump Boost II (0:22)",
+                                            signName: "Jump Boost II"
                                         },
                                         {
                                             name: "Lingering Potion of Swiftness",
-                                            modifier: "Swiftness (0:45)",
-                                            signName: "Swiftness"
+                                            modifier: "Speed (0:45)",
+                                            signName: "Speed 0:45"
                                         },
                                         {
                                             name: "Lingering Potion of Swiftness",
-                                            modifier: "Swiftness (2:00)",
-                                            signName: "Swiftness Extended"
+                                            modifier: "Speed (2:00)",
+                                            signName: "Speed 2:00"
                                         },
                                         {
                                             name: "Lingering Potion of Swiftness",
-                                            modifier: "Swiftness II (0:22)",
-                                            signName: "Swiftness II"
+                                            modifier: "Speed II (0:22)",
+                                            signName: "Speed II"
                                         },
                                         {
                                             name: "Lingering Potion of Water Breathing",
                                             modifier: "Water Breathing (0:45)",
-                                            signName: "Water Breathing"
+                                            signName: "Water Breathing 0:45"
                                         },
                                         {
                                             name: "Lingering Potion of Water Breathing",
                                             modifier: "Water Breathing (2:00)",
-                                            signName: "Water Breathing Extended"
+                                            signName: "Water Breathing 2:00"
                                         },
                                         {
                                             name: "Lingering Potion of Invisibility",
                                             modifier: "Invisibility (0:45)",
-                                            signName: "Invisibility"
+                                            signName: "Invisibility 0:45"
                                         },
                                         {
                                             name: "Lingering Potion of Invisibility",
                                             modifier: "Invisibility (2:00)",
-                                            signName: "Invisibility Extended"
+                                            signName: "Invisibility 2:00"
                                         },
                                         {
                                             name: "Lingering Potion of Slow Falling",
                                             modifier: "Slow Falling (0:22)",
-                                            signName: "Slow Falling"
+                                            signName: "Slow Falling 0:22"
                                         },
                                         {
                                             name: "Lingering Potion of Slow Falling",
                                             modifier: "Slow Falling (1:00)",
-                                            signName: "Slow Falling Extended"
+                                            signName: "Slow Falling 1:00"
                                         }
                                     ]
                                 },
@@ -5646,33 +5654,37 @@ const bank: Room = {
                                         },
                                         {
                                             name: "Lingering Potion of the Turtle Master",
-                                            modifier: "Slowness IV (0:05)\\nResistance III (0:05)",
-                                            signName: "Turtle Master"
+                                            modifier: "Slowness IV (0:05)\nResistance III (0:05)",
+                                            signName: "Turtle Master 0:05"
                                         },
                                         {
                                             name: "Lingering Potion of the Turtle Master",
-                                            modifier: "Slowness IV (0:10)\\nResistance III (0:10)",
-                                            signName: "Turtle Master Extended"
+                                            modifier: "Slowness IV (0:10)\nResistance III (0:10)",
+                                            signName: "Turtle Master 0:10"
                                         },
                                         {
                                             name: "Lingering Potion of the Turtle Master",
-                                            modifier: "Slowness VI (0:05)\\nResistance IV (0:05)",
+                                            modifier: "Slowness VI (0:05)\nResistance IV (0:05)",
                                             signName: "Turtle Master II"
                                         },
                                         {
                                             name: "Lingering Potion of Infestation",
+                                            modifier: "Infested",
                                             signName: "Infestation"
                                         },
                                         {
                                             name: "Lingering Potion of Oozing",
+                                            modifier: "Oozing",
                                             signName: "Oozing"
                                         },
                                         {
                                             name: "Lingering Potion of Weaving",
+                                            modifier: "Weaving",
                                             signName: "Weaving"
                                         },
                                         {
                                             name: "Lingering Potion of Wind Charging",
+                                            modifier: "Wind Charged",
                                             signName: "Wind Charging"
                                         }
                                     ]
@@ -5683,12 +5695,12 @@ const bank: Room = {
                                         {
                                             name: "Lingering Potion of Poison",
                                             modifier: "Poison (0:11)",
-                                            signName: "Poison"
+                                            signName: "Poison 0:11"
                                         },
                                         {
                                             name: "Lingering Potion of Poison",
                                             modifier: "Poison (0:30)",
-                                            signName: "Poison Extended"
+                                            signName: "Poison 0:30"
                                         },
                                         {
                                             name: "Lingering Potion of Poison",
@@ -5698,22 +5710,22 @@ const bank: Room = {
                                         {
                                             name: "Lingering Potion of Weakness",
                                             modifier: "Weakness (0:22)",
-                                            signName: "Weakness"
+                                            signName: "Weakness 0:22"
                                         },
                                         {
                                             name: "Lingering Potion of Weakness",
                                             modifier: "Weakness (1:00)",
-                                            signName: "Weakness Extended"
+                                            signName: "Weakness 1:00"
                                         },
                                         {
                                             name: "Lingering Potion of Slowness",
                                             modifier: "Slowness (0:22)",
-                                            signName: "Slowness"
+                                            signName: "Slowness 0:22"
                                         },
                                         {
                                             name: "Lingering Potion of Slowness",
                                             modifier: "Slowness (1:00)",
-                                            signName: "Slowness Extended"
+                                            signName: "Slowness 1:00"
                                         },
                                         {
                                             name: "Lingering Potion of Slowness",
@@ -6125,44 +6137,124 @@ const bank: Room = {
                                             name: "Beneficial Tipped Arrows",
                                             chests: [
                                                 {
-                                                    name: "Arrow of Regeneration",
-                                                    signName: "Regeneration"
-                                                },
-                                                {
-                                                    name: "Arrow of Swiftness",
-                                                    signName: "Swiftness"
-                                                },
-                                                {
-                                                    name: "Arrow of Fire Resistance",
-                                                    signName: "Fire Resistance"
-                                                },
-                                                {
                                                     name: "Arrow of Healing",
+                                                    modifier: "Instant Health",
                                                     signName: "Healing"
                                                 },
                                                 {
-                                                    name: "Arrow of Night Vision",
-                                                    signName: "Night Vision"
+                                                    name: "Arrow of Healing",
+                                                    modifier: "Instant Health II",
+                                                    signName: "Healing II"
+                                                },
+                                                {
+                                                    name: "Arrow of Fire Resistance",
+                                                    modifier: "Fire Resistance (0:22)",
+                                                    signName: "Fire Resistance 0:22"
+                                                },
+                                                {
+                                                    name: "Arrow of Fire Resistance",
+                                                    modifier: "Fire Resistance (1:00)",
+                                                    signName: "Fire Resistance 1:00"
+                                                },
+                                                {
+                                                    name: "Arrow of Regeneration",
+                                                    modifier: "Regeneration (0:05)",
+                                                    signName: "Regeneration 0:05"
+                                                },
+                                                {
+                                                    name: "Arrow of Regeneration",
+                                                    modifier: "Regeneration (0:15)",
+                                                    signName: "Regeneration 0:15"
+                                                },
+                                                {
+                                                    name: "Arrow of Regeneration",
+                                                    modifier: "Regeneration II (0:02)",
+                                                    signName: "Regeneration II"
                                                 },
                                                 {
                                                     name: "Arrow of Strength",
-                                                    signName: "Strength"
+                                                    modifier: "Strength (0:22)",
+                                                    signName: "Strength 0:22"
+                                                },
+                                                {
+                                                    name: "Arrow of Strength",
+                                                    modifier: "Strength (1:00)",
+                                                    signName: "Strength 1:00"
+                                                },
+                                                {
+                                                    name: "Arrow of Strength",
+                                                    modifier: "Strength II (0:11)",
+                                                    signName: "Strength II"
+                                                },
+                                                {
+                                                    name: "Arrow of Night Vision",
+                                                    modifier: "Night Vision (0:22)",
+                                                    signName: "Night Vision 0:22"
+                                                },
+                                                {
+                                                    name: "Arrow of Night Vision",
+                                                    modifier: "Night Vision (1:00)",
+                                                    signName: "Night Vision 1:00"
                                                 },
                                                 {
                                                     name: "Arrow of Leaping",
-                                                    signName: "Leaping"
+                                                    modifier: "Jump Boost (0:22)",
+                                                    signName: "Leaping 0:22"
+                                                },
+                                                {
+                                                    name: "Arrow of Leaping",
+                                                    modifier: "Jump Boost (1:00)",
+                                                    signName: "Leaping 1:00"
+                                                },
+                                                {
+                                                    name: "Arrow of Leaping",
+                                                    modifier: "Jump Boost II (0:11)",
+                                                    signName: "Leaping II"
+                                                },
+                                                {
+                                                    name: "Arrow of Swiftness",
+                                                    modifier: "Speed (0:22)",
+                                                    signName: "Swiftness 0:22"
+                                                },
+                                                {
+                                                    name: "Arrow of Swiftness",
+                                                    modifier: "Speed (1:00)",
+                                                    signName: "Swiftness 1:00"
+                                                },
+                                                {
+                                                    name: "Arrow of Swiftness",
+                                                    modifier: "Speed II",
+                                                    signName: "Swiftness II"
                                                 },
                                                 {
                                                     name: "Arrow of Water Breathing",
-                                                    signName: "Water Breathing"
+                                                    modifier: "Water Breathing (0:22)",
+                                                    signName: "Water Breathing 0:22"
+                                                },
+                                                {
+                                                    name: "Arrow of Water Breathing",
+                                                    modifier: "Water Breathing (1:00)",
+                                                    signName: "Water Breathing 1:00"
                                                 },
                                                 {
                                                     name: "Arrow of Invisibility",
-                                                    signName: "Invisibility"
+                                                    modifier: "Invisibility (0:22)",
+                                                    signName: "Invisibility 0:22"
+                                                },
+                                                {
+                                                    name: "Arrow of Invisibility",
+                                                    modifier: "Invisibility (1:00)",
+                                                    signName: "Invisibility 1:00"
                                                 },
                                                 {
                                                     name: "Arrow of Slow Falling",
-                                                    signName: "Slow Falling"
+                                                    modifier: "Slow Falling (0:11)",
+                                                    signName: "Slow Falling 0:11"
+                                                },
+                                                {
+                                                    name: "Arrow of Slow Falling",
+                                                    modifier: "Slow Falling (0:30)",
+                                                    signName: "Slow Falling 0:30"
                                                 }
                                             ]
                                         },
@@ -6171,7 +6263,18 @@ const bank: Room = {
                                             chests: [
                                                 {
                                                     name: "Arrow of the Turtle Master",
-                                                    signName: "Turtle Master"
+                                                    modifier: "Slowness IV (0:02)\nResistance III (0:02)",
+                                                    signName: "Turtle Master 0:02"
+                                                },
+                                                {
+                                                    name: "Arrow of the Turtle Master",
+                                                    modifier: "Slowness IV (0:05)\nResistance III (0:05)",
+                                                    signName: "Turtle Master 0:05"
+                                                },
+                                                {
+                                                    name: "Arrow of the Turtle Master",
+                                                    modifier: "Slowness VI (0:02)\nResistance IV (0:02)",
+                                                    signName: "Turtle Master II"
                                                 },
                                                 {
                                                     name: "Arrow of Infestation",
@@ -6196,22 +6299,57 @@ const bank: Room = {
                                             chests: [
                                                 {
                                                     name: "Arrow of Poison",
-                                                    signName: "Poison"
+                                                    modifier: "Poison (0:05)",
+                                                    signName: "Poison 0:05"
+                                                },
+                                                {
+                                                    name: "Arrow of Poison",
+                                                    modifier: "Poison (0:15)",
+                                                    signName: "Poison 0:15"
+                                                },
+                                                {
+                                                    name: "Arrow of Poison",
+                                                    modifier: "Poison II (0:02)",
+                                                    signName: "Poison II"
                                                 },
                                                 {
                                                     name: "Arrow of Weakness",
-                                                    signName: "Weakness"
+                                                    modifier: "Weakness (0:11)",
+                                                    signName: "Weakness 0:11"
+                                                },
+                                                {
+                                                    name: "Arrow of Weakness",
+                                                    modifier: "Weakness (0:30)",
+                                                    signName: "Weakness 0:30"
                                                 },
                                                 {
                                                     name: "Arrow of Slowness",
-                                                    signName: "Slowness"
+                                                    modifier: "Slowness (0:11)",
+                                                    signName: "Slowness 0:11"
+                                                },
+                                                {
+                                                    name: "Arrow of Slowness",
+                                                    modifier: "Slowness (0:30)",
+                                                    signName: "Slowness 0:30"
+                                                },
+                                                {
+                                                    name: "Arrow of Slowness",
+                                                    modifier: "Slowness IV (0:02)",
+                                                    signName: "Slowness IV"
                                                 },
                                                 {
                                                     name: "Arrow of Harming",
+                                                    modifier: "Instant Damage",
                                                     signName: "Harming"
                                                 },
                                                 {
+                                                    name: "Arrow of Harming",
+                                                    modifier: "Instant Damage II",
+                                                    signName: "Harming II"
+                                                },
+                                                {
                                                     name: "Arrow of Decay",
+                                                    modifier: "Wither II",
                                                     signName: "Decay"
                                                 }
                                             ]
