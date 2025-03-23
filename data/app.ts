@@ -1979,6 +1979,9 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Flowering Azalea Leaves"
+                                },
+                                {
+                                    name: "Leaf Litter"
                                 }
                             ]
                         },
@@ -2082,6 +2085,13 @@ const bank: Room = {
                                 {
                                     name: "Closed Eyeblossom",
                                     signName: "Closed Eyeblossoms"
+                                },
+                                {
+                                    name: "Wildflowers"
+                                },
+                                {
+                                    "name": "Cactus Flower",
+                                    signName: "Cactus Flowers"
                                 }
                             ]
                         },
@@ -2264,14 +2274,28 @@ const bank: Room = {
                             name: "Weeds",
                             chests: [
                                 {
+                                    name: "Short Grass"
+                                },
+                                {
                                     name: "Tall Grass"
                                 },
                                 {
-                                    name: "Double Tall Grass"
+                                    name: "Short Dry Grass"
+                                },
+                                {
+                                    name: "Tall Dry Grass"
+                                },
+                                {
+                                    name: "Bush",
+                                    signName: "Bushes"
                                 },
                                 {
                                     name: "Dead Bush",
                                     signName: "Dead Bushes"
+                                },
+                                {
+                                    name: "Firefly Bush",
+                                    signName: "Firefly Bushes"
                                 },
                                 {
                                     name: "Shrub",
@@ -4989,6 +5013,14 @@ const bank: Room = {
                                     signName: "Eggs"
                                 },
                                 {
+                                    name: "Blue Egg",
+                                    signName: "Blue Eggs"
+                                },
+                                {
+                                    name: "Brown Egg",
+                                    signName: "Brown Eggs"
+                                },
+                                {
                                     name: "Honey Bottle",
                                     signName: "Honey Bottles"
                                 }
@@ -6014,6 +6046,12 @@ const bank: Room = {
                                     items: [
                                         {
                                             name: "Egg"
+                                        },
+                                        {
+                                            name: "Blue Egg"
+                                        },
+                                        {
+                                            name: "Brown Egg"
                                         }
                                     ],
                                     description: "Eggs"
@@ -7836,3 +7874,14 @@ const bank: Room = {
         }
     ]
 }
+
+
+
+function renderRoom(room: Room, depth: number): void {
+    console.log(`${'  '.repeat(depth)}${room.name}: ${room.chests?.length}`);
+    for (const subroom of room?.subrooms ?? []) {
+        renderRoom(subroom, depth + 1);
+    }
+}
+
+renderRoom(bank, 0);
