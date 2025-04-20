@@ -6411,6 +6411,10 @@ const bank: Room = {
                                     signName: "Recovery Compi"
                                 },
                                 {
+                                    name: "Lodestone Compass",
+                                    signName: "Lodestone Compi"
+                                },
+                                {
                                     name: "Map",
                                     signName: "Maps"
                                 },
