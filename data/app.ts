@@ -2581,6 +2581,10 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Glowstone"
+                                },
+                                {
+                                    name: "Dried Ghast",
+                                    signName: "Dried Ghasts"
                                 }
                             ]
                         },
@@ -6938,7 +6942,7 @@ const bank: Room = {
                             ]
                         },
                         {
-                            name: "Animal",
+                            name: "Mob",
                             chests: [
                                 {
                                     name: "Leather Horse Armor"
@@ -6958,6 +6962,70 @@ const bank: Room = {
                                 {
                                     name: "Saddle",
                                     signName: "Saddles"
+                                },
+                                {
+                                    name: "White Harness",
+                                    signName: "White Harnesses"
+                                },
+                                {
+                                    name: "Light Gray Harness",
+                                    signName: "Light Gray Harnesses"
+                                },
+                                {
+                                    name: "Gray Harness",
+                                    signName: "Gray Harnesses"
+                                },
+                                {
+                                    name: "Black Harness",
+                                    signName: "Black Harnesses"
+                                },
+                                {
+                                    name: "Red Harness",
+                                    signName: "Red Harnesses"
+                                },
+                                {
+                                    name: "Orange Harness",
+                                    signName: "Orange Harnesses"
+                                },
+                                {
+                                    name: "Yellow Harness",
+                                    signName: "Yellow Harnesses"
+                                },
+                                {
+                                    name: "Lime Harness",
+                                    signName: "Lime Harnesses"
+                                },
+                                {
+                                    name: "Green Harness",
+                                    signName: "Green Harnesses"
+                                },
+                                {
+                                    name: "Blue Harness",
+                                    signName: "Blue Harnesses"
+                                },
+                                {
+                                    name: "Light Blue Harness",
+                                    signName: "Light Blue Harnesses"
+                                },
+                                {
+                                    name: "Cyan Harness",
+                                    signName: "Cyan Harnesses"
+                                },
+                                {
+                                    name: "Purple Harness",
+                                    signName: "Purple Harnesses"
+                                },
+                                {
+                                    name: "Magenta Harness",
+                                    signName: "Magenta Harnesses"
+                                },
+                                {
+                                    name: "Pink Harness",
+                                    signName: "Pink Harnesses"
+                                },
+                                {
+                                    name: "Brown Harness",
+                                    signName: "Brown Harnesses"
                                 }
                             ]
                         }
@@ -7524,6 +7592,11 @@ const bank: Room = {
                                     name: "Music Disc",
                                     modifier: "Aaron Cherof - Creator (Music Box)",
                                     signName: "Creator (Music Box)"
+                                },
+                                {
+                                    name: "Music Disc",
+                                    modifier: "Amos Roddy - Tears",
+                                    signName: "Tears"
                                 },
                                 {
                                     name: "Disc Fragment",
