@@ -1637,6 +1637,38 @@ const bank: Room = {
                                         {
                                             name: "Resin Brick Slab",
                                             signName: "Resin Brick Slabs"
+                                        },
+                                        {
+                                            name: "Sulfur Slab",
+                                            signName: "Sulfur Slabs"
+                                        },
+                                        {
+                                            name: "Polished Sulfur Slab",
+                                            signName: "Polished Sulfur Slabs"
+                                        },
+                                        {
+                                            name: "Sulfur Brick Slab",
+                                            signName: "Sulfur Brick Slabs",
+                                        },
+                                        {
+                                            name: "Chiseled Sulfur Slab",
+                                            signName: "Chiseled Sulfur Slabs",
+                                        },
+                                        {
+                                            name: "Cinnabar Slab",
+                                            signName: "Cinnabar Slabs",
+                                        },
+                                        {
+                                            name: "Polished Cinnabar Slab",
+                                            signName: "Polished Cinnabar Slabs",
+                                        },
+                                        {
+                                            name: "Cinnabar Brick Slab",
+                                            signName: "Cinnabar Brick Slabs",
+                                        },
+                                        {
+                                            name: "Chiseled Cinnabar Slab",
+                                            signName: "Chiseled Cinnabar Slabs",
                                         }
                                     ]
                                 }
@@ -1849,6 +1881,30 @@ const bank: Room = {
                                         },
                                         {
                                             name: "Resin Brick Stairs"
+                                        },
+                                        {
+                                            name: "Sulfur Stairs",
+                                        },
+                                        {
+                                            name: "Polished Sulfur Stairs",
+                                        },
+                                        {
+                                            name: "Sulfur Brick Stairs",
+                                        },
+                                        {
+                                            name: "Chiseled Sulfur Stairs"
+                                        },
+                                        {
+                                            name: "Cinnabar Stairs",
+                                        },
+                                        {
+                                            name: "Polished Cinnabar Stairs"
+                                        },
+                                        {
+                                            name: "Cinnabar Brick Stairs",
+                                        },
+                                        {
+                                            name: "Chiseled Cinnabar Stairs"
                                         }
                                     ]
                                 }
@@ -4679,6 +4735,42 @@ const bank: Room = {
                                         }
                                     ]
                                 }
+                            ]
+                        },
+                        {
+                            name: "Sulfur & Cinnabar",
+                            chests: [
+                                {
+                                    name: "Sulfur",
+                                },
+                                {
+                                    name: "Polished Sulfur Block",
+                                    signName: "Polished Sulfur"
+                                },
+                                {
+                                    name: "Sulfur Bricks",
+                                },
+                                {
+                                    name: "Chiseled Sulfur Block",
+                                    signName: "Chiseled Sulfur"
+                                },
+                                {
+                                    name: "Potent Sulfur",
+                                },
+                                {
+                                    name: "Cinnabar",
+                                },
+                                {
+                                    name: "Polished Cinnabar Block",
+                                    signName: "Polished Cinnabar"
+                                },
+                                {
+                                    name: "Cinnabar Bricks",
+                                },
+                                {
+                                    name: "Chiseled Cinnabar Block",
+                                    signName: "Cinnabar Sulfur"
+                                },
                             ]
                         },
                         {

@@ -1918,6 +1918,9 @@ const bank = {
                                 },
                                 {
                                     name: "Flowering Azalea Leaves"
+                                },
+                                {
+                                    name: "Leaf Litter"
                                 }
                             ]
                         },
@@ -2021,6 +2024,13 @@ const bank = {
                                 {
                                     name: "Closed Eyeblossom",
                                     signName: "Closed Eyeblossoms"
+                                },
+                                {
+                                    name: "Wildflowers"
+                                },
+                                {
+                                    "name": "Cactus Flower",
+                                    signName: "Cactus Flowers"
                                 }
                             ]
                         },
@@ -2203,14 +2213,28 @@ const bank = {
                             name: "Weeds",
                             chests: [
                                 {
+                                    name: "Short Grass"
+                                },
+                                {
                                     name: "Tall Grass"
                                 },
                                 {
-                                    name: "Double Tall Grass"
+                                    name: "Short Dry Grass"
+                                },
+                                {
+                                    name: "Tall Dry Grass"
+                                },
+                                {
+                                    name: "Bush",
+                                    signName: "Bushes"
                                 },
                                 {
                                     name: "Dead Bush",
                                     signName: "Dead Bushes"
+                                },
+                                {
+                                    name: "Firefly Bush",
+                                    signName: "Firefly Bushes"
                                 },
                                 {
                                     name: "Shrub",
@@ -4928,6 +4952,14 @@ const bank = {
                                     signName: "Eggs"
                                 },
                                 {
+                                    name: "Blue Egg",
+                                    signName: "Blue Eggs"
+                                },
+                                {
+                                    name: "Brown Egg",
+                                    signName: "Brown Eggs"
+                                },
+                                {
                                     name: "Honey Bottle",
                                     signName: "Honey Bottles"
                                 }
@@ -5953,6 +5985,12 @@ const bank = {
                                     items: [
                                         {
                                             name: "Egg"
+                                        },
+                                        {
+                                            name: "Blue Egg"
+                                        },
+                                        {
+                                            name: "Brown Egg"
                                         }
                                     ],
                                     description: "Eggs"
