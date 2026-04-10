@@ -6601,6 +6601,10 @@ const bank: Room = {
                                 {
                                     name: "Bucket of Tadpole",
                                     signName: "Tadpole Buckets"
+                                },
+                                {
+                                    name: "Bucket of Sulfur Cube",
+                                    signName: "Sulfur Cube Buckets"
                                 }
                             ]
                         },
