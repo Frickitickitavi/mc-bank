@@ -4762,6 +4762,10 @@ const bank: Room = {
                                     name: "Potent Sulfur",
                                 },
                                 {
+                                    name: "Sulfur Spike",
+                                    signName: "Sulfur Spikes"
+                                },
+                                {
                                     name: "Cinnabar",
                                 },
                                 {
