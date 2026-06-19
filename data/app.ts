@@ -735,6 +735,10 @@ const bank: Room = {
                                     signName: "Cherry Logs"
                                 },
                                 {
+                                    name: "Poplar Log",
+                                    signName: "Poplar Logs"
+                                },
+                                {
                                     name: "Crimson Stem",
                                     signName: "Crimson Stems"
                                 },
@@ -788,6 +792,10 @@ const bank: Room = {
                                     signName: "Stripped Cherry Logs"
                                 },
                                 {
+                                    name: "Stripped Poplar Log",
+                                    signName: "Stripped Poplar Logs"
+                                },
+                                {
                                     name: "Stripped Crimson Stem",
                                     signName: "Stripped Crimson Stems"
                                 },
@@ -830,6 +838,9 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Cherry Planks"
+                                },
+                                {
+                                    name: "Poplar Planks"
                                 },
                                 {
                                     name: "Crimson Planks"
@@ -878,6 +889,9 @@ const bank: Room = {
                                     name: "Cherry Wood"
                                 },
                                 {
+                                    name: "Poplar Wood"
+                                },
+                                {
                                     name: "Crimson Hyphae"
                                 },
                                 {
@@ -914,6 +928,9 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Stripped Cherry Wood"
+                                },
+                                {
+                                    name: "Stripped Poplar Wood"
                                 },
                                 {
                                     name: "Stripped Crimson Hyphae"
@@ -1092,6 +1109,10 @@ const bank: Room = {
                                             signName: "Cherry Trapdoors"
                                         },
                                         {
+                                            name: "Poplar Trapdoor",
+                                            signName: "Poplar Trapdoors"
+                                        },
+                                        {
                                             name: "Bamboo Trapdoor",
                                             signName: "Bamboo Trapdoors"
                                         }
@@ -1189,6 +1210,10 @@ const bank: Room = {
                                     signName: "Cherry Fences"
                                 },
                                 {
+                                    name: "Poplar Fence",
+                                    signName: "Poplar Fences"
+                                },
+                                {
                                     name: "Bamboo Fence",
                                     signName: "Bamboo Fences"
                                 },
@@ -1255,6 +1280,10 @@ const bank: Room = {
                                         {
                                             name: "Cherry Door",
                                             signName: "Cherry Doors"
+                                        },
+                                        {
+                                            name: "Poplar Door",
+                                            signName: "Poplar Doors"
                                         },
                                         {
                                             name: "Bamboo Door",
@@ -1352,6 +1381,10 @@ const bank: Room = {
                                 {
                                     name: "Cherry Fence Gate",
                                     signName: "Cherry Fence Gates"
+                                },
+                                {
+                                    name: "Poplar Fence Gate",
+                                    signName: "Poplar Fence Gates"
                                 },
                                 {
                                     name: "Bamboo Fence Gate",
@@ -1577,12 +1610,86 @@ const bank: Room = {
                                             signName: "Cherry Slabs"
                                         },
                                         {
+                                            name: "Poplar Slab",
+                                            signName: "Poplar Slabs"
+                                        },
+                                        {
                                             name: "Bamboo Slab",
                                             signName: "Bamboo Slabs"
                                         },
                                         {
                                             name: "Wooden Slab",
                                             signName: "Petrified Oak Slabs"
+                                        }
+                                    ]
+                                },
+                                {
+                                    name: "Wool Slabs",
+                                    upstreamName: "Wool",
+                                    chests: [
+                                        {
+                                            name: "White Wool Slab",
+                                            signName: "White Wool Slabs"
+                                        },
+                                        {
+                                            name: "Light Gray Wool Slab",
+                                            signName: "Light Gray Wool Slabs"
+                                        },
+                                        {
+                                            name: "Gray Wool Slab",
+                                            signName: "Gray Wool Slabs"
+                                        },
+                                        {
+                                            name: "Black Wool Slab",
+                                            signName: "Black Wool Slabs"
+                                        },
+                                        {
+                                            name: "Red Wool Slab",
+                                            signName: "Red Wool Slabs"
+                                        },
+                                        {
+                                            name: "Orange Wool Slab",
+                                            signName: "Orange Wool Slabs"
+                                        },
+                                        {
+                                            name: "Yellow Wool Slab",
+                                            signName: "Yellow Wool Slabs"
+                                        },
+                                        {
+                                            name: "Lime Wool Slab",
+                                            signName: "Lime Wool Slabs"
+                                        },
+                                        {
+                                            name: "Green Wool Slab",
+                                            signName: "Green Wool Slabs"
+                                        },
+                                        {
+                                            name: "Blue Wool Slab",
+                                            signName: "Blue Wool Slabs"
+                                        },
+                                        {
+                                            name: "Light Blue Wool Slab",
+                                            signName: "Light Blue Wool Slabs"
+                                        },
+                                        {
+                                            name: "Cyan Wool Slab",
+                                            signName: "Cyan Wool Slabs"
+                                        },
+                                        {
+                                            name: "Purple Wool Slab",
+                                            signName: "Purple Wool Slabs"
+                                        },
+                                        {
+                                            name: "Magenta Wool Slab",
+                                            signName: "Magenta Wool Slabs"
+                                        },
+                                        {
+                                            name: "Pink Wool Slab",
+                                            signName: "Pink Wool Slabs"
+                                        },
+                                        {
+                                            name: "Brown Wool Slab",
+                                            signName: "Brown Wool Slabs"
                                         }
                                     ]
                                 },
@@ -1838,7 +1945,64 @@ const bank: Room = {
                                             name: "Cherry Stairs"
                                         },
                                         {
+                                            name: "Poplar Stairs"
+                                        },
+                                        {
                                             name: "Bamboo Stairs"
+                                        }
+                                    ]
+                                },
+                                {
+                                    name: "Wool Stairs",
+                                    upstreamName: "Wool",
+                                    chests: [
+                                        {
+                                            name: "White Wool Stairs"
+                                        },
+                                        {
+                                            name: "Light Gray Wool Stairs"
+                                        },
+                                        {
+                                            name: "Gray Wool Stairs"
+                                        },
+                                        {
+                                            name: "Black Wool Stairs"
+                                        },
+                                        {
+                                            name: "Red Wool Stairs"
+                                        },
+                                        {
+                                            name: "Orange Wool Stairs"
+                                        },
+                                        {
+                                            name: "Yellow Wool Stairs"
+                                        },
+                                        {
+                                            name: "Lime Wool Stairs"
+                                        },
+                                        {
+                                            name: "Green Wool Stairs"
+                                        },
+                                        {
+                                            name: "Blue Wool Stairs"
+                                        },
+                                        {
+                                            name: "Light Blue Wool Stairs"
+                                        },
+                                        {
+                                            name: "Cyan Wool Stairs"
+                                        },
+                                        {
+                                            name: "Purple Wool Stairs"
+                                        },
+                                        {
+                                            name: "Magenta Wool Stairs"
+                                        },
+                                        {
+                                            name: "Pink Wool Stairs"
+                                        },
+                                        {
+                                            name: "Brown Wool Stairs"
                                         }
                                     ]
                                 },
@@ -1983,6 +2147,10 @@ const bank: Room = {
                                 {
                                     name: "Flowering Azalea",
                                     signName: "Flowering Azaleas"
+                                },
+                                {
+                                    name: "Poplar Sapling",
+                                    signName: "Poplar Sapings"
                                 }
                             ]
                         },
@@ -2035,6 +2203,15 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Flowering Azalea Leaves"
+                                },
+                                {
+                                    name: "Red Poplar Leaves"
+                                },
+                                {
+                                    name: "Orange Poplar Leaves"
+                                },
+                                {
+                                    name: "Yellow Poplar Leaves"
                                 },
                                 {
                                     name: "Leaf Litter"
@@ -2209,6 +2386,10 @@ const bank: Room = {
                                         {
                                             name: "Brown Mushroom Block",
                                             signName: "Brown Mushroom Blocks"
+                                        },
+                                        {
+                                            name: "Shelf Mushroom",
+                                            signName: "Shelf Mushrooms"
                                         }
                                     ]
                                 },
@@ -2364,6 +2545,10 @@ const bank: Room = {
                                 {
                                     name: "Large Fern",
                                     signName: "Large Ferns"
+                                },
+                                {
+                                    name: "Red Shrub",
+                                    signName: "Red Shrubs"
                                 }
                             ]
                         },
@@ -3064,6 +3249,10 @@ const bank: Room = {
                                 {
                                     name: "Brown Bed",
                                     signName: "Brown Beds"
+                                },
+                                {
+                                    name: "Straw Bed",
+                                    signName: "Straw Beds"
                                 }
                             ]
                         },
@@ -3701,6 +3890,10 @@ const bank: Room = {
                                             signName: "Cherry Buttons"
                                         },
                                         {
+                                            name: "Poplar Button",
+                                            signName: "Poplar Buttons"
+                                        },
+                                        {
                                             name: "Stone Button",
                                             signName: "Stone Buttons"
                                         },
@@ -3760,6 +3953,10 @@ const bank: Room = {
                                         {
                                             name: "Cherry Pressure Plate",
                                             signName: "Cherry Pressure Plates"
+                                        },
+                                        {
+                                            name: "Poplar Pressure Plate",
+                                            signName: "Poplar Pressure Plates"
                                         },
                                         {
                                             name: "Stone Pressure Plate",
@@ -4405,6 +4602,14 @@ const bank: Room = {
                                     signName: "Cherry Boats with Chests"
                                 },
                                 {
+                                    name: "Poplar Boat",
+                                    signName: "Poplar Boats"
+                                },
+                                {
+                                    name: "Poplar Boat with Chest",
+                                    signName: "Poplar Boats with Chests"
+                                },
+                                {
                                     name: "Bamboo Raft",
                                     signName: "Bamboo Rafts"
                                 },
@@ -4649,6 +4854,10 @@ const bank: Room = {
                                             signName: "Cherry Signs"
                                         },
                                         {
+                                            name: "Poplar Sign",
+                                            signName: "Poplar Signs"
+                                        },
+                                        {
                                             name: "Bamboo Sign",
                                             signName: "Bamboo Signs"
                                         },
@@ -4695,6 +4904,10 @@ const bank: Room = {
                                         {
                                             name: "Cherry Hanging Sign",
                                             signName: "Cherry Hanging Signs"
+                                        },
+                                        {
+                                            name: "Poplar Hanging Sign",
+                                            signName: "Poplar Hanging Signs"
                                         },
                                         {
                                             name: "Bamboo Hanging Sign",
