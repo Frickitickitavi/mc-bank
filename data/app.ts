@@ -1163,7 +1163,7 @@ const bank: Room = {
                             ]
                         },
                         {
-                            name: "Fences & Bars",
+                            name: "Fences",
                             chests: [
                                 {
                                     name: "Oak Fence",
@@ -1224,6 +1224,35 @@ const bank: Room = {
                                 {
                                     name: "Nether Brick Fence",
                                     signName: "Nether Brick Fences"
+                                },
+                            ]
+                        },
+                        {
+                            name: "Bars",
+                            chests: [
+                                {
+                                    name: "Copper Bars",
+                                },
+                                {
+                                    name: "Exposed Copper Bars"
+                                },
+                                {
+                                    name: "Weathered Copper Bars"
+                                },
+                                {
+                                    name: "Oxidized Copper Bars"
+                                },
+                                {
+                                    name: "Waxed Copper Bars",
+                                },
+                                {
+                                    name: "Waxed Exposed Copper Bars"
+                                },
+                                {
+                                    name: "Waxed Weathered Copper Bars"
+                                },
+                                {
+                                    name: "Waxed Oxidized Copper Bars"
                                 },
                                 {
                                     name: "Iron Bars"
@@ -3832,10 +3861,6 @@ const bank: Room = {
                                     name: "Observer",
                                     signName: "Observers"
                                 },
-                                {
-                                    name: "Lightning Rod",
-                                    signName: "Lightning Rods"
-                                }
                             ],
                             subrooms: [
                                 {
@@ -3901,6 +3926,43 @@ const bank: Room = {
                                             name: "Polished Blackstone Button",
                                             signName: "Polished Blackstone Buttons"
                                         }
+                                    ]
+                                },
+                                {
+                                    name: "Lightning Rods",
+                                    chests: [
+                                        {
+                                            name: "Lightning Rod",
+                                            signName: "Lightning Rods",
+                                        },
+                                        {
+                                            name: "Exposed Lightning Rod",
+                                            signName: "Exposed Lightning Rods"
+                                        },
+                                        {
+                                            name: "Weathered Lightning Rod",
+                                            signName: "Weathered Lightning Rods"
+                                        },
+                                        {
+                                            name: "Oxidized Lightning Rod",
+                                            signName: "Oxidized Lightning Rods"
+                                        },
+                                        {
+                                            name: "Waxed Lightning Rod",
+                                            signName: "Waxed Lightning Rods"
+                                        },
+                                        {
+                                            name: "Waxed Exposed Lightning Rod",
+                                            signName: "Waxed Exposed Lightning Rods"
+                                        },
+                                        {
+                                            name: "Waxed Weathered Lightning Rod",
+                                            signName: "Waxed Weathered Lightning Rods"
+                                        },
+                                        {
+                                            name: "Waxed Oxidized Lightning Rod",
+                                            signName: "Waxed Oxidized Lightning Rods"
+                                        },
                                     ]
                                 },
                                 {
@@ -4011,6 +4073,51 @@ const bank: Room = {
                                         }
                                     ],
                                     description: "Powered/Activator Rails"
+                                },
+                                {
+                                    room: "Shelves",
+                                    items: [
+                                        {
+                                            name: "Oak Shelf"
+                                        },
+                                        {
+                                            name: "Birch Shelf"
+                                        },
+                                        {
+                                            name: "Spruce Shelf"
+                                        },
+                                        {
+                                            name: "Acacia Shelf"
+                                        },
+                                        {
+                                            name: "Jungle Shelf"
+                                        },
+                                        {
+                                            name: "Dark Oak Shelf"
+                                        },
+                                        {
+                                            name: "Pale Oak Shelf"
+                                        },
+                                        {
+                                            name: "Crimson Shelf"
+                                        },
+                                        {
+                                            name: "Warped Shelf"
+                                        },
+                                        {
+                                            name: "Mangrove Shelf"
+                                        },
+                                        {
+                                            name: "Cherry Shelf"
+                                        },
+                                        {
+                                            name: "Poplar Shelf"
+                                        },
+                                        {
+                                            name: "Bamboo Shelf"
+                                        }
+                                    ],
+                                    description: "Shelves"
                                 }
                             ],
                             chests: [
@@ -4411,6 +4518,97 @@ const bank: Room = {
                                 {
                                     name: "Chiseled Bookshelf",
                                     signName: "Chiseled Bookshelves"
+                                },
+                                {
+                                    name: "Copper Chest",
+                                    signName: "Copper Chests",
+                                },
+                                {
+                                    name: "Exposed Copper Chest",
+                                    signName: "Exposed Copper Chests"
+                                },
+                                {
+                                    name: "Weathered Copper Chest",
+                                    signName: "Weathered Copper Chests"
+                                },
+                                {
+                                    name: "Oxidized Copper Chest",
+                                    signName: "Oxidized Copper Chests"
+                                },
+                                {
+                                    name: "Waxed Copper Chest",
+                                    signName: "Waxed Copper Chests"
+                                },
+                                {
+                                    name: "Waxed Exposed Copper Chest",
+                                    signName: "Waxed Exposed Copper Chests"
+                                },
+                                {
+                                    name: "Waxed Weathered Copper Chest",
+                                    signName: "Waxed Weathered Copper Chests"
+                                },
+                                {
+                                    name: "Waxed Oxidized Copper Chest",
+                                    signName: "Waxed Oxidized Copper Chests"
+                                },
+                            ],
+                            subrooms: [
+                                {
+                                    name: "Shelves",
+                                    chests: [
+                                        {
+                                            name: "Oak Shelf",
+                                            signName: "Oak Shelves"
+                                        },
+                                        {
+                                            name: "Birch Shelf",
+                                            signName: "Birch Shelves"
+                                        },
+                                        {
+                                            name: "Spruce Shelf",
+                                            signName: "Spruce Shelves"
+                                        },
+                                        {
+                                            name: "Acacia Shelf",
+                                            signName: "Acacia Shelves"
+                                        },
+                                        {
+                                            name: "Jungle Shelf",
+                                            signName: "Jungle Shelves"
+                                        },
+                                        {
+                                            name: "Dark Oak Shelf",
+                                            signName: "Dark Oak Shelves"
+                                        },
+                                        {
+                                            name: "Pale Oak Shelf",
+                                            signName: "Pale Oak Shelves"
+                                        },
+                                        {
+                                            name: "Mangrove Shelf",
+                                            signName: "Mangrove Shelves"
+                                        },
+                                        {
+                                            name: "Crimson Shelf",
+                                            signName: "Crimson Shelves"
+                                        },
+                                        {
+                                            name: "Warped Shelf",
+                                            signName: "Warped Shelves"
+                                        },
+                                        {
+                                            name: "Cherry Shelf",
+                                            signName: "Cherry Shelves"
+                                        },
+                                        {
+                                            name: "Poplar Shelf",
+                                            signName: "Poplar Shelves"
+                                        },
+                                        {
+                                            name: "Bamboo Shelf",
+                                            signName: "Bamboo Shelves"
+                                        },
+                                    ]
                                 }
                             ]
                         },
@@ -4702,23 +4900,6 @@ const bank: Room = {
                             ]
                         },
                         {
-                            name: "Froglights",
-                            chests: [
-                                {
-                                    name: "Pearlescent Froglight",
-                                    signName: "Pearlescent Froglights"
-                                },
-                                {
-                                    name: "Ochre Froglight",
-                                    signName: "Ochre Froglights"
-                                },
-                                {
-                                    name: "Verdant Froglight",
-                                    signName: "Verdant Froglights"
-                                }
-                            ]
-                        },
-                        {
                             name: "Sculks",
                             chests: [
                                 {
@@ -4772,10 +4953,6 @@ const bank: Room = {
                         {
                             name: "Decorative",
                             chests: [
-                                {
-                                    name: "Chain",
-                                    signName: "Chains"
-                                },
                                 {
                                     name: "Flower Pot",
                                     signName: "Flower Pots"
@@ -4951,7 +5128,85 @@ const bank: Room = {
                                             signName: "Waxed Oxidized"
                                         }
                                     ]
-                                }
+                                },
+                                {
+                                    name: "Chains",
+                                    chests: [
+                                        {
+                                            name: "Copper Chain",
+                                            signName: "Copper Chains",
+                                        },
+                                        {
+                                            name: "Exposed Copper Chain",
+                                            signName: "Exposed Copper Chains"
+                                        },
+                                        {
+                                            name: "Weathered Copper Chain",
+                                            signName: "Weathered Copper Chains"
+                                        },
+                                        {
+                                            name: "Oxidized Copper Chain",
+                                            signName: "Oxidized Copper Chains"
+                                        },
+                                        {
+                                            name: "Waxed Copper Chain",
+                                            signName: "Waxed Copper Chains"
+                                        },
+                                        {
+                                            name: "Waxed Exposed Copper Chain",
+                                            signName: "Waxed Exposed Copper Chains"
+                                        },
+                                        {
+                                            name: "Waxed Weathered Copper Chain",
+                                            signName: "Waxed Weathered Copper Chains"
+                                        },
+                                        {
+                                            name: "Waxed Oxidized Copper Chain",
+                                            signName: "Waxed Oxidized Copper Chains"
+                                        },
+                                        {
+                                            name: "Iron Chain",
+                                            signName: "Iron Chains"
+                                        }
+                                    ]
+                                },
+                                {
+                                    name: "Copper Golem Statues",
+                                    chests: [
+                                        {
+                                            name: "Copper Golem Statue",
+                                            signName: "Copper Golems"
+                                        },
+                                        {
+                                            name: "Exposed Copper Golem Statue",
+                                            signName: "Exposed Copper Golems"
+                                        },
+                                        {
+                                            name: "Weathered Copper Golem Statue",
+                                            signName: "Weathered Copper Golems"
+                                        },
+                                        {
+                                            name: "Oxidized Copper Golem Statue",
+                                            signName: "Oxidized Copper Golems"
+                                        },
+                                        {
+                                            name: "Waxed Copper Golem Statue",
+                                            signName: "Waxed Copper Golems"
+                                        },
+                                        {
+                                            name: "Waxed Exposed Copper Golem Statue",
+                                            signName: "Waxed Exposed Copper Golems"
+                                        },
+                                        {
+                                            name: "Waxed Weathered Copper Golem Statue",
+                                            signName: "Waxed Weathered Copper Golems"
+                                        },
+                                        {
+                                            name: "Waxed Oxidized Copper Golem Statue",
+                                            signName: "Waxed Oxidized Copper Golems"
+                                        }
+                                    ]
+                                },
                             ]
                         },
                         {
@@ -4995,9 +5250,26 @@ const bank: Room = {
                             ]
                         },
                         {
-                            name: "Miscellaneous Blocks",
-                            upstreamName: "Miscellaneous",
-                            shortcutName: "Misc. Blocks",
+                            name: "Unpowered Light Sources",
+                            shortcuts: [
+                                {
+                                    items: [
+                                        {
+                                            name: "Redstone Torch"
+                                        }
+                                    ],
+                                    room: "Power Sources",
+                                    description: "Redstone Torches"
+                                },
+                                {
+                                    items: [
+                                        {
+                                            name: "Glowstone"
+                                        }
+                                    ],
+                                    room: "Nether Blocks"
+                                }
+                            ],
                             chests: [
                                 {
                                     name: "Torch",
@@ -5008,6 +5280,22 @@ const bank: Room = {
                                     signName: "Soul Torches"
                                 },
                                 {
+                                    name: "Copper Torch",
+                                    signName: "Copper Torches"
+                                },
+                                {
+                                    name: "Pearlescent Froglight",
+                                    signName: "Pearlescent Froglights"
+                                },
+                                {
+                                    name: "Ochre Froglight",
+                                    signName: "Ochre Froglights"
+                                },
+                                {
+                                    name: "Verdant Froglight",
+                                    signName: "Verdant Froglights"
+                                },
+                                {
                                     name: "Lantern",
                                     signName: "Lanterns"
                                 },
@@ -5015,6 +5303,45 @@ const bank: Room = {
                                     name: "Soul Lantern",
                                     signName: "Soul Lanterns"
                                 },
+                                {
+                                    name: "Copper Lantern",
+                                    signName: "Copper Lanterns",
+                                },
+                                {
+                                    name: "Exposed Copper Lantern",
+                                    signName: "Exposed Copper Lanterns"
+                                },
+                                {
+                                    name: "Weathered Copper Lantern",
+                                    signName: "Weathered Copper Lanterns"
+                                },
+                                {
+                                    name: "Oxidized Copper Lantern",
+                                    signName: "Oxidized Copper Lanterns"
+                                },
+                                {
+                                    name: "Waxed Copper Lantern",
+                                    signName: "Waxed Copper Lanterns"
+                                },
+                                {
+                                    name: "Waxed Exposed Copper Lantern",
+                                    signName: "Waxed Exposed Copper Lanterns"
+                                },
+                                {
+                                    name: "Waxed Weathered Copper Lantern",
+                                    signName: "Waxed Weathered Copper Lanterns"
+                                },
+                                {
+                                    name: "Waxed Oxidized Copper Lantern",
+                                    signName: "Waxed Oxidized Copper Lanterns"
+                                },
+                            ]
+                        },
+                        {
+                            name: "Miscellaneous Blocks",
+                            upstreamName: "Miscellaneous",
+                            shortcutName: "Misc. Blocks",
+                            chests: [
                                 {
                                     name: "Slime Block",
                                     signName: "Slime Blocks"
@@ -6214,6 +6541,10 @@ const bank: Room = {
                                     signName: "Stone Pickaxes"
                                 },
                                 {
+                                    name: "Copper Pickaxe",
+                                    signName: "Copper Pickaxes"
+                                },
+                                {
                                     name: "Iron Pickaxe",
                                     signName: "Iron Pickaxes"
                                 },
@@ -6241,6 +6572,10 @@ const bank: Room = {
                                 {
                                     name: "Stone Shovel",
                                     signName: "Stone Shovels"
+                                },
+                                {
+                                    name: "Copper Shovel",
+                                    signName: "Copper Shovels"
                                 },
                                 {
                                     name: "Iron Shovel",
@@ -6272,6 +6607,10 @@ const bank: Room = {
                                     signName: "Stone Axes"
                                 },
                                 {
+                                    name: "Copper Axe",
+                                    signName: "Copper Axes"
+                                },
+                                {
                                     name: "Iron Axe",
                                     signName: "Iron Axes"
                                 },
@@ -6301,6 +6640,10 @@ const bank: Room = {
                                     signName: "Stone Hoes"
                                 },
                                 {
+                                    name: "Copper Hoe",
+                                    signName: "Copper Hoes"
+                                },
+                                {
                                     name: "Iron Hoe",
                                     signName: "Iron Hoes"
                                 },
@@ -6328,6 +6671,10 @@ const bank: Room = {
                                 {
                                     name: "Stone Sword",
                                     signName: "Stone Swords"
+                                },
+                                {
+                                    name: "Copper Sword",
+                                    signName: "Copper Swords"
                                 },
                                 {
                                     name: "Iron Sword",
@@ -7157,6 +7504,10 @@ const bank: Room = {
                                     signName: "Iron Helmets"
                                 },
                                 {
+                                    name: "Copper Helmet",
+                                    signName: "Copper Helmets"
+                                },
+                                {
                                     name: "Gold Helmet",
                                     signName: "Gold Helmets"
                                 },
@@ -7184,6 +7535,10 @@ const bank: Room = {
                                 {
                                     name: "Iron Chestplate",
                                     signName: "Iron Chestplates"
+                                },
+                                {
+                                    name: "Copper Chestplate",
+                                    signName: "Copper Chestplates"
                                 },
                                 {
                                     name: "Gold Chestplate",
@@ -7216,6 +7571,9 @@ const bank: Room = {
                                     name: "Iron Leggings"
                                 },
                                 {
+                                    name: "Copper Leggings"
+                                },
+                                {
                                     name: "Gold Leggings"
                                 },
                                 {
@@ -7238,6 +7596,9 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Iron Boots"
+                                },
+                                {
+                                    name: "Copper Boots"
                                 },
                                 {
                                     name: "Gold Boots"
@@ -7264,10 +7625,16 @@ const bank: Room = {
                                     name: "Iron Horse Armor"
                                 },
                                 {
+                                    name: "Copper Horse Armor",
+                                },
+                                {
                                     name: "Gold Horse Armor"
                                 },
                                 {
                                     name: "Diamond Horse Armor"
+                                },
+                                {
+                                    name: "Netherite Horse Armor"
                                 },
                                 {
                                     name: "Wolf Armor"
@@ -7663,6 +8030,10 @@ const bank: Room = {
                                 {
                                     name: "Iron Nugget",
                                     signName: "Iron Nuggets"
+                                },
+                                {
+                                    name: "Copper Nugget",
+                                    signName: "Copper Nuggets"
                                 },
                                 {
                                     name: "Gold Nugget",
