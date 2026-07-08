@@ -3766,6 +3766,75 @@ const bank: Room = {
                                     signName: "Brown Glass Panes"
                                 }
                             ]
+                        },
+                        {
+                            name: "Cushions",
+                            chests: [
+                                {
+                                    name: "White Cushion",
+                                    signName: "White Cushions"
+                                },
+                                {
+                                    name: "Light Gray Cushion",
+                                    signName: "Light Gray Cushions"
+                                },
+                                {
+                                    name: "Gray Cushion",
+                                    signName: "Gray Cushions"
+                                },
+                                {
+                                    name: "Black Cushion",
+                                    signName: "Black Cushions"
+                                },
+                                {
+                                    name: "Red Cushion",
+                                    signName: "Red Cushions"
+                                },
+                                {
+                                    name: "Orange Cushion",
+                                    signName: "Orange Cushions"
+                                },
+                                {
+                                    name: "Yellow Cushion",
+                                    signName: "Yellow Cushions"
+                                },
+                                {
+                                    name: "Lime Cushion",
+                                    signName: "Lime Cushions"
+                                },
+                                {
+                                    name: "Green Cushion",
+                                    signName: "Green Cushions"
+                                },
+                                {
+                                    name: "Blue Cushion",
+                                    signName: "Blue Cushions"
+                                },
+                                {
+                                    name: "Light Blue Cushion",
+                                    signName: "Light Blue Cushions"
+                                },
+                                {
+                                    name: "Cyan Cushion",
+                                    signName: "Cyan Cushions"
+                                },
+                                {
+                                    name: "Purple Cushion",
+                                    signName: "Purple Cushions"
+                                },
+                                {
+                                    name: "Magenta Cushion",
+                                    signName: "Magenta Cushions"
+                                },
+                                {
+                                    name: "Pink Cushion",
+                                    signName: "Pink Cushions"
+                                },
+                                {
+                                    name: "Brown Cushion",
+                                    signName: "Brown Cushions"
+                                }
+                            ]
                         }
                     ]
                 },
