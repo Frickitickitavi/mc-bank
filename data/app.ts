@@ -57,7 +57,7 @@ interface Dimensions {
     z: number;
 }
 
-function getUtilityDimensions(utility: Utility): Dimensions | "door" {
+export function getUtilityDimensions(utility: Utility): Dimensions | "door" {
     switch (utility) {
         case "Composter with Storage":
             return { x: 1, y: 3, z: 1 };
@@ -184,7 +184,7 @@ const bank: Room = {
                                     name: "Resin Clump",
                                     signName: "Resin Clumps",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Amethyst Clusters",
@@ -205,7 +205,7 @@ const bank: Room = {
                                     name: "Amethyst Cluster",
                                     signName: "Amethyst Clusters",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Mineral Blocks",
@@ -393,11 +393,11 @@ const bank: Room = {
                                             name: "Block of Raw Copper",
                                             signName: "Raw",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Rocks",
@@ -415,11 +415,11 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Stone",
-                                            silo: 0
+                                            silo: 0,
                                         },
                                         {
                                             name: "Cobblestone",
-                                            silo: 11
+                                            silo: 11,
                                         },
                                         {
                                             name: "Smooth Stone",
@@ -439,7 +439,7 @@ const bank: Room = {
                                         {
                                             name: "Cracked Stone Bricks",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Deepslate",
@@ -453,7 +453,7 @@ const bank: Room = {
                                         },
                                         {
                                             name: "Cobbled Deepslate",
-                                            silo: 7
+                                            silo: 7,
                                         },
                                         {
                                             name: "Polished Deepslate",
@@ -473,33 +473,33 @@ const bank: Room = {
                                         {
                                             name: "Chiseled Deepslate",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Andesite, Diorite, & Granite",
                                     chests: [
                                         {
                                             name: "Andesite",
-                                            silo: 0
+                                            silo: 0,
                                         },
                                         {
                                             name: "Polished Andesite",
                                         },
                                         {
                                             name: "Diorite",
-                                            silo: 0
+                                            silo: 0,
                                         },
                                         {
                                             name: "Polished Diorite",
                                         },
                                         {
                                             name: "Granite",
-                                            silo: 0
+                                            silo: 0,
                                         },
                                         {
                                             name: "Polished Granite",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Blackstone",
@@ -522,7 +522,7 @@ const bank: Room = {
                                         {
                                             name: "Cracked Polished Blackstone Bricks",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Basalt",
@@ -536,14 +536,14 @@ const bank: Room = {
                                         {
                                             name: "Smooth Basalt",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Tuff",
                                     chests: [
                                         {
                                             name: "Tuff",
-                                            silo: 0
+                                            silo: 0,
                                         },
                                         {
                                             name: "Chiseled Tuff",
@@ -558,7 +558,7 @@ const bank: Room = {
                                             name: "Chiseled Tuff Bricks",
                                         },
 
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Other Rocks",
@@ -574,9 +574,9 @@ const bank: Room = {
                                         {
                                             name: "Pointed Dripstone",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Soil",
@@ -602,7 +602,7 @@ const bank: Room = {
                                         {
                                             name: "Soul Soil",
                                         },
-                                    ]
+                                    ],
                                 },
                             ],
                             chests: [
@@ -614,11 +614,11 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Gravel",
-                                    silo: 0
+                                    silo: 0,
                                 },
                                 {
                                     name: "Dirt",
-                                    silo: 5
+                                    silo: 5,
                                 },
                                 {
                                     name: "Mycelium",
@@ -643,7 +643,7 @@ const bank: Room = {
                                 {
                                     name: "Mud Bricks",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Sand",
@@ -654,7 +654,7 @@ const bank: Room = {
                                         {
                                             name: "Soul Sand",
                                         },
-                                    ]
+                                    ],
                                 },
                             ],
                             chests: [
@@ -688,9 +688,9 @@ const bank: Room = {
                                 {
                                     name: "Chiseled Red Sandstone",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Wood",
@@ -750,7 +750,7 @@ const bank: Room = {
                                     name: "Block of Bamboo",
                                     signName: "Bamboo Blocks",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Stripped Logs, Stems, & Bamboo Blocks",
@@ -807,7 +807,7 @@ const bank: Room = {
                                     name: "Block of Stripped Bamboo",
                                     signName: "Stripped Bamboo Blocks",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Planks & Mosaics",
@@ -855,7 +855,7 @@ const bank: Room = {
                                     name: "Bamboo Mosaic",
                                     signName: "Bamboo Mosaics",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Wood Blocks and Hyphae",
@@ -897,7 +897,7 @@ const bank: Room = {
                                 {
                                     name: "Warped Hyphae",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Stripped Wood",
@@ -938,9 +938,9 @@ const bank: Room = {
                                 {
                                     name: "Stripped Warped Hyphae",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Barriers",
@@ -1055,7 +1055,7 @@ const bank: Room = {
                                     name: "Resin Brick Wall",
                                     signName: "Resin Brick Walls",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Trapdoors",
@@ -1116,7 +1116,7 @@ const bank: Room = {
                                             name: "Bamboo Trapdoor",
                                             signName: "Bamboo Trapdoors",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Metal Trapdoors",
@@ -1158,9 +1158,9 @@ const bank: Room = {
                                             name: "Waxed Oxidized Copper Trapdoor",
                                             signName: "Waxed Oxidized Copper",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Fences",
@@ -1225,7 +1225,7 @@ const bank: Room = {
                                     name: "Nether Brick Fence",
                                     signName: "Nether Brick Fences",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Bars",
@@ -1257,7 +1257,7 @@ const bank: Room = {
                                 {
                                     name: "Iron Bars",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Doors",
@@ -1318,7 +1318,7 @@ const bank: Room = {
                                             name: "Bamboo Door",
                                             signName: "Bamboo Doors",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Metal Doors",
@@ -1360,9 +1360,9 @@ const bank: Room = {
                                             name: "Waxed Oxidized Copper Door",
                                             signName: "Waxed Oxidized Copper Doors",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Fence Gates",
@@ -1419,9 +1419,9 @@ const bank: Room = {
                                     name: "Bamboo Fence Gate",
                                     signName: "Bamboo Fence Gates",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Partial Blocks",
@@ -1520,7 +1520,7 @@ const bank: Room = {
                                             name: "Tuff Brick Slab",
                                             signName: "Tuff Brick Slabs",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Sandstone Slabs",
@@ -1550,7 +1550,7 @@ const bank: Room = {
                                             name: "Cut Red Sandstone Slab",
                                             signName: "Cut Red Sandstone Slabs",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Copper Slabs",
@@ -1588,7 +1588,7 @@ const bank: Room = {
                                             name: "Waxed Oxidized Cut Copper Slab",
                                             signName: "Waxed Oxidized Cut",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Wood & Fungus Slabs",
@@ -1650,7 +1650,7 @@ const bank: Room = {
                                             name: "Wooden Slab",
                                             signName: "Petrified Oak Slabs",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Wool Slabs",
@@ -1720,7 +1720,7 @@ const bank: Room = {
                                             name: "Brown Wool Slab",
                                             signName: "Brown Wool Slabs",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Other Slabs",
@@ -1806,9 +1806,9 @@ const bank: Room = {
                                             name: "Chiseled Cinnabar Slab",
                                             signName: "Chiseled Cinnabar Slabs",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Stairs",
@@ -1878,7 +1878,7 @@ const bank: Room = {
                                         {
                                             name: "Tuff Brick Stairs",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Sandstone Stairs",
@@ -1896,7 +1896,7 @@ const bank: Room = {
                                         {
                                             name: "Smooth Red Sandstone Stairs",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Copper Stairs",
@@ -1934,7 +1934,7 @@ const bank: Room = {
                                             name: "Waxed Oxidized Cut Copper Stairs",
                                             signName: "Waxed Oxidized Cut",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Wood & Fungus Stairs",
@@ -1979,7 +1979,7 @@ const bank: Room = {
                                         {
                                             name: "Bamboo Stairs",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Wool Stairs",
@@ -2033,7 +2033,7 @@ const bank: Room = {
                                         {
                                             name: "Brown Wool Stairs",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Other Stairs",
@@ -2099,11 +2099,11 @@ const bank: Room = {
                                         {
                                             name: "Chiseled Cinnabar Stairs",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Plants & Fungi",
@@ -2121,7 +2121,7 @@ const bank: Room = {
                                         {
                                             name: "Bamboo",
                                         },
-                                    ]
+                                    ],
                                 },
                             ],
                             chests: [
@@ -2181,7 +2181,7 @@ const bank: Room = {
                                     name: "Poplar Sapling",
                                     signName: "Poplar Sapings",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Leaves",
@@ -2245,7 +2245,7 @@ const bank: Room = {
                                 {
                                     name: "Leaf Litter",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Flowers & Petals",
@@ -2355,7 +2355,7 @@ const bank: Room = {
                                     "name": "Cactus Flower",
                                     signName: "Cactus Flowers",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Aquatic Plants",
@@ -2382,7 +2382,7 @@ const bank: Room = {
                                 {
                                     name: "Tall Seagrass",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Fungi",
@@ -2420,7 +2420,7 @@ const bank: Room = {
                                             name: "Shelf Mushroom",
                                             signName: "Shelf Mushrooms",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Nether Fungi",
@@ -2511,9 +2511,9 @@ const bank: Room = {
                                             name: "Shroomlight",
                                             signName: "Shroomlights",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Fruit",
@@ -2534,7 +2534,7 @@ const bank: Room = {
                                     name: "Jack-O-Lantern",
                                     signName: "Jack-O-Lanterns",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Weeds",
@@ -2579,7 +2579,7 @@ const bank: Room = {
                                     name: "Red Shrub",
                                     signName: "Red Shrubs",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Other Plants",
@@ -2664,9 +2664,9 @@ const bank: Room = {
                                     name: "Pitcher Plant",
                                     signName: "Pitcher Plants",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Interdimensional",
@@ -2800,7 +2800,7 @@ const bank: Room = {
                                         {
                                             name: "Crying Obsidian",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     room: "Basalt",
@@ -2831,7 +2831,7 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Netherrack",
-                                    silo: 7
+                                    silo: 7,
                                 },
                                 {
                                     name: "Nether Brick Block",
@@ -2856,7 +2856,7 @@ const bank: Room = {
                                     name: "Dried Ghast",
                                     signName: "Dried Ghasts",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "End",
@@ -2963,9 +2963,9 @@ const bank: Room = {
                                     name: "Purpur Pillar",
                                     signName: "Purpur Pillars",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Chromatic",
@@ -3021,7 +3021,7 @@ const bank: Room = {
                                 {
                                     name: "Brown Wool",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Carpets",
@@ -3036,7 +3036,7 @@ const bank: Room = {
                                         {
                                             name: "Pale Moss Carpet",
                                         },
-                                    ]
+                                    ],
                                 },
                             ],
                             chests: [
@@ -3104,7 +3104,7 @@ const bank: Room = {
                                     name: "Brown Carpet",
                                     signName: "Brown Carpets",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Concrete Powder",
@@ -3157,7 +3157,7 @@ const bank: Room = {
                                 {
                                     name: "Brown Concrete Powder",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Concrete",
@@ -3210,7 +3210,7 @@ const bank: Room = {
                                 {
                                     name: "Brown Concrete",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Beds",
@@ -3283,7 +3283,7 @@ const bank: Room = {
                                     name: "Straw Bed",
                                     signName: "Straw Beds",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Shulker Boxes",
@@ -3356,7 +3356,7 @@ const bank: Room = {
                                     name: "Brown Shulker Box",
                                     signName: "Brown Shulker Boxes",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Candles",
@@ -3429,7 +3429,7 @@ const bank: Room = {
                                     name: "Brown Candle",
                                     signName: "Brown Candles",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Banners",
@@ -3505,7 +3505,7 @@ const bank: Room = {
                                     name: "Illager Banner",
                                     signName: "Illager Banners",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Clay & Unglazed Terracotta",
@@ -3564,7 +3564,7 @@ const bank: Room = {
                                 {
                                     name: "Brown Terracotta",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Glazed Terracotta",
@@ -3617,7 +3617,7 @@ const bank: Room = {
                                 {
                                     name: "Brown Glazed Terracotta",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Glass",
@@ -3692,7 +3692,7 @@ const bank: Room = {
                                     name: "Brown Stained Glass",
                                     signName: "Brown Glass",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Glass Panes",
@@ -3765,7 +3765,7 @@ const bank: Room = {
                                     name: "Brown Stained Glass Pane",
                                     signName: "Brown Glass Panes",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Cushions",
@@ -3834,9 +3834,9 @@ const bank: Room = {
                                     name: "Brown Cushion",
                                     signName: "Brown Cushions",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Mechanical",
@@ -3995,7 +3995,7 @@ const bank: Room = {
                                             name: "Polished Blackstone Button",
                                             signName: "Polished Blackstone Buttons",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Lightning Rods",
@@ -4032,7 +4032,7 @@ const bank: Room = {
                                             name: "Waxed Oxidized Lightning Rod",
                                             signName: "Waxed Oxidized Lightning Rods",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Pressure Plates",
@@ -4105,9 +4105,9 @@ const bank: Room = {
                                             name: "Light Weighted Pressure Plate",
                                             signName: "Gold Weighted Pressure Plates",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Transmitters",
@@ -4124,7 +4124,7 @@ const bank: Room = {
                                     name: "Redstone Dust",
                                     signName: "Redstone",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Devices",
@@ -4262,11 +4262,11 @@ const bank: Room = {
                                             name: "Waxed Oxidized Copper Bulb",
                                             signName: "Waxed Oxidized Copper Bulbs",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Aquatic Blocks",
@@ -4315,7 +4315,7 @@ const bank: Room = {
                                     name: "Dead Horn Coral Fan",
                                     signName: "Dead Horn Coral Fans",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Coral",
@@ -4350,7 +4350,7 @@ const bank: Room = {
                                 {
                                     name: "Dead Horn Coral",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Coral Blocks",
@@ -4395,7 +4395,7 @@ const bank: Room = {
                                     name: "Dead Horn Coral Block",
                                     signName: "Dead Horn Coral Blocks",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Misc. Aquatic Blocks",
@@ -4408,7 +4408,7 @@ const bank: Room = {
                                         {
                                             name: "Sea Pickle",
                                         },
-                                    ]
+                                    ],
                                 },
                             ],
                             chests: [
@@ -4433,9 +4433,9 @@ const bank: Room = {
                                     name: "Wet Sponge",
                                     signName: "Wet Sponges",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Utilities",
@@ -4467,7 +4467,7 @@ const bank: Room = {
                                     name: "Fletching Table",
                                     signName: "Fletching Tables",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Processing",
@@ -4500,7 +4500,7 @@ const bank: Room = {
                                     name: "Smoker",
                                     signName: "Smokers",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Storage",
@@ -4677,9 +4677,9 @@ const bank: Room = {
                                             name: "Bamboo Shelf",
                                             signName: "Bamboo Shelves",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Enchanting",
@@ -4715,7 +4715,7 @@ const bank: Room = {
                                     name: "Very Damaged Anvil",
                                     signName: "Very Damaged Anvils",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Misc. Utilities",
@@ -4749,9 +4749,9 @@ const bank: Room = {
                                     name: "Lectern",
                                     signName: "Lecterns",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Transportation",
@@ -4775,7 +4775,7 @@ const bank: Room = {
                                     name: "Activator Rail",
                                     signName: "Activator Rails",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Boats & Rafts",
@@ -4884,7 +4884,7 @@ const bank: Room = {
                                     name: "Bamboo Raft with Chest",
                                     signName: "Bamboo Rafts with Chests",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Minecarts",
@@ -4905,9 +4905,9 @@ const bank: Room = {
                                     name: "Minecart with Hopper",
                                     signName: "Minecarts with Hoppers",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Other Blocks",
@@ -4937,7 +4937,7 @@ const bank: Room = {
                                     name: "Honeycomb Block",
                                     signName: "Honeycomb Blocks",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Heads",
@@ -4966,7 +4966,7 @@ const bank: Room = {
                                     name: "Piglin Head",
                                     signName: "Piglin Heads",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Sculks",
@@ -4995,7 +4995,7 @@ const bank: Room = {
                                     name: "Calibrated Sculk Sensor",
                                     signName: "Calibrated Sculk Sensors",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Arctic",
@@ -5017,7 +5017,7 @@ const bank: Room = {
                                     name: "Snow Layer",
                                     signName: "Snow Layers",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Decorative",
@@ -5159,7 +5159,7 @@ const bank: Room = {
                                             name: "Bamboo Hanging Sign",
                                             signName: "Bamboo Hanging Signs",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Copper Grates",
@@ -5196,7 +5196,7 @@ const bank: Room = {
                                             name: "Waxed Oxidized Copper Grate",
                                             signName: "Waxed Oxidized",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Chains",
@@ -5237,7 +5237,7 @@ const bank: Room = {
                                             name: "Iron Chain",
                                             signName: "Iron Chains",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Copper Golem Statues",
@@ -5274,9 +5274,9 @@ const bank: Room = {
                                             name: "Waxed Oxidized Copper Golem Statue",
                                             signName: "Waxed Oxidized Copper Golems",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Sulfur & Cinnabar",
@@ -5316,7 +5316,7 @@ const bank: Room = {
                                     name: "Chiseled Cinnabar Block",
                                     signName: "Cinnabar Sulfur",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Unpowered Light Sources",
@@ -5404,7 +5404,7 @@ const bank: Room = {
                                     name: "Waxed Oxidized Copper Lantern",
                                     signName: "Waxed Oxidized Copper Lanterns",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Miscellaneous Blocks",
@@ -5460,11 +5460,11 @@ const bank: Room = {
                                     name: "Creaking Heart",
                                     signName: "Creaking Hearts",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
-            ]
+            ],
         },
         {
             name: "Items",
@@ -5548,7 +5548,7 @@ const bank: Room = {
                                 {
                                     name: "Cooked Salmon",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Seeds",
@@ -5575,7 +5575,7 @@ const bank: Room = {
                                     name: "Pitcher Pod",
                                     signName: "Pitcher Pods",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Vegetarian Options",
@@ -5733,9 +5733,9 @@ const bank: Room = {
                                     name: "Honey Bottle",
                                     signName: "Honey Bottles",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Brewing",
@@ -5894,7 +5894,7 @@ const bank: Room = {
                                             modifier: "Slow Falling (4:00)",
                                             signName: "Slow Falling 4:00",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Mixed/Neutral Potions",
@@ -5946,7 +5946,7 @@ const bank: Room = {
                                             modifier: "Wind Charged",
                                             signName: "Wind Charging",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Detrimental Potions",
@@ -6001,9 +6001,9 @@ const bank: Room = {
                                             modifier: "Instant Damage II",
                                             signName: "Harming II",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Splash Potions",
@@ -6131,7 +6131,7 @@ const bank: Room = {
                                             modifier: "Slow Falling (3:00)",
                                             signName: "Slow Falling 3:00",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Mixed/Neutral Splash Potions",
@@ -6187,7 +6187,7 @@ const bank: Room = {
                                             modifier: "Wind Charged",
                                             signName: "Wind Charging",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Detrimental Splash Potions",
@@ -6242,9 +6242,9 @@ const bank: Room = {
                                             modifier: "Instant Damage II",
                                             signName: "Harming II",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Lingering Potions",
@@ -6372,7 +6372,7 @@ const bank: Room = {
                                             modifier: "Slow Falling (1:00)",
                                             signName: "Slow Falling 1:00",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Mixed/Neutral Lingering Potions",
@@ -6428,7 +6428,7 @@ const bank: Room = {
                                             modifier: "Wind Charged",
                                             signName: "Wind Charging",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     name: "Detrimental Lingering Potions",
@@ -6483,9 +6483,9 @@ const bank: Room = {
                                             modifier: "Instant Damage II",
                                             signName: "Harming II",
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Brewing Supplies",
@@ -6510,7 +6510,7 @@ const bank: Room = {
                                         {
                                             name: "Redstone Dust",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     room: "Firework Supplies",
@@ -6518,7 +6518,7 @@ const bank: Room = {
                                         {
                                             name: "Gunpowder",
                                         },
-                                    ]
+                                    ],
                                 },
                             ],
                             chests: [
@@ -6586,9 +6586,9 @@ const bank: Room = {
                                     name: "Breeze Rod",
                                     signName: "Breeze Rods",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Equipment",
@@ -6629,7 +6629,7 @@ const bank: Room = {
                                     name: "Netherite Pickaxe",
                                     signName: "Netherite Pickaxes",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Shovels",
@@ -6662,7 +6662,7 @@ const bank: Room = {
                                     name: "Netherite Shovel",
                                     signName: "Netherite Shovels",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Axes",
@@ -6695,7 +6695,7 @@ const bank: Room = {
                                     name: "Netherite Axe",
                                     signName: "Netherite Axes",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Hoes",
@@ -6728,7 +6728,7 @@ const bank: Room = {
                                     name: "Netherite Hoe",
                                     signName: "Netherite Hoes",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Swords",
@@ -6761,7 +6761,7 @@ const bank: Room = {
                                     name: "Netherite Sword",
                                     signName: "Netherite Swords",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Ranged Weapons & Projectiles",
@@ -7023,7 +7023,7 @@ const bank: Room = {
                                                     modifier: "Slow Falling (0:30)",
                                                     signName: "Slow Falling 0:30",
                                                 },
-                                            ]
+                                            ],
                                         },
                                         {
                                             name: "Mixed/Neutral Tipped Arrows",
@@ -7059,7 +7059,7 @@ const bank: Room = {
                                                     name: "Arrow of Wind Charging",
                                                     signName: "Wind Charging",
                                                 },
-                                            ]
+                                            ],
                                         },
                                         {
                                             name: "Detrimental Tipped Arrows",
@@ -7119,11 +7119,11 @@ const bank: Room = {
                                                     modifier: "Wither II",
                                                     signName: "Decay",
                                                 },
-                                            ]
+                                            ],
                                         },
-                                    ]
+                                    ],
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Exploration",
@@ -7179,7 +7179,7 @@ const bank: Room = {
                                     name: "Spyglass",
                                     signName: "Spyglasses",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Buckets",
@@ -7239,7 +7239,7 @@ const bank: Room = {
                                     name: "Bucket of Sulfur Cube",
                                     signName: "Sulfur Cube Buckets",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Goat Horns",
@@ -7284,7 +7284,7 @@ const bank: Room = {
                                     modifier: "Dream",
                                     signName: "Dream",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Smithing Templates",
@@ -7384,7 +7384,7 @@ const bank: Room = {
                                     modifier: "Flow Armor Trim",
                                     signName: "Flow Armor Trim",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Bundles",
@@ -7457,7 +7457,7 @@ const bank: Room = {
                                     name: "Brown Bundle",
                                     signName: "Brown Bundles",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Miscellaneous Equipment",
@@ -7506,9 +7506,9 @@ const bank: Room = {
                                     name: "Mace",
                                     signName: "Maces",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Wearables",
@@ -7592,7 +7592,7 @@ const bank: Room = {
                                     name: "Netherite Helmet",
                                     signName: "Netherite Helmets",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Chest",
@@ -7628,7 +7628,7 @@ const bank: Room = {
                                 {
                                     name: "Elytra",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Legs",
@@ -7655,7 +7655,7 @@ const bank: Room = {
                                 {
                                     name: "Netherite Leggings",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Feet",
@@ -7682,7 +7682,7 @@ const bank: Room = {
                                 {
                                     name: "Netherite Boots",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Mob",
@@ -7776,9 +7776,9 @@ const bank: Room = {
                                     name: "Brown Harness",
                                     signName: "Brown Harnesses",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Pyrotechnics",
@@ -7870,7 +7870,7 @@ const bank: Room = {
                                     modifier: "Brown",
                                     signName: "Brown Fireworks",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Firework Supplies",
@@ -7956,7 +7956,7 @@ const bank: Room = {
                                         {
                                             name: "Glowstone Dust",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     room: "Ranged Weapons & Projectiles",
@@ -8052,9 +8052,9 @@ const bank: Room = {
                                 {
                                     name: "Gunpowder",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
                 {
                     name: "Other Items",
@@ -8078,7 +8078,7 @@ const bank: Room = {
                                         {
                                             name: "Redstone Dust",
                                         },
-                                    ]
+                                    ],
                                 },
                             ],
                             chests: [
@@ -8154,7 +8154,7 @@ const bank: Room = {
                                     name: "Resin Brick",
                                     signName: "Resin Bricks",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Dyes",
@@ -8186,7 +8186,7 @@ const bank: Room = {
                                         {
                                             name: "Cocoa Beans",
                                         },
-                                    ]
+                                    ],
                                 },
                                 {
                                     room: "Mineral Items",
@@ -8194,7 +8194,7 @@ const bank: Room = {
                                         {
                                             name: "Lapis Lazuli",
                                         },
-                                    ]
+                                    ],
                                 },
                             ],
                             chests: [
@@ -8246,7 +8246,7 @@ const bank: Room = {
                                 {
                                     name: "Brown Dye",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Music Discs",
@@ -8355,7 +8355,7 @@ const bank: Room = {
                                     name: "Disc Fragment",
                                     signName: "Disc Fragments",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Books",
@@ -8376,7 +8376,7 @@ const bank: Room = {
                                     name: "Written Book",
                                     signName: "Written Books",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Banner Patterns",
@@ -8434,7 +8434,7 @@ const bank: Room = {
                                     modifier: "Guster",
                                     signName: "Guster",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Pottery Sherds",
@@ -8568,7 +8568,7 @@ const bank: Room = {
                                     modifier: "Scrape",
                                     signName: "Scrape",
                                 },
-                            ]
+                            ],
                         },
                         {
                             name: "Miscellaneous Items",
@@ -8696,19 +8696,17 @@ const bank: Room = {
                                     name: "Ominous Trial Key",
                                     signName: "Ominous Trial Keys",
                                 },
-                            ]
+                            ],
                         },
-                    ]
+                    ],
                 },
-            ]
+            ],
         },
-    ]
+    ],
 };
 
-
-
 function renderRoom(room: Room, depth: number): void {
-    console.log(`${'  '.repeat(depth)}${room.name}: ${room.chests?.length}`);
+    console.log(`${"  ".repeat(depth)}${room.name}: ${room.chests?.length}`);
     for (const subroom of room?.subrooms ?? []) {
         renderRoom(subroom, depth + 1);
     }
