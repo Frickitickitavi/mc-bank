@@ -1,30 +1,30 @@
 ﻿interface Room {
-    name: string,
-    upstreamName?: string,
-    downstreamName?: string,
-    shortcutName?: string,
-    utilities?: Utility[],
-    subrooms?: Room[],
-    chests?: Chest[],
-    shortcuts?: Shortcut[]
+    name: string;
+    upstreamName?: string;
+    downstreamName?: string;
+    shortcutName?: string;
+    utilities?: Utility[];
+    subrooms?: Room[];
+    chests?: Chest[];
+    shortcuts?: Shortcut[];
 }
 
 interface Chest {
-    name: string,
-    signName?: string,
-    modifier?: string,
-    silo?: number
+    name: string;
+    signName?: string;
+    modifier?: string;
+    silo?: number;
 }
 
 interface Shortcut {
-    room: string,
-    items: ShortcutDestinationItem[],
-    description?: string
+    room: string;
+    items: ShortcutDestinationItem[];
+    description?: string;
 }
 
 interface ShortcutDestinationItem {
-    name: string,
-    modifier?: string
+    name: string;
+    modifier?: string;
 }
 
 type Utility = "Anvil"
@@ -52,9 +52,9 @@ type Utility = "Anvil"
     | "Water Source";
 
 interface Dimensions {
-    x: number,
-    y: number,
-    z: number
+    x: number;
+    y: number;
+    z: number;
 }
 
 function getUtilityDimensions(utility: Utility): Dimensions | "door" {
@@ -106,84 +106,84 @@ const bank: Room = {
         "Smoker",
         "Smoker",
         "Stonecutter",
-        "Water Source"
+        "Water Source",
     ],
     subrooms: [
         {
             name: "Blocks & Entities",
             utilities: [
-                "Crafting Table"
+                "Crafting Table",
             ],
             subrooms: [
                 {
                     name: "Minerals",
                     utilities: [
                         "Furnace",
-                        "Blast Furnace"
+                        "Blast Furnace",
                     ],
                     subrooms: [
                         {
                             name: "Ores",
                             utilities: [
                                 "Furnace",
-                                "Blast Furnace"
+                                "Blast Furnace",
                             ],
                             chests: [
                                 {
-                                    name: "Iron Ore"
+                                    name: "Iron Ore",
                                 },
                                 {
-                                    name: "Deepslate Iron Ore"
+                                    name: "Deepslate Iron Ore",
                                 },
                                 {
-                                    name: "Gold Ore"
+                                    name: "Gold Ore",
                                 },
                                 {
-                                    name: "Deepslate Gold Ore"
+                                    name: "Deepslate Gold Ore",
                                 },
                                 {
-                                    name: "Nether Gold Ore"
+                                    name: "Nether Gold Ore",
                                 },
                                 {
-                                    name: "Quartz Ore"
+                                    name: "Quartz Ore",
                                 },
                                 {
-                                    name: "Redstone Ore"
+                                    name: "Redstone Ore",
                                 },
                                 {
-                                    name: "Deepslate Redstone Ore"
+                                    name: "Deepslate Redstone Ore",
                                 },
                                 {
-                                    name: "Emerald Ore"
+                                    name: "Emerald Ore",
                                 },
                                 {
-                                    name: "Deepslate Emerald Ore"
+                                    name: "Deepslate Emerald Ore",
                                 },
                                 {
-                                    name: "Diamond Ore"
+                                    name: "Diamond Ore",
                                 },
                                 {
-                                    name: "Deepslate Diamond Ore"
+                                    name: "Deepslate Diamond Ore",
                                 },
                                 {
-                                    name: "Lapis Lazuli Ore"
+                                    name: "Lapis Lazuli Ore",
                                 },
                                 {
-                                    name: "Deepslate Lapis Lazuli Ore"
+                                    name: "Deepslate Lapis Lazuli Ore",
                                 },
                                 {
-                                    name: "Coal Ore"
+                                    name: "Coal Ore",
                                 },
                                 {
-                                    name: "Copper Ore"
+                                    name: "Copper Ore",
                                 },
                                 {
-                                    name: "Ancient Debris"
+                                    name: "Ancient Debris",
                                 },
                                 {
                                     name: "Resin Clump",
-                                    signName: "Resin Clumps"
-                                }
+                                    signName: "Resin Clumps",
+                                },
                             ]
                         },
                         {
@@ -191,102 +191,102 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Small Amethyst Bud",
-                                    signName: "Small Amethyst Buds"
+                                    signName: "Small Amethyst Buds",
                                 },
                                 {
                                     name: "Medium Amethyst Bud",
-                                    signName: "Medium Amethyst Buds"
+                                    signName: "Medium Amethyst Buds",
                                 },
                                 {
                                     name: "Large Amethyst Bud",
-                                    signName: "Large Amethyst Buds"
+                                    signName: "Large Amethyst Buds",
                                 },
                                 {
                                     name: "Amethyst Cluster",
-                                    signName: "Amethyst Clusters"
-                                }
+                                    signName: "Amethyst Clusters",
+                                },
                             ]
                         },
                         {
                             name: "Mineral Blocks",
                             utilities: [
                                 "Furnace",
-                                "Blast Furnace"
+                                "Blast Furnace",
                             ],
                             chests: [
                                 {
                                     name: "Block of Coal",
-                                    signName: "Coal Blocks"
+                                    signName: "Coal Blocks",
                                 },
                                 {
                                     name: "Block of Quartz",
-                                    signName: "Quartz Blocks"
+                                    signName: "Quartz Blocks",
                                 },
                                 {
                                     name: "Block of Lapis Lazuli",
-                                    signName: "Lapis Lazuli Blocks"
+                                    signName: "Lapis Lazuli Blocks",
                                 },
                                 {
                                     name: "Block of Redstone",
-                                    signName: "Redstone Blocks"
+                                    signName: "Redstone Blocks",
                                 },
                                 {
                                     name: "Block of Iron",
-                                    signName: "Iron Blocks"
+                                    signName: "Iron Blocks",
                                 },
                                 {
                                     name: "Block of Gold",
-                                    signName: "Gold Blocks"
+                                    signName: "Gold Blocks",
                                 },
                                 {
                                     name: "Block of Diamond",
-                                    signName: "Diamond Blocks"
+                                    signName: "Diamond Blocks",
                                 },
                                 {
                                     name: "Block of Emerald",
-                                    signName: "Emerald Blocks"
+                                    signName: "Emerald Blocks",
                                 },
                                 {
                                     name: "Chiseled Quartz Block",
-                                    signName: "Chiseled Quartz Blocks"
+                                    signName: "Chiseled Quartz Blocks",
                                 },
                                 {
                                     name: "Pillar Quartz Block",
-                                    signName: "Pillar Quartz Blocks"
+                                    signName: "Pillar Quartz Blocks",
                                 },
                                 {
                                     name: "Smooth Quartz Block",
-                                    signName: "Smooth Quartz Blocks"
+                                    signName: "Smooth Quartz Blocks",
                                 },
                                 {
-                                    name: "Quartz Bricks"
+                                    name: "Quartz Bricks",
                                 },
                                 {
                                     name: "Block of Netherite",
-                                    signName: "Netherite Blocks"
+                                    signName: "Netherite Blocks",
                                 },
                                 {
                                     name: "Block of Raw Iron",
-                                    signName: "Raw Iron Blocks"
+                                    signName: "Raw Iron Blocks",
                                 },
                                 {
                                     name: "Block of Raw Gold",
-                                    signName: "Raw Gold Blocks"
+                                    signName: "Raw Gold Blocks",
                                 },
                                 {
                                     name: "Block of Amethyst",
-                                    signName: "Amethyst Blocks"
+                                    signName: "Amethyst Blocks",
                                 },
                                 {
                                     name: "Block of Resin",
-                                    signName: "Resin Blocks"
+                                    signName: "Resin Blocks",
                                 },
                                 {
                                     name: "Resin Bricks",
                                 },
                                 {
                                     name: "Chiseled Resin Bricks",
-                                }
+                                },
 
                             ],
                             subrooms: [
@@ -295,108 +295,108 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Block of Copper",
-                                            signName: "Regular"
+                                            signName: "Regular",
                                         },
                                         {
                                             name: "Exposed Copper",
-                                            signName: "Exposed"
+                                            signName: "Exposed",
                                         },
                                         {
                                             name: "Weathered Copper",
-                                            signName: "Weathered"
+                                            signName: "Weathered",
                                         },
                                         {
                                             name: "Oxidized Copper",
-                                            signName: "Oxidized"
+                                            signName: "Oxidized",
                                         },
                                         {
                                             name: "Waxed Copper",
-                                            signName: "Waxed"
+                                            signName: "Waxed",
                                         },
                                         {
                                             name: "Waxed Exposed Copper",
-                                            signName: "Waxed Exposed"
+                                            signName: "Waxed Exposed",
                                         },
                                         {
                                             name: "Waxed Weathered Copper",
-                                            signName: "Waxed Weathered"
+                                            signName: "Waxed Weathered",
                                         },
                                         {
                                             name: "Waxed Oxidized Copper",
-                                            signName: "Waxed Oxidized"
+                                            signName: "Waxed Oxidized",
                                         },
                                         {
                                             name: "Cut Copper",
-                                            signName: "Cut"
+                                            signName: "Cut",
                                         },
                                         {
                                             name: "Exposed Cut Copper",
-                                            signName: "Exposed Cut"
+                                            signName: "Exposed Cut",
                                         },
                                         {
                                             name: "Weathered Cut Copper",
-                                            signName: "Weathered Cut"
+                                            signName: "Weathered Cut",
                                         },
                                         {
                                             name: "Oxidized Cut Copper",
-                                            signName: "Oxidized Cut"
+                                            signName: "Oxidized Cut",
                                         },
                                         {
                                             name: "Waxed Cut Copper",
-                                            signName: "Waxed Cut"
+                                            signName: "Waxed Cut",
                                         },
                                         {
                                             name: "Waxed Exposed Cut Copper",
-                                            signName: "Waxed Exposed Cut"
+                                            signName: "Waxed Exposed Cut",
                                         },
                                         {
                                             name: "Waxed Weathered Cut Copper",
-                                            signName: "Waxed Weathered Cut"
+                                            signName: "Waxed Weathered Cut",
                                         },
                                         {
                                             name: "Waxed Oxidized Cut Copper",
-                                            signName: "Waxed Oxidized Cut"
+                                            signName: "Waxed Oxidized Cut",
                                         },
                                         {
                                             name: "Chiseled Copper",
-                                            signName: "Chiseled"
+                                            signName: "Chiseled",
                                         },
                                         {
                                             name: "Exposed Chiseled Copper",
-                                            signName: "Exposed Chiseled"
+                                            signName: "Exposed Chiseled",
                                         },
                                         {
                                             name: "Weathered Chiseled Copper",
-                                            signName: "Weathered Chiseled"
+                                            signName: "Weathered Chiseled",
                                         },
                                         {
                                             name: "Oxidized Chiseled Copper",
-                                            signName: "Oxidized Chiseled"
+                                            signName: "Oxidized Chiseled",
                                         },
                                         {
                                             name: "Waxed Chiseled Copper",
-                                            signName: "Waxed Chiseled"
+                                            signName: "Waxed Chiseled",
                                         },
                                         {
                                             name: "Waxed Exposed Chiseled Copper",
-                                            signName: "Waxed Exposed Chiseled"
+                                            signName: "Waxed Exposed Chiseled",
                                         },
                                         {
                                             name: "Waxed Weathered Chiseled Copper",
-                                            signName: "Waxed Weathered Chiseled"
+                                            signName: "Waxed Weathered Chiseled",
                                         },
                                         {
                                             name: "Waxed Oxidized Chiseled Copper",
-                                            signName: "Waxed Oxidized Chiseled"
+                                            signName: "Waxed Oxidized Chiseled",
                                         },
                                         {
                                             name: "Block of Raw Copper",
-                                            signName: "Raw"
-                                        }
+                                            signName: "Raw",
+                                        },
                                     ]
-                                }
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -410,7 +410,7 @@ const bank: Room = {
                                     utilities: [
                                         "Crafting Table",
                                         "Furnace",
-                                        "Stonecutter"
+                                        "Stonecutter",
                                     ],
                                     chests: [
                                         {
@@ -422,57 +422,57 @@ const bank: Room = {
                                             silo: 11
                                         },
                                         {
-                                            name: "Smooth Stone"
+                                            name: "Smooth Stone",
                                         },
                                         {
-                                            name: "Mossy Cobblestone"
+                                            name: "Mossy Cobblestone",
                                         },
                                         {
-                                            name: "Stone Bricks"
+                                            name: "Stone Bricks",
                                         },
                                         {
-                                            name: "Chiseled Stone Bricks"
+                                            name: "Chiseled Stone Bricks",
                                         },
                                         {
-                                            name: "Mossy Stone Bricks"
+                                            name: "Mossy Stone Bricks",
                                         },
                                         {
-                                            name: "Cracked Stone Bricks"
-                                        }
+                                            name: "Cracked Stone Bricks",
+                                        },
                                     ]
                                 },
                                 {
                                     name: "Deepslate",
                                     utilities: [
                                         "Crafting Table",
-                                        "Furnace"
+                                        "Furnace",
                                     ],
                                     chests: [
                                         {
-                                            name: "Deepslate"
+                                            name: "Deepslate",
                                         },
                                         {
                                             name: "Cobbled Deepslate",
                                             silo: 7
                                         },
                                         {
-                                            name: "Polished Deepslate"
+                                            name: "Polished Deepslate",
                                         },
                                         {
-                                            name: "Deepslate Bricks"
+                                            name: "Deepslate Bricks",
                                         },
                                         {
-                                            name: "Cracked Deepslate Bricks"
+                                            name: "Cracked Deepslate Bricks",
                                         },
                                         {
-                                            name: "Deepslate Tiles"
+                                            name: "Deepslate Tiles",
                                         },
                                         {
-                                            name: "Cracked Deepslate Tiles"
+                                            name: "Cracked Deepslate Tiles",
                                         },
                                         {
-                                            name: "Chiseled Deepslate"
-                                        }
+                                            name: "Chiseled Deepslate",
+                                        },
                                     ]
                                 },
                                 {
@@ -483,59 +483,59 @@ const bank: Room = {
                                             silo: 0
                                         },
                                         {
-                                            name: "Polished Andesite"
+                                            name: "Polished Andesite",
                                         },
                                         {
                                             name: "Diorite",
                                             silo: 0
                                         },
                                         {
-                                            name: "Polished Diorite"
+                                            name: "Polished Diorite",
                                         },
                                         {
                                             name: "Granite",
                                             silo: 0
                                         },
                                         {
-                                            name: "Polished Granite"
-                                        }
+                                            name: "Polished Granite",
+                                        },
                                     ]
                                 },
                                 {
                                     name: "Blackstone",
                                     chests: [
                                         {
-                                            name: "Blackstone"
+                                            name: "Blackstone",
                                         },
                                         {
-                                            name: "Gilded Blackstone"
+                                            name: "Gilded Blackstone",
                                         },
                                         {
-                                            name: "Polished Blackstone"
+                                            name: "Polished Blackstone",
                                         },
                                         {
-                                            name: "Polished Blackstone Bricks"
+                                            name: "Polished Blackstone Bricks",
                                         },
                                         {
-                                            name: "Chiseled Polished Blackstone"
+                                            name: "Chiseled Polished Blackstone",
                                         },
                                         {
-                                            name: "Cracked Polished Blackstone Bricks"
-                                        }
+                                            name: "Cracked Polished Blackstone Bricks",
+                                        },
                                     ]
                                 },
                                 {
                                     name: "Basalt",
                                     chests: [
                                         {
-                                            name: "Basalt"
+                                            name: "Basalt",
                                         },
                                         {
-                                            name: "Polished Basalt"
+                                            name: "Polished Basalt",
                                         },
                                         {
-                                            name: "Smooth Basalt"
-                                        }
+                                            name: "Smooth Basalt",
+                                        },
                                     ]
                                 },
                                 {
@@ -546,17 +546,17 @@ const bank: Room = {
                                             silo: 0
                                         },
                                         {
-                                            name: "Chiseled Tuff"
+                                            name: "Chiseled Tuff",
                                         },
                                         {
-                                            name: "Polished Tuff"
+                                            name: "Polished Tuff",
                                         },
                                         {
-                                            name: "Tuff Bricks"
+                                            name: "Tuff Bricks",
                                         },
                                         {
-                                            name: "Chiseled Tuff Bricks"
-                                        }
+                                            name: "Chiseled Tuff Bricks",
+                                        },
 
                                     ]
                                 },
@@ -565,52 +565,52 @@ const bank: Room = {
                                     upstreamName: "Other",
                                     chests: [
                                         {
-                                            name: "Calcite"
+                                            name: "Calcite",
                                         },
                                         {
                                             name: "Dripstone Block",
-                                            signName: "Dripstone Blocks"
+                                            signName: "Dripstone Blocks",
                                         },
                                         {
-                                            name: "Pointed Dripstone"
-                                        }
+                                            name: "Pointed Dripstone",
+                                        },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
                             name: "Soil",
                             utilities: [
-                                "Crafting Table"
+                                "Crafting Table",
                             ],
                             shortcuts: [
                                 {
                                     room: "Nether Fungi",
                                     items: [
                                         {
-                                            name: "Crimson Nylium"
+                                            name: "Crimson Nylium",
                                         },
                                         {
-                                            name: "Warped Nylium"
-                                        }
+                                            name: "Warped Nylium",
+                                        },
                                     ],
-                                    description: "Nylium"
+                                    description: "Nylium",
                                 },
                                 {
                                     room: "Nether",
                                     items: [
                                         {
-                                            name: "Soul Soil"
-                                        }
+                                            name: "Soul Soil",
+                                        },
                                     ]
-                                }
+                                },
                             ],
                             chests: [
                                 {
-                                    name: "Rooted Dirt"
+                                    name: "Rooted Dirt",
                                 },
                                 {
-                                    name: "Coarse Dirt"
+                                    name: "Coarse Dirt",
                                 },
                                 {
                                     name: "Gravel",
@@ -621,28 +621,28 @@ const bank: Room = {
                                     silo: 5
                                 },
                                 {
-                                    name: "Mycelium"
+                                    name: "Mycelium",
                                 },
                                 {
-                                    name: "Podzol"
+                                    name: "Podzol",
                                 },
                                 {
                                     name: "Grass Block",
-                                    signName: "Grass"
+                                    signName: "Grass",
                                 },
                                 {
                                     name: "Dirt Path",
-                                    signName: "Dirt Paths"
+                                    signName: "Dirt Paths",
                                 },
                                 {
-                                    name: "Mud"
+                                    name: "Mud",
                                 },
                                 {
-                                    name: "Packed Mud"
+                                    name: "Packed Mud",
                                 },
                                 {
-                                    name: "Mud Bricks"
-                                }
+                                    name: "Mud Bricks",
+                                },
                             ]
                         },
                         {
@@ -652,44 +652,44 @@ const bank: Room = {
                                     room: "Nether",
                                     items: [
                                         {
-                                            name: "Soul Sand"
-                                        }
+                                            name: "Soul Sand",
+                                        },
                                     ]
-                                }
+                                },
                             ],
                             chests: [
                                 {
-                                    name: "Sand"
+                                    name: "Sand",
                                 },
                                 {
-                                    name: "Red Sand"
+                                    name: "Red Sand",
                                 },
                                 {
-                                    name: "Sandstone"
+                                    name: "Sandstone",
                                 },
                                 {
-                                    name: "Red Sandstone"
+                                    name: "Red Sandstone",
                                 },
                                 {
-                                    name: "Cut Sandstone"
+                                    name: "Cut Sandstone",
                                 },
                                 {
-                                    name: "Cut Red Sandstone"
+                                    name: "Cut Red Sandstone",
                                 },
                                 {
-                                    name: "Smooth Sandstone"
+                                    name: "Smooth Sandstone",
                                 },
                                 {
-                                    name: "Smooth Red Sandstone"
+                                    name: "Smooth Red Sandstone",
                                 },
                                 {
-                                    name: "Chiseled Sandstone"
+                                    name: "Chiseled Sandstone",
                                 },
                                 {
-                                    name: "Chiseled Red Sandstone"
-                                }
+                                    name: "Chiseled Red Sandstone",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -700,56 +700,56 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Oak Log",
-                                    signName: "Oak Logs"
+                                    signName: "Oak Logs",
                                 },
                                 {
                                     name: "Birch Log",
-                                    signName: "Birch Logs"
+                                    signName: "Birch Logs",
                                 },
                                 {
                                     name: "Spruce Log",
-                                    signName: "Spruce Logs"
+                                    signName: "Spruce Logs",
                                 },
                                 {
                                     name: "Acacia Log",
-                                    signName: "Acacia Logs"
+                                    signName: "Acacia Logs",
                                 },
                                 {
                                     name: "Jungle Log",
-                                    signName: "Jungle Logs"
+                                    signName: "Jungle Logs",
                                 },
                                 {
                                     name: "Dark Oak Log",
-                                    signName: "Dark Oak Logs"
+                                    signName: "Dark Oak Logs",
                                 },
                                 {
                                     name: "Pale Oak Log",
-                                    signName: "Pale Oak Logs"
+                                    signName: "Pale Oak Logs",
                                 },
                                 {
                                     name: "Mangrove Log",
-                                    signName: "Mangrove Logs"
+                                    signName: "Mangrove Logs",
                                 },
                                 {
                                     name: "Cherry Log",
-                                    signName: "Cherry Logs"
+                                    signName: "Cherry Logs",
                                 },
                                 {
                                     name: "Poplar Log",
-                                    signName: "Poplar Logs"
+                                    signName: "Poplar Logs",
                                 },
                                 {
                                     name: "Crimson Stem",
-                                    signName: "Crimson Stems"
+                                    signName: "Crimson Stems",
                                 },
                                 {
                                     name: "Warped Stem",
-                                    signName: "Warped Stems"
+                                    signName: "Warped Stems",
                                 },
                                 {
                                     name: "Block of Bamboo",
-                                    signName: "Bamboo Blocks"
-                                }
+                                    signName: "Bamboo Blocks",
+                                },
                             ]
                         },
                         {
@@ -757,104 +757,104 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Stripped Oak Log",
-                                    signName: "Stripped Oak Logs"
+                                    signName: "Stripped Oak Logs",
                                 },
                                 {
                                     name: "Stripped Birch Log",
-                                    signName: "Stripped Birch Logs"
+                                    signName: "Stripped Birch Logs",
                                 },
                                 {
                                     name: "Stripped Spruce Log",
-                                    signName: "Stripped Spruce Logs"
+                                    signName: "Stripped Spruce Logs",
                                 },
                                 {
                                     name: "Stripped Acacia Log",
-                                    signName: "Stripped Acacia Logs"
+                                    signName: "Stripped Acacia Logs",
                                 },
                                 {
                                     name: "Stripped Jungle Log",
-                                    signName: "Stripped Jungle Logs"
+                                    signName: "Stripped Jungle Logs",
                                 },
                                 {
                                     name: "Stripped Dark Oak Log",
-                                    signName: "Stripped Dark Oak Logs"
+                                    signName: "Stripped Dark Oak Logs",
                                 },
                                 {
                                     name: "Stripped Pale Oak Log",
-                                    signName: "Stripped Pale Oak Logs"
+                                    signName: "Stripped Pale Oak Logs",
                                 },
                                 {
                                     name: "Stripped Mangrove Log",
-                                    signName: "Stripped Mangrove Logs"
+                                    signName: "Stripped Mangrove Logs",
                                 },
                                 {
                                     name: "Stripped Cherry Log",
-                                    signName: "Stripped Cherry Logs"
+                                    signName: "Stripped Cherry Logs",
                                 },
                                 {
                                     name: "Stripped Poplar Log",
-                                    signName: "Stripped Poplar Logs"
+                                    signName: "Stripped Poplar Logs",
                                 },
                                 {
                                     name: "Stripped Crimson Stem",
-                                    signName: "Stripped Crimson Stems"
+                                    signName: "Stripped Crimson Stems",
                                 },
                                 {
                                     name: "Stripped Warped Stem",
-                                    signName: "Stripped Warped Stems"
+                                    signName: "Stripped Warped Stems",
                                 },
                                 {
                                     name: "Block of Stripped Bamboo",
-                                    signName: "Stripped Bamboo Blocks"
-                                }
+                                    signName: "Stripped Bamboo Blocks",
+                                },
                             ]
                         },
                         {
                             name: "Planks & Mosaics",
                             chests: [
                                 {
-                                    name: "Oak Planks"
+                                    name: "Oak Planks",
                                 },
                                 {
-                                    name: "Birch Planks"
+                                    name: "Birch Planks",
                                 },
                                 {
-                                    name: "Spruce Planks"
+                                    name: "Spruce Planks",
                                 },
                                 {
-                                    name: "Acacia Planks"
+                                    name: "Acacia Planks",
                                 },
                                 {
-                                    name: "Jungle Planks"
+                                    name: "Jungle Planks",
                                 },
                                 {
-                                    name: "Dark Oak Planks"
+                                    name: "Dark Oak Planks",
                                 },
                                 {
-                                    name: "Pale Oak Planks"
+                                    name: "Pale Oak Planks",
                                 },
                                 {
-                                    name: "Mangrove Planks"
+                                    name: "Mangrove Planks",
                                 },
                                 {
-                                    name: "Cherry Planks"
+                                    name: "Cherry Planks",
                                 },
                                 {
-                                    name: "Poplar Planks"
+                                    name: "Poplar Planks",
                                 },
                                 {
-                                    name: "Crimson Planks"
+                                    name: "Crimson Planks",
                                 },
                                 {
-                                    name: "Warped Planks"
+                                    name: "Warped Planks",
                                 },
                                 {
-                                    name: "Bamboo Planks"
+                                    name: "Bamboo Planks",
                                 },
                                 {
                                     name: "Bamboo Mosaic",
-                                    signName: "Bamboo Mosaics"
-                                }
+                                    signName: "Bamboo Mosaics",
+                                },
                             ]
                         },
                         {
@@ -862,90 +862,90 @@ const bank: Room = {
                             upstreamName: "Wood and Hyphae",
                             chests: [
                                 {
-                                    name: "Oak Wood"
+                                    name: "Oak Wood",
                                 },
                                 {
-                                    name: "Birch Wood"
+                                    name: "Birch Wood",
                                 },
                                 {
-                                    name: "Spruce Wood"
+                                    name: "Spruce Wood",
                                 },
                                 {
-                                    name: "Acacia Wood"
+                                    name: "Acacia Wood",
                                 },
                                 {
-                                    name: "Jungle Wood"
+                                    name: "Jungle Wood",
                                 },
                                 {
-                                    name: "Dark Oak Wood"
+                                    name: "Dark Oak Wood",
                                 },
                                 {
-                                    name: "Pale Oak Wood"
+                                    name: "Pale Oak Wood",
                                 },
                                 {
-                                    name: "Mangrove Wood"
+                                    name: "Mangrove Wood",
                                 },
                                 {
-                                    name: "Cherry Wood"
+                                    name: "Cherry Wood",
                                 },
                                 {
-                                    name: "Poplar Wood"
+                                    name: "Poplar Wood",
                                 },
                                 {
-                                    name: "Crimson Hyphae"
+                                    name: "Crimson Hyphae",
                                 },
                                 {
-                                    name: "Warped Hyphae"
-                                }
+                                    name: "Warped Hyphae",
+                                },
                             ]
                         },
                         {
                             name: "Stripped Wood",
                             chests: [
                                 {
-                                    name: "Stripped Oak Wood"
+                                    name: "Stripped Oak Wood",
                                 },
                                 {
-                                    name: "Stripped Birch Wood"
+                                    name: "Stripped Birch Wood",
                                 },
                                 {
-                                    name: "Stripped Spruce Wood"
+                                    name: "Stripped Spruce Wood",
                                 },
                                 {
-                                    name: "Stripped Acacia Wood"
+                                    name: "Stripped Acacia Wood",
                                 },
                                 {
-                                    name: "Stripped Jungle Wood"
+                                    name: "Stripped Jungle Wood",
                                 },
                                 {
-                                    name: "Stripped Dark Oak Wood"
+                                    name: "Stripped Dark Oak Wood",
                                 },
                                 {
-                                    name: "Stripped Pale Oak Wood"
+                                    name: "Stripped Pale Oak Wood",
                                 },
                                 {
-                                    name: "Stripped Mangrove Wood"
+                                    name: "Stripped Mangrove Wood",
                                 },
                                 {
-                                    name: "Stripped Cherry Wood"
+                                    name: "Stripped Cherry Wood",
                                 },
                                 {
-                                    name: "Stripped Poplar Wood"
+                                    name: "Stripped Poplar Wood",
                                 },
                                 {
-                                    name: "Stripped Crimson Hyphae"
+                                    name: "Stripped Crimson Hyphae",
                                 },
                                 {
-                                    name: "Stripped Warped Hyphae"
-                                }
+                                    name: "Stripped Warped Hyphae",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
                     name: "Barriers",
                     utilities: [
-                        "Stonecutter"
+                        "Stonecutter",
                     ],
                     subrooms: [
                         {
@@ -953,108 +953,108 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Mud Brick Wall",
-                                    signName: "Mud Brick Walls"
+                                    signName: "Mud Brick Walls",
                                 },
                                 {
                                     name: "Polished Blackstone Brick Wall",
-                                    signName: "Polished Blackstone Brick Walls"
+                                    signName: "Polished Blackstone Brick Walls",
                                 },
                                 {
                                     name: "Blackstone Wall",
-                                    signName: "Blackstone Walls"
+                                    signName: "Blackstone Walls",
                                 },
                                 {
                                     name: "Polished Blackstone Wall",
-                                    signName: "Polished Blackstone Walls"
+                                    signName: "Polished Blackstone Walls",
                                 },
                                 {
                                     name: "End Stone Brick Wall",
-                                    signName: "End Stone Brick Walls"
+                                    signName: "End Stone Brick Walls",
                                 },
                                 {
                                     name: "Prismarine Wall",
-                                    signName: "Prismarine Walls"
+                                    signName: "Prismarine Walls",
                                 },
                                 {
                                     name: "Deepslate Wall",
-                                    signName: "Deepslate Walls"
+                                    signName: "Deepslate Walls",
                                 },
                                 {
                                     name: "Polished Deepslate Wall",
-                                    signName: "Polished Deepslate Walls"
+                                    signName: "Polished Deepslate Walls",
                                 },
                                 {
                                     name: "Deepslate Brick Wall",
-                                    signName: "Deepslate Brick Walls"
+                                    signName: "Deepslate Brick Walls",
                                 },
                                 {
                                     name: "Deepslate Tile Wall",
-                                    signName: "Deepslate Tile Walls"
+                                    signName: "Deepslate Tile Walls",
                                 },
                                 {
                                     name: "Granite Wall",
-                                    signName: "Granite Walls"
+                                    signName: "Granite Walls",
                                 },
                                 {
                                     name: "Diorite Wall",
-                                    signName: "Diorite Walls"
+                                    signName: "Diorite Walls",
                                 },
                                 {
                                     name: "Andesite Wall",
-                                    signName: "Andesite Walls"
+                                    signName: "Andesite Walls",
                                 },
                                 {
                                     name: "Brick Wall",
-                                    signName: "Brick Walls"
+                                    signName: "Brick Walls",
                                 },
                                 {
                                     name: "Sandstone Wall",
-                                    signName: "Sandstone Walls"
+                                    signName: "Sandstone Walls",
                                 },
                                 {
                                     name: "Red Sandstone Wall",
-                                    signName: "Red Sandstone Walls"
+                                    signName: "Red Sandstone Walls",
                                 },
                                 {
                                     name: "Nether Brick Wall",
-                                    signName: "Nether Brick Walls"
+                                    signName: "Nether Brick Walls",
                                 },
                                 {
                                     name: "Red Nether Brick Wall",
-                                    signName: "Red Nether Brick Walls"
+                                    signName: "Red Nether Brick Walls",
                                 },
                                 {
                                     name: "Cobblestone Wall",
-                                    signName: "Cobblestone Walls"
+                                    signName: "Cobblestone Walls",
                                 },
                                 {
                                     name: "Mossy Cobblestone Wall",
-                                    signName: "Mossy Cobble Walls"
+                                    signName: "Mossy Cobble Walls",
                                 },
                                 {
                                     name: "Stone Brick Wall",
-                                    signName: "Stone Brick Walls"
+                                    signName: "Stone Brick Walls",
                                 },
                                 {
                                     name: "Mossy Stone Brick Wall",
-                                    signName: "Mossy Stone Brick Walls"
+                                    signName: "Mossy Stone Brick Walls",
                                 },
                                 {
                                     name: "Tuff Wall",
-                                    signName: "Tuff Walls"
+                                    signName: "Tuff Walls",
                                 },
                                 {
                                     name: "Polished Tuff Wall",
-                                    signName: "Polished Tuff Walls"
+                                    signName: "Polished Tuff Walls",
                                 },
                                 {
                                     name: "Tuff Brick Wall",
-                                    signName: "Tuff Brick Walls"
+                                    signName: "Tuff Brick Walls",
                                 },
                                 {
                                     name: "Resin Brick Wall",
-                                    signName: "Resin Brick Walls"
-                                }
+                                    signName: "Resin Brick Walls",
+                                },
                             ]
                         },
                         {
@@ -1066,56 +1066,56 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Oak Trapdoor",
-                                            signName: "Oak Trapdoors"
+                                            signName: "Oak Trapdoors",
                                         },
                                         {
                                             name: "Birch Trapdoor",
-                                            signName: "Birch Trapdoors"
+                                            signName: "Birch Trapdoors",
                                         },
                                         {
                                             name: "Spruce Trapdoor",
-                                            signName: "Spruce Trapdoors"
+                                            signName: "Spruce Trapdoors",
                                         },
                                         {
                                             name: "Acacia Trapdoor",
-                                            signName: "Acacia Trapdoors"
+                                            signName: "Acacia Trapdoors",
                                         },
                                         {
                                             name: "Jungle Trapdoor",
-                                            signName: "Jungle Trapdoors"
+                                            signName: "Jungle Trapdoors",
                                         },
                                         {
                                             name: "Dark Oak Trapdoor",
-                                            signName: "Dark Oak Trapdoors"
+                                            signName: "Dark Oak Trapdoors",
                                         },
                                         {
                                             name: "Pale Oak Trapdoor",
-                                            signName: "Pale Oak Trapdoors"
+                                            signName: "Pale Oak Trapdoors",
                                         },
                                         {
                                             name: "Crimson Trapdoor",
-                                            signName: "Crimson Trapdoors"
+                                            signName: "Crimson Trapdoors",
                                         },
                                         {
                                             name: "Warped Trapdoor",
-                                            signName: "Warped Trapdoors"
+                                            signName: "Warped Trapdoors",
                                         },
                                         {
                                             name: "Mangrove Trapdoor",
-                                            signName: "Mangrove Trapdoors"
+                                            signName: "Mangrove Trapdoors",
                                         },
                                         {
                                             name: "Cherry Trapdoor",
-                                            signName: "Cherry Trapdoors"
+                                            signName: "Cherry Trapdoors",
                                         },
                                         {
                                             name: "Poplar Trapdoor",
-                                            signName: "Poplar Trapdoors"
+                                            signName: "Poplar Trapdoors",
                                         },
                                         {
                                             name: "Bamboo Trapdoor",
-                                            signName: "Bamboo Trapdoors"
-                                        }
+                                            signName: "Bamboo Trapdoors",
+                                        },
                                     ]
                                 },
                                 {
@@ -1124,42 +1124,42 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Iron Trapdoor",
-                                            signName: "Iron"
+                                            signName: "Iron",
                                         },
                                         {
                                             name: "Copper Trapdoor",
-                                            signName: "Copper"
+                                            signName: "Copper",
                                         },
                                         {
                                             name: "Exposed Copper Trapdoor",
-                                            signName: "Exposed Copper"
+                                            signName: "Exposed Copper",
                                         },
                                         {
                                             name: "Weathered Copper Trapdoor",
-                                            signName: "Weathered Copper"
+                                            signName: "Weathered Copper",
                                         },
                                         {
                                             name: "Oxidized Copper Trapdoor",
-                                            signName: "Oxidized Copper"
+                                            signName: "Oxidized Copper",
                                         },
                                         {
                                             name: "Waxed Copper Trapdoor",
-                                            signName: "Waxed Copper"
+                                            signName: "Waxed Copper",
                                         },
                                         {
                                             name: "Waxed Exposed Copper Trapdoor",
-                                            signName: "Waxed Exposed Copper"
+                                            signName: "Waxed Exposed Copper",
                                         },
                                         {
                                             name: "Waxed Weathered Copper Trapdoor",
-                                            signName: "Waxed Weathered Copper"
+                                            signName: "Waxed Weathered Copper",
                                         },
                                         {
                                             name: "Waxed Oxidized Copper Trapdoor",
-                                            signName: "Waxed Oxidized Copper"
-                                        }
+                                            signName: "Waxed Oxidized Copper",
+                                        },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
@@ -1167,63 +1167,63 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Oak Fence",
-                                    signName: "Oak Fences"
+                                    signName: "Oak Fences",
                                 },
                                 {
                                     name: "Birch Fence",
-                                    signName: "Birch Fences"
+                                    signName: "Birch Fences",
                                 },
                                 {
                                     name: "Spruce Fence",
-                                    signName: "Spruce Fences"
+                                    signName: "Spruce Fences",
                                 },
                                 {
                                     name: "Acacia Fence",
-                                    signName: "Acacia Fences"
+                                    signName: "Acacia Fences",
                                 },
                                 {
                                     name: "Jungle Fence",
-                                    signName: "Jungle Fences"
+                                    signName: "Jungle Fences",
                                 },
                                 {
                                     name: "Dark Oak Fence",
-                                    signName: "Dark Oak Fences"
+                                    signName: "Dark Oak Fences",
                                 },
                                 {
                                     name: "Pale Oak Fence",
-                                    signName: "Pale Oak Fences"
+                                    signName: "Pale Oak Fences",
                                 },
                                 {
                                     name: "Crimson Fence",
-                                    signName: "Crimson Fences"
+                                    signName: "Crimson Fences",
                                 },
                                 {
                                     name: "Warped Fence",
-                                    signName: "Warped Fences"
+                                    signName: "Warped Fences",
                                 },
                                 {
                                     name: "Mangrove Fence",
-                                    signName: "Mangrove Fences"
+                                    signName: "Mangrove Fences",
                                 },
                                 {
                                     name: "Cherry Fence",
-                                    signName: "Cherry Fences"
+                                    signName: "Cherry Fences",
                                 },
                                 {
                                     name: "Poplar Fence",
-                                    signName: "Poplar Fences"
+                                    signName: "Poplar Fences",
                                 },
                                 {
                                     name: "Bamboo Fence",
-                                    signName: "Bamboo Fences"
+                                    signName: "Bamboo Fences",
                                 },
                                 {
                                     name: "Iron Fence",
-                                    signName: "Iron Fences"
+                                    signName: "Iron Fences",
                                 },
                                 {
                                     name: "Nether Brick Fence",
-                                    signName: "Nether Brick Fences"
+                                    signName: "Nether Brick Fences",
                                 },
                             ]
                         },
@@ -1234,29 +1234,29 @@ const bank: Room = {
                                     name: "Copper Bars",
                                 },
                                 {
-                                    name: "Exposed Copper Bars"
+                                    name: "Exposed Copper Bars",
                                 },
                                 {
-                                    name: "Weathered Copper Bars"
+                                    name: "Weathered Copper Bars",
                                 },
                                 {
-                                    name: "Oxidized Copper Bars"
+                                    name: "Oxidized Copper Bars",
                                 },
                                 {
                                     name: "Waxed Copper Bars",
                                 },
                                 {
-                                    name: "Waxed Exposed Copper Bars"
+                                    name: "Waxed Exposed Copper Bars",
                                 },
                                 {
-                                    name: "Waxed Weathered Copper Bars"
+                                    name: "Waxed Weathered Copper Bars",
                                 },
                                 {
-                                    name: "Waxed Oxidized Copper Bars"
+                                    name: "Waxed Oxidized Copper Bars",
                                 },
                                 {
-                                    name: "Iron Bars"
-                                }
+                                    name: "Iron Bars",
+                                },
                             ]
                         },
                         {
@@ -1268,56 +1268,56 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Oak Door",
-                                            signName: "Oak Doors"
+                                            signName: "Oak Doors",
                                         },
                                         {
                                             name: "Birch Door",
-                                            signName: "Birch Doors"
+                                            signName: "Birch Doors",
                                         },
                                         {
                                             name: "Spruce Door",
-                                            signName: "Spruce Doors"
+                                            signName: "Spruce Doors",
                                         },
                                         {
                                             name: "Acacia Door",
-                                            signName: "Acacia Doors"
+                                            signName: "Acacia Doors",
                                         },
                                         {
                                             name: "Jungle Door",
-                                            signName: "Jungle Doors"
+                                            signName: "Jungle Doors",
                                         },
                                         {
                                             name: "Dark Oak Door",
-                                            signName: "Dark Oak Doors"
+                                            signName: "Dark Oak Doors",
                                         },
                                         {
                                             name: "Pale Oak Door",
-                                            signName: "Pale Oak Doors"
+                                            signName: "Pale Oak Doors",
                                         },
                                         {
                                             name: "Crimson Door",
-                                            signName: "Crimson Doors"
+                                            signName: "Crimson Doors",
                                         },
                                         {
                                             name: "Warped Door",
-                                            signName: "Warped Doors"
+                                            signName: "Warped Doors",
                                         },
                                         {
                                             name: "Mangrove Door",
-                                            signName: "Mangrove Doors"
+                                            signName: "Mangrove Doors",
                                         },
                                         {
                                             name: "Cherry Door",
-                                            signName: "Cherry Doors"
+                                            signName: "Cherry Doors",
                                         },
                                         {
                                             name: "Poplar Door",
-                                            signName: "Poplar Doors"
+                                            signName: "Poplar Doors",
                                         },
                                         {
                                             name: "Bamboo Door",
-                                            signName: "Bamboo Doors"
-                                        }
+                                            signName: "Bamboo Doors",
+                                        },
                                     ]
                                 },
                                 {
@@ -1326,42 +1326,42 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Iron Door",
-                                            signName: "Iron Doors"
+                                            signName: "Iron Doors",
                                         },
                                         {
                                             name: "Copper Door",
-                                            signName: "Copper Doors"
+                                            signName: "Copper Doors",
                                         },
                                         {
                                             name: "Exposed Copper Door",
-                                            signName: "Exposed Copper Doors"
+                                            signName: "Exposed Copper Doors",
                                         },
                                         {
                                             name: "Weathered Copper Door",
-                                            signName: "Weathered Copper Doors"
+                                            signName: "Weathered Copper Doors",
                                         },
                                         {
                                             name: "Oxidized Copper Door",
-                                            signName: "Oxidized Copper Doors"
+                                            signName: "Oxidized Copper Doors",
                                         },
                                         {
                                             name: "Waxed Copper Door",
-                                            signName: "Waxed Copper Doors"
+                                            signName: "Waxed Copper Doors",
                                         },
                                         {
                                             name: "Waxed Exposed Copper Door",
-                                            signName: "Waxed Exposed Copper Doors"
+                                            signName: "Waxed Exposed Copper Doors",
                                         },
                                         {
                                             name: "Waxed Weathered Copper Door",
-                                            signName: "Waxed Weathered Copper Doors"
+                                            signName: "Waxed Weathered Copper Doors",
                                         },
                                         {
                                             name: "Waxed Oxidized Copper Door",
-                                            signName: "Waxed Oxidized Copper Doors"
-                                        }
+                                            signName: "Waxed Oxidized Copper Doors",
+                                        },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
@@ -1369,64 +1369,64 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Oak Fence Gate",
-                                    signName: "Oak Fence Gates"
+                                    signName: "Oak Fence Gates",
                                 },
                                 {
                                     name: "Birch Fence Gate",
-                                    signName: "Birch Fence Gates"
+                                    signName: "Birch Fence Gates",
                                 },
                                 {
                                     name: "Spruce Fence Gate",
-                                    signName: "Spruce Fence Gates"
+                                    signName: "Spruce Fence Gates",
                                 },
                                 {
                                     name: "Acacia Fence Gate",
-                                    signName: "Acacia Fence Gates"
+                                    signName: "Acacia Fence Gates",
                                 },
                                 {
                                     name: "Jungle Fence Gate",
-                                    signName: "Jungle Fence Gates"
+                                    signName: "Jungle Fence Gates",
                                 },
                                 {
                                     name: "Dark Oak Fence Gate",
-                                    signName: "Dark Oak Fence Gates"
+                                    signName: "Dark Oak Fence Gates",
                                 },
                                 {
                                     name: "Pale Oak Fence Gate",
-                                    signName: "Pale Oak Fence Gates"
+                                    signName: "Pale Oak Fence Gates",
                                 },
                                 {
                                     name: "Crimson Fence Gate",
-                                    signName: "Crimson Fence Gates"
+                                    signName: "Crimson Fence Gates",
                                 },
                                 {
                                     name: "Warped Fence Gate",
-                                    signName: "Warped Fence Gates"
+                                    signName: "Warped Fence Gates",
                                 },
                                 {
                                     name: "Mangrove Fence Gate",
-                                    signName: "Mangrove Fence Gates"
+                                    signName: "Mangrove Fence Gates",
                                 },
                                 {
                                     name: "Cherry Fence Gate",
-                                    signName: "Cherry Fence Gates"
+                                    signName: "Cherry Fence Gates",
                                 },
                                 {
                                     name: "Poplar Fence Gate",
-                                    signName: "Poplar Fence Gates"
+                                    signName: "Poplar Fence Gates",
                                 },
                                 {
                                     name: "Bamboo Fence Gate",
-                                    signName: "Bamboo Fence Gates"
-                                }
+                                    signName: "Bamboo Fence Gates",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
                     name: "Partial Blocks",
                     utilities: [
-                        "Stonecutter"
+                        "Stonecutter",
                     ],
                     subrooms: [
                         {
@@ -1438,88 +1438,88 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Cobbled Deepslate Slab",
-                                            signName: "Cobbled Deepslate Slabs"
+                                            signName: "Cobbled Deepslate Slabs",
                                         },
                                         {
                                             name: "Polished Deepslate Slab",
-                                            signName: "Polished Deepslate Slabs"
+                                            signName: "Polished Deepslate Slabs",
                                         },
                                         {
                                             name: "Deepslate Brick Slab",
-                                            signName: "Deepslate Brick Slabs"
+                                            signName: "Deepslate Brick Slabs",
                                         },
                                         {
                                             name: "Deepslate Tile Slab",
-                                            signName: "Deepslate Tile Slabs"
+                                            signName: "Deepslate Tile Slabs",
                                         },
                                         {
                                             name: "Granite Slab",
-                                            signName: "Granite Slabs"
+                                            signName: "Granite Slabs",
                                         },
                                         {
                                             name: "Polished Granite Slab",
-                                            signName: "Polished Granite Slabs"
+                                            signName: "Polished Granite Slabs",
                                         },
                                         {
                                             name: "Diorite Slab",
-                                            signName: "Diorite Slabs"
+                                            signName: "Diorite Slabs",
                                         },
                                         {
                                             name: "Polished Diorite Slab",
-                                            signName: "Polished Diorite Slabs"
+                                            signName: "Polished Diorite Slabs",
                                         },
                                         {
                                             name: "Andesite Slab",
-                                            signName: "Andesite Slabs"
+                                            signName: "Andesite Slabs",
                                         },
                                         {
                                             name: "Polished Andesite Slab",
-                                            signName: "Polished Andesite Slabs"
+                                            signName: "Polished Andesite Slabs",
                                         },
                                         {
                                             name: "Smooth Stone Slab",
-                                            signName: "Smooth Stone Slabs"
+                                            signName: "Smooth Stone Slabs",
                                         },
                                         {
                                             name: "Stone Slab",
-                                            signName: "Stone Slabs"
+                                            signName: "Stone Slabs",
                                         },
                                         {
                                             name: "Cobblestone Slab",
-                                            signName: "Cobblestone Slabs"
+                                            signName: "Cobblestone Slabs",
                                         },
                                         {
                                             name: "Mossy Cobblestone Slab",
-                                            signName: "Mossy Cobble Slabs"
+                                            signName: "Mossy Cobble Slabs",
                                         },
                                         {
                                             name: "Stone Brick Slab",
-                                            signName: "Stone Brick Slabs"
+                                            signName: "Stone Brick Slabs",
                                         },
                                         {
                                             name: "Blackstone Slab",
-                                            signName: "Blackstone Slabs"
+                                            signName: "Blackstone Slabs",
                                         },
                                         {
                                             name: "Polished Blackstone Slab",
-                                            signName: "Polished Blackstone Slabs"
+                                            signName: "Polished Blackstone Slabs",
                                         },
                                         {
                                             name: "Polished Blackstone Brick Slab",
-                                            signName: "Polished Blackstone Brick Slabs"
+                                            signName: "Polished Blackstone Brick Slabs",
                                         },
                                         {
                                             name: "Tuff Slab",
-                                            signName: "Tuff Slabs"
+                                            signName: "Tuff Slabs",
                                         },
                                         {
                                             name: "Polished Tuff Slab",
-                                            signName: "Polished Tuff Slabs"
+                                            signName: "Polished Tuff Slabs",
                                         },
                                         {
                                             name: "Tuff Brick Slab",
-                                            signName: "Tuff Brick Slabs"
-                                        }
+                                            signName: "Tuff Brick Slabs",
+                                        },
                                     ]
                                 },
                                 {
@@ -1528,28 +1528,28 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Sandstone Slab",
-                                            signName: "Sandstone Slabs"
+                                            signName: "Sandstone Slabs",
                                         },
                                         {
                                             name: "Red Sandstone Slab",
-                                            signName: "Red Sandstone Slabs"
+                                            signName: "Red Sandstone Slabs",
                                         },
                                         {
                                             name: "Smooth Sandstone Slab",
-                                            signName: "Smooth Sandstone Slabs"
+                                            signName: "Smooth Sandstone Slabs",
                                         },
                                         {
                                             name: "Smooth Red Sandstone Slab",
-                                            signName: "Smooth Red Sandstone Slabs"
+                                            signName: "Smooth Red Sandstone Slabs",
                                         },
                                         {
                                             name: "Cut Sandstone Slab",
-                                            signName: "Cut Sandstone Slabs"
+                                            signName: "Cut Sandstone Slabs",
                                         },
                                         {
                                             name: "Cut Red Sandstone Slab",
-                                            signName: "Cut Red Sandstone Slabs"
-                                        }
+                                            signName: "Cut Red Sandstone Slabs",
+                                        },
                                     ]
                                 },
                                 {
@@ -1558,36 +1558,36 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Cut Copper Slab",
-                                            signName: "Cut"
+                                            signName: "Cut",
                                         },
                                         {
                                             name: "Exposed Cut Copper Slab",
-                                            signName: "Exposed Cut"
+                                            signName: "Exposed Cut",
                                         },
                                         {
                                             name: "Weathered Cut Copper Slab",
-                                            signName: "Weathered Cut"
+                                            signName: "Weathered Cut",
                                         },
                                         {
                                             name: "Oxidized Cut Copper Slab",
-                                            signName: "Oxidized Cut"
+                                            signName: "Oxidized Cut",
                                         },
                                         {
                                             name: "Waxed Cut Copper Slab",
-                                            signName: "Waxed Cut"
+                                            signName: "Waxed Cut",
                                         },
                                         {
                                             name: "Waxed Exposed Cut Copper Slab",
-                                            signName: "Waxed Exposed Cut"
+                                            signName: "Waxed Exposed Cut",
                                         },
                                         {
                                             name: "Waxed Weathered Cut Copper Slab",
-                                            signName: "Waxed Weathered Cut"
+                                            signName: "Waxed Weathered Cut",
                                         },
                                         {
                                             name: "Waxed Oxidized Cut Copper Slab",
-                                            signName: "Waxed Oxidized Cut"
-                                        }
+                                            signName: "Waxed Oxidized Cut",
+                                        },
                                     ]
                                 },
                                 {
@@ -1596,60 +1596,60 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Oak Slab",
-                                            signName: "Oak Slabs"
+                                            signName: "Oak Slabs",
                                         },
                                         {
                                             name: "Birch Slab",
-                                            signName: "Birch Slabs"
+                                            signName: "Birch Slabs",
                                         },
                                         {
                                             name: "Spruce Slab",
-                                            signName: "Spruce Slabs"
+                                            signName: "Spruce Slabs",
                                         },
                                         {
                                             name: "Acacia Slab",
-                                            signName: "Acacia Slabs"
+                                            signName: "Acacia Slabs",
                                         },
                                         {
                                             name: "Jungle Slab",
-                                            signName: "Jungle Slabs"
+                                            signName: "Jungle Slabs",
                                         },
                                         {
                                             name: "Dark Oak Slab",
-                                            signName: "Dark Oak Slabs"
+                                            signName: "Dark Oak Slabs",
                                         },
                                         {
                                             name: "Pale Oak Slab",
-                                            signName: "Pale Oak Slabs"
+                                            signName: "Pale Oak Slabs",
                                         },
                                         {
                                             name: "Crimson Slab",
-                                            signName: "Crimson Slabs"
+                                            signName: "Crimson Slabs",
                                         },
                                         {
                                             name: "Warped Slab",
-                                            signName: "Warped Slabs"
+                                            signName: "Warped Slabs",
                                         },
                                         {
                                             name: "Mangrove Slab",
-                                            signName: "Mangrove Slabs"
+                                            signName: "Mangrove Slabs",
                                         },
                                         {
                                             name: "Cherry Slab",
-                                            signName: "Cherry Slabs"
+                                            signName: "Cherry Slabs",
                                         },
                                         {
                                             name: "Poplar Slab",
-                                            signName: "Poplar Slabs"
+                                            signName: "Poplar Slabs",
                                         },
                                         {
                                             name: "Bamboo Slab",
-                                            signName: "Bamboo Slabs"
+                                            signName: "Bamboo Slabs",
                                         },
                                         {
                                             name: "Wooden Slab",
-                                            signName: "Petrified Oak Slabs"
-                                        }
+                                            signName: "Petrified Oak Slabs",
+                                        },
                                     ]
                                 },
                                 {
@@ -1658,68 +1658,68 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "White Wool Slab",
-                                            signName: "White Wool Slabs"
+                                            signName: "White Wool Slabs",
                                         },
                                         {
                                             name: "Light Gray Wool Slab",
-                                            signName: "Light Gray Wool Slabs"
+                                            signName: "Light Gray Wool Slabs",
                                         },
                                         {
                                             name: "Gray Wool Slab",
-                                            signName: "Gray Wool Slabs"
+                                            signName: "Gray Wool Slabs",
                                         },
                                         {
                                             name: "Black Wool Slab",
-                                            signName: "Black Wool Slabs"
+                                            signName: "Black Wool Slabs",
                                         },
                                         {
                                             name: "Red Wool Slab",
-                                            signName: "Red Wool Slabs"
+                                            signName: "Red Wool Slabs",
                                         },
                                         {
                                             name: "Orange Wool Slab",
-                                            signName: "Orange Wool Slabs"
+                                            signName: "Orange Wool Slabs",
                                         },
                                         {
                                             name: "Yellow Wool Slab",
-                                            signName: "Yellow Wool Slabs"
+                                            signName: "Yellow Wool Slabs",
                                         },
                                         {
                                             name: "Lime Wool Slab",
-                                            signName: "Lime Wool Slabs"
+                                            signName: "Lime Wool Slabs",
                                         },
                                         {
                                             name: "Green Wool Slab",
-                                            signName: "Green Wool Slabs"
+                                            signName: "Green Wool Slabs",
                                         },
                                         {
                                             name: "Blue Wool Slab",
-                                            signName: "Blue Wool Slabs"
+                                            signName: "Blue Wool Slabs",
                                         },
                                         {
                                             name: "Light Blue Wool Slab",
-                                            signName: "Light Blue Wool Slabs"
+                                            signName: "Light Blue Wool Slabs",
                                         },
                                         {
                                             name: "Cyan Wool Slab",
-                                            signName: "Cyan Wool Slabs"
+                                            signName: "Cyan Wool Slabs",
                                         },
                                         {
                                             name: "Purple Wool Slab",
-                                            signName: "Purple Wool Slabs"
+                                            signName: "Purple Wool Slabs",
                                         },
                                         {
                                             name: "Magenta Wool Slab",
-                                            signName: "Magenta Wool Slabs"
+                                            signName: "Magenta Wool Slabs",
                                         },
                                         {
                                             name: "Pink Wool Slab",
-                                            signName: "Pink Wool Slabs"
+                                            signName: "Pink Wool Slabs",
                                         },
                                         {
                                             name: "Brown Wool Slab",
-                                            signName: "Brown Wool Slabs"
-                                        }
+                                            signName: "Brown Wool Slabs",
+                                        },
                                     ]
                                 },
                                 {
@@ -1728,59 +1728,59 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Quartz Slab",
-                                            signName: "Quartz Slabs"
+                                            signName: "Quartz Slabs",
                                         },
                                         {
                                             name: "Smooth Quartz Slab",
-                                            signName: "Smooth Quartz Slabs"
+                                            signName: "Smooth Quartz Slabs",
                                         },
                                         {
                                             name: "Nether Brick Slab",
-                                            signName: "Nether Brick Slabs"
+                                            signName: "Nether Brick Slabs",
                                         },
                                         {
                                             name: "Red Nether Brick Slab",
-                                            signName: "Red Nether Brick Slabs"
+                                            signName: "Red Nether Brick Slabs",
                                         },
                                         {
                                             name: "Brick Slab",
-                                            signName: "Brick Slabs"
+                                            signName: "Brick Slabs",
                                         },
                                         {
                                             name: "Prismarine Brick Slab",
-                                            signName: "Prismarine Brick Slabs"
+                                            signName: "Prismarine Brick Slabs",
                                         },
                                         {
                                             name: "Prismarine Slab",
-                                            signName: "Prismarine Slabs"
+                                            signName: "Prismarine Slabs",
                                         },
                                         {
                                             name: "Dark Prismarine Slab",
-                                            signName: "Dark Prismarine Slabs"
+                                            signName: "Dark Prismarine Slabs",
                                         },
                                         {
                                             name: "End Stone Brick Slab",
-                                            signName: "End Stone Brick Slabs"
+                                            signName: "End Stone Brick Slabs",
                                         },
                                         {
                                             name: "Purpur Slab",
-                                            signName: "Purpur Slabs"
+                                            signName: "Purpur Slabs",
                                         },
                                         {
                                             name: "Mud Brick Slab",
-                                            signName: "Mud Brick Slabs"
+                                            signName: "Mud Brick Slabs",
                                         },
                                         {
                                             name: "Resin Brick Slab",
-                                            signName: "Resin Brick Slabs"
+                                            signName: "Resin Brick Slabs",
                                         },
                                         {
                                             name: "Sulfur Slab",
-                                            signName: "Sulfur Slabs"
+                                            signName: "Sulfur Slabs",
                                         },
                                         {
                                             name: "Polished Sulfur Slab",
-                                            signName: "Polished Sulfur Slabs"
+                                            signName: "Polished Sulfur Slabs",
                                         },
                                         {
                                             name: "Sulfur Brick Slab",
@@ -1805,9 +1805,9 @@ const bank: Room = {
                                         {
                                             name: "Chiseled Cinnabar Slab",
                                             signName: "Chiseled Cinnabar Slabs",
-                                        }
+                                        },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
@@ -1818,66 +1818,66 @@ const bank: Room = {
                                     upstreamName: "Stone",
                                     chests: [
                                         {
-                                            name: "Cobbled Deepslate Stairs"
+                                            name: "Cobbled Deepslate Stairs",
                                         },
                                         {
-                                            name: "Polished Deepslate Stairs"
+                                            name: "Polished Deepslate Stairs",
                                         },
                                         {
-                                            name: "Deepslate Brick Stairs"
+                                            name: "Deepslate Brick Stairs",
                                         },
                                         {
-                                            name: "Deepslate Tile Stairs"
+                                            name: "Deepslate Tile Stairs",
                                         },
                                         {
-                                            name: "Granite Stairs"
+                                            name: "Granite Stairs",
                                         },
                                         {
-                                            name: "Polished Granite Stairs"
+                                            name: "Polished Granite Stairs",
                                         },
                                         {
-                                            name: "Diorite Stairs"
+                                            name: "Diorite Stairs",
                                         },
                                         {
-                                            name: "Polished Diorite Stairs"
+                                            name: "Polished Diorite Stairs",
                                         },
                                         {
-                                            name: "Andesite Stairs"
+                                            name: "Andesite Stairs",
                                         },
                                         {
-                                            name: "Polished Andesite Stairs"
+                                            name: "Polished Andesite Stairs",
                                         },
                                         {
-                                            name: "Stone Stairs"
+                                            name: "Stone Stairs",
                                         },
                                         {
-                                            name: "Cobblestone Stairs"
+                                            name: "Cobblestone Stairs",
                                         },
                                         {
                                             name: "Mossy Cobblestone Stairs",
-                                            signName: "Mossy Cobble Stairs"
+                                            signName: "Mossy Cobble Stairs",
                                         },
                                         {
-                                            name: "Stone Brick Stairs"
+                                            name: "Stone Brick Stairs",
                                         },
                                         {
-                                            name: "Blackstone Stairs"
+                                            name: "Blackstone Stairs",
                                         },
                                         {
-                                            name: "Polished Blackstone Stairs"
+                                            name: "Polished Blackstone Stairs",
                                         },
                                         {
-                                            name: "Polished Blackstone Brick Stairs"
+                                            name: "Polished Blackstone Brick Stairs",
                                         },
                                         {
-                                            name: "Tuff Stairs"
+                                            name: "Tuff Stairs",
                                         },
                                         {
-                                            name: "Polished Tuff Stairs"
+                                            name: "Polished Tuff Stairs",
                                         },
                                         {
-                                            name: "Tuff Brick Stairs"
-                                        }
+                                            name: "Tuff Brick Stairs",
+                                        },
                                     ]
                                 },
                                 {
@@ -1885,17 +1885,17 @@ const bank: Room = {
                                     upstreamName: "Sandstone",
                                     chests: [
                                         {
-                                            name: "Sandstone Stairs"
+                                            name: "Sandstone Stairs",
                                         },
                                         {
-                                            name: "Red Sandstone Stairs"
+                                            name: "Red Sandstone Stairs",
                                         },
                                         {
-                                            name: "Smooth Sandstone Stairs"
+                                            name: "Smooth Sandstone Stairs",
                                         },
                                         {
-                                            name: "Smooth Red Sandstone Stairs"
-                                        }
+                                            name: "Smooth Red Sandstone Stairs",
+                                        },
                                     ]
                                 },
                                 {
@@ -1904,36 +1904,36 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Cut Copper Stairs",
-                                            signName: "Cut"
+                                            signName: "Cut",
                                         },
                                         {
                                             name: "Exposed Cut Copper Stairs",
-                                            signName: "Exposed Cut"
+                                            signName: "Exposed Cut",
                                         },
                                         {
                                             name: "Weathered Cut Copper Stairs",
-                                            signName: "Weathered Cut"
+                                            signName: "Weathered Cut",
                                         },
                                         {
                                             name: "Oxidized Cut Copper Stairs",
-                                            signName: "Oxidized Cut"
+                                            signName: "Oxidized Cut",
                                         },
                                         {
                                             name: "Waxed Cut Copper Stairs",
-                                            signName: "Waxed Cut"
+                                            signName: "Waxed Cut",
                                         },
                                         {
                                             name: "Waxed Exposed Cut Copper Stairs",
-                                            signName: "Waxed Exposed Cut"
+                                            signName: "Waxed Exposed Cut",
                                         },
                                         {
                                             name: "Waxed Weathered Cut Copper Stairs",
-                                            signName: "Waxed Weathered Cut"
+                                            signName: "Waxed Weathered Cut",
                                         },
                                         {
                                             name: "Waxed Oxidized Cut Copper Stairs",
-                                            signName: "Waxed Oxidized Cut"
-                                        }
+                                            signName: "Waxed Oxidized Cut",
+                                        },
                                     ]
                                 },
                                 {
@@ -1941,44 +1941,44 @@ const bank: Room = {
                                     upstreamName: "Wood & Fungus",
                                     chests: [
                                         {
-                                            name: "Oak Stairs"
+                                            name: "Oak Stairs",
                                         },
                                         {
-                                            name: "Birch Stairs"
+                                            name: "Birch Stairs",
                                         },
                                         {
-                                            name: "Spruce Stairs"
+                                            name: "Spruce Stairs",
                                         },
                                         {
-                                            name: "Acacia Stairs"
+                                            name: "Acacia Stairs",
                                         },
                                         {
-                                            name: "Jungle Stairs"
+                                            name: "Jungle Stairs",
                                         },
                                         {
-                                            name: "Dark Oak Stairs"
+                                            name: "Dark Oak Stairs",
                                         },
                                         {
-                                            name: "Pale Oak Stairs"
+                                            name: "Pale Oak Stairs",
                                         },
                                         {
-                                            name: "Crimson Stairs"
+                                            name: "Crimson Stairs",
                                         },
                                         {
-                                            name: "Warped Stairs"
+                                            name: "Warped Stairs",
                                         },
                                         {
-                                            name: "Mangrove Stairs"
+                                            name: "Mangrove Stairs",
                                         },
                                         {
-                                            name: "Cherry Stairs"
+                                            name: "Cherry Stairs",
                                         },
                                         {
-                                            name: "Poplar Stairs"
+                                            name: "Poplar Stairs",
                                         },
                                         {
-                                            name: "Bamboo Stairs"
-                                        }
+                                            name: "Bamboo Stairs",
+                                        },
                                     ]
                                 },
                                 {
@@ -1986,53 +1986,53 @@ const bank: Room = {
                                     upstreamName: "Wool",
                                     chests: [
                                         {
-                                            name: "White Wool Stairs"
+                                            name: "White Wool Stairs",
                                         },
                                         {
-                                            name: "Light Gray Wool Stairs"
+                                            name: "Light Gray Wool Stairs",
                                         },
                                         {
-                                            name: "Gray Wool Stairs"
+                                            name: "Gray Wool Stairs",
                                         },
                                         {
-                                            name: "Black Wool Stairs"
+                                            name: "Black Wool Stairs",
                                         },
                                         {
-                                            name: "Red Wool Stairs"
+                                            name: "Red Wool Stairs",
                                         },
                                         {
-                                            name: "Orange Wool Stairs"
+                                            name: "Orange Wool Stairs",
                                         },
                                         {
-                                            name: "Yellow Wool Stairs"
+                                            name: "Yellow Wool Stairs",
                                         },
                                         {
-                                            name: "Lime Wool Stairs"
+                                            name: "Lime Wool Stairs",
                                         },
                                         {
-                                            name: "Green Wool Stairs"
+                                            name: "Green Wool Stairs",
                                         },
                                         {
-                                            name: "Blue Wool Stairs"
+                                            name: "Blue Wool Stairs",
                                         },
                                         {
-                                            name: "Light Blue Wool Stairs"
+                                            name: "Light Blue Wool Stairs",
                                         },
                                         {
-                                            name: "Cyan Wool Stairs"
+                                            name: "Cyan Wool Stairs",
                                         },
                                         {
-                                            name: "Purple Wool Stairs"
+                                            name: "Purple Wool Stairs",
                                         },
                                         {
-                                            name: "Magenta Wool Stairs"
+                                            name: "Magenta Wool Stairs",
                                         },
                                         {
-                                            name: "Pink Wool Stairs"
+                                            name: "Pink Wool Stairs",
                                         },
                                         {
-                                            name: "Brown Wool Stairs"
-                                        }
+                                            name: "Brown Wool Stairs",
+                                        },
                                     ]
                                 },
                                 {
@@ -2040,40 +2040,40 @@ const bank: Room = {
                                     upstreamName: "Other",
                                     chests: [
                                         {
-                                            name: "Quartz Stairs"
+                                            name: "Quartz Stairs",
                                         },
                                         {
-                                            name: "Smooth Quartz Stairs"
+                                            name: "Smooth Quartz Stairs",
                                         },
                                         {
-                                            name: "Nether Brick Stairs"
+                                            name: "Nether Brick Stairs",
                                         },
                                         {
-                                            name: "Red Nether Brick Stairs"
+                                            name: "Red Nether Brick Stairs",
                                         },
                                         {
-                                            name: "Brick Stairs"
+                                            name: "Brick Stairs",
                                         },
                                         {
-                                            name: "Prismarine Brick Stairs"
+                                            name: "Prismarine Brick Stairs",
                                         },
                                         {
-                                            name: "Prismarine Stairs"
+                                            name: "Prismarine Stairs",
                                         },
                                         {
-                                            name: "Dark Prismarine Stairs"
+                                            name: "Dark Prismarine Stairs",
                                         },
                                         {
-                                            name: "End Stone Brick Stairs"
+                                            name: "End Stone Brick Stairs",
                                         },
                                         {
-                                            name: "Purpur Stairs"
+                                            name: "Purpur Stairs",
                                         },
                                         {
-                                            name: "Mud Brick Stairs"
+                                            name: "Mud Brick Stairs",
                                         },
                                         {
-                                            name: "Resin Brick Stairs"
+                                            name: "Resin Brick Stairs",
                                         },
                                         {
                                             name: "Sulfur Stairs",
@@ -2085,30 +2085,30 @@ const bank: Room = {
                                             name: "Sulfur Brick Stairs",
                                         },
                                         {
-                                            name: "Chiseled Sulfur Stairs"
+                                            name: "Chiseled Sulfur Stairs",
                                         },
                                         {
                                             name: "Cinnabar Stairs",
                                         },
                                         {
-                                            name: "Polished Cinnabar Stairs"
+                                            name: "Polished Cinnabar Stairs",
                                         },
                                         {
                                             name: "Cinnabar Brick Stairs",
                                         },
                                         {
-                                            name: "Chiseled Cinnabar Stairs"
-                                        }
+                                            name: "Chiseled Cinnabar Stairs",
+                                        },
                                     ]
-                                }
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
                     name: "Plants & Fungi",
                     utilities: [
-                        "Composter"
+                        "Composter",
                     ],
                     subrooms: [
                         {
@@ -2119,68 +2119,68 @@ const bank: Room = {
                                     room: "Other Plants",
                                     items: [
                                         {
-                                            name: "Bamboo"
-                                        }
+                                            name: "Bamboo",
+                                        },
                                     ]
-                                }
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Oak Sapling",
-                                    signName: "Oak Saplings"
+                                    signName: "Oak Saplings",
                                 },
                                 {
                                     name: "Birch Sapling",
-                                    signName: "Birch Saplings"
+                                    signName: "Birch Saplings",
                                 },
                                 {
                                     name: "Spruce Sapling",
-                                    signName: "Spruce Saplings"
+                                    signName: "Spruce Saplings",
                                 },
                                 {
                                     name: "Acacia Sapling",
-                                    signName: "Acacia Saplings"
+                                    signName: "Acacia Saplings",
                                 },
                                 {
                                     name: "Jungle Sapling",
-                                    signName: "Jungle Saplings"
+                                    signName: "Jungle Saplings",
                                 },
                                 {
                                     name: "Dark Oak Sapling",
-                                    signName: "Dark Oak Saplings"
+                                    signName: "Dark Oak Saplings",
                                 },
                                 {
                                     name: "Pale Oak Sapling",
-                                    signName: "Pale Oak Saplings"
+                                    signName: "Pale Oak Saplings",
                                 },
                                 {
                                     name: "Mangrove Propagule",
-                                    signName: "Mangrove Propagules"
+                                    signName: "Mangrove Propagules",
                                 },
                                 {
                                     name: "Crimson Fungus",
-                                    signName: "Crimson Fungi"
+                                    signName: "Crimson Fungi",
                                 },
                                 {
                                     name: "Warped Fungus",
-                                    signName: "Warped Fungi"
+                                    signName: "Warped Fungi",
                                 },
                                 {
                                     name: "Cherry Sapling",
-                                    signName: "Cherry Saplings"
+                                    signName: "Cherry Saplings",
                                 },
                                 {
                                     name: "Azalea",
-                                    signName: "Azaleas"
+                                    signName: "Azaleas",
                                 },
                                 {
                                     name: "Flowering Azalea",
-                                    signName: "Flowering Azaleas"
+                                    signName: "Flowering Azaleas",
                                 },
                                 {
                                     name: "Poplar Sapling",
-                                    signName: "Poplar Sapings"
-                                }
+                                    signName: "Poplar Sapings",
+                                },
                             ]
                         },
                         {
@@ -2190,171 +2190,171 @@ const bank: Room = {
                                     room: "Nether Fungi",
                                     items: [
                                         {
-                                            name: "Nether Wart Block"
+                                            name: "Nether Wart Block",
                                         },
                                         {
-                                            name: "Warped Wart Block"
-                                        }
+                                            name: "Warped Wart Block",
+                                        },
                                     ],
-                                    description: "Wart Blocks"
-                                }
+                                    description: "Wart Blocks",
+                                },
                             ],
                             chests: [
                                 {
-                                    name: "Oak Leaves"
+                                    name: "Oak Leaves",
                                 },
                                 {
-                                    name: "Birch Leaves"
+                                    name: "Birch Leaves",
                                 },
                                 {
-                                    name: "Spruce Leaves"
+                                    name: "Spruce Leaves",
                                 },
                                 {
-                                    name: "Acacia Leaves"
+                                    name: "Acacia Leaves",
                                 },
                                 {
-                                    name: "Jungle Leaves"
+                                    name: "Jungle Leaves",
                                 },
                                 {
-                                    name: "Dark Oak Leaves"
+                                    name: "Dark Oak Leaves",
                                 },
                                 {
-                                    name: "Pale Oak Leaves"
+                                    name: "Pale Oak Leaves",
                                 },
                                 {
-                                    name: "Mangrove Leaves"
+                                    name: "Mangrove Leaves",
                                 },
                                 {
-                                    name: "Cherry Leaves"
+                                    name: "Cherry Leaves",
                                 },
                                 {
-                                    name: "Azalea Leaves"
+                                    name: "Azalea Leaves",
                                 },
                                 {
-                                    name: "Flowering Azalea Leaves"
+                                    name: "Flowering Azalea Leaves",
                                 },
                                 {
-                                    name: "Red Poplar Leaves"
+                                    name: "Red Poplar Leaves",
                                 },
                                 {
-                                    name: "Orange Poplar Leaves"
+                                    name: "Orange Poplar Leaves",
                                 },
                                 {
-                                    name: "Yellow Poplar Leaves"
+                                    name: "Yellow Poplar Leaves",
                                 },
                                 {
-                                    name: "Leaf Litter"
-                                }
+                                    name: "Leaf Litter",
+                                },
                             ]
                         },
                         {
                             name: "Flowers & Petals",
                             utilities: [
                                 "Composter with Storage",
-                                "Grass Field"
+                                "Grass Field",
                             ],
                             shortcuts: [
                                 {
                                     room: "End",
                                     items: [
                                         {
-                                            name: "Chorus Flower"
-                                        }
+                                            name: "Chorus Flower",
+                                        },
                                     ],
-                                    description: "Chorus Flowers"
-                                }
+                                    description: "Chorus Flowers",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Cornflower",
-                                    signName: "Cornflowers"
+                                    signName: "Cornflowers",
                                 },
                                 {
                                     name: "Lily of the Valley",
-                                    signName: "Lilies of the Valley"
+                                    signName: "Lilies of the Valley",
                                 },
                                 {
                                     name: "Dandelion",
-                                    signName: "Dandelions"
+                                    signName: "Dandelions",
                                 },
                                 {
                                     name: "Poppy",
-                                    signName: "Poppies"
+                                    signName: "Poppies",
                                 },
                                 {
                                     name: "Blue Orchid",
-                                    signName: "Blue Orchids"
+                                    signName: "Blue Orchids",
                                 },
                                 {
                                     name: "Allium",
-                                    signName: "Alliums"
+                                    signName: "Alliums",
                                 },
                                 {
                                     name: "Azure Bluet",
-                                    signName: "Azure Bluets"
+                                    signName: "Azure Bluets",
                                 },
                                 {
                                     name: "Oxeye Daisy",
-                                    signName: "Oxeye Daisies"
+                                    signName: "Oxeye Daisies",
                                 },
                                 {
                                     name: "Sunflower",
-                                    signName: "Sunflowers"
+                                    signName: "Sunflowers",
                                 },
                                 {
                                     name: "Lilac",
-                                    signName: "Lilacs"
+                                    signName: "Lilacs",
                                 },
                                 {
                                     name: "Rose Bush",
-                                    signName: "Rose Bushes"
+                                    signName: "Rose Bushes",
                                 },
                                 {
                                     name: "Peony",
-                                    signName: "Peonies"
+                                    signName: "Peonies",
                                 },
                                 {
                                     name: "Red Tulip",
-                                    signName: "Red Tulips"
+                                    signName: "Red Tulips",
                                 },
                                 {
                                     name: "Orange Tulip",
-                                    signName: "Orange Tulips"
+                                    signName: "Orange Tulips",
                                 },
                                 {
                                     name: "White Tulip",
-                                    signName: "White Tulips"
+                                    signName: "White Tulips",
                                 },
                                 {
                                     name: "Pink Tulip",
-                                    signName: "Pink Tulips"
+                                    signName: "Pink Tulips",
                                 },
                                 {
                                     name: "Wither Rose",
-                                    signName: "Wither Roses"
+                                    signName: "Wither Roses",
                                 },
                                 {
-                                    name: "Pink Petals"
+                                    name: "Pink Petals",
                                 },
                                 {
                                     name: "Torchflower",
-                                    signName: "Torchflowers"
+                                    signName: "Torchflowers",
                                 },
                                 {
                                     name: "Open Eyeblossom",
-                                    signName: "Open Eyeblossoms"
+                                    signName: "Open Eyeblossoms",
                                 },
                                 {
                                     name: "Closed Eyeblossom",
-                                    signName: "Closed Eyeblossoms"
+                                    signName: "Closed Eyeblossoms",
                                 },
                                 {
-                                    name: "Wildflowers"
+                                    name: "Wildflowers",
                                 },
                                 {
                                     "name": "Cactus Flower",
-                                    signName: "Cactus Flowers"
-                                }
+                                    signName: "Cactus Flowers",
+                                },
                             ]
                         },
                         {
@@ -2362,26 +2362,26 @@ const bank: Room = {
                             upstreamName: "Aquatic",
                             chests: [
                                 {
-                                    name: "Kelp"
+                                    name: "Kelp",
                                 },
                                 {
                                     name: "Dried Kelp Block",
-                                    signName: "Dried Kelp Blocks"
+                                    signName: "Dried Kelp Blocks",
                                 },
                                 {
                                     name: "Lily Pad",
-                                    signName: "Lily Pads"
+                                    signName: "Lily Pads",
                                 },
                                 {
                                     name: "Sea Pickle",
-                                    signName: "Sea Pickles"
+                                    signName: "Sea Pickles",
                                 },
                                 {
-                                    name: "Seagrass"
+                                    name: "Seagrass",
                                 },
                                 {
-                                    name: "Tall Seagrass"
-                                }
+                                    name: "Tall Seagrass",
+                                },
                             ]
                         },
                         {
@@ -2394,32 +2394,32 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Red Mushroom",
-                                            signName: "Red Mushroom Blocks"
+                                            signName: "Red Mushroom Blocks",
                                         },
                                         {
                                             name: "Brown Mushroom",
-                                            signName: "Brown Mushroom Blocks"
+                                            signName: "Brown Mushroom Blocks",
                                         },
                                         {
                                             name: "Mushroom",
-                                            signName: "Mushroom Blocks"
+                                            signName: "Mushroom Blocks",
                                         },
                                         {
                                             name: "Mushroom Stem",
-                                            signName: "Mushroom Stems"
+                                            signName: "Mushroom Stems",
                                         },
                                         {
                                             name: "Red Mushroom Block",
-                                            signName: "Red Mushroom Blocks"
+                                            signName: "Red Mushroom Blocks",
                                         },
                                         {
                                             name: "Brown Mushroom Block",
-                                            signName: "Brown Mushroom Blocks"
+                                            signName: "Brown Mushroom Blocks",
                                         },
                                         {
                                             name: "Shelf Mushroom",
-                                            signName: "Shelf Mushrooms"
-                                        }
+                                            signName: "Shelf Mushrooms",
+                                        },
                                     ]
                                 },
                                 {
@@ -2431,88 +2431,88 @@ const bank: Room = {
                                             room: "Wood",
                                             items: [
                                                 {
-                                                    name: "Crimson Stem"
+                                                    name: "Crimson Stem",
                                                 },
                                                 {
-                                                    name: "Stripped Crimson Stem"
+                                                    name: "Stripped Crimson Stem",
                                                 },
                                                 {
-                                                    name: "Crimson Hyphae"
+                                                    name: "Crimson Hyphae",
                                                 },
                                                 {
-                                                    name: "Stripped Crimson Hyphae"
+                                                    name: "Stripped Crimson Hyphae",
                                                 },
                                                 {
-                                                    name: "Crimson Planks"
+                                                    name: "Crimson Planks",
                                                 },
                                                 {
-                                                    name: "Warped Stem"
+                                                    name: "Warped Stem",
                                                 },
                                                 {
-                                                    name: "Stripped Warped Stem"
+                                                    name: "Stripped Warped Stem",
                                                 },
                                                 {
-                                                    name: "Warped Hyphae"
+                                                    name: "Warped Hyphae",
                                                 },
                                                 {
-                                                    name: "Stripped Warped Hyphae"
+                                                    name: "Stripped Warped Hyphae",
                                                 },
                                                 {
-                                                    name: "Warped Planks"
-                                                }
+                                                    name: "Warped Planks",
+                                                },
                                             ],
-                                            description: "Crimson/Warped Wood"
+                                            description: "Crimson/Warped Wood",
                                         },
                                         {
                                             room: "Saplings & Other Baby Trees",
                                             items: [
                                                 {
-                                                    name: "Crimson Fungus"
+                                                    name: "Crimson Fungus",
                                                 },
                                                 {
-                                                    name: "Warped Fungus"
-                                                }
+                                                    name: "Warped Fungus",
+                                                },
                                             ],
-                                            description: "Crimson/Warped Sapling Fungi"
-                                        }
+                                            description: "Crimson/Warped Sapling Fungi",
+                                        },
                                     ],
                                     chests: [
                                         {
-                                            name: "Crimson Roots"
+                                            name: "Crimson Roots",
                                         },
                                         {
-                                            name: "Warped Roots"
+                                            name: "Warped Roots",
                                         },
                                         {
                                             name: "Nether Wart Block",
-                                            signName: "Nether Wart Blocks"
+                                            signName: "Nether Wart Blocks",
                                         },
                                         {
                                             name: "Warped Wart Block",
-                                            signName: "Warped Wart Blocks"
+                                            signName: "Warped Wart Blocks",
                                         },
                                         {
-                                            name: "Weeping Vines"
+                                            name: "Weeping Vines",
                                         },
                                         {
-                                            name: "Twisted Vines"
+                                            name: "Twisted Vines",
                                         },
                                         {
-                                            name: "Crimson Nylium"
+                                            name: "Crimson Nylium",
                                         },
                                         {
-                                            name: "Warped Nylium"
+                                            name: "Warped Nylium",
                                         },
                                         {
                                             name: "Nether Sprout",
-                                            signName: "Nether Sprouts"
+                                            signName: "Nether Sprouts",
                                         },
                                         {
                                             name: "Shroomlight",
-                                            signName: "Shroomlights"
-                                        }
+                                            signName: "Shroomlights",
+                                        },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
@@ -2520,65 +2520,65 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Pumpkin",
-                                    signName: "Pumpkins"
+                                    signName: "Pumpkins",
                                 },
                                 {
                                     name: "Melon",
-                                    signName: "Melons"
+                                    signName: "Melons",
                                 },
                                 {
                                     name: "Carved Pumpkin",
-                                    signName: "Carved Pumpkins"
+                                    signName: "Carved Pumpkins",
                                 },
                                 {
                                     name: "Jack-O-Lantern",
-                                    signName: "Jack-O-Lanterns"
-                                }
+                                    signName: "Jack-O-Lanterns",
+                                },
                             ]
                         },
                         {
                             name: "Weeds",
                             chests: [
                                 {
-                                    name: "Short Grass"
+                                    name: "Short Grass",
                                 },
                                 {
-                                    name: "Tall Grass"
+                                    name: "Tall Grass",
                                 },
                                 {
-                                    name: "Short Dry Grass"
+                                    name: "Short Dry Grass",
                                 },
                                 {
-                                    name: "Tall Dry Grass"
+                                    name: "Tall Dry Grass",
                                 },
                                 {
                                     name: "Bush",
-                                    signName: "Bushes"
+                                    signName: "Bushes",
                                 },
                                 {
                                     name: "Dead Bush",
-                                    signName: "Dead Bushes"
+                                    signName: "Dead Bushes",
                                 },
                                 {
                                     name: "Firefly Bush",
-                                    signName: "Firefly Bushes"
+                                    signName: "Firefly Bushes",
                                 },
                                 {
                                     name: "Shrub",
-                                    signName: "Shrubs"
+                                    signName: "Shrubs",
                                 },
                                 {
                                     name: "Fern",
-                                    signName: "Ferns"
+                                    signName: "Ferns",
                                 },
                                 {
                                     name: "Large Fern",
-                                    signName: "Large Ferns"
+                                    signName: "Large Ferns",
                                 },
                                 {
                                     name: "Red Shrub",
-                                    signName: "Red Shrubs"
-                                }
+                                    signName: "Red Shrubs",
+                                },
                             ]
                         },
                         {
@@ -2590,82 +2590,82 @@ const bank: Room = {
                                     room: "End",
                                     items: [
                                         {
-                                            name: "Chorus Plant"
-                                        }
+                                            name: "Chorus Plant",
+                                        },
                                     ],
-                                    description: "Chorus Plants"
-                                }
+                                    description: "Chorus Plants",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Cactus",
-                                    signName: "Cacti"
+                                    signName: "Cacti",
                                 },
                                 {
-                                    name: "Bamboo"
+                                    name: "Bamboo",
                                 },
                                 {
-                                    name: "Sugarcane"
+                                    name: "Sugarcane",
                                 },
                                 {
-                                    name: "Vines"
+                                    name: "Vines",
                                 },
                                 {
-                                    name: "Cave Vines"
+                                    name: "Cave Vines",
                                 },
                                 {
                                     name: "Moss Block",
-                                    signName: "Moss Blocks"
+                                    signName: "Moss Blocks",
                                 },
                                 {
                                     name: "Pale Moss Block",
-                                    signName: "Pale Moss Blocks"
+                                    signName: "Pale Moss Blocks",
                                 },
                                 {
                                     name: "Moss Carpet",
-                                    signName: "Moss Carpets"
+                                    signName: "Moss Carpets",
                                 },
                                 {
                                     name: "Pale Moss Carpet",
-                                    signName: "Pale Moss Carpets"
+                                    signName: "Pale Moss Carpets",
                                 },
                                 {
-                                    name: "Pale Hanging Moss"
+                                    name: "Pale Hanging Moss",
                                 },
                                 {
-                                    name: "Mangrove Roots"
+                                    name: "Mangrove Roots",
                                 },
                                 {
-                                    name: "Muddy Mangrove Roots"
+                                    name: "Muddy Mangrove Roots",
                                 },
                                 {
                                     name: "Hay Bale",
-                                    signName: "Hay Bales"
+                                    signName: "Hay Bales",
                                 },
                                 {
                                     name: "Spore Blossom",
-                                    signName: "Spore Blossoms"
+                                    signName: "Spore Blossoms",
                                 },
                                 {
-                                    name: "Hanging Roots"
+                                    name: "Hanging Roots",
                                 },
                                 {
-                                    name: "Glow Lichen"
+                                    name: "Glow Lichen",
                                 },
                                 {
                                     name: "Small Dripleaf",
-                                    signName: "Small Dripleaves"
+                                    signName: "Small Dripleaves",
                                 },
                                 {
                                     name: "Big Dripleaf",
-                                    signName: "Big Dripleaves"
+                                    signName: "Big Dripleaves",
                                 },
                                 {
                                     name: "Pitcher Plant",
-                                    signName: "Pitcher Plants"
-                                }
+                                    signName: "Pitcher Plants",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -2674,160 +2674,160 @@ const bank: Room = {
                         {
                             name: "Nether",
                             utilities: [
-                                "Nether Portal"
+                                "Nether Portal",
                             ],
                             shortcuts: [
                                 {
                                     room: "Nether Fungi",
                                     items: [
                                         {
-                                            name: "Crimson Roots"
+                                            name: "Crimson Roots",
                                         },
                                         {
-                                            name: "Warped Roots"
+                                            name: "Warped Roots",
                                         },
                                         {
-                                            name: "Nether Wart Block"
+                                            name: "Nether Wart Block",
                                         },
                                         {
-                                            name: "Warped Wart Block"
+                                            name: "Warped Wart Block",
                                         },
                                         {
-                                            name: "Weeping Vines"
+                                            name: "Weeping Vines",
                                         },
                                         {
-                                            name: "Twisted Vines"
+                                            name: "Twisted Vines",
                                         },
                                         {
-                                            name: "Crimson Nylium"
+                                            name: "Crimson Nylium",
                                         },
                                         {
-                                            name: "Warped Nylium"
+                                            name: "Warped Nylium",
                                         },
                                         {
-                                            name: "Nether Sprout"
+                                            name: "Nether Sprout",
                                         },
                                         {
-                                            name: "Shroomlight"
-                                        }
+                                            name: "Shroomlight",
+                                        },
                                     ],
-                                    description: "Fungi"
+                                    description: "Fungi",
                                 },
                                 {
                                     room: "Wood",
                                     items: [
                                         {
-                                            name: "Crimson Stem"
+                                            name: "Crimson Stem",
                                         },
                                         {
-                                            name: "Stripped Crimson Stem"
+                                            name: "Stripped Crimson Stem",
                                         },
                                         {
-                                            name: "Crimson Hyphae"
+                                            name: "Crimson Hyphae",
                                         },
                                         {
-                                            name: "Stripped Crimson Hyphae"
+                                            name: "Stripped Crimson Hyphae",
                                         },
                                         {
-                                            name: "Crimson Planks"
+                                            name: "Crimson Planks",
                                         },
                                         {
-                                            name: "Warped Stem"
+                                            name: "Warped Stem",
                                         },
                                         {
-                                            name: "Stripped Warped Stem"
+                                            name: "Stripped Warped Stem",
                                         },
                                         {
-                                            name: "Warped Hyphae"
+                                            name: "Warped Hyphae",
                                         },
                                         {
-                                            name: "Stripped Warped Hyphae"
+                                            name: "Stripped Warped Hyphae",
                                         },
                                         {
-                                            name: "Warped Planks"
-                                        }
+                                            name: "Warped Planks",
+                                        },
                                     ],
-                                    description: "Crimson/Warped Wood"
+                                    description: "Crimson/Warped Wood",
                                 },
                                 {
                                     room: "Saplings & Other Baby Trees",
                                     items: [
                                         {
-                                            name: "Crimson Fungus"
+                                            name: "Crimson Fungus",
                                         },
                                         {
-                                            name: "Warped Fungus"
-                                        }
+                                            name: "Warped Fungus",
+                                        },
                                     ],
-                                    description: "Crimson/Warped Sapling Fungi"
+                                    description: "Crimson/Warped Sapling Fungi",
                                 },
                                 {
                                     room: "Minerals",
                                     items: [
                                         {
-                                            name: "Block of Quartz"
+                                            name: "Block of Quartz",
                                         },
                                         {
-                                            name: "Smooth Quartz Block"
+                                            name: "Smooth Quartz Block",
                                         },
                                         {
-                                            name: "Chiseled Quartz Block"
+                                            name: "Chiseled Quartz Block",
                                         },
                                         {
-                                            name: "Pillar Quartz Block"
+                                            name: "Pillar Quartz Block",
                                         },
                                         {
-                                            name: "Quartz Bricks"
+                                            name: "Quartz Bricks",
                                         },
                                         {
-                                            name: "Quartz Ore"
+                                            name: "Quartz Ore",
                                         },
                                         {
-                                            name: "Block of Netherite"
+                                            name: "Block of Netherite",
                                         },
                                         {
-                                            name: "Ancient Debris"
+                                            name: "Ancient Debris",
                                         },
                                         {
-                                            name: "Nether Gold Ore"
-                                        }
+                                            name: "Nether Gold Ore",
+                                        },
                                     ],
-                                    description: "Quartz/Netherite/Ancient Debris/Nether Gold Ore"
+                                    description: "Quartz/Netherite/Ancient Debris/Nether Gold Ore",
                                 },
                                 {
                                     room: "Miscellaneous Blocks",
                                     items: [
                                         {
-                                            name: "Crying Obsidian"
-                                        }
+                                            name: "Crying Obsidian",
+                                        },
                                     ]
                                 },
                                 {
                                     room: "Basalt",
                                     items: [
                                         {
-                                            name: "Basalt"
+                                            name: "Basalt",
                                         },
                                         {
-                                            name: "Smooth Basalt"
+                                            name: "Smooth Basalt",
                                         },
                                         {
-                                            name: "Polished Basalt"
-                                        }
+                                            name: "Polished Basalt",
+                                        },
                                     ],
-                                    description: "Basalt"
-                                }
+                                    description: "Basalt",
+                                },
                             ],
                             chests: [
                                 {
-                                    name: "Soul Soil"
+                                    name: "Soul Soil",
                                 },
                                 {
-                                    name: "Soul Sand"
+                                    name: "Soul Sand",
                                 },
                                 {
                                     name: "Magma Block",
-                                    signName: "Magma Blocks"
+                                    signName: "Magma Blocks",
                                 },
                                 {
                                     name: "Netherrack",
@@ -2835,136 +2835,136 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Nether Brick Block",
-                                    signName: "Nether Brick Blocks"
+                                    signName: "Nether Brick Blocks",
                                 },
                                 {
                                     name: "Red Nether Brick Block",
-                                    signName: "Red Nether Brick Blocks"
+                                    signName: "Red Nether Brick Blocks",
                                 },
                                 {
                                     name: "Chiseled Nether Brick Block",
-                                    signName: "Chiseled Nether Brick Blocks"
+                                    signName: "Chiseled Nether Brick Blocks",
                                 },
                                 {
                                     name: "Cracked Nether Brick Block",
-                                    signName: "Cracked Nether Brick Blocks"
+                                    signName: "Cracked Nether Brick Blocks",
                                 },
                                 {
-                                    name: "Glowstone"
+                                    name: "Glowstone",
                                 },
                                 {
                                     name: "Dried Ghast",
-                                    signName: "Dried Ghasts"
-                                }
+                                    signName: "Dried Ghasts",
+                                },
                             ]
                         },
                         {
                             name: "End",
                             utilities: [
-                                "End Portal"
+                                "End Portal",
                             ],
                             shortcuts: [
                                 {
                                     room: "Storage",
                                     items: [
                                         {
-                                            name: "Ender Chest"
-                                        }
+                                            name: "Ender Chest",
+                                        },
                                     ],
-                                    description: "Ender Chests"
+                                    description: "Ender Chests",
                                 },
                                 {
                                     room: "Shulker Boxes",
                                     items: [
                                         {
-                                            name: "White Shulker Box"
+                                            name: "White Shulker Box",
                                         },
                                         {
-                                            name: "Light Gray Shulker Box"
+                                            name: "Light Gray Shulker Box",
                                         },
                                         {
-                                            name: "Gray Shulker Box"
+                                            name: "Gray Shulker Box",
                                         },
                                         {
-                                            name: "Black Shulker Box"
+                                            name: "Black Shulker Box",
                                         },
                                         {
-                                            name: "Red Shulker Box"
+                                            name: "Red Shulker Box",
                                         },
                                         {
-                                            name: "Orange Shulker Box"
+                                            name: "Orange Shulker Box",
                                         },
                                         {
-                                            name: "Yellow Shulker Box"
+                                            name: "Yellow Shulker Box",
                                         },
                                         {
-                                            name: "Lime Shulker Box"
+                                            name: "Lime Shulker Box",
                                         },
                                         {
-                                            name: "Green Shulker Box"
+                                            name: "Green Shulker Box",
                                         },
                                         {
-                                            name: "Blue Shulker Box"
+                                            name: "Blue Shulker Box",
                                         },
                                         {
-                                            name: "Light Blue Shulker Box"
+                                            name: "Light Blue Shulker Box",
                                         },
                                         {
-                                            name: "Cyan Shulker Box"
+                                            name: "Cyan Shulker Box",
                                         },
                                         {
-                                            name: "Purple Shulker Box"
+                                            name: "Purple Shulker Box",
                                         },
                                         {
-                                            name: "Magenta Shulker Box"
+                                            name: "Magenta Shulker Box",
                                         },
                                         {
-                                            name: "Pink Shulker Box"
+                                            name: "Pink Shulker Box",
                                         },
                                         {
-                                            name: "Brown Shulker Box"
-                                        }
+                                            name: "Brown Shulker Box",
+                                        },
                                     ],
-                                    description: "Shulker Boxes"
-                                }
+                                    description: "Shulker Boxes",
+                                },
                             ],
                             chests: [
                                 {
-                                    name: "End Stone"
+                                    name: "End Stone",
                                 },
                                 {
-                                    name: "End Stone Bricks"
+                                    name: "End Stone Bricks",
                                 },
                                 {
                                     name: "Ender Crystal",
-                                    signName: "Ender Crystals"
+                                    signName: "Ender Crystals",
                                 },
                                 {
                                     name: "End Rod",
-                                    signName: "End Rods"
+                                    signName: "End Rods",
                                 },
                                 {
                                     name: "Ender Dragon Egg",
-                                    signName: "Ender Dragon Eggs"
+                                    signName: "Ender Dragon Eggs",
                                 },
                                 {
                                     name: "Chorus Flower",
-                                    signName: "Chorus Flowers"
+                                    signName: "Chorus Flowers",
                                 },
                                 {
                                     name: "Chorus Plant",
-                                    signName: "Chorus Plants"
+                                    signName: "Chorus Plants",
                                 },
                                 {
                                     name: "Purpur Block",
-                                    signName: "Purpur Blocks"
+                                    signName: "Purpur Blocks",
                                 },
                                 {
                                     name: "Purpur Pillar",
-                                    signName: "Purpur Pillars"
-                                }
+                                    signName: "Purpur Pillars",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -2974,53 +2974,53 @@ const bank: Room = {
                             name: "Wool",
                             chests: [
                                 {
-                                    name: "White Wool"
+                                    name: "White Wool",
                                 },
                                 {
-                                    name: "Light Gray Wool"
+                                    name: "Light Gray Wool",
                                 },
                                 {
-                                    name: "Gray Wool"
+                                    name: "Gray Wool",
                                 },
                                 {
-                                    name: "Black Wool"
+                                    name: "Black Wool",
                                 },
                                 {
-                                    name: "Red Wool"
+                                    name: "Red Wool",
                                 },
                                 {
-                                    name: "Orange Wool"
+                                    name: "Orange Wool",
                                 },
                                 {
-                                    name: "Yellow Wool"
+                                    name: "Yellow Wool",
                                 },
                                 {
-                                    name: "Lime Wool"
+                                    name: "Lime Wool",
                                 },
                                 {
-                                    name: "Green Wool"
+                                    name: "Green Wool",
                                 },
                                 {
-                                    name: "Blue Wool"
+                                    name: "Blue Wool",
                                 },
                                 {
-                                    name: "Light Blue Wool"
+                                    name: "Light Blue Wool",
                                 },
                                 {
-                                    name: "Cyan Wool"
+                                    name: "Cyan Wool",
                                 },
                                 {
-                                    name: "Purple Wool"
+                                    name: "Purple Wool",
                                 },
                                 {
-                                    name: "Magenta Wool"
+                                    name: "Magenta Wool",
                                 },
                                 {
-                                    name: "Pink Wool"
+                                    name: "Pink Wool",
                                 },
                                 {
-                                    name: "Brown Wool"
-                                }
+                                    name: "Brown Wool",
+                                },
                             ]
                         },
                         {
@@ -3031,185 +3031,185 @@ const bank: Room = {
                                     description: "Moss Carpets",
                                     items: [
                                         {
-                                            name: "Moss Carpet"
+                                            name: "Moss Carpet",
                                         },
                                         {
-                                            name: "Pale Moss Carpet"
-                                        }
+                                            name: "Pale Moss Carpet",
+                                        },
                                     ]
-                                }
+                                },
                             ],
                             chests: [
                                 {
                                     name: "White Carpet",
-                                    signName: "White Carpets"
+                                    signName: "White Carpets",
                                 },
                                 {
                                     name: "Light Gray Carpet",
-                                    signName: "Light Gray Carpets"
+                                    signName: "Light Gray Carpets",
                                 },
                                 {
                                     name: "Gray Carpet",
-                                    signName: "Gray Carpets"
+                                    signName: "Gray Carpets",
                                 },
                                 {
                                     name: "Black Carpet",
-                                    signName: "Black Carpets"
+                                    signName: "Black Carpets",
                                 },
                                 {
                                     name: "Red Carpet",
-                                    signName: "Red Carpets"
+                                    signName: "Red Carpets",
                                 },
                                 {
                                     name: "Orange Carpet",
-                                    signName: "Orange Carpets"
+                                    signName: "Orange Carpets",
                                 },
                                 {
                                     name: "Yellow Carpet",
-                                    signName: "Yellow Carpets"
+                                    signName: "Yellow Carpets",
                                 },
                                 {
                                     name: "Lime Carpet",
-                                    signName: "Lime Carpets"
+                                    signName: "Lime Carpets",
                                 },
                                 {
                                     name: "Green Carpet",
-                                    signName: "Green Carpets"
+                                    signName: "Green Carpets",
                                 },
                                 {
                                     name: "Blue Carpet",
-                                    signName: "Blue Carpets"
+                                    signName: "Blue Carpets",
                                 },
                                 {
                                     name: "Light Blue Carpet",
-                                    signName: "Light Blue Carpets"
+                                    signName: "Light Blue Carpets",
                                 },
                                 {
                                     name: "Cyan Carpet",
-                                    signName: "Cyan Carpets"
+                                    signName: "Cyan Carpets",
                                 },
                                 {
                                     name: "Purple Carpet",
-                                    signName: "Purple Carpets"
+                                    signName: "Purple Carpets",
                                 },
                                 {
                                     name: "Magenta Carpet",
-                                    signName: "Magenta Carpets"
+                                    signName: "Magenta Carpets",
                                 },
                                 {
                                     name: "Pink Carpet",
-                                    signName: "Pink Carpets"
+                                    signName: "Pink Carpets",
                                 },
                                 {
                                     name: "Brown Carpet",
-                                    signName: "Brown Carpets"
-                                }
+                                    signName: "Brown Carpets",
+                                },
                             ]
                         },
                         {
                             name: "Concrete Powder",
                             chests: [
                                 {
-                                    name: "White Concrete Powder"
+                                    name: "White Concrete Powder",
                                 },
                                 {
-                                    name: "Light Gray Concrete Powder"
+                                    name: "Light Gray Concrete Powder",
                                 },
                                 {
-                                    name: "Gray Concrete Powder"
+                                    name: "Gray Concrete Powder",
                                 },
                                 {
-                                    name: "Black Concrete Powder"
+                                    name: "Black Concrete Powder",
                                 },
                                 {
-                                    name: "Red Concrete Powder"
+                                    name: "Red Concrete Powder",
                                 },
                                 {
-                                    name: "Orange Concrete Powder"
+                                    name: "Orange Concrete Powder",
                                 },
                                 {
-                                    name: "Yellow Concrete Powder"
+                                    name: "Yellow Concrete Powder",
                                 },
                                 {
-                                    name: "Lime Concrete Powder"
+                                    name: "Lime Concrete Powder",
                                 },
                                 {
-                                    name: "Green Concrete Powder"
+                                    name: "Green Concrete Powder",
                                 },
                                 {
-                                    name: "Blue Concrete Powder"
+                                    name: "Blue Concrete Powder",
                                 },
                                 {
-                                    name: "Light Blue Concrete Powder"
+                                    name: "Light Blue Concrete Powder",
                                 },
                                 {
-                                    name: "Cyan Concrete Powder"
+                                    name: "Cyan Concrete Powder",
                                 },
                                 {
-                                    name: "Purple Concrete Powder"
+                                    name: "Purple Concrete Powder",
                                 },
                                 {
-                                    name: "Magenta Concrete Powder"
+                                    name: "Magenta Concrete Powder",
                                 },
                                 {
-                                    name: "Pink Concrete Powder"
+                                    name: "Pink Concrete Powder",
                                 },
                                 {
-                                    name: "Brown Concrete Powder"
-                                }
+                                    name: "Brown Concrete Powder",
+                                },
                             ]
                         },
                         {
                             name: "Concrete",
                             chests: [
                                 {
-                                    name: "White Concrete"
+                                    name: "White Concrete",
                                 },
                                 {
-                                    name: "Light Gray Concrete"
+                                    name: "Light Gray Concrete",
                                 },
                                 {
-                                    name: "Gray Concrete"
+                                    name: "Gray Concrete",
                                 },
                                 {
-                                    name: "Black Concrete"
+                                    name: "Black Concrete",
                                 },
                                 {
-                                    name: "Red Concrete"
+                                    name: "Red Concrete",
                                 },
                                 {
-                                    name: "Orange Concrete"
+                                    name: "Orange Concrete",
                                 },
                                 {
-                                    name: "Yellow Concrete"
+                                    name: "Yellow Concrete",
                                 },
                                 {
-                                    name: "Lime Concrete"
+                                    name: "Lime Concrete",
                                 },
                                 {
-                                    name: "Green Concrete"
+                                    name: "Green Concrete",
                                 },
                                 {
-                                    name: "Blue Concrete"
+                                    name: "Blue Concrete",
                                 },
                                 {
-                                    name: "Light Blue Concrete"
+                                    name: "Light Blue Concrete",
                                 },
                                 {
-                                    name: "Cyan Concrete"
+                                    name: "Cyan Concrete",
                                 },
                                 {
-                                    name: "Purple Concrete"
+                                    name: "Purple Concrete",
                                 },
                                 {
-                                    name: "Magenta Concrete"
+                                    name: "Magenta Concrete",
                                 },
                                 {
-                                    name: "Pink Concrete"
+                                    name: "Pink Concrete",
                                 },
                                 {
-                                    name: "Brown Concrete"
-                                }
+                                    name: "Brown Concrete",
+                                },
                             ]
                         },
                         {
@@ -3217,72 +3217,72 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "White Bed",
-                                    signName: "White Beds"
+                                    signName: "White Beds",
                                 },
                                 {
                                     name: "Light Gray Bed",
-                                    signName: "Light Gray Beds"
+                                    signName: "Light Gray Beds",
                                 },
                                 {
                                     name: "Gray Bed",
-                                    signName: "Gray Beds"
+                                    signName: "Gray Beds",
                                 },
                                 {
                                     name: "Black Bed",
-                                    signName: "Black Beds"
+                                    signName: "Black Beds",
                                 },
                                 {
                                     name: "Red Bed",
-                                    signName: "Red Beds"
+                                    signName: "Red Beds",
                                 },
                                 {
                                     name: "Orange Bed",
-                                    signName: "Orange Beds"
+                                    signName: "Orange Beds",
                                 },
                                 {
                                     name: "Yellow Bed",
-                                    signName: "Yellow Beds"
+                                    signName: "Yellow Beds",
                                 },
                                 {
                                     name: "Lime Bed",
-                                    signName: "Lime Beds"
+                                    signName: "Lime Beds",
                                 },
                                 {
                                     name: "Green Bed",
-                                    signName: "Green Beds"
+                                    signName: "Green Beds",
                                 },
                                 {
                                     name: "Blue Bed",
-                                    signName: "Blue Beds"
+                                    signName: "Blue Beds",
                                 },
                                 {
                                     name: "Light Blue Bed",
-                                    signName: "Light Blue Beds"
+                                    signName: "Light Blue Beds",
                                 },
                                 {
                                     name: "Cyan Bed",
-                                    signName: "Cyan Beds"
+                                    signName: "Cyan Beds",
                                 },
                                 {
                                     name: "Purple Bed",
-                                    signName: "Purple Beds"
+                                    signName: "Purple Beds",
                                 },
                                 {
                                     name: "Magenta Bed",
-                                    signName: "Magenta Beds"
+                                    signName: "Magenta Beds",
                                 },
                                 {
                                     name: "Pink Bed",
-                                    signName: "Pink Beds"
+                                    signName: "Pink Beds",
                                 },
                                 {
                                     name: "Brown Bed",
-                                    signName: "Brown Beds"
+                                    signName: "Brown Beds",
                                 },
                                 {
                                     name: "Straw Bed",
-                                    signName: "Straw Beds"
-                                }
+                                    signName: "Straw Beds",
+                                },
                             ]
                         },
                         {
@@ -3290,72 +3290,72 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Shulker Box",
-                                    signName: "Shulker Boxes"
+                                    signName: "Shulker Boxes",
                                 },
                                 {
                                     name: "White Shulker Box",
-                                    signName: "White Shulker Boxes"
+                                    signName: "White Shulker Boxes",
                                 },
                                 {
                                     name: "Light Gray Shulker Box",
-                                    signName: "Light Gray Shulker Boxes"
+                                    signName: "Light Gray Shulker Boxes",
                                 },
                                 {
                                     name: "Gray Shulker Box",
-                                    signName: "Gray Shulker Boxes"
+                                    signName: "Gray Shulker Boxes",
                                 },
                                 {
                                     name: "Black Shulker Box",
-                                    signName: "Black Shulker Boxes"
+                                    signName: "Black Shulker Boxes",
                                 },
                                 {
                                     name: "Red Shulker Box",
-                                    signName: "Red Shulker Boxes"
+                                    signName: "Red Shulker Boxes",
                                 },
                                 {
                                     name: "Orange Shulker Box",
-                                    signName: "Orange Shulker Boxes"
+                                    signName: "Orange Shulker Boxes",
                                 },
                                 {
                                     name: "Yellow Shulker Box",
-                                    signName: "Yellow Shulker Boxes"
+                                    signName: "Yellow Shulker Boxes",
                                 },
                                 {
                                     name: "Lime Shulker Box",
-                                    signName: "Lime Shulker Boxes"
+                                    signName: "Lime Shulker Boxes",
                                 },
                                 {
                                     name: "Green Shulker Box",
-                                    signName: "Green Shulker Boxes"
+                                    signName: "Green Shulker Boxes",
                                 },
                                 {
                                     name: "Blue Shulker Box",
-                                    signName: "Blue Shulker Boxes"
+                                    signName: "Blue Shulker Boxes",
                                 },
                                 {
                                     name: "Light Blue Shulker Box",
-                                    signName: "Light Blue Shulker Boxes"
+                                    signName: "Light Blue Shulker Boxes",
                                 },
                                 {
                                     name: "Cyan Shulker Box",
-                                    signName: "Cyan Shulker Boxes"
+                                    signName: "Cyan Shulker Boxes",
                                 },
                                 {
                                     name: "Purple Shulker Box",
-                                    signName: "Purple Shulker Boxes"
+                                    signName: "Purple Shulker Boxes",
                                 },
                                 {
                                     name: "Magenta Shulker Box",
-                                    signName: "Magenta Shulker Boxes"
+                                    signName: "Magenta Shulker Boxes",
                                 },
                                 {
                                     name: "Pink Shulker Box",
-                                    signName: "Pink Shulker Boxes"
+                                    signName: "Pink Shulker Boxes",
                                 },
                                 {
                                     name: "Brown Shulker Box",
-                                    signName: "Brown Shulker Boxes"
-                                }
+                                    signName: "Brown Shulker Boxes",
+                                },
                             ]
                         },
                         {
@@ -3363,335 +3363,335 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Candle",
-                                    signName: "Candles"
+                                    signName: "Candles",
                                 },
                                 {
                                     name: "White Candle",
-                                    signName: "White Candles"
+                                    signName: "White Candles",
                                 },
                                 {
                                     name: "Light Gray Candle",
-                                    signName: "Light Gray Candles"
+                                    signName: "Light Gray Candles",
                                 },
                                 {
                                     name: "Gray Candle",
-                                    signName: "Gray Candles"
+                                    signName: "Gray Candles",
                                 },
                                 {
                                     name: "Black Candle",
-                                    signName: "Black Candles"
+                                    signName: "Black Candles",
                                 },
                                 {
                                     name: "Red Candle",
-                                    signName: "Red Candles"
+                                    signName: "Red Candles",
                                 },
                                 {
                                     name: "Orange Candle",
-                                    signName: "Orange Candles"
+                                    signName: "Orange Candles",
                                 },
                                 {
                                     name: "Yellow Candle",
-                                    signName: "Yellow Candles"
+                                    signName: "Yellow Candles",
                                 },
                                 {
                                     name: "Lime Candle",
-                                    signName: "Lime Candles"
+                                    signName: "Lime Candles",
                                 },
                                 {
                                     name: "Green Candle",
-                                    signName: "Green Candles"
+                                    signName: "Green Candles",
                                 },
                                 {
                                     name: "Blue Candle",
-                                    signName: "Blue Candles"
+                                    signName: "Blue Candles",
                                 },
                                 {
                                     name: "Light Blue Candle",
-                                    signName: "Light Blue Candles"
+                                    signName: "Light Blue Candles",
                                 },
                                 {
                                     name: "Cyan Candle",
-                                    signName: "Cyan Candles"
+                                    signName: "Cyan Candles",
                                 },
                                 {
                                     name: "Purple Candle",
-                                    signName: "Purple Candles"
+                                    signName: "Purple Candles",
                                 },
                                 {
                                     name: "Magenta Candle",
-                                    signName: "Magenta Candles"
+                                    signName: "Magenta Candles",
                                 },
                                 {
                                     name: "Pink Candle",
-                                    signName: "Pink Candles"
+                                    signName: "Pink Candles",
                                 },
                                 {
                                     name: "Brown Candle",
-                                    signName: "Brown Candles"
-                                }
+                                    signName: "Brown Candles",
+                                },
                             ]
                         },
                         {
                             name: "Banners",
                             utilities: [
-                                "Loom"
+                                "Loom",
                             ],
                             chests: [
                                 {
                                     name: "White Banner",
-                                    signName: "White Banners"
+                                    signName: "White Banners",
                                 },
                                 {
                                     name: "Light Gray Banner",
-                                    signName: "Light Gray Banners"
+                                    signName: "Light Gray Banners",
                                 },
                                 {
                                     name: "Gray Banner",
-                                    signName: "Gray Banners"
+                                    signName: "Gray Banners",
                                 },
                                 {
                                     name: "Black Banner",
-                                    signName: "Black Banners"
+                                    signName: "Black Banners",
                                 },
                                 {
                                     name: "Red Banner",
-                                    signName: "Red Banners"
+                                    signName: "Red Banners",
                                 },
                                 {
                                     name: "Orange Banner",
-                                    signName: "Orange Banners"
+                                    signName: "Orange Banners",
                                 },
                                 {
                                     name: "Yellow Banner",
-                                    signName: "Yellow Banners"
+                                    signName: "Yellow Banners",
                                 },
                                 {
                                     name: "Lime Banner",
-                                    signName: "Lime Banners"
+                                    signName: "Lime Banners",
                                 },
                                 {
                                     name: "Green Banner",
-                                    signName: "Green Banners"
+                                    signName: "Green Banners",
                                 },
                                 {
                                     name: "Blue Banner",
-                                    signName: "Blue Banners"
+                                    signName: "Blue Banners",
                                 },
                                 {
                                     name: "Light Blue Banner",
-                                    signName: "Light Blue Banners"
+                                    signName: "Light Blue Banners",
                                 },
                                 {
                                     name: "Cyan Banner",
-                                    signName: "Cyan Banners"
+                                    signName: "Cyan Banners",
                                 },
                                 {
                                     name: "Purple Banner",
-                                    signName: "Purple Banners"
+                                    signName: "Purple Banners",
                                 },
                                 {
                                     name: "Magenta Banner",
-                                    signName: "Magenta Banners"
+                                    signName: "Magenta Banners",
                                 },
                                 {
                                     name: "Pink Banner",
-                                    signName: "Pink Banners"
+                                    signName: "Pink Banners",
                                 },
                                 {
                                     name: "Brown Banner",
-                                    signName: "Brown Banners"
+                                    signName: "Brown Banners",
                                 },
                                 {
                                     name: "Illager Banner",
-                                    signName: "Illager Banners"
-                                }
+                                    signName: "Illager Banners",
+                                },
                             ]
                         },
                         {
                             name: "Clay & Unglazed Terracotta",
                             chests: [
                                 {
-                                    name: "Clay"
+                                    name: "Clay",
                                 },
                                 {
-                                    name: "Terracotta"
+                                    name: "Terracotta",
                                 },
                                 {
-                                    name: "White Terracotta"
+                                    name: "White Terracotta",
                                 },
                                 {
-                                    name: "Light Gray Terracotta"
+                                    name: "Light Gray Terracotta",
                                 },
                                 {
-                                    name: "Gray Terracotta"
+                                    name: "Gray Terracotta",
                                 },
                                 {
-                                    name: "Black Terracotta"
+                                    name: "Black Terracotta",
                                 },
                                 {
-                                    name: "Red Terracotta"
+                                    name: "Red Terracotta",
                                 },
                                 {
-                                    name: "Orange Terracotta"
+                                    name: "Orange Terracotta",
                                 },
                                 {
-                                    name: "Yellow Terracotta"
+                                    name: "Yellow Terracotta",
                                 },
                                 {
-                                    name: "Lime Terracotta"
+                                    name: "Lime Terracotta",
                                 },
                                 {
-                                    name: "Green Terracotta"
+                                    name: "Green Terracotta",
                                 },
                                 {
-                                    name: "Blue Terracotta"
+                                    name: "Blue Terracotta",
                                 },
                                 {
-                                    name: "Light Blue Terracotta"
+                                    name: "Light Blue Terracotta",
                                 },
                                 {
-                                    name: "Cyan Terracotta"
+                                    name: "Cyan Terracotta",
                                 },
                                 {
-                                    name: "Purple Terracotta"
+                                    name: "Purple Terracotta",
                                 },
                                 {
-                                    name: "Magenta Terracotta"
+                                    name: "Magenta Terracotta",
                                 },
                                 {
-                                    name: "Pink Terracotta"
+                                    name: "Pink Terracotta",
                                 },
                                 {
-                                    name: "Brown Terracotta"
-                                }
+                                    name: "Brown Terracotta",
+                                },
                             ]
                         },
                         {
                             name: "Glazed Terracotta",
                             chests: [
                                 {
-                                    name: "White Glazed Terracotta"
+                                    name: "White Glazed Terracotta",
                                 },
                                 {
-                                    name: "Light Gray Glazed Terracotta"
+                                    name: "Light Gray Glazed Terracotta",
                                 },
                                 {
-                                    name: "Gray Glazed Terracotta"
+                                    name: "Gray Glazed Terracotta",
                                 },
                                 {
-                                    name: "Black Glazed Terracotta"
+                                    name: "Black Glazed Terracotta",
                                 },
                                 {
-                                    name: "Red Glazed Terracotta"
+                                    name: "Red Glazed Terracotta",
                                 },
                                 {
-                                    name: "Orange Glazed Terracotta"
+                                    name: "Orange Glazed Terracotta",
                                 },
                                 {
-                                    name: "Yellow Glazed Terracotta"
+                                    name: "Yellow Glazed Terracotta",
                                 },
                                 {
-                                    name: "Lime Glazed Terracotta"
+                                    name: "Lime Glazed Terracotta",
                                 },
                                 {
-                                    name: "Green Glazed Terracotta"
+                                    name: "Green Glazed Terracotta",
                                 },
                                 {
-                                    name: "Blue Glazed Terracotta"
+                                    name: "Blue Glazed Terracotta",
                                 },
                                 {
-                                    name: "Light Blue Glazed Terracotta"
+                                    name: "Light Blue Glazed Terracotta",
                                 },
                                 {
-                                    name: "Cyan Glazed Terracotta"
+                                    name: "Cyan Glazed Terracotta",
                                 },
                                 {
-                                    name: "Purple Glazed Terracotta"
+                                    name: "Purple Glazed Terracotta",
                                 },
                                 {
-                                    name: "Magenta Glazed Terracotta"
+                                    name: "Magenta Glazed Terracotta",
                                 },
                                 {
-                                    name: "Pink Glazed Terracotta"
+                                    name: "Pink Glazed Terracotta",
                                 },
                                 {
-                                    name: "Brown Glazed Terracotta"
-                                }
+                                    name: "Brown Glazed Terracotta",
+                                },
                             ]
                         },
                         {
                             name: "Glass",
                             chests: [
                                 {
-                                    name: "Glass"
+                                    name: "Glass",
                                 },
                                 {
-                                    name: "Tinted Glass"
+                                    name: "Tinted Glass",
                                 },
                                 {
                                     name: "White Stained Glass",
-                                    signName: "White Glass"
+                                    signName: "White Glass",
                                 },
                                 {
                                     name: "Light Gray Stained Glass",
-                                    signName: "Light Gray Glass"
+                                    signName: "Light Gray Glass",
                                 },
                                 {
                                     name: "Gray Stained Glass",
-                                    signName: "Gray Glass"
+                                    signName: "Gray Glass",
                                 },
                                 {
                                     name: "Black Stained Glass",
-                                    signName: "Black Glass"
+                                    signName: "Black Glass",
                                 },
                                 {
                                     name: "Red Stained Glass",
-                                    signName: "Red Glass"
+                                    signName: "Red Glass",
                                 },
                                 {
                                     name: "Orange Stained Glass",
-                                    signName: "Orange Glass"
+                                    signName: "Orange Glass",
                                 },
                                 {
                                     name: "Yellow Stained Glass",
-                                    signName: "Yellow Glass"
+                                    signName: "Yellow Glass",
                                 },
                                 {
                                     name: "Lime Stained Glass",
-                                    signName: "Lime Glass"
+                                    signName: "Lime Glass",
                                 },
                                 {
                                     name: "Green Stained Glass",
-                                    signName: "Green Glass"
+                                    signName: "Green Glass",
                                 },
                                 {
                                     name: "Blue Stained Glass",
-                                    signName: "Blue Glass"
+                                    signName: "Blue Glass",
                                 },
                                 {
                                     name: "Light Blue Stained Glass",
-                                    signName: "Light Blue Glass"
+                                    signName: "Light Blue Glass",
                                 },
                                 {
                                     name: "Cyan Stained Glass",
-                                    signName: "Cyan Glass"
+                                    signName: "Cyan Glass",
                                 },
                                 {
                                     name: "Purple Stained Glass",
-                                    signName: "Purple Glass"
+                                    signName: "Purple Glass",
                                 },
                                 {
                                     name: "Magenta Stained Glass",
-                                    signName: "Magenta Glass"
+                                    signName: "Magenta Glass",
                                 },
                                 {
                                     name: "Pink Stained Glass",
-                                    signName: "Pink Glass"
+                                    signName: "Pink Glass",
                                 },
                                 {
                                     name: "Brown Stained Glass",
-                                    signName: "Brown Glass"
-                                }
+                                    signName: "Brown Glass",
+                                },
                             ]
                         },
                         {
@@ -3699,72 +3699,72 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Glass Pane",
-                                    signName: "Glass Panes"
+                                    signName: "Glass Panes",
                                 },
                                 {
                                     name: "White Stained Glass Pane",
-                                    signName: "White Glass Panes"
+                                    signName: "White Glass Panes",
                                 },
                                 {
                                     name: "Light Gray Stained Glass Pane",
-                                    signName: "Light Gray Glass Panes"
+                                    signName: "Light Gray Glass Panes",
                                 },
                                 {
                                     name: "Gray Stained Glass Pane",
-                                    signName: "Gray Glass Panes"
+                                    signName: "Gray Glass Panes",
                                 },
                                 {
                                     name: "Black Stained Glass Pane",
-                                    signName: "Black Glass Panes"
+                                    signName: "Black Glass Panes",
                                 },
                                 {
                                     name: "Red Stained Glass Pane",
-                                    signName: "Red Glass Panes"
+                                    signName: "Red Glass Panes",
                                 },
                                 {
                                     name: "Orange Stained Glass Pane",
-                                    signName: "Orange Glass Panes"
+                                    signName: "Orange Glass Panes",
                                 },
                                 {
                                     name: "Yellow Stained Glass Pane",
-                                    signName: "Yellow Glass Panes"
+                                    signName: "Yellow Glass Panes",
                                 },
                                 {
                                     name: "Lime Stained Glass Pane",
-                                    signName: "Lime Glass Panes"
+                                    signName: "Lime Glass Panes",
                                 },
                                 {
                                     name: "Green Stained Glass Pane",
-                                    signName: "Green Glass Panes"
+                                    signName: "Green Glass Panes",
                                 },
                                 {
                                     name: "Blue Stained Glass Pane",
-                                    signName: "Blue Glass Panes"
+                                    signName: "Blue Glass Panes",
                                 },
                                 {
                                     name: "Light Blue Stained Glass Pane",
-                                    signName: "Light Blue Glass Panes"
+                                    signName: "Light Blue Glass Panes",
                                 },
                                 {
                                     name: "Cyan Stained Glass Pane",
-                                    signName: "Cyan Glass Panes"
+                                    signName: "Cyan Glass Panes",
                                 },
                                 {
                                     name: "Purple Stained Glass Pane",
-                                    signName: "Purple Glass Panes"
+                                    signName: "Purple Glass Panes",
                                 },
                                 {
                                     name: "Magenta Stained Glass Pane",
-                                    signName: "Magenta Glass Panes"
+                                    signName: "Magenta Glass Panes",
                                 },
                                 {
                                     name: "Pink Stained Glass Pane",
-                                    signName: "Pink Glass Panes"
+                                    signName: "Pink Glass Panes",
                                 },
                                 {
                                     name: "Brown Stained Glass Pane",
-                                    signName: "Brown Glass Panes"
-                                }
+                                    signName: "Brown Glass Panes",
+                                },
                             ]
                         },
                         {
@@ -3772,70 +3772,70 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "White Cushion",
-                                    signName: "White Cushions"
+                                    signName: "White Cushions",
                                 },
                                 {
                                     name: "Light Gray Cushion",
-                                    signName: "Light Gray Cushions"
+                                    signName: "Light Gray Cushions",
                                 },
                                 {
                                     name: "Gray Cushion",
-                                    signName: "Gray Cushions"
+                                    signName: "Gray Cushions",
                                 },
                                 {
                                     name: "Black Cushion",
-                                    signName: "Black Cushions"
+                                    signName: "Black Cushions",
                                 },
                                 {
                                     name: "Red Cushion",
-                                    signName: "Red Cushions"
+                                    signName: "Red Cushions",
                                 },
                                 {
                                     name: "Orange Cushion",
-                                    signName: "Orange Cushions"
+                                    signName: "Orange Cushions",
                                 },
                                 {
                                     name: "Yellow Cushion",
-                                    signName: "Yellow Cushions"
+                                    signName: "Yellow Cushions",
                                 },
                                 {
                                     name: "Lime Cushion",
-                                    signName: "Lime Cushions"
+                                    signName: "Lime Cushions",
                                 },
                                 {
                                     name: "Green Cushion",
-                                    signName: "Green Cushions"
+                                    signName: "Green Cushions",
                                 },
                                 {
                                     name: "Blue Cushion",
-                                    signName: "Blue Cushions"
+                                    signName: "Blue Cushions",
                                 },
                                 {
                                     name: "Light Blue Cushion",
-                                    signName: "Light Blue Cushions"
+                                    signName: "Light Blue Cushions",
                                 },
                                 {
                                     name: "Cyan Cushion",
-                                    signName: "Cyan Cushions"
+                                    signName: "Cyan Cushions",
                                 },
                                 {
                                     name: "Purple Cushion",
-                                    signName: "Purple Cushions"
+                                    signName: "Purple Cushions",
                                 },
                                 {
                                     name: "Magenta Cushion",
-                                    signName: "Magenta Cushions"
+                                    signName: "Magenta Cushions",
                                 },
                                 {
                                     name: "Pink Cushion",
-                                    signName: "Pink Cushions"
+                                    signName: "Pink Cushions",
                                 },
                                 {
                                     name: "Brown Cushion",
-                                    signName: "Brown Cushions"
-                                }
+                                    signName: "Brown Cushions",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -3848,87 +3848,87 @@ const bank: Room = {
                                     room: "Miscellaneous Items",
                                     items: [
                                         {
-                                            name: "String"
-                                        }
+                                            name: "String",
+                                        },
                                     ],
-                                    description: "Tripwire"
+                                    description: "Tripwire",
                                 },
                                 {
                                     room: "Mineral Blocks",
                                     items: [
                                         {
-                                            name: "Block of Redstone"
-                                        }
+                                            name: "Block of Redstone",
+                                        },
                                     ],
-                                    description: "Redstone Blocks"
+                                    description: "Redstone Blocks",
                                 },
                                 {
                                     room: "Sculks",
                                     items: [
                                         {
-                                            name: "Sculk Sensor"
+                                            name: "Sculk Sensor",
                                         },
                                         {
-                                            name: "Calibrated Sculk Sensor"
-                                        }
+                                            name: "Calibrated Sculk Sensor",
+                                        },
                                     ],
-                                    description: "Sculk Sensors"
+                                    description: "Sculk Sensors",
                                 },
                                 {
                                     room: "Rails",
                                     items: [
                                         {
-                                            name: "Detector Rail"
-                                        }
+                                            name: "Detector Rail",
+                                        },
                                     ],
-                                    description: "Detector Rails"
+                                    description: "Detector Rails",
                                 },
                                 {
                                     room: "Storage",
                                     items: [
                                         {
-                                            name: "Trapped Chest"
-                                        }
+                                            name: "Trapped Chest",
+                                        },
                                     ],
-                                    description: "Trapped Chests"
+                                    description: "Trapped Chests",
                                 },
                                 {
                                     room: "Misc. Utilities",
                                     items: [
                                         {
-                                            name: "Jukebox"
+                                            name: "Jukebox",
                                         },
                                         {
-                                            name: "Lectern"
-                                        }
+                                            name: "Lectern",
+                                        },
                                     ],
-                                    description: "Jukeboxes/Lecterns"
-                                }
+                                    description: "Jukeboxes/Lecterns",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Lever",
-                                    signName: "Levers"
+                                    signName: "Levers",
                                 },
                                 {
                                     name: "Tripwire Hook",
-                                    signName: "Tripwire Hooks"
+                                    signName: "Tripwire Hooks",
                                 },
                                 {
                                     name: "Target",
-                                    signName: "Targets"
+                                    signName: "Targets",
                                 },
                                 {
                                     name: "Redstone Torch",
-                                    signName: "Redstone Torches"
+                                    signName: "Redstone Torches",
                                 },
                                 {
                                     name: "Daylight Sensor",
-                                    signName: "Daylight Sensors"
+                                    signName: "Daylight Sensors",
                                 },
                                 {
                                     name: "Observer",
-                                    signName: "Observers"
+                                    signName: "Observers",
                                 },
                             ],
                             subrooms: [
@@ -3937,64 +3937,64 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Oak Button",
-                                            signName: "Oak Buttons"
+                                            signName: "Oak Buttons",
                                         },
                                         {
                                             name: "Birch Button",
-                                            signName: "Birch Buttons"
+                                            signName: "Birch Buttons",
                                         },
                                         {
                                             name: "Spruce Button",
-                                            signName: "Spruce Buttons"
+                                            signName: "Spruce Buttons",
                                         },
                                         {
                                             name: "Acacia Button",
-                                            signName: "Acacia Buttons"
+                                            signName: "Acacia Buttons",
                                         },
                                         {
                                             name: "Jungle Button",
-                                            signName: "Jungle Buttons"
+                                            signName: "Jungle Buttons",
                                         },
                                         {
                                             name: "Dark Oak Button",
-                                            signName: "Dark Oak Buttons"
+                                            signName: "Dark Oak Buttons",
                                         },
                                         {
                                             name: "Pale Oak Button",
-                                            signName: "Pale Oak Buttons"
+                                            signName: "Pale Oak Buttons",
                                         },
                                         {
                                             name: "Crimson Button",
-                                            signName: "Crimson Buttons"
+                                            signName: "Crimson Buttons",
                                         },
                                         {
                                             name: "Warped Button",
-                                            signName: "Warped Buttons"
+                                            signName: "Warped Buttons",
                                         },
                                         {
                                             name: "Mangrove Button",
-                                            signName: "Mangrove Buttons"
+                                            signName: "Mangrove Buttons",
                                         },
                                         {
                                             name: "Bamboo Button",
-                                            signName: "Bamboo Buttons"
+                                            signName: "Bamboo Buttons",
                                         },
                                         {
                                             name: "Cherry Button",
-                                            signName: "Cherry Buttons"
+                                            signName: "Cherry Buttons",
                                         },
                                         {
                                             name: "Poplar Button",
-                                            signName: "Poplar Buttons"
+                                            signName: "Poplar Buttons",
                                         },
                                         {
                                             name: "Stone Button",
-                                            signName: "Stone Buttons"
+                                            signName: "Stone Buttons",
                                         },
                                         {
                                             name: "Polished Blackstone Button",
-                                            signName: "Polished Blackstone Buttons"
-                                        }
+                                            signName: "Polished Blackstone Buttons",
+                                        },
                                     ]
                                 },
                                 {
@@ -4006,31 +4006,31 @@ const bank: Room = {
                                         },
                                         {
                                             name: "Exposed Lightning Rod",
-                                            signName: "Exposed Lightning Rods"
+                                            signName: "Exposed Lightning Rods",
                                         },
                                         {
                                             name: "Weathered Lightning Rod",
-                                            signName: "Weathered Lightning Rods"
+                                            signName: "Weathered Lightning Rods",
                                         },
                                         {
                                             name: "Oxidized Lightning Rod",
-                                            signName: "Oxidized Lightning Rods"
+                                            signName: "Oxidized Lightning Rods",
                                         },
                                         {
                                             name: "Waxed Lightning Rod",
-                                            signName: "Waxed Lightning Rods"
+                                            signName: "Waxed Lightning Rods",
                                         },
                                         {
                                             name: "Waxed Exposed Lightning Rod",
-                                            signName: "Waxed Exposed Lightning Rods"
+                                            signName: "Waxed Exposed Lightning Rods",
                                         },
                                         {
                                             name: "Waxed Weathered Lightning Rod",
-                                            signName: "Waxed Weathered Lightning Rods"
+                                            signName: "Waxed Weathered Lightning Rods",
                                         },
                                         {
                                             name: "Waxed Oxidized Lightning Rod",
-                                            signName: "Waxed Oxidized Lightning Rods"
+                                            signName: "Waxed Oxidized Lightning Rods",
                                         },
                                     ]
                                 },
@@ -4039,74 +4039,74 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Oak Pressure Plate",
-                                            signName: "Oak Pressure Plates"
+                                            signName: "Oak Pressure Plates",
                                         },
                                         {
                                             name: "Birch Pressure Plate",
-                                            signName: "Birch Pressure Plates"
+                                            signName: "Birch Pressure Plates",
                                         },
                                         {
                                             name: "Spruce Pressure Plate",
-                                            signName: "Spruce Pressure Plates"
+                                            signName: "Spruce Pressure Plates",
                                         },
                                         {
                                             name: "Acacia Pressure Plate",
-                                            signName: "Acacia Pressure Plates"
+                                            signName: "Acacia Pressure Plates",
                                         },
                                         {
                                             name: "Jungle Pressure Plate",
-                                            signName: "Jungle Pressure Plates"
+                                            signName: "Jungle Pressure Plates",
                                         },
                                         {
                                             name: "Dark Oak Pressure Plate",
-                                            signName: "Dark Oak Pressure Plates"
+                                            signName: "Dark Oak Pressure Plates",
                                         },
                                         {
                                             name: "Pale Oak Pressure Plate",
-                                            signName: "Pale Oak Pressure Plates"
+                                            signName: "Pale Oak Pressure Plates",
                                         },
                                         {
                                             name: "Crimson Pressure Plate",
-                                            signName: "Crimson Pressure Plates"
+                                            signName: "Crimson Pressure Plates",
                                         },
                                         {
                                             name: "Warped Pressure Plate",
-                                            signName: "Warped Pressure Plates"
+                                            signName: "Warped Pressure Plates",
                                         },
                                         {
                                             name: "Mangrove Pressure Plate",
-                                            signName: "Mangrove Pressure Plates"
+                                            signName: "Mangrove Pressure Plates",
                                         },
                                         {
                                             name: "Bamboo Pressure Plate",
-                                            signName: "Bamboo Pressure Plates"
+                                            signName: "Bamboo Pressure Plates",
                                         },
                                         {
                                             name: "Cherry Pressure Plate",
-                                            signName: "Cherry Pressure Plates"
+                                            signName: "Cherry Pressure Plates",
                                         },
                                         {
                                             name: "Poplar Pressure Plate",
-                                            signName: "Poplar Pressure Plates"
+                                            signName: "Poplar Pressure Plates",
                                         },
                                         {
                                             name: "Stone Pressure Plate",
-                                            signName: "Stone Pressure Plates"
+                                            signName: "Stone Pressure Plates",
                                         },
                                         {
                                             name: "Polished Blackstone Pressure Plate",
-                                            signName: "Polished B.stone Pressure Plates"
+                                            signName: "Polished B.stone Pressure Plates",
                                         },
                                         {
                                             name: "Heavy Weighted Pressure Plate",
-                                            signName: "Iron Weighted Pressure Plates"
+                                            signName: "Iron Weighted Pressure Plates",
                                         },
                                         {
                                             name: "Light Weighted Pressure Plate",
-                                            signName: "Gold Weighted Pressure Plates"
-                                        }
+                                            signName: "Gold Weighted Pressure Plates",
+                                        },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
@@ -4114,16 +4114,16 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Redstone Repeater",
-                                    signName: "Repeaters"
+                                    signName: "Repeaters",
                                 },
                                 {
                                     name: "Redstone Comparator",
-                                    signName: "Comparators"
+                                    signName: "Comparators",
                                 },
                                 {
                                     name: "Redstone Dust",
-                                    signName: "Redstone"
-                                }
+                                    signName: "Redstone",
+                                },
                             ]
                         },
                         {
@@ -4135,92 +4135,92 @@ const bank: Room = {
                                     room: "Rails",
                                     items: [
                                         {
-                                            name: "Powered Rail"
+                                            name: "Powered Rail",
                                         },
                                         {
-                                            name: "Activator Rail"
-                                        }
+                                            name: "Activator Rail",
+                                        },
                                     ],
-                                    description: "Powered/Activator Rails"
+                                    description: "Powered/Activator Rails",
                                 },
                                 {
                                     room: "Shelves",
                                     items: [
                                         {
-                                            name: "Oak Shelf"
+                                            name: "Oak Shelf",
                                         },
                                         {
-                                            name: "Birch Shelf"
+                                            name: "Birch Shelf",
                                         },
                                         {
-                                            name: "Spruce Shelf"
+                                            name: "Spruce Shelf",
                                         },
                                         {
-                                            name: "Acacia Shelf"
+                                            name: "Acacia Shelf",
                                         },
                                         {
-                                            name: "Jungle Shelf"
+                                            name: "Jungle Shelf",
                                         },
                                         {
-                                            name: "Dark Oak Shelf"
+                                            name: "Dark Oak Shelf",
                                         },
                                         {
-                                            name: "Pale Oak Shelf"
+                                            name: "Pale Oak Shelf",
                                         },
                                         {
-                                            name: "Crimson Shelf"
+                                            name: "Crimson Shelf",
                                         },
                                         {
-                                            name: "Warped Shelf"
+                                            name: "Warped Shelf",
                                         },
                                         {
-                                            name: "Mangrove Shelf"
+                                            name: "Mangrove Shelf",
                                         },
                                         {
-                                            name: "Cherry Shelf"
+                                            name: "Cherry Shelf",
                                         },
                                         {
-                                            name: "Poplar Shelf"
+                                            name: "Poplar Shelf",
                                         },
                                         {
-                                            name: "Bamboo Shelf"
-                                        }
+                                            name: "Bamboo Shelf",
+                                        },
                                     ],
-                                    description: "Shelves"
-                                }
+                                    description: "Shelves",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Piston",
-                                    signName: "Pistons"
+                                    signName: "Pistons",
                                 },
                                 {
                                     name: "Sticky Piston",
-                                    signName: "Sticky Pistons"
+                                    signName: "Sticky Pistons",
                                 },
                                 {
                                     name: "Dropper",
-                                    signName: "Droppers"
+                                    signName: "Droppers",
                                 },
                                 {
                                     name: "Hopper",
-                                    signName: "Hoppers"
+                                    signName: "Hoppers",
                                 },
                                 {
                                     name: "Dispenser",
-                                    signName: "Dispensers"
+                                    signName: "Dispensers",
                                 },
                                 {
-                                    name: "TNT"
+                                    name: "TNT",
                                 },
                                 {
                                     name: "Note Block",
-                                    signName: "Note Blocks"
+                                    signName: "Note Blocks",
                                 },
                                 {
                                     name: "Crafter",
-                                    signName: "Crafters"
-                                }
+                                    signName: "Crafters",
+                                },
                             ],
                             subrooms: [
                                 {
@@ -4228,44 +4228,44 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Redstone Lamp",
-                                            signName: "Redstone Lamps"
+                                            signName: "Redstone Lamps",
                                         },
                                         {
                                             name: "Copper Bulb",
-                                            signName: "Copper Bulbs"
+                                            signName: "Copper Bulbs",
                                         },
                                         {
                                             name: "Exposed Copper Bulb",
-                                            signName: "Exposed Copper Bulbs"
+                                            signName: "Exposed Copper Bulbs",
                                         },
                                         {
                                             name: "Weathered Copper Bulb",
-                                            signName: "Weathered Copper Bulbs"
+                                            signName: "Weathered Copper Bulbs",
                                         },
                                         {
                                             name: "Oxidized Copper Bulb",
-                                            signName: "Oxidized Copper Bulbs"
+                                            signName: "Oxidized Copper Bulbs",
                                         },
                                         {
                                             name: "Waxed Copper Bulb",
-                                            signName: "Waxed Copper Bulbs"
+                                            signName: "Waxed Copper Bulbs",
                                         },
                                         {
                                             name: "Waxed Exposed Copper Bulb",
-                                            signName: "Waxed Exposed Copper Bulbs"
+                                            signName: "Waxed Exposed Copper Bulbs",
                                         },
                                         {
                                             name: "Waxed Weathered Copper Bulb",
-                                            signName: "Waxed Weathered Copper Bulbs"
+                                            signName: "Waxed Weathered Copper Bulbs",
                                         },
                                         {
                                             name: "Waxed Oxidized Copper Bulb",
-                                            signName: "Waxed Oxidized Copper Bulbs"
-                                        }
+                                            signName: "Waxed Oxidized Copper Bulbs",
+                                        },
                                     ]
-                                }
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -4277,79 +4277,79 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Tube Coral Fan",
-                                    signName: "Tube Coral Fans"
+                                    signName: "Tube Coral Fans",
                                 },
                                 {
                                     name: "Dead Tube Coral Fan",
-                                    signName: "Dead Tube Coral Fans"
+                                    signName: "Dead Tube Coral Fans",
                                 },
                                 {
                                     name: "Brain Coral Fan",
-                                    signName: "Brain Coral Fans"
+                                    signName: "Brain Coral Fans",
                                 },
                                 {
                                     name: "Dead Brain Coral Fan",
-                                    signName: "Dead Brain Coral Fans"
+                                    signName: "Dead Brain Coral Fans",
                                 },
                                 {
                                     name: "Bubble Coral Fan",
-                                    signName: "Bubble Coral Fans"
+                                    signName: "Bubble Coral Fans",
                                 },
                                 {
                                     name: "Dead Bubble Coral Fan",
-                                    signName: "Dead Bubble Coral Fans"
+                                    signName: "Dead Bubble Coral Fans",
                                 },
                                 {
                                     name: "Fire Coral Fan",
-                                    signName: "Fire Coral Fans"
+                                    signName: "Fire Coral Fans",
                                 },
                                 {
                                     name: "Dead Fire Coral Fan",
-                                    signName: "Dead Fire Coral Fans"
+                                    signName: "Dead Fire Coral Fans",
                                 },
                                 {
                                     name: "Horn Coral Fan",
-                                    signName: "Horn Coral Fans"
+                                    signName: "Horn Coral Fans",
                                 },
                                 {
                                     name: "Dead Horn Coral Fan",
-                                    signName: "Dead Horn Coral Fans"
-                                }
+                                    signName: "Dead Horn Coral Fans",
+                                },
                             ]
                         },
                         {
                             name: "Coral",
                             chests: [
                                 {
-                                    name: "Tube Coral"
+                                    name: "Tube Coral",
                                 },
                                 {
-                                    name: "Dead Tube Coral"
+                                    name: "Dead Tube Coral",
                                 },
                                 {
-                                    name: "Brain Coral"
+                                    name: "Brain Coral",
                                 },
                                 {
-                                    name: "Dead Brain Coral"
+                                    name: "Dead Brain Coral",
                                 },
                                 {
-                                    name: "Bubble Coral"
+                                    name: "Bubble Coral",
                                 },
                                 {
-                                    name: "Dead Bubble Coral"
+                                    name: "Dead Bubble Coral",
                                 },
                                 {
-                                    name: "Fire Coral"
+                                    name: "Fire Coral",
                                 },
                                 {
-                                    name: "Dead Fire Coral"
+                                    name: "Dead Fire Coral",
                                 },
                                 {
-                                    name: "Horn Coral"
+                                    name: "Horn Coral",
                                 },
                                 {
-                                    name: "Dead Horn Coral"
-                                }
+                                    name: "Dead Horn Coral",
+                                },
                             ]
                         },
                         {
@@ -4357,44 +4357,44 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Tube Coral Block",
-                                    signName: "Tube Coral Blocks"
+                                    signName: "Tube Coral Blocks",
                                 },
                                 {
                                     name: "Dead Tube Coral Block",
-                                    signName: "Dead Tube Coral Blocks"
+                                    signName: "Dead Tube Coral Blocks",
                                 },
                                 {
                                     name: "Brain Coral Block",
-                                    signName: "Brain Coral Blocks"
+                                    signName: "Brain Coral Blocks",
                                 },
                                 {
                                     name: "Dead Brain Coral Block",
-                                    signName: "Dead Brain Coral Blocks"
+                                    signName: "Dead Brain Coral Blocks",
                                 },
                                 {
                                     name: "Bubble Coral Block",
-                                    signName: "Bubble Coral Blocks"
+                                    signName: "Bubble Coral Blocks",
                                 },
                                 {
                                     name: "Dead Bubble Coral Block",
-                                    signName: "Dead Bubble Coral Blocks"
+                                    signName: "Dead Bubble Coral Blocks",
                                 },
                                 {
                                     name: "Fire Coral Block",
-                                    signName: "Fire Coral Blocks"
+                                    signName: "Fire Coral Blocks",
                                 },
                                 {
                                     name: "Dead Fire Coral Block",
-                                    signName: "Dead Fire Coral Blocks"
+                                    signName: "Dead Fire Coral Blocks",
                                 },
                                 {
                                     name: "Horn Coral Block",
-                                    signName: "Horn Coral Blocks"
+                                    signName: "Horn Coral Blocks",
                                 },
                                 {
                                     name: "Dead Horn Coral Block",
-                                    signName: "Dead Horn Coral Blocks"
-                                }
+                                    signName: "Dead Horn Coral Blocks",
+                                },
                             ]
                         },
                         {
@@ -4406,35 +4406,35 @@ const bank: Room = {
                                     room: "Other Plants",
                                     items: [
                                         {
-                                            name: "Sea Pickle"
-                                        }
+                                            name: "Sea Pickle",
+                                        },
                                     ]
-                                }
+                                },
                             ],
                             chests: [
                                 {
-                                    name: "Prismarine"
+                                    name: "Prismarine",
                                 },
                                 {
-                                    name: "Prismarine Bricks"
+                                    name: "Prismarine Bricks",
                                 },
                                 {
-                                    name: "Dark Prismarine"
+                                    name: "Dark Prismarine",
                                 },
                                 {
                                     name: "Sea Lantern",
-                                    signName: "Sea Lanterns"
+                                    signName: "Sea Lanterns",
                                 },
                                 {
                                     name: "Sponge",
-                                    signName: "Sponges"
+                                    signName: "Sponges",
                                 },
                                 {
                                     name: "Wet Sponge",
-                                    signName: "Wet Sponges"
-                                }
+                                    signName: "Wet Sponges",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -4445,28 +4445,28 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Crafting Table",
-                                    signName: "Crafting Tables"
+                                    signName: "Crafting Tables",
                                 },
                                 {
                                     name: "Stonecutter",
-                                    signName: "Stonecutters"
+                                    signName: "Stonecutters",
                                 },
                                 {
                                     name: "Loom",
-                                    signName: "Looms"
+                                    signName: "Looms",
                                 },
                                 {
                                     name: "Cartography Table",
-                                    signName: "Cartography Tables"
+                                    signName: "Cartography Tables",
                                 },
                                 {
                                     name: "Smithing Table",
-                                    signName: "Smithing Tables"
+                                    signName: "Smithing Tables",
                                 },
                                 {
                                     name: "Fletching Table",
-                                    signName: "Fletching Tables"
-                                }
+                                    signName: "Fletching Tables",
+                                },
                             ]
                         },
                         {
@@ -4474,32 +4474,32 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Furnace",
-                                    signName: "Furni"
+                                    signName: "Furni",
                                 },
                                 {
                                     name: "Blast Furnace",
-                                    signName: "Blast Furni"
+                                    signName: "Blast Furni",
                                 },
                                 {
                                     name: "Campfire",
-                                    signName: "Campfires"
+                                    signName: "Campfires",
                                 },
                                 {
                                     name: "Soul Campfire",
-                                    signName: "Soul Campfires"
+                                    signName: "Soul Campfires",
                                 },
                                 {
                                     name: "Brewing Stand",
-                                    signName: "Brewing Stands"
+                                    signName: "Brewing Stands",
                                 },
                                 {
                                     name: "Composter",
-                                    signName: "Composters"
+                                    signName: "Composters",
                                 },
                                 {
                                     name: "Smoker",
-                                    signName: "Smokers"
-                                }
+                                    signName: "Smokers",
+                                },
                             ]
                         },
                         {
@@ -4509,84 +4509,84 @@ const bank: Room = {
                                     room: "Shulker Boxes",
                                     items: [
                                         {
-                                            name: "Shulker Box"
+                                            name: "Shulker Box",
                                         },
                                         {
-                                            name: "White Shulker Box"
+                                            name: "White Shulker Box",
                                         },
                                         {
-                                            name: "Light Gray Shulker Box"
+                                            name: "Light Gray Shulker Box",
                                         },
                                         {
-                                            name: "Gray Shulker Box"
+                                            name: "Gray Shulker Box",
                                         },
                                         {
-                                            name: "Black Shulker Box"
+                                            name: "Black Shulker Box",
                                         },
                                         {
-                                            name: "Red Shulker Box"
+                                            name: "Red Shulker Box",
                                         },
                                         {
-                                            name: "Orange Shulker Box"
+                                            name: "Orange Shulker Box",
                                         },
                                         {
-                                            name: "Yellow Shulker Box"
+                                            name: "Yellow Shulker Box",
                                         },
                                         {
-                                            name: "Lime Shulker Box"
+                                            name: "Lime Shulker Box",
                                         },
                                         {
-                                            name: "Green Shulker Box"
+                                            name: "Green Shulker Box",
                                         },
                                         {
-                                            name: "Blue Shulker Box"
+                                            name: "Blue Shulker Box",
                                         },
                                         {
-                                            name: "Light Blue Shulker Box"
+                                            name: "Light Blue Shulker Box",
                                         },
                                         {
-                                            name: "Cyan Shulker Box"
+                                            name: "Cyan Shulker Box",
                                         },
                                         {
-                                            name: "Purple Shulker Box"
+                                            name: "Purple Shulker Box",
                                         },
                                         {
-                                            name: "Magenta Shulker Box"
+                                            name: "Magenta Shulker Box",
                                         },
                                         {
-                                            name: "Pink Shulker Box"
+                                            name: "Pink Shulker Box",
                                         },
                                         {
-                                            name: "Brown Shulker Box"
-                                        }
+                                            name: "Brown Shulker Box",
+                                        },
                                     ],
-                                    description: "Shulker Boxes"
-                                }
+                                    description: "Shulker Boxes",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Chest",
-                                    signName: "Chests"
+                                    signName: "Chests",
                                 },
                                 {
                                     name: "Trapped Chest",
-                                    signName: "Trapped Chests"
+                                    signName: "Trapped Chests",
                                 },
                                 {
                                     name: "Ender Chest",
-                                    signName: "Ender Chests"
+                                    signName: "Ender Chests",
                                 },
                                 {
                                     name: "Barrel",
-                                    signName: "Barrels"
+                                    signName: "Barrels",
                                 },
                                 {
                                     name: "Cauldron",
-                                    signName: "Cauldrons"
+                                    signName: "Cauldrons",
                                 },
                                 {
                                     name: "Chiseled Bookshelf",
-                                    signName: "Chiseled Bookshelves"
+                                    signName: "Chiseled Bookshelves",
                                 },
                                 {
                                     name: "Copper Chest",
@@ -4594,31 +4594,31 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Exposed Copper Chest",
-                                    signName: "Exposed Copper Chests"
+                                    signName: "Exposed Copper Chests",
                                 },
                                 {
                                     name: "Weathered Copper Chest",
-                                    signName: "Weathered Copper Chests"
+                                    signName: "Weathered Copper Chests",
                                 },
                                 {
                                     name: "Oxidized Copper Chest",
-                                    signName: "Oxidized Copper Chests"
+                                    signName: "Oxidized Copper Chests",
                                 },
                                 {
                                     name: "Waxed Copper Chest",
-                                    signName: "Waxed Copper Chests"
+                                    signName: "Waxed Copper Chests",
                                 },
                                 {
                                     name: "Waxed Exposed Copper Chest",
-                                    signName: "Waxed Exposed Copper Chests"
+                                    signName: "Waxed Exposed Copper Chests",
                                 },
                                 {
                                     name: "Waxed Weathered Copper Chest",
-                                    signName: "Waxed Weathered Copper Chests"
+                                    signName: "Waxed Weathered Copper Chests",
                                 },
                                 {
                                     name: "Waxed Oxidized Copper Chest",
-                                    signName: "Waxed Oxidized Copper Chests"
+                                    signName: "Waxed Oxidized Copper Chests",
                                 },
                             ],
                             subrooms: [
@@ -4627,58 +4627,58 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Oak Shelf",
-                                            signName: "Oak Shelves"
+                                            signName: "Oak Shelves",
                                         },
                                         {
                                             name: "Birch Shelf",
-                                            signName: "Birch Shelves"
+                                            signName: "Birch Shelves",
                                         },
                                         {
                                             name: "Spruce Shelf",
-                                            signName: "Spruce Shelves"
+                                            signName: "Spruce Shelves",
                                         },
                                         {
                                             name: "Acacia Shelf",
-                                            signName: "Acacia Shelves"
+                                            signName: "Acacia Shelves",
                                         },
                                         {
                                             name: "Jungle Shelf",
-                                            signName: "Jungle Shelves"
+                                            signName: "Jungle Shelves",
                                         },
                                         {
                                             name: "Dark Oak Shelf",
-                                            signName: "Dark Oak Shelves"
+                                            signName: "Dark Oak Shelves",
                                         },
                                         {
                                             name: "Pale Oak Shelf",
-                                            signName: "Pale Oak Shelves"
+                                            signName: "Pale Oak Shelves",
                                         },
                                         {
                                             name: "Mangrove Shelf",
-                                            signName: "Mangrove Shelves"
+                                            signName: "Mangrove Shelves",
                                         },
                                         {
                                             name: "Crimson Shelf",
-                                            signName: "Crimson Shelves"
+                                            signName: "Crimson Shelves",
                                         },
                                         {
                                             name: "Warped Shelf",
-                                            signName: "Warped Shelves"
+                                            signName: "Warped Shelves",
                                         },
                                         {
                                             name: "Cherry Shelf",
-                                            signName: "Cherry Shelves"
+                                            signName: "Cherry Shelves",
                                         },
                                         {
                                             name: "Poplar Shelf",
-                                            signName: "Poplar Shelves"
+                                            signName: "Poplar Shelves",
                                         },
                                         {
                                             name: "Bamboo Shelf",
-                                            signName: "Bamboo Shelves"
+                                            signName: "Bamboo Shelves",
                                         },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
@@ -4688,33 +4688,33 @@ const bank: Room = {
                                     room: "Decorative",
                                     items: [
                                         {
-                                            name: "Bookshelf"
-                                        }
+                                            name: "Bookshelf",
+                                        },
                                     ],
-                                    description: "Bookshelves"
-                                }
+                                    description: "Bookshelves",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Enchantment Table",
-                                    signName: "Enchantment Tables"
+                                    signName: "Enchantment Tables",
                                 },
                                 {
                                     name: "Grindstone",
-                                    signName: "Grindstones"
+                                    signName: "Grindstones",
                                 },
                                 {
                                     name: "Anvil",
-                                    signName: "Anvils"
+                                    signName: "Anvils",
                                 },
                                 {
                                     name: "Slightly Damaged Anvil",
-                                    signName: "Slightly Damaged Anvils"
+                                    signName: "Slightly Damaged Anvils",
                                 },
                                 {
                                     name: "Very Damaged Anvil",
-                                    signName: "Very Damaged Anvils"
-                                }
+                                    signName: "Very Damaged Anvils",
+                                },
                             ]
                         },
                         {
@@ -4723,34 +4723,34 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Jukebox",
-                                    signName: "Jukeboxes"
+                                    signName: "Jukeboxes",
                                 },
                                 {
                                     name: "Bell",
-                                    signName: "Bells"
+                                    signName: "Bells",
                                 },
                                 {
                                     name: "Lodestone",
-                                    signName: "Lodestones"
+                                    signName: "Lodestones",
                                 },
                                 {
                                     name: "Respawn Anchor",
-                                    signName: "Respawn Anchors"
+                                    signName: "Respawn Anchors",
                                 },
                                 {
                                     name: "Beacon",
-                                    signName: "Beacons"
+                                    signName: "Beacons",
                                 },
                                 {
                                     name: "Conduit",
-                                    signName: "Conduits"
+                                    signName: "Conduits",
                                 },
                                 {
                                     name: "Lectern",
-                                    signName: "Lecterns"
-                                }
+                                    signName: "Lecterns",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -4761,20 +4761,20 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Rail",
-                                    signName: "Rails"
+                                    signName: "Rails",
                                 },
                                 {
                                     name: "Powered Rail",
-                                    signName: "Powered Rails"
+                                    signName: "Powered Rails",
                                 },
                                 {
                                     name: "Detector Rail",
-                                    signName: "Detector Rails"
+                                    signName: "Detector Rails",
                                 },
                                 {
                                     name: "Activator Rail",
-                                    signName: "Activator Rails"
-                                }
+                                    signName: "Activator Rails",
+                                },
                             ]
                         },
                         {
@@ -4782,108 +4782,108 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Oak Boat",
-                                    signName: "Oak Boats"
+                                    signName: "Oak Boats",
                                 },
                                 {
                                     name: "Oak Boat with Chest",
-                                    signName: "Oak Boats with Chests"
+                                    signName: "Oak Boats with Chests",
                                 },
                                 {
                                     name: "Birch Boat",
-                                    signName: "Birch Boats"
+                                    signName: "Birch Boats",
                                 },
                                 {
                                     name: "Birch Boat with Chest",
-                                    signName: "Birch Boats with Chests"
+                                    signName: "Birch Boats with Chests",
                                 },
                                 {
                                     name: "Spruce Boat",
-                                    signName: "Spruce Boats"
+                                    signName: "Spruce Boats",
                                 },
                                 {
                                     name: "Spruce Boat with Chest",
-                                    signName: "Spruce Boats with Chests"
+                                    signName: "Spruce Boats with Chests",
                                 },
                                 {
                                     name: "Acacia Boat",
-                                    signName: "Acacia Boats"
+                                    signName: "Acacia Boats",
                                 },
                                 {
                                     name: "Acacia Boat with Chest",
-                                    signName: "Acacia Boats with Chests"
+                                    signName: "Acacia Boats with Chests",
                                 },
                                 {
                                     name: "Jungle Boat",
-                                    signName: "Jungle Boats"
+                                    signName: "Jungle Boats",
                                 },
                                 {
                                     name: "Jungle Boat with Chest",
-                                    signName: "Jungle Boats with Chests"
+                                    signName: "Jungle Boats with Chests",
                                 },
                                 {
                                     name: "Dark Oak Boat",
-                                    signName: "Dark Oak Boats"
+                                    signName: "Dark Oak Boats",
                                 },
                                 {
                                     name: "Dark Oak Boat with Chest",
-                                    signName: "Dark Oak Boats with Chests"
+                                    signName: "Dark Oak Boats with Chests",
                                 },
                                 {
                                     name: "Pale Oak Boat",
-                                    signName: "Pale Oak Boats"
+                                    signName: "Pale Oak Boats",
                                 },
                                 {
                                     name: "Pale Oak Boat with Chest",
-                                    signName: "Pale Oak Boats with Chests"
+                                    signName: "Pale Oak Boats with Chests",
                                 },
                                 {
                                     name: "Crimson Boat",
-                                    signName: "Crimson Boats"
+                                    signName: "Crimson Boats",
                                 },
                                 {
                                     name: "Crimson Boat with Chest",
-                                    signName: "Crimson Boats with Chests"
+                                    signName: "Crimson Boats with Chests",
                                 },
                                 {
                                     name: "Warped Boat",
-                                    signName: "Warped Boats"
+                                    signName: "Warped Boats",
                                 },
                                 {
                                     name: "Warped Boat with Chest",
-                                    signName: "Warped Boats with Chests"
+                                    signName: "Warped Boats with Chests",
                                 },
                                 {
                                     name: "Mangrove Boat",
-                                    signName: "Mangrove Boats"
+                                    signName: "Mangrove Boats",
                                 },
                                 {
                                     name: "Mangrove Boat with Chest",
-                                    signName: "Mangrove Boats with Chests"
+                                    signName: "Mangrove Boats with Chests",
                                 },
                                 {
                                     name: "Cherry Boat",
-                                    signName: "Cherry Boats"
+                                    signName: "Cherry Boats",
                                 },
                                 {
                                     name: "Cherry Boat with Chest",
-                                    signName: "Cherry Boats with Chests"
+                                    signName: "Cherry Boats with Chests",
                                 },
                                 {
                                     name: "Poplar Boat",
-                                    signName: "Poplar Boats"
+                                    signName: "Poplar Boats",
                                 },
                                 {
                                     name: "Poplar Boat with Chest",
-                                    signName: "Poplar Boats with Chests"
+                                    signName: "Poplar Boats with Chests",
                                 },
                                 {
                                     name: "Bamboo Raft",
-                                    signName: "Bamboo Rafts"
+                                    signName: "Bamboo Rafts",
                                 },
                                 {
                                     name: "Bamboo Raft with Chest",
-                                    signName: "Bamboo Rafts with Chests"
-                                }
+                                    signName: "Bamboo Rafts with Chests",
+                                },
                             ]
                         },
                         {
@@ -4891,22 +4891,22 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Minecart",
-                                    signName: "Minecarts"
+                                    signName: "Minecarts",
                                 },
                                 {
                                     name: "Minecart with TNT",
-                                    signName: "Minecarts with TNT"
+                                    signName: "Minecarts with TNT",
                                 },
                                 {
                                     name: "Minecart with Chest",
-                                    signName: "Minecarts with Chests"
+                                    signName: "Minecarts with Chests",
                                 },
                                 {
                                     name: "Minecart with Hopper",
-                                    signName: "Minecarts with Hoppers"
-                                }
+                                    signName: "Minecarts with Hoppers",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -4915,7 +4915,7 @@ const bank: Room = {
                     downstreamName: "Other Blocks",
                     utilities: [
                         "Crafting Table",
-                        "Furnace"
+                        "Furnace",
                     ],
                     subrooms: [
                         {
@@ -4923,20 +4923,20 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Bee Nest",
-                                    signName: "Bee Nests"
+                                    signName: "Bee Nests",
                                 },
                                 {
                                     name: "Beehive",
-                                    signName: "Beehives"
+                                    signName: "Beehives",
                                 },
                                 {
                                     name: "Honey Block",
-                                    signName: "Honey Blocks"
+                                    signName: "Honey Blocks",
                                 },
                                 {
                                     name: "Honeycomb Block",
-                                    signName: "Honeycomb Blocks"
-                                }
+                                    signName: "Honeycomb Blocks",
+                                },
                             ]
                         },
                         {
@@ -4944,28 +4944,28 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Zombie Head",
-                                    signName: "Zombie Heads"
+                                    signName: "Zombie Heads",
                                 },
                                 {
                                     name: "Creeper Head",
-                                    signName: "Creeper Heads"
+                                    signName: "Creeper Heads",
                                 },
                                 {
                                     name: "Ender Dragon Head",
-                                    signName: "Ender Dragon Heads"
+                                    signName: "Ender Dragon Heads",
                                 },
                                 {
                                     name: "Skeleton Skull",
-                                    signName: "Skeleton Heads"
+                                    signName: "Skeleton Heads",
                                 },
                                 {
                                     name: "Wither Skeleton Skull",
-                                    signName: "Wither Skeleton Heads"
+                                    signName: "Wither Skeleton Heads",
                                 },
                                 {
                                     name: "Piglin Head",
-                                    signName: "Piglin Heads"
-                                }
+                                    signName: "Piglin Heads",
+                                },
                             ]
                         },
                         {
@@ -4973,50 +4973,50 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Sculk",
-                                    signName: "Sculks"
+                                    signName: "Sculks",
                                 },
                                 {
                                     name: "Sculk Catalyst",
-                                    signName: "Sculk Catalysts"
+                                    signName: "Sculk Catalysts",
                                 },
                                 {
                                     name: "Sculk Vein",
-                                    signName: "Sculk Veins"
+                                    signName: "Sculk Veins",
                                 },
                                 {
                                     name: "Sculk Sensor",
-                                    signName: "Sculk Sensors"
+                                    signName: "Sculk Sensors",
                                 },
                                 {
                                     name: "Sculk Shrieker",
-                                    signName: "Sculk Shriekers"
+                                    signName: "Sculk Shriekers",
                                 },
                                 {
                                     name: "Calibrated Sculk Sensor",
-                                    signName: "Calibrated Sculk Sensors"
-                                }
+                                    signName: "Calibrated Sculk Sensors",
+                                },
                             ]
                         },
                         {
                             name: "Arctic",
                             chests: [
                                 {
-                                    name: "Ice"
+                                    name: "Ice",
                                 },
                                 {
-                                    name: "Packed Ice"
+                                    name: "Packed Ice",
                                 },
                                 {
-                                    name: "Blue Ice"
+                                    name: "Blue Ice",
                                 },
                                 {
                                     name: "Snow Block",
-                                    signName: "Snow Blocks"
+                                    signName: "Snow Blocks",
                                 },
                                 {
                                     name: "Snow Layer",
-                                    signName: "Snow Layers"
-                                }
+                                    signName: "Snow Layers",
+                                },
                             ]
                         },
                         {
@@ -5024,32 +5024,32 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Flower Pot",
-                                    signName: "Flower Pots"
+                                    signName: "Flower Pots",
                                 },
                                 {
                                     name: "Bookshelf",
-                                    signName: "Bookshelves"
+                                    signName: "Bookshelves",
                                 },
                                 {
                                     name: "Painting",
-                                    signName: "Paintings"
+                                    signName: "Paintings",
                                 },
                                 {
                                     name: "Item Frame",
-                                    signName: "Item Frames"
+                                    signName: "Item Frames",
                                 },
                                 {
                                     name: "Glow Item Frame",
-                                    signName: "Glow Item Frames"
+                                    signName: "Glow Item Frames",
                                 },
                                 {
                                     name: "Armor Stand",
-                                    signName: "Armor Stands"
+                                    signName: "Armor Stands",
                                 },
                                 {
                                     name: "Decorated Pot",
-                                    signName: "Decorated Pots"
-                                }
+                                    signName: "Decorated Pots",
+                                },
                             ],
                             subrooms: [
                                 {
@@ -5057,108 +5057,108 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Oak Sign",
-                                            signName: "Oak Signs"
+                                            signName: "Oak Signs",
                                         },
                                         {
                                             name: "Birch Sign",
-                                            signName: "Birch Signs"
+                                            signName: "Birch Signs",
                                         },
                                         {
                                             name: "Spruce Sign",
-                                            signName: "Spruce Signs"
+                                            signName: "Spruce Signs",
                                         },
                                         {
                                             name: "Acacia Sign",
-                                            signName: "Acacia Signs"
+                                            signName: "Acacia Signs",
                                         },
                                         {
                                             name: "Jungle Sign",
-                                            signName: "Jungle Signs"
+                                            signName: "Jungle Signs",
                                         },
                                         {
                                             name: "Dark Oak Sign",
-                                            signName: "Dark Oak Signs"
+                                            signName: "Dark Oak Signs",
                                         },
                                         {
                                             name: "Pale Oak Sign",
-                                            signName: "Pale Oak Signs"
+                                            signName: "Pale Oak Signs",
                                         },
                                         {
                                             name: "Mangrove Sign",
-                                            signName: "Mangrove Signs"
+                                            signName: "Mangrove Signs",
                                         },
                                         {
                                             name: "Crimson Sign",
-                                            signName: "Crimson Signs"
+                                            signName: "Crimson Signs",
                                         },
                                         {
                                             name: "Warped Sign",
-                                            signName: "Warped Signs"
+                                            signName: "Warped Signs",
                                         },
                                         {
                                             name: "Cherry Sign",
-                                            signName: "Cherry Signs"
+                                            signName: "Cherry Signs",
                                         },
                                         {
                                             name: "Poplar Sign",
-                                            signName: "Poplar Signs"
+                                            signName: "Poplar Signs",
                                         },
                                         {
                                             name: "Bamboo Sign",
-                                            signName: "Bamboo Signs"
+                                            signName: "Bamboo Signs",
                                         },
                                         {
                                             name: "Oak Hanging Sign",
-                                            signName: "Oak Hanging Signs"
+                                            signName: "Oak Hanging Signs",
                                         },
                                         {
                                             name: "Birch Hanging Sign",
-                                            signName: "Birch Hanging Signs"
+                                            signName: "Birch Hanging Signs",
                                         },
                                         {
                                             name: "Spruce Hanging Sign",
-                                            signName: "Spruce Hanging Signs"
+                                            signName: "Spruce Hanging Signs",
                                         },
                                         {
                                             name: "Acacia Hanging Sign",
-                                            signName: "Acacia Hanging Signs"
+                                            signName: "Acacia Hanging Signs",
                                         },
                                         {
                                             name: "Jungle Hanging Sign",
-                                            signName: "Jungle Hanging Signs"
+                                            signName: "Jungle Hanging Signs",
                                         },
                                         {
                                             name: "Dark Oak Hanging Sign",
-                                            signName: "Dark Oak Hanging Signs"
+                                            signName: "Dark Oak Hanging Signs",
                                         },
                                         {
                                             name: "Pale Oak Hanging Sign",
-                                            signName: "Pale Oak Hanging Signs"
+                                            signName: "Pale Oak Hanging Signs",
                                         },
                                         {
                                             name: "Mangrove Hanging Sign",
-                                            signName: "Mangrove Hanging Signs"
+                                            signName: "Mangrove Hanging Signs",
                                         },
                                         {
                                             name: "Crimson Hanging Sign",
-                                            signName: "Crimson Hanging Signs"
+                                            signName: "Crimson Hanging Signs",
                                         },
                                         {
                                             name: "Warped Hanging Sign",
-                                            signName: "Warped Hanging Signs"
+                                            signName: "Warped Hanging Signs",
                                         },
                                         {
                                             name: "Cherry Hanging Sign",
-                                            signName: "Cherry Hanging Signs"
+                                            signName: "Cherry Hanging Signs",
                                         },
                                         {
                                             name: "Poplar Hanging Sign",
-                                            signName: "Poplar Hanging Signs"
+                                            signName: "Poplar Hanging Signs",
                                         },
                                         {
                                             name: "Bamboo Hanging Sign",
-                                            signName: "Bamboo Hanging Signs"
-                                        }
+                                            signName: "Bamboo Hanging Signs",
+                                        },
                                     ]
                                 },
                                 {
@@ -5166,36 +5166,36 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Copper Grate",
-                                            signName: "Regular"
+                                            signName: "Regular",
                                         },
                                         {
                                             name: "Exposed Copper Grate",
-                                            signName: "Exposed"
+                                            signName: "Exposed",
                                         },
                                         {
                                             name: "Weathered Copper Grate",
-                                            signName: "Weathered"
+                                            signName: "Weathered",
                                         },
                                         {
                                             name: "Oxidized Copper Grate",
-                                            signName: "Oxidized"
+                                            signName: "Oxidized",
                                         },
                                         {
                                             name: "Waxed Copper Grate",
-                                            signName: "Waxed"
+                                            signName: "Waxed",
                                         },
                                         {
                                             name: "Waxed Exposed Copper Grate",
-                                            signName: "Waxed Exposed"
+                                            signName: "Waxed Exposed",
                                         },
                                         {
                                             name: "Waxed Weathered Copper Grate",
-                                            signName: "Waxed Weathered"
+                                            signName: "Waxed Weathered",
                                         },
                                         {
                                             name: "Waxed Oxidized Copper Grate",
-                                            signName: "Waxed Oxidized"
-                                        }
+                                            signName: "Waxed Oxidized",
+                                        },
                                     ]
                                 },
                                 {
@@ -5207,36 +5207,36 @@ const bank: Room = {
                                         },
                                         {
                                             name: "Exposed Copper Chain",
-                                            signName: "Exposed Copper Chains"
+                                            signName: "Exposed Copper Chains",
                                         },
                                         {
                                             name: "Weathered Copper Chain",
-                                            signName: "Weathered Copper Chains"
+                                            signName: "Weathered Copper Chains",
                                         },
                                         {
                                             name: "Oxidized Copper Chain",
-                                            signName: "Oxidized Copper Chains"
+                                            signName: "Oxidized Copper Chains",
                                         },
                                         {
                                             name: "Waxed Copper Chain",
-                                            signName: "Waxed Copper Chains"
+                                            signName: "Waxed Copper Chains",
                                         },
                                         {
                                             name: "Waxed Exposed Copper Chain",
-                                            signName: "Waxed Exposed Copper Chains"
+                                            signName: "Waxed Exposed Copper Chains",
                                         },
                                         {
                                             name: "Waxed Weathered Copper Chain",
-                                            signName: "Waxed Weathered Copper Chains"
+                                            signName: "Waxed Weathered Copper Chains",
                                         },
                                         {
                                             name: "Waxed Oxidized Copper Chain",
-                                            signName: "Waxed Oxidized Copper Chains"
+                                            signName: "Waxed Oxidized Copper Chains",
                                         },
                                         {
                                             name: "Iron Chain",
-                                            signName: "Iron Chains"
-                                        }
+                                            signName: "Iron Chains",
+                                        },
                                     ]
                                 },
                                 {
@@ -5244,36 +5244,36 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Copper Golem Statue",
-                                            signName: "Copper Golems"
+                                            signName: "Copper Golems",
                                         },
                                         {
                                             name: "Exposed Copper Golem Statue",
-                                            signName: "Exposed Copper Golems"
+                                            signName: "Exposed Copper Golems",
                                         },
                                         {
                                             name: "Weathered Copper Golem Statue",
-                                            signName: "Weathered Copper Golems"
+                                            signName: "Weathered Copper Golems",
                                         },
                                         {
                                             name: "Oxidized Copper Golem Statue",
-                                            signName: "Oxidized Copper Golems"
+                                            signName: "Oxidized Copper Golems",
                                         },
                                         {
                                             name: "Waxed Copper Golem Statue",
-                                            signName: "Waxed Copper Golems"
+                                            signName: "Waxed Copper Golems",
                                         },
                                         {
                                             name: "Waxed Exposed Copper Golem Statue",
-                                            signName: "Waxed Exposed Copper Golems"
+                                            signName: "Waxed Exposed Copper Golems",
                                         },
                                         {
                                             name: "Waxed Weathered Copper Golem Statue",
-                                            signName: "Waxed Weathered Copper Golems"
+                                            signName: "Waxed Weathered Copper Golems",
                                         },
                                         {
                                             name: "Waxed Oxidized Copper Golem Statue",
-                                            signName: "Waxed Oxidized Copper Golems"
-                                        }
+                                            signName: "Waxed Oxidized Copper Golems",
+                                        },
                                     ]
                                 },
                             ]
@@ -5286,35 +5286,35 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Polished Sulfur Block",
-                                    signName: "Polished Sulfur"
+                                    signName: "Polished Sulfur",
                                 },
                                 {
                                     name: "Sulfur Bricks",
                                 },
                                 {
                                     name: "Chiseled Sulfur Block",
-                                    signName: "Chiseled Sulfur"
+                                    signName: "Chiseled Sulfur",
                                 },
                                 {
                                     name: "Potent Sulfur",
                                 },
                                 {
                                     name: "Sulfur Spike",
-                                    signName: "Sulfur Spikes"
+                                    signName: "Sulfur Spikes",
                                 },
                                 {
                                     name: "Cinnabar",
                                 },
                                 {
                                     name: "Polished Cinnabar Block",
-                                    signName: "Polished Cinnabar"
+                                    signName: "Polished Cinnabar",
                                 },
                                 {
                                     name: "Cinnabar Bricks",
                                 },
                                 {
                                     name: "Chiseled Cinnabar Block",
-                                    signName: "Cinnabar Sulfur"
+                                    signName: "Cinnabar Sulfur",
                                 },
                             ]
                         },
@@ -5324,53 +5324,53 @@ const bank: Room = {
                                 {
                                     items: [
                                         {
-                                            name: "Redstone Torch"
-                                        }
+                                            name: "Redstone Torch",
+                                        },
                                     ],
                                     room: "Power Sources",
-                                    description: "Redstone Torches"
+                                    description: "Redstone Torches",
                                 },
                                 {
                                     items: [
                                         {
-                                            name: "Glowstone"
-                                        }
+                                            name: "Glowstone",
+                                        },
                                     ],
-                                    room: "Nether Blocks"
-                                }
+                                    room: "Nether Blocks",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Torch",
-                                    signName: "Torches"
+                                    signName: "Torches",
                                 },
                                 {
                                     name: "Soul Torch",
-                                    signName: "Soul Torches"
+                                    signName: "Soul Torches",
                                 },
                                 {
                                     name: "Copper Torch",
-                                    signName: "Copper Torches"
+                                    signName: "Copper Torches",
                                 },
                                 {
                                     name: "Pearlescent Froglight",
-                                    signName: "Pearlescent Froglights"
+                                    signName: "Pearlescent Froglights",
                                 },
                                 {
                                     name: "Ochre Froglight",
-                                    signName: "Ochre Froglights"
+                                    signName: "Ochre Froglights",
                                 },
                                 {
                                     name: "Verdant Froglight",
-                                    signName: "Verdant Froglights"
+                                    signName: "Verdant Froglights",
                                 },
                                 {
                                     name: "Lantern",
-                                    signName: "Lanterns"
+                                    signName: "Lanterns",
                                 },
                                 {
                                     name: "Soul Lantern",
-                                    signName: "Soul Lanterns"
+                                    signName: "Soul Lanterns",
                                 },
                                 {
                                     name: "Copper Lantern",
@@ -5378,31 +5378,31 @@ const bank: Room = {
                                 },
                                 {
                                     name: "Exposed Copper Lantern",
-                                    signName: "Exposed Copper Lanterns"
+                                    signName: "Exposed Copper Lanterns",
                                 },
                                 {
                                     name: "Weathered Copper Lantern",
-                                    signName: "Weathered Copper Lanterns"
+                                    signName: "Weathered Copper Lanterns",
                                 },
                                 {
                                     name: "Oxidized Copper Lantern",
-                                    signName: "Oxidized Copper Lanterns"
+                                    signName: "Oxidized Copper Lanterns",
                                 },
                                 {
                                     name: "Waxed Copper Lantern",
-                                    signName: "Waxed Copper Lanterns"
+                                    signName: "Waxed Copper Lanterns",
                                 },
                                 {
                                     name: "Waxed Exposed Copper Lantern",
-                                    signName: "Waxed Exposed Copper Lanterns"
+                                    signName: "Waxed Exposed Copper Lanterns",
                                 },
                                 {
                                     name: "Waxed Weathered Copper Lantern",
-                                    signName: "Waxed Weathered Copper Lanterns"
+                                    signName: "Waxed Weathered Copper Lanterns",
                                 },
                                 {
                                     name: "Waxed Oxidized Copper Lantern",
-                                    signName: "Waxed Oxidized Copper Lanterns"
+                                    signName: "Waxed Oxidized Copper Lanterns",
                                 },
                             ]
                         },
@@ -5413,63 +5413,63 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Slime Block",
-                                    signName: "Slime Blocks"
+                                    signName: "Slime Blocks",
                                 },
                                 {
                                     name: "Bone Block",
-                                    signName: "Bone Blocks"
+                                    signName: "Bone Blocks",
                                 },
                                 {
                                     name: "Cobweb",
-                                    signName: "Cobwebs"
+                                    signName: "Cobwebs",
                                 },
                                 {
                                     name: "tile.info_update.name",
-                                    signName: "tile.info_update.names"
+                                    signName: "tile.info_update.names",
                                 },
                                 {
                                     name: "Cake",
-                                    signName: "Cakes"
+                                    signName: "Cakes",
                                 },
                                 {
                                     name: "Bricks",
-                                    signName: "Brick Blocks"
+                                    signName: "Brick Blocks",
                                 },
                                 {
                                     name: "Ladder",
-                                    signName: "Ladders"
+                                    signName: "Ladders",
                                 },
                                 {
-                                    name: "Scaffolding"
+                                    name: "Scaffolding",
                                 },
                                 {
-                                    name: "Obsidian"
+                                    name: "Obsidian",
                                 },
                                 {
-                                    name: "Crying Obsidian"
+                                    name: "Crying Obsidian",
                                 },
                                 {
                                     name: "Sniffer Egg",
-                                    signName: "Sniffer Eggs"
+                                    signName: "Sniffer Eggs",
                                 },
                                 {
                                     name: "Turtle Egg",
-                                    signName: "Turtle Eggs"
+                                    signName: "Turtle Eggs",
                                 },
                                 {
                                     name: "Creaking Heart",
-                                    signName: "Creaking Hearts"
-                                }
+                                    signName: "Creaking Hearts",
+                                },
                             ]
-                        }
+                        },
                     ]
-                }
+                },
             ]
         },
         {
             name: "Items",
             utilities: [
-                "Crafting Table"
+                "Crafting Table",
             ],
             subrooms: [
                 {
@@ -5479,262 +5479,262 @@ const bank: Room = {
                             name: "Meat",
                             utilities: [
                                 "Furnace",
-                                "Smoker"
+                                "Smoker",
                             ],
                             shortcuts: [
                                 {
                                     room: "Brewing Supplies",
                                     items: [
                                         {
-                                            name: "Spider Eye"
+                                            name: "Spider Eye",
                                         },
                                         {
-                                            name: "Pufferfish"
-                                        }
+                                            name: "Pufferfish",
+                                        },
                                     ],
-                                    description: "Spider Eyes/Pufferfish"
-                                }
+                                    description: "Spider Eyes/Pufferfish",
+                                },
                             ],
                             chests: [
                                 {
-                                    name: "Raw Pork"
+                                    name: "Raw Pork",
                                 },
                                 {
                                     name: "Porkchop",
-                                    signName: "Porkchops"
+                                    signName: "Porkchops",
                                 },
                                 {
-                                    name: "Raw Beef"
+                                    name: "Raw Beef",
                                 },
                                 {
-                                    name: "Steak"
+                                    name: "Steak",
                                 },
                                 {
-                                    name: "Raw Mutton"
+                                    name: "Raw Mutton",
                                 },
                                 {
-                                    name: "Cooked Mutton"
+                                    name: "Cooked Mutton",
                                 },
                                 {
-                                    name: "Raw Chicken"
+                                    name: "Raw Chicken",
                                 },
                                 {
-                                    name: "Cooked Chicken"
+                                    name: "Cooked Chicken",
                                 },
                                 {
-                                    name: "Rotten Flesh"
+                                    name: "Rotten Flesh",
                                 },
                                 {
-                                    name: "Raw Rabbit"
+                                    name: "Raw Rabbit",
                                 },
                                 {
-                                    name: "Cooked Rabbit"
+                                    name: "Cooked Rabbit",
                                 },
                                 {
-                                    name: "Rabbit Stew"
+                                    name: "Rabbit Stew",
                                 },
                                 {
-                                    name: "Tropical Fish"
+                                    name: "Tropical Fish",
                                 },
                                 {
-                                    name: "Raw Cod"
+                                    name: "Raw Cod",
                                 },
                                 {
-                                    name: "Cooked Cod"
+                                    name: "Cooked Cod",
                                 },
                                 {
-                                    name: "Raw Salmon"
+                                    name: "Raw Salmon",
                                 },
                                 {
-                                    name: "Cooked Salmon"
-                                }
+                                    name: "Cooked Salmon",
+                                },
                             ]
                         },
                         {
                             name: "Seeds",
                             utilities: [
-                                "Composter"
+                                "Composter",
                             ],
                             chests: [
                                 {
-                                    name: "Wheat Seeds"
+                                    name: "Wheat Seeds",
                                 },
                                 {
-                                    name: "Beetroot Seeds"
+                                    name: "Beetroot Seeds",
                                 },
                                 {
-                                    name: "Melon Seeds"
+                                    name: "Melon Seeds",
                                 },
                                 {
-                                    name: "Pumpkin Seeds"
+                                    name: "Pumpkin Seeds",
                                 },
                                 {
-                                    name: "Torchflower Seeds"
+                                    name: "Torchflower Seeds",
                                 },
                                 {
                                     name: "Pitcher Pod",
-                                    signName: "Pitcher Pods"
-                                }
+                                    signName: "Pitcher Pods",
+                                },
                             ]
                         },
                         {
                             name: "Vegetarian Options",
                             utilities: [
-                                "Composter"
+                                "Composter",
                             ],
                             shortcuts: [
                                 {
                                     room: "Terrestrial Fungi",
                                     items: [
                                         {
-                                            name: "Brown Mushroom"
+                                            name: "Brown Mushroom",
                                         },
                                         {
-                                            name: "Red Mushroom"
-                                        }
+                                            name: "Red Mushroom",
+                                        },
                                     ],
-                                    description: "Mushrooms"
+                                    description: "Mushrooms",
                                 },
                                 {
                                     room: "Brewing Supplies",
                                     items: [
                                         {
-                                            name: "Glistering Melon"
-                                        }
+                                            name: "Glistering Melon",
+                                        },
                                     ],
-                                    description: "GlisteringMelons"
+                                    description: "GlisteringMelons",
                                 },
                                 {
                                     room: "Buckets",
                                     items: [
                                         {
-                                            name: "Milk Bucket"
-                                        }
+                                            name: "Milk Bucket",
+                                        },
                                     ],
-                                    description: "Milk Buckets"
+                                    description: "Milk Buckets",
                                 },
                                 {
                                     room: "Fruit",
                                     items: [
                                         {
-                                            name: "Melon"
+                                            name: "Melon",
                                         },
                                         {
-                                            name: "Pumpkin"
-                                        }
+                                            name: "Pumpkin",
+                                        },
                                     ],
-                                    description: "Melons/Pumpkins"
+                                    description: "Melons/Pumpkins",
                                 },
                                 {
                                     room: "Miscellaneous Blocks",
                                     items: [
                                         {
-                                            name: "Cake"
-                                        }
+                                            name: "Cake",
+                                        },
                                     ],
-                                    description: "Cakes"
-                                }
+                                    description: "Cakes",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Apple",
-                                    signName: "Apples"
+                                    signName: "Apples",
                                 },
                                 {
                                     name: "Golden Apple",
-                                    signName: "Golden Apples"
+                                    signName: "Golden Apples",
                                 },
                                 {
                                     name: "Enchanted Apple",
-                                    signName: "Enchanted Golden Apples"
+                                    signName: "Enchanted Golden Apples",
                                 },
                                 {
                                     name: "Melon Slice",
-                                    signName: "Melon Slices"
+                                    signName: "Melon Slices",
                                 },
                                 {
                                     name: "Carrot",
-                                    signName: "Carrots"
+                                    signName: "Carrots",
                                 },
                                 {
                                     name: "Golden Carrot",
-                                    signName: "Golden Carrots"
+                                    signName: "Golden Carrots",
                                 },
                                 {
                                     name: "Potato",
-                                    signName: "Potatoes"
+                                    signName: "Potatoes",
                                 },
                                 {
                                     name: "Baked Potato",
-                                    signName: "Baked Potatoes"
+                                    signName: "Baked Potatoes",
                                 },
                                 {
                                     name: "Poisonous Potato",
-                                    signName: "Poisonous Potatoes"
+                                    signName: "Poisonous Potatoes",
                                 },
                                 {
                                     name: "Pumpkin Pie",
-                                    signName: "Pumpkin Pies"
+                                    signName: "Pumpkin Pies",
                                 },
                                 {
-                                    name: "Sweet Berries"
+                                    name: "Sweet Berries",
                                 },
                                 {
-                                    name: "Glow Berries"
+                                    name: "Glow Berries",
                                 },
                                 {
                                     name: "Cookie",
-                                    signName: "Cookies"
+                                    signName: "Cookies",
                                 },
                                 {
-                                    name: "Wheat"
+                                    name: "Wheat",
                                 },
                                 {
-                                    name: "Bread"
+                                    name: "Bread",
                                 },
                                 {
-                                    name: "Chorus Fruit"
+                                    name: "Chorus Fruit",
                                 },
                                 {
-                                    name: "Popped Chorus Fruit"
+                                    name: "Popped Chorus Fruit",
                                 },
                                 {
                                     name: "Beetroot",
-                                    signName: "Beetroots"
+                                    signName: "Beetroots",
                                 },
                                 {
-                                    name: "Beetroot Soup"
+                                    name: "Beetroot Soup",
                                 },
                                 {
-                                    name: "Dried Kelp"
+                                    name: "Dried Kelp",
                                 },
                                 {
-                                    name: "Mushroom Stew"
+                                    name: "Mushroom Stew",
                                 },
                                 {
-                                    name: "Sugar"
+                                    name: "Sugar",
                                 },
                                 {
-                                    name: "Cocoa Beans"
+                                    name: "Cocoa Beans",
                                 },
                                 {
                                     name: "Egg",
-                                    signName: "Eggs"
+                                    signName: "Eggs",
                                 },
                                 {
                                     name: "Blue Egg",
-                                    signName: "Blue Eggs"
+                                    signName: "Blue Eggs",
                                 },
                                 {
                                     name: "Brown Egg",
-                                    signName: "Brown Eggs"
+                                    signName: "Brown Eggs",
                                 },
                                 {
                                     name: "Honey Bottle",
-                                    signName: "Honey Bottles"
-                                }
+                                    signName: "Honey Bottles",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -5742,30 +5742,30 @@ const bank: Room = {
                     utilities: [
                         "Brewing Stand",
                         "Cauldron",
-                        "Water Source"
+                        "Water Source",
                     ],
                     shortcuts: [
                         {
                             room: "Buckets",
                             items: [
                                 {
-                                    name: "Milk Bucket"
-                                }
+                                    name: "Milk Bucket",
+                                },
                             ],
-                            description: "Milk Buckets"
+                            description: "Milk Buckets",
                         },
                         {
                             room: "Miscellaneous Items",
                             items: [
                                 {
-                                    name: "Bottle o' Enchanting"
+                                    name: "Bottle o' Enchanting",
                                 },
                                 {
-                                    name: "Ominous Bottle"
-                                }
+                                    name: "Ominous Bottle",
+                                },
                             ],
-                            description: "Bottles o' Enchanting/Ominous Bottles"
-                        }
+                            description: "Bottles o' Enchanting/Ominous Bottles",
+                        },
                     ],
                     subrooms: [
                         {
@@ -5777,123 +5777,123 @@ const bank: Room = {
                                         {
                                             name: "Potion of Healing",
                                             modifier: "Instant Health",
-                                            signName: "Healing"
+                                            signName: "Healing",
                                         },
                                         {
                                             name: "Potion of Healing",
                                             modifier: "Instant Health II",
-                                            signName: "Healing II"
+                                            signName: "Healing II",
                                         },
                                         {
                                             name: "Potion of Fire Resistance",
                                             modifier: "Fire Resistance (3:00)",
-                                            signName: "Fire Resistance 3:00"
+                                            signName: "Fire Resistance 3:00",
                                         },
                                         {
                                             name: "Potion of Fire Resistance",
                                             modifier: "Fire Resistance (8:00)",
-                                            signName: "Fire Resistance 8:00"
+                                            signName: "Fire Resistance 8:00",
                                         },
                                         {
                                             name: "Potion of Regeneration",
                                             modifier: "Regeneration (0:45)",
-                                            signName: "Regeneration 0:45"
+                                            signName: "Regeneration 0:45",
                                         },
                                         {
                                             name: "Potion of Regeneration",
                                             modifier: "Regeneration (2:00)",
-                                            signName: "Regeneration 2:00"
+                                            signName: "Regeneration 2:00",
                                         },
                                         {
                                             name: "Potion of Regeneration",
                                             modifier: "Regeneration II (0:22)",
-                                            signName: "Regeneration II"
+                                            signName: "Regeneration II",
                                         },
                                         {
                                             name: "Potion of Strength",
                                             modifier: "Strength (3:00)",
-                                            signName: "Strength 3:00"
+                                            signName: "Strength 3:00",
                                         },
                                         {
                                             name: "Potion of Strength",
                                             modifier: "Strength (8:00)",
-                                            signName: "Strength 8:00"
+                                            signName: "Strength 8:00",
                                         },
                                         {
                                             name: "Potion of Strength",
                                             modifier: "Strength II (1:30)",
-                                            signName: "Strength II"
+                                            signName: "Strength II",
                                         },
                                         {
                                             name: "Potion of Night Vision",
                                             modifier: "Night Vision (3:00)",
-                                            signName: "Night Vision 3:00"
+                                            signName: "Night Vision 3:00",
                                         },
                                         {
                                             name: "Potion of Night Vision",
                                             modifier: "Night Vision (8:00)",
-                                            signName: "Night Vision 8:00"
+                                            signName: "Night Vision 8:00",
                                         },
                                         {
                                             name: "Potion of Leaping",
                                             modifier: "Jump Boost (3:00)",
-                                            signName: "Leaping 3:00"
+                                            signName: "Leaping 3:00",
                                         },
                                         {
                                             name: "Potion of Leaping",
                                             modifier: "Jump Boost (8:00)",
-                                            signName: "Leaping 8:00"
+                                            signName: "Leaping 8:00",
                                         },
                                         {
                                             name: "Potion of Leaping",
                                             modifier: "Jump Boost II (1:30)",
-                                            signName: "Leaping II"
+                                            signName: "Leaping II",
                                         },
                                         {
                                             name: "Potion of Swiftness",
                                             modifier: "Speed (3:00)",
-                                            signName: "Swiftness 3:00"
+                                            signName: "Swiftness 3:00",
                                         },
                                         {
                                             name: "Potion of Swiftness",
                                             modifier: "Speed (8:00)",
-                                            signName: "Swiftness 8:00"
+                                            signName: "Swiftness 8:00",
                                         },
                                         {
                                             name: "Potion of Swiftness",
                                             modifier: "Speed II (1:30)",
-                                            signName: "Swiftness II"
+                                            signName: "Swiftness II",
                                         },
                                         {
                                             name: "Potion of Water Breathing",
                                             modifier: "Water Breathing (3:00)",
-                                            signName: "Water Breathing 3:00"
+                                            signName: "Water Breathing 3:00",
                                         },
                                         {
                                             name: "Potion of Water Breathing",
                                             modifier: "Water Breathing (8:00)",
-                                            signName: "Water Breathing 8:00"
+                                            signName: "Water Breathing 8:00",
                                         },
                                         {
                                             name: "Potion of Invisibility",
                                             modifier: "Invisibility (3:00)",
-                                            signName: "Invisibility 3:00"
+                                            signName: "Invisibility 3:00",
                                         },
                                         {
                                             name: "Potion of Invisibility",
                                             modifier: "Invisibility (8:00)",
-                                            signName: "Invisibility 8:00"
+                                            signName: "Invisibility 8:00",
                                         },
                                         {
                                             name: "Potion of Slow Falling",
                                             modifier: "Slow Falling (1:30)",
-                                            signName: "Slow Falling 1:30"
+                                            signName: "Slow Falling 1:30",
                                         },
                                         {
                                             name: "Potion of Slow Falling",
                                             modifier: "Slow Falling (4:00)",
-                                            signName: "Slow Falling 4:00"
-                                        }
+                                            signName: "Slow Falling 4:00",
+                                        },
                                     ]
                                 },
                                 {
@@ -5901,51 +5901,51 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Awkward Potion",
-                                            signName: "Awkward"
+                                            signName: "Awkward",
                                         },
                                         {
                                             name: "Mundane Potion",
-                                            signName: "Mundane"
+                                            signName: "Mundane",
                                         },
                                         {
                                             name: "Thick Potion",
-                                            signName: "Thick"
+                                            signName: "Thick",
                                         },
                                         {
                                             name: "Potion of the Turtle Master",
                                             modifier: "Slowness IV (0:20)\nResistance III (0:20)",
-                                            signName: "Turtle Master 0:20"
+                                            signName: "Turtle Master 0:20",
                                         },
                                         {
                                             name: "Potion of the Turtle Master",
                                             modifier: "Slowness IV (0:40)\nResistance III (0:40)",
-                                            signName: "Turtle Master 0:40"
+                                            signName: "Turtle Master 0:40",
                                         },
                                         {
                                             name: "Potion of the Turtle Master",
                                             modifier: "Slowness VI (0:20)\\nResistance IV (0:20)",
-                                            signName: "Turtle Master II"
+                                            signName: "Turtle Master II",
                                         },
                                         {
                                             name: "Potion of Infestation",
                                             modifier: "Infested",
-                                            signName: "Infestation"
+                                            signName: "Infestation",
                                         },
                                         {
                                             name: "Potion of Oozing",
                                             modifier: "Oozing",
-                                            signName: "Oozing"
+                                            signName: "Oozing",
                                         },
                                         {
                                             name: "Potion of Weaving",
                                             modifier: "Weaving",
-                                            signName: "Weaving"
+                                            signName: "Weaving",
                                         },
                                         {
                                             name: "Potion of Wind Charging",
                                             modifier: "Wind Charged",
-                                            signName: "Wind Charging"
-                                        }
+                                            signName: "Wind Charging",
+                                        },
                                     ]
                                 },
                                 {
@@ -5954,55 +5954,55 @@ const bank: Room = {
                                         {
                                             name: "Potion of Poison",
                                             modifier: "Poison (0:45)",
-                                            signName: "Poison 0:45"
+                                            signName: "Poison 0:45",
                                         },
                                         {
                                             name: "Potion of Poison",
                                             modifier: "Poison (2:00)",
-                                            signName: "Poison 2:00"
+                                            signName: "Poison 2:00",
                                         },
                                         {
                                             name: "Potion of Poison",
                                             modifier: "Poison II (0:22)",
-                                            signName: "Poison II"
+                                            signName: "Poison II",
                                         },
                                         {
                                             name: "Potion of Weakness",
                                             modifier: "Weakness (1:30)",
-                                            signName: "Weakness 1:30"
+                                            signName: "Weakness 1:30",
                                         },
                                         {
                                             name: "Potion of Weakness",
                                             modifier: "Weakness (4:00)",
-                                            signName: "Weakness 4:00"
+                                            signName: "Weakness 4:00",
                                         },
                                         {
                                             name: "Potion of Slowness",
                                             modifier: "Slowness (1:30)",
-                                            signName: "Slowness 1:30"
+                                            signName: "Slowness 1:30",
                                         },
                                         {
                                             name: "Potion of Slowness",
                                             modifier: "Slowness (4:00)",
-                                            signName: "Slowness 4:00"
+                                            signName: "Slowness 4:00",
                                         },
                                         {
                                             name: "Potion of Slowness",
                                             modifier: "Slowness IV (0:20)",
-                                            signName: "Slowness IV"
+                                            signName: "Slowness IV",
                                         },
                                         {
                                             name: "Potion of Harming",
                                             modifier: "Instant Damage",
-                                            signName: "Harming"
+                                            signName: "Harming",
                                         },
                                         {
                                             name: "Potion of Harming",
                                             modifier: "Instant Damage II",
-                                            signName: "Harming II"
-                                        }
+                                            signName: "Harming II",
+                                        },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
@@ -6014,123 +6014,123 @@ const bank: Room = {
                                         {
                                             name: "Splash Potion of Healing",
                                             modifier: "Instant Health",
-                                            signName: "Healing"
+                                            signName: "Healing",
                                         },
                                         {
                                             name: "Splash Potion of Healing",
                                             modifier: "Instant Health II",
-                                            signName: "Healing II"
+                                            signName: "Healing II",
                                         },
                                         {
                                             name: "Splash Potion of Fire Resistance",
                                             modifier: "Fire Resistance (2:15)",
-                                            signName: "Fire Resistance 2:15"
+                                            signName: "Fire Resistance 2:15",
                                         },
                                         {
                                             name: "Splash Potion of Fire Resistance",
                                             modifier: "Fire Resistance (6:00)",
-                                            signName: "Fire Resistance 6:00"
+                                            signName: "Fire Resistance 6:00",
                                         },
                                         {
                                             name: "Splash Potion of Regeneration",
                                             modifier: "Regeneration (0:33)",
-                                            signName: "Regeneration 0:33"
+                                            signName: "Regeneration 0:33",
                                         },
                                         {
                                             name: "Splash Potion of Regeneration",
                                             modifier: "Regeneration (1:30)",
-                                            signName: "Regeneration 1:30"
+                                            signName: "Regeneration 1:30",
                                         },
                                         {
                                             name: "Splash Potion of Regeneration",
                                             modifier: "Regeneration II (0:16)",
-                                            signName: "Regeneration II"
+                                            signName: "Regeneration II",
                                         },
                                         {
                                             name: "Splash Potion of Strength",
                                             modifier: "Strength (2:15)",
-                                            signName: "Strength 2:15"
+                                            signName: "Strength 2:15",
                                         },
                                         {
                                             name: "Splash Potion of Strength",
                                             modifier: "Strength (6:00)",
-                                            signName: "Strength 6:00"
+                                            signName: "Strength 6:00",
                                         },
                                         {
                                             name: "Splash Potion of Strength",
                                             modifier: "Strength II (1:07)",
-                                            signName: "Strength II"
+                                            signName: "Strength II",
                                         },
                                         {
                                             name: "Splash Potion of Night Vision",
                                             modifier: "Night Vision (2:15)",
-                                            signName: "Night Vision 2:15"
+                                            signName: "Night Vision 2:15",
                                         },
                                         {
                                             name: "Splash Potion of Night Vision",
                                             modifier: "Night Vision (6:00)",
-                                            signName: "Night Vision 6:00"
+                                            signName: "Night Vision 6:00",
                                         },
                                         {
                                             name: "Splash Potion of Leaping",
                                             modifier: "Jump Boost (2:15)",
-                                            signName: "Leaping 2:15"
+                                            signName: "Leaping 2:15",
                                         },
                                         {
                                             name: "Splash Potion of Leaping",
                                             modifier: "Jump Boost (6:00)",
-                                            signName: "Leaping 6:00"
+                                            signName: "Leaping 6:00",
                                         },
                                         {
                                             name: "Splash Potion of Leaping",
                                             modifier: "Jump Boost II (1:07)",
-                                            signName: "Leaping II"
+                                            signName: "Leaping II",
                                         },
                                         {
                                             name: "Splash Potion of Swiftness",
                                             modifier: "Speed (2:15)",
-                                            signName: "Swiftness 2:15"
+                                            signName: "Swiftness 2:15",
                                         },
                                         {
                                             name: "Splash Potion of Swiftness",
                                             modifier: "Speed (6:00)",
-                                            signName: "Swiftness 6:00"
+                                            signName: "Swiftness 6:00",
                                         },
                                         {
                                             name: "Splash Potion of Swiftness",
                                             modifier: "Speed II (1:07)",
-                                            signName: "Swiftness II"
+                                            signName: "Swiftness II",
                                         },
                                         {
                                             name: "Splash Potion of Water Breathing",
                                             modifier: "Water Breathing (2:15)",
-                                            signName: "Water Breathing 2:15"
+                                            signName: "Water Breathing 2:15",
                                         },
                                         {
                                             name: "Splash Potion of Water Breathing",
                                             modifier: "Water Breathing (6:00)",
-                                            signName: "Water Breathing 6:00"
+                                            signName: "Water Breathing 6:00",
                                         },
                                         {
                                             name: "Splash Potion of Invisibility",
                                             modifier: "Invisibility (2:15)",
-                                            signName: "Invisibility 2:15"
+                                            signName: "Invisibility 2:15",
                                         },
                                         {
                                             name: "Splash Potion of Invisibility",
                                             modifier: "Invisibility (6:00)",
-                                            signName: "Invisibility 6:00"
+                                            signName: "Invisibility 6:00",
                                         },
                                         {
                                             name: "Splash Potion of Slow Falling",
                                             modifier: "Slow Falling (1:07)",
-                                            signName: "Slow Falling 1:07"
+                                            signName: "Slow Falling 1:07",
                                         },
                                         {
                                             name: "Splash Potion of Slow Falling",
                                             modifier: "Slow Falling (3:00)",
-                                            signName: "Slow Falling 3:00"
-                                        }
+                                            signName: "Slow Falling 3:00",
+                                        },
                                     ]
                                 },
                                 {
@@ -6138,55 +6138,55 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Splash Water Bottle",
-                                            signName: "Water"
+                                            signName: "Water",
                                         },
                                         {
                                             name: "Splash Awkward Potion",
-                                            signName: "Awkward"
+                                            signName: "Awkward",
                                         },
                                         {
                                             name: "Splash Mundane Potion",
-                                            signName: "Mundane"
+                                            signName: "Mundane",
                                         },
                                         {
                                             name: "Splash Thick Potion",
-                                            signName: "Thick"
+                                            signName: "Thick",
                                         },
                                         {
                                             name: "Splash Potion of the Turtle Master",
                                             modifier: "Slowness IV (0:15)\nResistance III (0:15)",
-                                            signName: "Turtle Master 0:15"
+                                            signName: "Turtle Master 0:15",
                                         },
                                         {
                                             name: "Splash Potion of the Turtle Master",
                                             modifier: "Slowness IV (0:30)\nResistance III (0:30)",
-                                            signName: "Turtle Master 0:30"
+                                            signName: "Turtle Master 0:30",
                                         },
                                         {
                                             name: "Splash Potion of the Turtle Master",
                                             modifier: "Slowness VI (0:15)\nResistance IV (0:15)",
-                                            signName: "Turtle Master II"
+                                            signName: "Turtle Master II",
                                         },
                                         {
                                             name: "Splash Potion of Infestation",
                                             modifier: "Infested",
-                                            signName: "Infestation"
+                                            signName: "Infestation",
                                         },
                                         {
                                             name: "Splash Potion of Oozing",
                                             modifier: "Oozing",
-                                            signName: "Oozing"
+                                            signName: "Oozing",
                                         },
                                         {
                                             name: "Splash Potion of Weaving",
                                             modifier: "Weaving",
-                                            signName: "Weaving"
+                                            signName: "Weaving",
                                         },
                                         {
                                             name: "Splash Potion of Wind Charging",
                                             modifier: "Wind Charged",
-                                            signName: "Wind Charging"
-                                        }
+                                            signName: "Wind Charging",
+                                        },
                                     ]
                                 },
                                 {
@@ -6195,55 +6195,55 @@ const bank: Room = {
                                         {
                                             name: "Splash Potion of Poison",
                                             modifier: "Poison (0:33)",
-                                            signName: "Poison 0:33"
+                                            signName: "Poison 0:33",
                                         },
                                         {
                                             name: "Splash Potion of Poison",
                                             modifier: "Poison (1:30)",
-                                            signName: "Poison 1:30"
+                                            signName: "Poison 1:30",
                                         },
                                         {
                                             name: "Splash Potion of Poison",
                                             modifier: "Poison II (0:16)",
-                                            signName: "Poison II"
+                                            signName: "Poison II",
                                         },
                                         {
                                             name: "Splash Potion of Weakness",
                                             modifier: "Weakness (1:07)",
-                                            signName: "Weakness 1:07"
+                                            signName: "Weakness 1:07",
                                         },
                                         {
                                             name: "Splash Potion of Weakness",
                                             modifier: "Weakness (3:00)",
-                                            signName: "Weakness 3:00"
+                                            signName: "Weakness 3:00",
                                         },
                                         {
                                             name: "Splash Potion of Slowness",
                                             modifier: "Slowness (1:07)",
-                                            signName: "Slowness 1:07"
+                                            signName: "Slowness 1:07",
                                         },
                                         {
                                             name: "Splash Potion of Slowness",
                                             modifier: "Slowness (3:00)",
-                                            signName: "Slowness 3:00"
+                                            signName: "Slowness 3:00",
                                         },
                                         {
                                             name: "Splash Potion of Slowness",
                                             modifier: "Slowness IV (0:15)",
-                                            signName: "Slowness IV"
+                                            signName: "Slowness IV",
                                         },
                                         {
                                             name: "Splash Potion of Harming",
                                             modifier: "Instant Damage",
-                                            signName: "Harming"
+                                            signName: "Harming",
                                         },
                                         {
                                             name: "Splash Potion of Harming",
                                             modifier: "Instant Damage II",
-                                            signName: "Harming II"
-                                        }
+                                            signName: "Harming II",
+                                        },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
@@ -6255,123 +6255,123 @@ const bank: Room = {
                                         {
                                             name: "Lingering Potion of Healing",
                                             modifier: "Instant Health",
-                                            signName: "Healing"
+                                            signName: "Healing",
                                         },
                                         {
                                             name: "Lingering Potion of Healing",
                                             modifier: "Instant Health II",
-                                            signName: "Healing II"
+                                            signName: "Healing II",
                                         },
                                         {
                                             name: "Lingering Potion of Fire Resistance",
                                             modifier: "Fire Resistance (0:45)",
-                                            signName: "Fire Resistance 0:45"
+                                            signName: "Fire Resistance 0:45",
                                         },
                                         {
                                             name: "Lingering Potion of Fire Resistance",
                                             modifier: "Fire Resistance (2:00)",
-                                            signName: "Fire Resistance 2:00"
+                                            signName: "Fire Resistance 2:00",
                                         },
                                         {
                                             name: "Lingering Potion of Regeneration",
                                             modifier: "Regeneration (0:11)",
-                                            signName: "Regeneration 0:11"
+                                            signName: "Regeneration 0:11",
                                         },
                                         {
                                             name: "Lingering Potion of Regeneration",
                                             modifier: "Regeneration (0:30)",
-                                            signName: "Regeneration 0:30"
+                                            signName: "Regeneration 0:30",
                                         },
                                         {
                                             name: "Lingering Potion of Regeneration",
                                             modifier: "Regeneration II (0:05)",
-                                            signName: "Regeneration II"
+                                            signName: "Regeneration II",
                                         },
                                         {
                                             name: "Lingering Potion of Strength",
                                             modifier: "Strength (0:45)",
-                                            signName: "Strength 0:45"
+                                            signName: "Strength 0:45",
                                         },
                                         {
                                             name: "Lingering Potion of Strength",
                                             modifier: "Strength (2:00)",
-                                            signName: "Strength 2:00"
+                                            signName: "Strength 2:00",
                                         },
                                         {
                                             name: "Lingering Potion of Strength",
                                             modifier: "Strength II (0:22)",
-                                            signName: "Strength II"
+                                            signName: "Strength II",
                                         },
                                         {
                                             name: "Lingering Potion of Night Vision",
                                             modifier: "Night Vision (0:45)",
-                                            signName: "Night Vision 0:45"
+                                            signName: "Night Vision 0:45",
                                         },
                                         {
                                             name: "Lingering Potion of Night Vision",
                                             modifier: "Night Vision (2:00)",
-                                            signName: "Night Vision 2:00"
+                                            signName: "Night Vision 2:00",
                                         },
                                         {
                                             name: "Lingering Potion of Leaping",
                                             modifier: "Jump Boost (0:45)",
-                                            signName: "Leaping 0:45"
+                                            signName: "Leaping 0:45",
                                         },
                                         {
                                             name: "Lingering Potion of Leaping",
                                             modifier: "Jump Boost (2:00)",
-                                            signName: "Leaping 2:00"
+                                            signName: "Leaping 2:00",
                                         },
                                         {
                                             name: "Lingering Potion of Leaping",
                                             modifier: "Jump Boost II (0:22)",
-                                            signName: "Leaping II"
+                                            signName: "Leaping II",
                                         },
                                         {
                                             name: "Lingering Potion of Swiftness",
                                             modifier: "Speed (0:45)",
-                                            signName: "Swiftness 0:45"
+                                            signName: "Swiftness 0:45",
                                         },
                                         {
                                             name: "Lingering Potion of Swiftness",
                                             modifier: "Speed (2:00)",
-                                            signName: "Swiftness 2:00"
+                                            signName: "Swiftness 2:00",
                                         },
                                         {
                                             name: "Lingering Potion of Swiftness",
                                             modifier: "Speed II (0:22)",
-                                            signName: "Swiftness II"
+                                            signName: "Swiftness II",
                                         },
                                         {
                                             name: "Lingering Potion of Water Breathing",
                                             modifier: "Water Breathing (0:45)",
-                                            signName: "Water Breathing 0:45"
+                                            signName: "Water Breathing 0:45",
                                         },
                                         {
                                             name: "Lingering Potion of Water Breathing",
                                             modifier: "Water Breathing (2:00)",
-                                            signName: "Water Breathing 2:00"
+                                            signName: "Water Breathing 2:00",
                                         },
                                         {
                                             name: "Lingering Potion of Invisibility",
                                             modifier: "Invisibility (0:45)",
-                                            signName: "Invisibility 0:45"
+                                            signName: "Invisibility 0:45",
                                         },
                                         {
                                             name: "Lingering Potion of Invisibility",
                                             modifier: "Invisibility (2:00)",
-                                            signName: "Invisibility 2:00"
+                                            signName: "Invisibility 2:00",
                                         },
                                         {
                                             name: "Lingering Potion of Slow Falling",
                                             modifier: "Slow Falling (0:22)",
-                                            signName: "Slow Falling 0:22"
+                                            signName: "Slow Falling 0:22",
                                         },
                                         {
                                             name: "Lingering Potion of Slow Falling",
                                             modifier: "Slow Falling (1:00)",
-                                            signName: "Slow Falling 1:00"
-                                        }
+                                            signName: "Slow Falling 1:00",
+                                        },
                                     ]
                                 },
                                 {
@@ -6379,55 +6379,55 @@ const bank: Room = {
                                     chests: [
                                         {
                                             name: "Lingering Water Bottle",
-                                            signName: "Water"
+                                            signName: "Water",
                                         },
                                         {
                                             name: "Lingering Awkward Potion",
-                                            signName: "Awkward"
+                                            signName: "Awkward",
                                         },
                                         {
                                             name: "Lingering Mundane Potion",
-                                            signName: "Mundane"
+                                            signName: "Mundane",
                                         },
                                         {
                                             name: "Lingering Thick Potion",
-                                            signName: "Thick"
+                                            signName: "Thick",
                                         },
                                         {
                                             name: "Lingering Potion of the Turtle Master",
                                             modifier: "Slowness IV (0:05)\nResistance III (0:05)",
-                                            signName: "Turtle Master 0:05"
+                                            signName: "Turtle Master 0:05",
                                         },
                                         {
                                             name: "Lingering Potion of the Turtle Master",
                                             modifier: "Slowness IV (0:10)\nResistance III (0:10)",
-                                            signName: "Turtle Master 0:10"
+                                            signName: "Turtle Master 0:10",
                                         },
                                         {
                                             name: "Lingering Potion of the Turtle Master",
                                             modifier: "Slowness VI (0:05)\nResistance IV (0:05)",
-                                            signName: "Turtle Master II"
+                                            signName: "Turtle Master II",
                                         },
                                         {
                                             name: "Lingering Potion of Infestation",
                                             modifier: "Infested",
-                                            signName: "Infestation"
+                                            signName: "Infestation",
                                         },
                                         {
                                             name: "Lingering Potion of Oozing",
                                             modifier: "Oozing",
-                                            signName: "Oozing"
+                                            signName: "Oozing",
                                         },
                                         {
                                             name: "Lingering Potion of Weaving",
                                             modifier: "Weaving",
-                                            signName: "Weaving"
+                                            signName: "Weaving",
                                         },
                                         {
                                             name: "Lingering Potion of Wind Charging",
                                             modifier: "Wind Charged",
-                                            signName: "Wind Charging"
-                                        }
+                                            signName: "Wind Charging",
+                                        },
                                     ]
                                 },
                                 {
@@ -6436,55 +6436,55 @@ const bank: Room = {
                                         {
                                             name: "Lingering Potion of Poison",
                                             modifier: "Poison (0:11)",
-                                            signName: "Poison 0:11"
+                                            signName: "Poison 0:11",
                                         },
                                         {
                                             name: "Lingering Potion of Poison",
                                             modifier: "Poison (0:30)",
-                                            signName: "Poison 0:30"
+                                            signName: "Poison 0:30",
                                         },
                                         {
                                             name: "Lingering Potion of Poison",
                                             modifier: "Poison II (0:05)",
-                                            signName: "Poison II"
+                                            signName: "Poison II",
                                         },
                                         {
                                             name: "Lingering Potion of Weakness",
                                             modifier: "Weakness (0:22)",
-                                            signName: "Weakness 0:22"
+                                            signName: "Weakness 0:22",
                                         },
                                         {
                                             name: "Lingering Potion of Weakness",
                                             modifier: "Weakness (1:00)",
-                                            signName: "Weakness 1:00"
+                                            signName: "Weakness 1:00",
                                         },
                                         {
                                             name: "Lingering Potion of Slowness",
                                             modifier: "Slowness (0:22)",
-                                            signName: "Slowness 0:22"
+                                            signName: "Slowness 0:22",
                                         },
                                         {
                                             name: "Lingering Potion of Slowness",
                                             modifier: "Slowness (1:00)",
-                                            signName: "Slowness 1:00"
+                                            signName: "Slowness 1:00",
                                         },
                                         {
                                             name: "Lingering Potion of Slowness",
                                             modifier: "Slowness IV (0:05)",
-                                            signName: "Slowness IV"
+                                            signName: "Slowness IV",
                                         },
                                         {
                                             name: "Lingering Potion of Harming",
                                             modifier: "Instant Damage",
-                                            signName: "Harming"
+                                            signName: "Harming",
                                         },
                                         {
                                             name: "Lingering Potion of Harming",
                                             modifier: "Instant Damage II",
-                                            signName: "Harming II"
-                                        }
+                                            signName: "Harming II",
+                                        },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
@@ -6496,98 +6496,98 @@ const bank: Room = {
                                     room: "Vegetarian Options",
                                     items: [
                                         {
-                                            name: "Sugar"
+                                            name: "Sugar",
                                         },
                                         {
-                                            name: "Golden Carrot"
-                                        }
+                                            name: "Golden Carrot",
+                                        },
                                     ],
-                                    description: "Sugar/Golden Carrots"
+                                    description: "Sugar/Golden Carrots",
                                 },
                                 {
                                     room: "Transmitters",
                                     items: [
                                         {
-                                            name: "Redstone Dust"
-                                        }
+                                            name: "Redstone Dust",
+                                        },
                                     ]
                                 },
                                 {
                                     room: "Firework Supplies",
                                     items: [
                                         {
-                                            name: "Gunpowder"
-                                        }
+                                            name: "Gunpowder",
+                                        },
                                     ]
-                                }
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Water Bottle",
-                                    signName: "Bottles of Water"
+                                    signName: "Bottles of Water",
                                 },
                                 {
-                                    name: "Pufferfish"
+                                    name: "Pufferfish",
                                 },
                                 {
                                     name: "Bottle",
-                                    signName: "Bottles"
+                                    signName: "Bottles",
                                 },
                                 {
                                     name: "Dragon's Breath",
-                                    signName: "Dragons' Breaths"
+                                    signName: "Dragons' Breaths",
                                 },
                                 {
                                     name: "Spider Eye",
-                                    signName: "Spider Eyes"
+                                    signName: "Spider Eyes",
                                 },
                                 {
                                     name: "Fermented Spider Eye",
-                                    signName: "Fermented Spider Eyes"
+                                    signName: "Fermented Spider Eyes",
                                 },
                                 {
                                     name: "Blaze Rod",
-                                    signName: "Blaze Rods"
+                                    signName: "Blaze Rods",
                                 },
                                 {
-                                    name: "Blaze Powder"
+                                    name: "Blaze Powder",
                                 },
                                 {
                                     name: "Turtle Shell",
-                                    signName: "Turtle Shells"
+                                    signName: "Turtle Shells",
                                 },
                                 {
                                     name: "Phantom Membrane",
-                                    signName: "Phantom Membranes"
+                                    signName: "Phantom Membranes",
                                 },
                                 {
                                     name: "Glistering Melon",
-                                    signName: "Glistering Melons"
+                                    signName: "Glistering Melons",
                                 },
                                 {
-                                    name: "Glowstone Dust"
+                                    name: "Glowstone Dust",
                                 },
                                 {
                                     name: "Nether Wart",
-                                    signName: "Nether Warts"
+                                    signName: "Nether Warts",
                                 },
                                 {
-                                    name: "Magma Cream"
+                                    name: "Magma Cream",
                                 },
                                 {
                                     name: "Rabbit's Foot",
-                                    signName: "Rabbits' Feet"
+                                    signName: "Rabbits' Feet",
                                 },
                                 {
                                     name: "Ghast Tear",
-                                    signName: "Ghast Tears"
+                                    signName: "Ghast Tears",
                                 },
                                 {
                                     name: "Breeze Rod",
-                                    signName: "Breeze Rods"
-                                }
+                                    signName: "Breeze Rods",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -6595,7 +6595,7 @@ const bank: Room = {
                     utilities: [
                         "Grindstone",
                         "Smithing Table",
-                        "Anvil"
+                        "Anvil",
                     ],
                     subrooms: [
                         {
@@ -6603,32 +6603,32 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Wooden Pickaxe",
-                                    signName: "Wood Pickaxes"
+                                    signName: "Wood Pickaxes",
                                 },
                                 {
                                     name: "Stone Pickaxe",
-                                    signName: "Stone Pickaxes"
+                                    signName: "Stone Pickaxes",
                                 },
                                 {
                                     name: "Copper Pickaxe",
-                                    signName: "Copper Pickaxes"
+                                    signName: "Copper Pickaxes",
                                 },
                                 {
                                     name: "Iron Pickaxe",
-                                    signName: "Iron Pickaxes"
+                                    signName: "Iron Pickaxes",
                                 },
                                 {
                                     name: "Gold Pickaxe",
-                                    signName: "Gold Pickaxes"
+                                    signName: "Gold Pickaxes",
                                 },
                                 {
                                     name: "Diamond Pickaxe",
-                                    signName: "Diamond Pickaxes"
+                                    signName: "Diamond Pickaxes",
                                 },
                                 {
                                     name: "Netherite Pickaxe",
-                                    signName: "Netherite Pickaxes"
-                                }
+                                    signName: "Netherite Pickaxes",
+                                },
                             ]
                         },
                         {
@@ -6636,32 +6636,32 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Wooden Shovel",
-                                    signName: "Wood Shovels"
+                                    signName: "Wood Shovels",
                                 },
                                 {
                                     name: "Stone Shovel",
-                                    signName: "Stone Shovels"
+                                    signName: "Stone Shovels",
                                 },
                                 {
                                     name: "Copper Shovel",
-                                    signName: "Copper Shovels"
+                                    signName: "Copper Shovels",
                                 },
                                 {
                                     name: "Iron Shovel",
-                                    signName: "Iron Shovels"
+                                    signName: "Iron Shovels",
                                 },
                                 {
                                     name: "Gold Shovel",
-                                    signName: "Gold Shovels"
+                                    signName: "Gold Shovels",
                                 },
                                 {
                                     name: "Diamond Shovel",
-                                    signName: "Diamond Shovels"
+                                    signName: "Diamond Shovels",
                                 },
                                 {
                                     name: "Netherite Shovel",
-                                    signName: "Netherite Shovels"
-                                }
+                                    signName: "Netherite Shovels",
+                                },
                             ]
                         },
                         {
@@ -6669,32 +6669,32 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Wooden Axe",
-                                    signName: "Wood Axes"
+                                    signName: "Wood Axes",
                                 },
                                 {
                                     name: "Stone Axe",
-                                    signName: "Stone Axes"
+                                    signName: "Stone Axes",
                                 },
                                 {
                                     name: "Copper Axe",
-                                    signName: "Copper Axes"
+                                    signName: "Copper Axes",
                                 },
                                 {
                                     name: "Iron Axe",
-                                    signName: "Iron Axes"
+                                    signName: "Iron Axes",
                                 },
                                 {
                                     name: "Gold Axe",
-                                    signName: "Gold Axes"
+                                    signName: "Gold Axes",
                                 },
                                 {
                                     name: "Diamond Axe",
-                                    signName: "Diamond Axes"
+                                    signName: "Diamond Axes",
                                 },
                                 {
                                     name: "Netherite Axe",
-                                    signName: "Netherite Axes"
-                                }
+                                    signName: "Netherite Axes",
+                                },
                             ]
                         },
                         {
@@ -6702,32 +6702,32 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Wooden Hoe",
-                                    signName: "Wood Hoes"
+                                    signName: "Wood Hoes",
                                 },
                                 {
                                     name: "Stone Hoe",
-                                    signName: "Stone Hoes"
+                                    signName: "Stone Hoes",
                                 },
                                 {
                                     name: "Copper Hoe",
-                                    signName: "Copper Hoes"
+                                    signName: "Copper Hoes",
                                 },
                                 {
                                     name: "Iron Hoe",
-                                    signName: "Iron Hoes"
+                                    signName: "Iron Hoes",
                                 },
                                 {
                                     name: "Gold Hoe",
-                                    signName: "Gold Hoes"
+                                    signName: "Gold Hoes",
                                 },
                                 {
                                     name: "Diamond Hoe",
-                                    signName: "Diamond Hoes"
+                                    signName: "Diamond Hoes",
                                 },
                                 {
                                     name: "Netherite Hoe",
-                                    signName: "Netherite Hoes"
-                                }
+                                    signName: "Netherite Hoes",
+                                },
                             ]
                         },
                         {
@@ -6735,169 +6735,169 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Wooden Sword",
-                                    signName: "Wood Swords"
+                                    signName: "Wood Swords",
                                 },
                                 {
                                     name: "Stone Sword",
-                                    signName: "Stone Swords"
+                                    signName: "Stone Swords",
                                 },
                                 {
                                     name: "Copper Sword",
-                                    signName: "Copper Swords"
+                                    signName: "Copper Swords",
                                 },
                                 {
                                     name: "Iron Sword",
-                                    signName: "Iron Swords"
+                                    signName: "Iron Swords",
                                 },
                                 {
                                     name: "Gold Sword",
-                                    signName: "Gold Swords"
+                                    signName: "Gold Swords",
                                 },
                                 {
                                     name: "Diamond Sword",
-                                    signName: "Diamond Swords"
+                                    signName: "Diamond Swords",
                                 },
                                 {
                                     name: "Netherite Sword",
-                                    signName: "Netherite Swords"
-                                }
+                                    signName: "Netherite Swords",
+                                },
                             ]
                         },
                         {
                             name: "Ranged Weapons & Projectiles",
                             shortcutName: "Projectiles",
                             utilities: [
-                                "Fletching Table"
+                                "Fletching Table",
                             ],
                             shortcuts: [
                                 {
                                     room: "Vegetarian Options",
                                     items: [
                                         {
-                                            name: "Egg"
+                                            name: "Egg",
                                         },
                                         {
-                                            name: "Blue Egg"
+                                            name: "Blue Egg",
                                         },
                                         {
-                                            name: "Brown Egg"
-                                        }
+                                            name: "Brown Egg",
+                                        },
                                     ],
-                                    description: "Eggs"
+                                    description: "Eggs",
                                 },
                                 {
                                     room: "Firework Rockets",
                                     items: [
                                         {
-                                            name: "Firework Rocket"
+                                            name: "Firework Rocket",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "White"
+                                            modifier: "White",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Light Gray"
+                                            modifier: "Light Gray",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Gray"
+                                            modifier: "Gray",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Black"
+                                            modifier: "Black",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Red"
+                                            modifier: "Red",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Orange"
+                                            modifier: "Orange",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Yellow"
+                                            modifier: "Yellow",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Lime"
+                                            modifier: "Lime",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Green"
+                                            modifier: "Green",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Blue"
+                                            modifier: "Blue",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Light Blue"
+                                            modifier: "Light Blue",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Cyan"
+                                            modifier: "Cyan",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Purple"
+                                            modifier: "Purple",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Magenta"
+                                            modifier: "Magenta",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Pink"
+                                            modifier: "Pink",
                                         },
                                         {
                                             name: "Firework Rocket",
-                                            modifier: "Brown"
-                                        }
+                                            modifier: "Brown",
+                                        },
                                     ],
-                                    description: "Fireworks"
-                                }
+                                    description: "Fireworks",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Trident",
-                                    signName: "Tridents"
+                                    signName: "Tridents",
                                 },
                                 {
                                     name: "Bow",
-                                    signName: "Bows"
+                                    signName: "Bows",
                                 },
                                 {
                                     name: "Arrow",
-                                    signName: "Arrows"
+                                    signName: "Arrows",
                                 },
                                 {
                                     name: "Crossbow",
-                                    signName: "Crossbows"
+                                    signName: "Crossbows",
                                 },
                                 {
                                     name: "Ender Pearl",
-                                    signName: "Ender Pearls"
+                                    signName: "Ender Pearls",
                                 },
                                 {
                                     name: "Snowball",
-                                    signName: "Snowballs"
+                                    signName: "Snowballs",
                                 },
                                 {
                                     name: "Fire Charge",
-                                    signName: "Fire Charges"
+                                    signName: "Fire Charges",
                                 },
                                 {
                                     name: "Wind Charge",
-                                    signName: "Wind Charges"
-                                }
+                                    signName: "Wind Charges",
+                                },
                             ],
                             subrooms: [
                                 {
                                     name: "Tipped Arrows",
                                     utilities: [
-                                        "Cauldron"
+                                        "Cauldron",
                                     ],
                                     subrooms: [
                                         {
@@ -6906,123 +6906,123 @@ const bank: Room = {
                                                 {
                                                     name: "Arrow of Healing",
                                                     modifier: "Instant Health",
-                                                    signName: "Healing"
+                                                    signName: "Healing",
                                                 },
                                                 {
                                                     name: "Arrow of Healing",
                                                     modifier: "Instant Health II",
-                                                    signName: "Healing II"
+                                                    signName: "Healing II",
                                                 },
                                                 {
                                                     name: "Arrow of Fire Resistance",
                                                     modifier: "Fire Resistance (0:22)",
-                                                    signName: "Fire Resistance 0:22"
+                                                    signName: "Fire Resistance 0:22",
                                                 },
                                                 {
                                                     name: "Arrow of Fire Resistance",
                                                     modifier: "Fire Resistance (1:00)",
-                                                    signName: "Fire Resistance 1:00"
+                                                    signName: "Fire Resistance 1:00",
                                                 },
                                                 {
                                                     name: "Arrow of Regeneration",
                                                     modifier: "Regeneration (0:05)",
-                                                    signName: "Regeneration 0:05"
+                                                    signName: "Regeneration 0:05",
                                                 },
                                                 {
                                                     name: "Arrow of Regeneration",
                                                     modifier: "Regeneration (0:15)",
-                                                    signName: "Regeneration 0:15"
+                                                    signName: "Regeneration 0:15",
                                                 },
                                                 {
                                                     name: "Arrow of Regeneration",
                                                     modifier: "Regeneration II (0:02)",
-                                                    signName: "Regeneration II"
+                                                    signName: "Regeneration II",
                                                 },
                                                 {
                                                     name: "Arrow of Strength",
                                                     modifier: "Strength (0:22)",
-                                                    signName: "Strength 0:22"
+                                                    signName: "Strength 0:22",
                                                 },
                                                 {
                                                     name: "Arrow of Strength",
                                                     modifier: "Strength (1:00)",
-                                                    signName: "Strength 1:00"
+                                                    signName: "Strength 1:00",
                                                 },
                                                 {
                                                     name: "Arrow of Strength",
                                                     modifier: "Strength II (0:11)",
-                                                    signName: "Strength II"
+                                                    signName: "Strength II",
                                                 },
                                                 {
                                                     name: "Arrow of Night Vision",
                                                     modifier: "Night Vision (0:22)",
-                                                    signName: "Night Vision 0:22"
+                                                    signName: "Night Vision 0:22",
                                                 },
                                                 {
                                                     name: "Arrow of Night Vision",
                                                     modifier: "Night Vision (1:00)",
-                                                    signName: "Night Vision 1:00"
+                                                    signName: "Night Vision 1:00",
                                                 },
                                                 {
                                                     name: "Arrow of Leaping",
                                                     modifier: "Jump Boost (0:22)",
-                                                    signName: "Leaping 0:22"
+                                                    signName: "Leaping 0:22",
                                                 },
                                                 {
                                                     name: "Arrow of Leaping",
                                                     modifier: "Jump Boost (1:00)",
-                                                    signName: "Leaping 1:00"
+                                                    signName: "Leaping 1:00",
                                                 },
                                                 {
                                                     name: "Arrow of Leaping",
                                                     modifier: "Jump Boost II (0:11)",
-                                                    signName: "Leaping II"
+                                                    signName: "Leaping II",
                                                 },
                                                 {
                                                     name: "Arrow of Swiftness",
                                                     modifier: "Speed (0:22)",
-                                                    signName: "Swiftness 0:22"
+                                                    signName: "Swiftness 0:22",
                                                 },
                                                 {
                                                     name: "Arrow of Swiftness",
                                                     modifier: "Speed (1:00)",
-                                                    signName: "Swiftness 1:00"
+                                                    signName: "Swiftness 1:00",
                                                 },
                                                 {
                                                     name: "Arrow of Swiftness",
                                                     modifier: "Speed II",
-                                                    signName: "Swiftness II"
+                                                    signName: "Swiftness II",
                                                 },
                                                 {
                                                     name: "Arrow of Water Breathing",
                                                     modifier: "Water Breathing (0:22)",
-                                                    signName: "Water Breathing 0:22"
+                                                    signName: "Water Breathing 0:22",
                                                 },
                                                 {
                                                     name: "Arrow of Water Breathing",
                                                     modifier: "Water Breathing (1:00)",
-                                                    signName: "Water Breathing 1:00"
+                                                    signName: "Water Breathing 1:00",
                                                 },
                                                 {
                                                     name: "Arrow of Invisibility",
                                                     modifier: "Invisibility (0:22)",
-                                                    signName: "Invisibility 0:22"
+                                                    signName: "Invisibility 0:22",
                                                 },
                                                 {
                                                     name: "Arrow of Invisibility",
                                                     modifier: "Invisibility (1:00)",
-                                                    signName: "Invisibility 1:00"
+                                                    signName: "Invisibility 1:00",
                                                 },
                                                 {
                                                     name: "Arrow of Slow Falling",
                                                     modifier: "Slow Falling (0:11)",
-                                                    signName: "Slow Falling 0:11"
+                                                    signName: "Slow Falling 0:11",
                                                 },
                                                 {
                                                     name: "Arrow of Slow Falling",
                                                     modifier: "Slow Falling (0:30)",
-                                                    signName: "Slow Falling 0:30"
-                                                }
+                                                    signName: "Slow Falling 0:30",
+                                                },
                                             ]
                                         },
                                         {
@@ -7031,34 +7031,34 @@ const bank: Room = {
                                                 {
                                                     name: "Arrow of the Turtle Master",
                                                     modifier: "Slowness IV (0:02)\nResistance III (0:02)",
-                                                    signName: "Turtle Master 0:02"
+                                                    signName: "Turtle Master 0:02",
                                                 },
                                                 {
                                                     name: "Arrow of the Turtle Master",
                                                     modifier: "Slowness IV (0:05)\nResistance III (0:05)",
-                                                    signName: "Turtle Master 0:05"
+                                                    signName: "Turtle Master 0:05",
                                                 },
                                                 {
                                                     name: "Arrow of the Turtle Master",
                                                     modifier: "Slowness VI (0:02)\nResistance IV (0:02)",
-                                                    signName: "Turtle Master II"
+                                                    signName: "Turtle Master II",
                                                 },
                                                 {
                                                     name: "Arrow of Infestation",
-                                                    signName: "Infestation"
+                                                    signName: "Infestation",
                                                 },
                                                 {
                                                     name: "Arrow of Oozing",
-                                                    signName: "Oozing"
+                                                    signName: "Oozing",
                                                 },
                                                 {
                                                     name: "Arrow of Weaving",
-                                                    signName: "Weaving"
+                                                    signName: "Weaving",
                                                 },
                                                 {
                                                     name: "Arrow of Wind Charging",
-                                                    signName: "Wind Charging"
-                                                }
+                                                    signName: "Wind Charging",
+                                                },
                                             ]
                                         },
                                         {
@@ -7067,178 +7067,178 @@ const bank: Room = {
                                                 {
                                                     name: "Arrow of Poison",
                                                     modifier: "Poison (0:05)",
-                                                    signName: "Poison 0:05"
+                                                    signName: "Poison 0:05",
                                                 },
                                                 {
                                                     name: "Arrow of Poison",
                                                     modifier: "Poison (0:15)",
-                                                    signName: "Poison 0:15"
+                                                    signName: "Poison 0:15",
                                                 },
                                                 {
                                                     name: "Arrow of Poison",
                                                     modifier: "Poison II (0:02)",
-                                                    signName: "Poison II"
+                                                    signName: "Poison II",
                                                 },
                                                 {
                                                     name: "Arrow of Weakness",
                                                     modifier: "Weakness (0:11)",
-                                                    signName: "Weakness 0:11"
+                                                    signName: "Weakness 0:11",
                                                 },
                                                 {
                                                     name: "Arrow of Weakness",
                                                     modifier: "Weakness (0:30)",
-                                                    signName: "Weakness 0:30"
+                                                    signName: "Weakness 0:30",
                                                 },
                                                 {
                                                     name: "Arrow of Slowness",
                                                     modifier: "Slowness (0:11)",
-                                                    signName: "Slowness 0:11"
+                                                    signName: "Slowness 0:11",
                                                 },
                                                 {
                                                     name: "Arrow of Slowness",
                                                     modifier: "Slowness (0:30)",
-                                                    signName: "Slowness 0:30"
+                                                    signName: "Slowness 0:30",
                                                 },
                                                 {
                                                     name: "Arrow of Slowness",
                                                     modifier: "Slowness IV (0:02)",
-                                                    signName: "Slowness IV"
+                                                    signName: "Slowness IV",
                                                 },
                                                 {
                                                     name: "Arrow of Harming",
                                                     modifier: "Instant Damage",
-                                                    signName: "Harming"
+                                                    signName: "Harming",
                                                 },
                                                 {
                                                     name: "Arrow of Harming",
                                                     modifier: "Instant Damage II",
-                                                    signName: "Harming II"
+                                                    signName: "Harming II",
                                                 },
                                                 {
                                                     name: "Arrow of Decay",
                                                     modifier: "Wither II",
-                                                    signName: "Decay"
-                                                }
+                                                    signName: "Decay",
+                                                },
                                             ]
-                                        }
+                                        },
                                     ]
-                                }
+                                },
                             ]
                         },
                         {
                             name: "Exploration",
                             utilities: [
-                                "Cartography Table"
+                                "Cartography Table",
                             ],
                             chests: [
                                 {
                                     name: "Compass",
-                                    signName: "Compi"
+                                    signName: "Compi",
                                 },
                                 {
                                     name: "Recovery Compass",
-                                    signName: "Recovery Compi"
+                                    signName: "Recovery Compi",
                                 },
                                 {
                                     name: "Lodestone Compass",
-                                    signName: "Lodestone Compi"
+                                    signName: "Lodestone Compi",
                                 },
                                 {
                                     name: "Map",
-                                    signName: "Maps"
+                                    signName: "Maps",
                                 },
                                 {
                                     name: "Empty Map",
-                                    signName: "Empty Maps"
+                                    signName: "Empty Maps",
                                 },
                                 {
                                     name: "Locator Map",
-                                    signName: "Locator Maps"
+                                    signName: "Locator Maps",
                                 },
                                 {
                                     name: "Empty Locator Map",
-                                    signName: "Empty Locator Maps"
+                                    signName: "Empty Locator Maps",
                                 },
                                 {
                                     name: "Ocean Explorer Map",
-                                    signName: "Ocean Explorer Maps"
+                                    signName: "Ocean Explorer Maps",
                                 },
                                 {
                                     name: "Woodland Explorer Map",
-                                    signName: "Woodland Explorer Maps"
+                                    signName: "Woodland Explorer Maps",
                                 },
                                 {
                                     name: "Treasure Map",
-                                    signName: "Buried Treasure Explorer Maps"
+                                    signName: "Buried Treasure Explorer Maps",
                                 },
                                 {
                                     name: "Trial Explorer Map",
-                                    signName: "Trial Explorer Maps"
+                                    signName: "Trial Explorer Maps",
                                 },
                                 {
                                     name: "Spyglass",
-                                    signName: "Spyglasses"
-                                }
+                                    signName: "Spyglasses",
+                                },
                             ]
                         },
                         {
                             name: "Buckets",
                             utilities: [
-                                "Water Source"
+                                "Water Source",
                             ],
                             chests: [
                                 {
                                     name: "Bucket",
-                                    signName: "Buckets"
+                                    signName: "Buckets",
                                 },
                                 {
                                     name: "Water Bucket",
-                                    signName: "Water Buckets"
+                                    signName: "Water Buckets",
                                 },
                                 {
                                     name: "Lava Bucket",
-                                    signName: "Lava Buckets"
+                                    signName: "Lava Buckets",
                                 },
                                 {
                                     name: "Milk Bucket",
-                                    signName: "Milk Buckets"
+                                    signName: "Milk Buckets",
                                 },
                                 {
                                     name: " Bucket",
-                                    signName: " Buckets"
+                                    signName: " Buckets",
                                 },
                                 {
                                     name: "Powder Snow Bucket",
-                                    signName: "Powder Snow Buckets"
+                                    signName: "Powder Snow Buckets",
                                 },
                                 {
                                     name: "Bucket of Salmon",
-                                    signName: "Salmon Buckets"
+                                    signName: "Salmon Buckets",
                                 },
                                 {
                                     name: "Bucket of Cod",
-                                    signName: "Cod Buckets"
+                                    signName: "Cod Buckets",
                                 },
                                 {
                                     name: "Bucket of Tropical Fish",
-                                    signName: "Tropical Fish Buckets"
+                                    signName: "Tropical Fish Buckets",
                                 },
                                 {
                                     name: "Bucket of Pufferfish",
-                                    signName: "Pufferfish Buckets"
+                                    signName: "Pufferfish Buckets",
                                 },
                                 {
                                     name: "Bucket of Axolotl",
-                                    signName: "Axolotl Buckets"
+                                    signName: "Axolotl Buckets",
                                 },
                                 {
                                     name: "Bucket of Tadpole",
-                                    signName: "Tadpole Buckets"
+                                    signName: "Tadpole Buckets",
                                 },
                                 {
                                     name: "Bucket of Sulfur Cube",
-                                    signName: "Sulfur Cube Buckets"
-                                }
+                                    signName: "Sulfur Cube Buckets",
+                                },
                             ]
                         },
                         {
@@ -7247,43 +7247,43 @@ const bank: Room = {
                                 {
                                     name: "Goat Horn",
                                     modifier: "Ponder",
-                                    signName: "Ponder"
+                                    signName: "Ponder",
                                 },
                                 {
                                     name: "Goat Horn",
                                     modifier: "Sing",
-                                    signName: "Sing"
+                                    signName: "Sing",
                                 },
                                 {
                                     name: "Goat Horn",
                                     modifier: "Seek",
-                                    signName: "Seek"
+                                    signName: "Seek",
                                 },
                                 {
                                     name: "Goat Horn",
                                     modifier: "Feel",
-                                    signName: "Feel"
+                                    signName: "Feel",
                                 },
                                 {
                                     name: "Goat Horn",
                                     modifier: "Admire",
-                                    signName: "Admire"
+                                    signName: "Admire",
                                 },
                                 {
                                     name: "Goat Horn",
                                     modifier: "Call",
-                                    signName: "Call"
+                                    signName: "Call",
                                 },
                                 {
                                     name: "Goat Horn",
                                     modifier: "Yearn",
-                                    signName: "Yearn"
+                                    signName: "Yearn",
                                 },
                                 {
                                     name: "Goat Horn",
                                     modifier: "Dream",
-                                    signName: "Dream"
-                                }
+                                    signName: "Dream",
+                                },
                             ]
                         },
                         {
@@ -7292,98 +7292,98 @@ const bank: Room = {
                                 {
                                     name: "Smithing Template",
                                     modifier: "Netherite Upgrade",
-                                    signName: "Netherite Upgrade"
+                                    signName: "Netherite Upgrade",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Coast Armor Trim",
-                                    signName: "Coast Armor Trim"
+                                    signName: "Coast Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Dune Armor Trim",
-                                    signName: "Dune Armor Trim"
+                                    signName: "Dune Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Eye Armor Trim",
-                                    signName: "Eye Armor Trim"
+                                    signName: "Eye Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Host Armor Trim",
-                                    signName: "Host Armor Trim"
+                                    signName: "Host Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Raiser Armor Trim",
-                                    signName: "Raiser Armor Trim"
+                                    signName: "Raiser Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Rib Armor Trim",
-                                    signName: "Rib Armor Trim"
+                                    signName: "Rib Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Sentry Armor Trim",
-                                    signName: "Sentry Armor Trim"
+                                    signName: "Sentry Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Shaper Armor Trim",
-                                    signName: "Shaper Armor Trim"
+                                    signName: "Shaper Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Silence Armor Trim",
-                                    signName: "Silence Armor Trim"
+                                    signName: "Silence Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Snout Armor Trim",
-                                    signName: "Snout Armor Trim"
+                                    signName: "Snout Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Spire Armor Trim",
-                                    signName: "Spire Armor Trim"
+                                    signName: "Spire Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Tide Armor Trim",
-                                    signName: "Tide Armor Trim"
+                                    signName: "Tide Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Vex Armor Trim",
-                                    signName: "Vex Armor Trim"
+                                    signName: "Vex Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Ward Armor Trim",
-                                    signName: "Ward Armor Trim"
+                                    signName: "Ward Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Wayfinder Armor Trim",
-                                    signName: "Wayfinder Armor Trim"
+                                    signName: "Wayfinder Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Wild Armor Trim",
-                                    signName: "Wild Armor Trim"
+                                    signName: "Wild Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Bolt Armor Trim",
-                                    signName: "Bolt Armor Trim"
+                                    signName: "Bolt Armor Trim",
                                 },
                                 {
                                     name: "Smithing Template",
                                     modifier: "Flow Armor Trim",
-                                    signName: "Flow Armor Trim"
-                                }
+                                    signName: "Flow Armor Trim",
+                                },
                             ]
                         },
                         {
@@ -7391,72 +7391,72 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Bundle",
-                                    signName: "Bundles"
+                                    signName: "Bundles",
                                 },
                                 {
                                     name: "White Bundle",
-                                    signName: "White Bundles"
+                                    signName: "White Bundles",
                                 },
                                 {
                                     name: "Light Gray Bundle",
-                                    signName: "Light Gray Bundles"
+                                    signName: "Light Gray Bundles",
                                 },
                                 {
                                     name: "Gray Bundle",
-                                    signName: "Gray Bundles"
+                                    signName: "Gray Bundles",
                                 },
                                 {
                                     name: "Black Bundle",
-                                    signName: "Black Bundles"
+                                    signName: "Black Bundles",
                                 },
                                 {
                                     name: "Red Bundle",
-                                    signName: "Red Bundles"
+                                    signName: "Red Bundles",
                                 },
                                 {
                                     name: "Orange Bundle",
-                                    signName: "Orange Bundles"
+                                    signName: "Orange Bundles",
                                 },
                                 {
                                     name: "Yellow Bundle",
-                                    signName: "Yellow Bundles"
+                                    signName: "Yellow Bundles",
                                 },
                                 {
                                     name: "Lime Bundle",
-                                    signName: "Lime Bundles"
+                                    signName: "Lime Bundles",
                                 },
                                 {
                                     name: "Green Bundle",
-                                    signName: "Green Bundles"
+                                    signName: "Green Bundles",
                                 },
                                 {
                                     name: "Blue Bundle",
-                                    signName: "Blue Bundles"
+                                    signName: "Blue Bundles",
                                 },
                                 {
                                     name: "Light Blue Bundle",
-                                    signName: "Light Blue Bundles"
+                                    signName: "Light Blue Bundles",
                                 },
                                 {
                                     name: "Cyan Bundle",
-                                    signName: "Cyan Bundles"
+                                    signName: "Cyan Bundles",
                                 },
                                 {
                                     name: "Purple Bundle",
-                                    signName: "Purple Bundles"
+                                    signName: "Purple Bundles",
                                 },
                                 {
                                     name: "Magenta Bundle",
-                                    signName: "Magenta Bundles"
+                                    signName: "Magenta Bundles",
                                 },
                                 {
                                     name: "Pink Bundle",
-                                    signName: "Pink Bundles"
+                                    signName: "Pink Bundles",
                                 },
                                 {
                                     name: "Brown Bundle",
-                                    signName: "Brown Bundles"
-                                }
+                                    signName: "Brown Bundles",
+                                },
                             ]
                         },
                         {
@@ -7465,49 +7465,49 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Carrot on a Stick",
-                                    signName: "Carrots on Sticks"
+                                    signName: "Carrots on Sticks",
                                 },
                                 {
                                     name: "Warped Fungus on a Stick",
-                                    signName: "Warped Fungi on Sticks"
+                                    signName: "Warped Fungi on Sticks",
                                 },
                                 {
-                                    name: "Shears"
+                                    name: "Shears",
                                 },
                                 {
                                     name: "Lead",
-                                    signName: "Leads"
+                                    signName: "Leads",
                                 },
                                 {
                                     name: "Fishing Rod",
-                                    signName: "Fishing Rods"
+                                    signName: "Fishing Rods",
                                 },
                                 {
                                     name: "Flint and Steel",
-                                    signName: "Flints and Steels"
+                                    signName: "Flints and Steels",
                                 },
                                 {
                                     name: "Clock",
-                                    signName: "Clocks"
+                                    signName: "Clocks",
                                 },
                                 {
                                     name: "Totem of Undying",
-                                    signName: "Totems of Undying"
+                                    signName: "Totems of Undying",
                                 },
                                 {
                                     name: "Shield",
-                                    signName: "Shields"
+                                    signName: "Shields",
                                 },
                                 {
                                     name: "Brush",
-                                    signName: "Brushes"
+                                    signName: "Brushes",
                                 },
                                 {
                                     name: "Mace",
-                                    signName: "Maces"
-                                }
+                                    signName: "Maces",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -7516,7 +7516,7 @@ const bank: Room = {
                         "Cauldron",
                         "Grindstone",
                         "Anvil",
-                        "Smithing Table"
+                        "Smithing Table",
                     ],
                     subrooms: [
                         {
@@ -7527,71 +7527,71 @@ const bank: Room = {
                                     room: "Fruit",
                                     items: [
                                         {
-                                            name: "Carved Pumpkin"
-                                        }
+                                            name: "Carved Pumpkin",
+                                        },
                                     ],
-                                    description: "Carved Pumpkins"
+                                    description: "Carved Pumpkins",
                                 },
                                 {
                                     room: "Heads",
                                     items: [
                                         {
-                                            name: "Zombie Head"
+                                            name: "Zombie Head",
                                         },
                                         {
-                                            name: "Creeper Head"
+                                            name: "Creeper Head",
                                         },
                                         {
-                                            name: "Ender Dragon Head"
+                                            name: "Ender Dragon Head",
                                         },
                                         {
-                                            name: "Skeleton Skull"
+                                            name: "Skeleton Skull",
                                         },
                                         {
-                                            name: "Wither Skeleton Skull"
-                                        }
+                                            name: "Wither Skeleton Skull",
+                                        },
                                     ],
-                                    description: "Heads"
+                                    description: "Heads",
                                 },
                                 {
                                     room: "Brewing Supplies",
                                     items: [
                                         {
-                                            name: "Turtle Shell"
-                                        }
+                                            name: "Turtle Shell",
+                                        },
                                     ],
-                                    description: "Turtle Shells"
-                                }
+                                    description: "Turtle Shells",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Leather Cap",
-                                    signName: "Leather Caps"
+                                    signName: "Leather Caps",
                                 },
                                 {
                                     name: "Iron Helmet",
-                                    signName: "Iron Helmets"
+                                    signName: "Iron Helmets",
                                 },
                                 {
                                     name: "Copper Helmet",
-                                    signName: "Copper Helmets"
+                                    signName: "Copper Helmets",
                                 },
                                 {
                                     name: "Gold Helmet",
-                                    signName: "Gold Helmets"
+                                    signName: "Gold Helmets",
                                 },
                                 {
                                     name: "Chain Helmet",
-                                    signName: "Chainmail Helmets"
+                                    signName: "Chainmail Helmets",
                                 },
                                 {
                                     name: "Diamond Helmet",
-                                    signName: "Diamond Helmets"
+                                    signName: "Diamond Helmets",
                                 },
                                 {
                                     name: "Netherite Helmet",
-                                    signName: "Netherite Helmets"
-                                }
+                                    signName: "Netherite Helmets",
+                                },
                             ]
                         },
                         {
@@ -7599,185 +7599,185 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Leather Tunic",
-                                    signName: "Leather Tunics"
+                                    signName: "Leather Tunics",
                                 },
                                 {
                                     name: "Iron Chestplate",
-                                    signName: "Iron Chestplates"
+                                    signName: "Iron Chestplates",
                                 },
                                 {
                                     name: "Copper Chestplate",
-                                    signName: "Copper Chestplates"
+                                    signName: "Copper Chestplates",
                                 },
                                 {
                                     name: "Gold Chestplate",
-                                    signName: "Gold Chestplates"
+                                    signName: "Gold Chestplates",
                                 },
                                 {
                                     name: "Chain Chestplate",
-                                    signName: "Chainmail Chestplates"
+                                    signName: "Chainmail Chestplates",
                                 },
                                 {
                                     name: "Diamond Chestplate",
-                                    signName: "Diamond Chestplates"
+                                    signName: "Diamond Chestplates",
                                 },
                                 {
                                     name: "Netherite Chestplate",
-                                    signName: "Netherite Chestplates"
+                                    signName: "Netherite Chestplates",
                                 },
                                 {
-                                    name: "Elytra"
-                                }
+                                    name: "Elytra",
+                                },
                             ]
                         },
                         {
                             name: "Legs",
                             chests: [
                                 {
-                                    name: "Leather Pants"
+                                    name: "Leather Pants",
                                 },
                                 {
-                                    name: "Iron Leggings"
+                                    name: "Iron Leggings",
                                 },
                                 {
-                                    name: "Copper Leggings"
+                                    name: "Copper Leggings",
                                 },
                                 {
-                                    name: "Gold Leggings"
+                                    name: "Gold Leggings",
                                 },
                                 {
                                     name: "Chain Leggings",
-                                    signName: "Chainmail Leggings"
+                                    signName: "Chainmail Leggings",
                                 },
                                 {
-                                    name: "Diamond Leggings"
+                                    name: "Diamond Leggings",
                                 },
                                 {
-                                    name: "Netherite Leggings"
-                                }
+                                    name: "Netherite Leggings",
+                                },
                             ]
                         },
                         {
                             name: "Feet",
                             chests: [
                                 {
-                                    name: "Leather Boots"
+                                    name: "Leather Boots",
                                 },
                                 {
-                                    name: "Iron Boots"
+                                    name: "Iron Boots",
                                 },
                                 {
-                                    name: "Copper Boots"
+                                    name: "Copper Boots",
                                 },
                                 {
-                                    name: "Gold Boots"
+                                    name: "Gold Boots",
                                 },
                                 {
                                     name: "Chain Boots",
-                                    signName: "Chainmail Boots"
+                                    signName: "Chainmail Boots",
                                 },
                                 {
-                                    name: "Diamond Boots"
+                                    name: "Diamond Boots",
                                 },
                                 {
-                                    name: "Netherite Boots"
-                                }
+                                    name: "Netherite Boots",
+                                },
                             ]
                         },
                         {
                             name: "Mob",
                             chests: [
                                 {
-                                    name: "Leather Horse Armor"
+                                    name: "Leather Horse Armor",
                                 },
                                 {
-                                    name: "Iron Horse Armor"
+                                    name: "Iron Horse Armor",
                                 },
                                 {
                                     name: "Copper Horse Armor",
                                 },
                                 {
-                                    name: "Gold Horse Armor"
+                                    name: "Gold Horse Armor",
                                 },
                                 {
-                                    name: "Diamond Horse Armor"
+                                    name: "Diamond Horse Armor",
                                 },
                                 {
-                                    name: "Netherite Horse Armor"
+                                    name: "Netherite Horse Armor",
                                 },
                                 {
-                                    name: "Wolf Armor"
+                                    name: "Wolf Armor",
                                 },
                                 {
                                     name: "Saddle",
-                                    signName: "Saddles"
+                                    signName: "Saddles",
                                 },
                                 {
                                     name: "White Harness",
-                                    signName: "White Harnesses"
+                                    signName: "White Harnesses",
                                 },
                                 {
                                     name: "Light Gray Harness",
-                                    signName: "Light Gray Harnesses"
+                                    signName: "Light Gray Harnesses",
                                 },
                                 {
                                     name: "Gray Harness",
-                                    signName: "Gray Harnesses"
+                                    signName: "Gray Harnesses",
                                 },
                                 {
                                     name: "Black Harness",
-                                    signName: "Black Harnesses"
+                                    signName: "Black Harnesses",
                                 },
                                 {
                                     name: "Red Harness",
-                                    signName: "Red Harnesses"
+                                    signName: "Red Harnesses",
                                 },
                                 {
                                     name: "Orange Harness",
-                                    signName: "Orange Harnesses"
+                                    signName: "Orange Harnesses",
                                 },
                                 {
                                     name: "Yellow Harness",
-                                    signName: "Yellow Harnesses"
+                                    signName: "Yellow Harnesses",
                                 },
                                 {
                                     name: "Lime Harness",
-                                    signName: "Lime Harnesses"
+                                    signName: "Lime Harnesses",
                                 },
                                 {
                                     name: "Green Harness",
-                                    signName: "Green Harnesses"
+                                    signName: "Green Harnesses",
                                 },
                                 {
                                     name: "Blue Harness",
-                                    signName: "Blue Harnesses"
+                                    signName: "Blue Harnesses",
                                 },
                                 {
                                     name: "Light Blue Harness",
-                                    signName: "Light Blue Harnesses"
+                                    signName: "Light Blue Harnesses",
                                 },
                                 {
                                     name: "Cyan Harness",
-                                    signName: "Cyan Harnesses"
+                                    signName: "Cyan Harnesses",
                                 },
                                 {
                                     name: "Purple Harness",
-                                    signName: "Purple Harnesses"
+                                    signName: "Purple Harnesses",
                                 },
                                 {
                                     name: "Magenta Harness",
-                                    signName: "Magenta Harnesses"
+                                    signName: "Magenta Harnesses",
                                 },
                                 {
                                     name: "Pink Harness",
-                                    signName: "Pink Harnesses"
+                                    signName: "Pink Harnesses",
                                 },
                                 {
                                     name: "Brown Harness",
-                                    signName: "Brown Harnesses"
-                                }
+                                    signName: "Brown Harnesses",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -7788,88 +7788,88 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Firework Rocket",
-                                    signName: "Fireworks"
+                                    signName: "Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "White",
-                                    signName: "White Fireworks"
+                                    signName: "White Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Light Gray",
-                                    signName: "Light Gray Fireworks"
+                                    signName: "Light Gray Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Gray",
-                                    signName: "Gray Fireworks"
+                                    signName: "Gray Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Black",
-                                    signName: "Black Fireworks"
+                                    signName: "Black Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Red",
-                                    signName: "Red Fireworks"
+                                    signName: "Red Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Orange",
-                                    signName: "Orange Fireworks"
+                                    signName: "Orange Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Yellow",
-                                    signName: "Yellow Fireworks"
+                                    signName: "Yellow Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Lime",
-                                    signName: "Lime Fireworks"
+                                    signName: "Lime Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Green",
-                                    signName: "Green Fireworks"
+                                    signName: "Green Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Blue",
-                                    signName: "Blue Fireworks"
+                                    signName: "Blue Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Light Blue",
-                                    signName: "Light Blue Fireworks"
+                                    signName: "Light Blue Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Cyan",
-                                    signName: "Cyan Fireworks"
+                                    signName: "Cyan Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Purple",
-                                    signName: "Purple Fireworks"
+                                    signName: "Purple Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Magenta",
-                                    signName: "Magenta Fireworks"
+                                    signName: "Magenta Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Pink",
-                                    signName: "Pink Fireworks"
+                                    signName: "Pink Fireworks",
                                 },
                                 {
                                     name: "Firework Rocket",
                                     modifier: "Brown",
-                                    signName: "Brown Fireworks"
-                                }
+                                    signName: "Brown Fireworks",
+                                },
                             ]
                         },
                         {
@@ -7879,10 +7879,10 @@ const bank: Room = {
                                     room: "Mineral Items",
                                     items: [
                                         {
-                                            name: "Gold Nugget"
-                                        }
+                                            name: "Gold Nugget",
+                                        },
                                     ],
-                                    description: "Gold Nuggets"
+                                    description: "Gold Nuggets",
                                 },
                                 {
                                     room: "Dyes",
@@ -7891,169 +7891,169 @@ const bank: Room = {
                                             name: "White Dye",
                                         },
                                         {
-                                            name: "Light Gray Dye"
+                                            name: "Light Gray Dye",
                                         },
                                         {
-                                            name: "Gray Dye"
+                                            name: "Gray Dye",
                                         },
                                         {
-                                            name: "Black Dye"
+                                            name: "Black Dye",
                                         },
                                         {
-                                            name: "Red Dye"
+                                            name: "Red Dye",
                                         },
                                         {
-                                            name: "Orange Dye"
+                                            name: "Orange Dye",
                                         },
                                         {
-                                            name: "Yellow Dye"
+                                            name: "Yellow Dye",
                                         },
                                         {
-                                            name: "Lime Dye"
+                                            name: "Lime Dye",
                                         },
                                         {
-                                            name: "Green Dye"
+                                            name: "Green Dye",
                                         },
                                         {
-                                            name: "Blue Dye"
+                                            name: "Blue Dye",
                                         },
                                         {
-                                            name: "Light Blue Dye"
+                                            name: "Light Blue Dye",
                                         },
                                         {
-                                            name: "Cyan Dye"
+                                            name: "Cyan Dye",
                                         },
                                         {
-                                            name: "Purple Dye"
+                                            name: "Purple Dye",
                                         },
                                         {
-                                            name: "Magenta Dye"
+                                            name: "Magenta Dye",
                                         },
                                         {
-                                            name: "Pink Dye"
+                                            name: "Pink Dye",
                                         },
                                         {
-                                            name: "Brown Dye"
-                                        }
+                                            name: "Brown Dye",
+                                        },
                                     ],
-                                    description: "Dyes"
+                                    description: "Dyes",
                                 },
                                 {
                                     room: "Miscellaneous Items",
                                     items: [
                                         {
-                                            name: "Feather"
+                                            name: "Feather",
                                         },
                                         {
-                                            name: "Paper"
-                                        }
+                                            name: "Paper",
+                                        },
                                     ],
-                                    description: "Feathers/Paper"
+                                    description: "Feathers/Paper",
                                 },
                                 {
                                     room: "Brewing Supplies",
                                     items: [
                                         {
-                                            name: "Glowstone Dust"
-                                        }
+                                            name: "Glowstone Dust",
+                                        },
                                     ]
                                 },
                                 {
                                     room: "Ranged Weapons & Projectiles",
                                     items: [
                                         {
-                                            name: "Fire Charge"
-                                        }
+                                            name: "Fire Charge",
+                                        },
                                     ],
-                                    description: "Fire Charges"
-                                }
+                                    description: "Fire Charges",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Firework Star",
                                     modifier: "White",
-                                    signName: "White Firework Stars"
+                                    signName: "White Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Light Gray",
-                                    signName: "Light Gray Firework Stars"
+                                    signName: "Light Gray Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Gray",
-                                    signName: "Gray Firework Stars"
+                                    signName: "Gray Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Black",
-                                    signName: "Black Firework Stars"
+                                    signName: "Black Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Red",
-                                    signName: "Red Firework Stars"
+                                    signName: "Red Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Orange",
-                                    signName: "Orange Firework Stars"
+                                    signName: "Orange Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Yellow",
-                                    signName: "Yellow Firework Stars"
+                                    signName: "Yellow Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Lime",
-                                    signName: "Lime Firework Stars"
+                                    signName: "Lime Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Green",
-                                    signName: "Green Firework Stars"
+                                    signName: "Green Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Blue",
-                                    signName: "Blue Firework Stars"
+                                    signName: "Blue Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Light Blue",
-                                    signName: "Light Blue Firework Stars"
+                                    signName: "Light Blue Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Cyan",
-                                    signName: "Cyan Firework Stars"
+                                    signName: "Cyan Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Purple",
-                                    signName: "Purple Firework Stars"
+                                    signName: "Purple Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Magenta",
-                                    signName: "Magenta Firework Stars"
+                                    signName: "Magenta Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Pink",
-                                    signName: "Pink Firework Stars"
+                                    signName: "Pink Firework Stars",
                                 },
                                 {
                                     name: "Firework Star",
                                     modifier: "Brown",
-                                    signName: "Brown Firework Stars"
+                                    signName: "Brown Firework Stars",
                                 },
                                 {
-                                    name: "Gunpowder"
-                                }
+                                    name: "Gunpowder",
+                                },
                             ]
-                        }
+                        },
                     ]
                 },
                 {
@@ -8061,7 +8061,7 @@ const bank: Room = {
                     upstreamName: "Other",
                     downstreamName: "Other Items",
                     utilities: [
-                        "Crafting Table"
+                        "Crafting Table",
                     ],
                     subrooms: [
                         {
@@ -8069,91 +8069,91 @@ const bank: Room = {
                             upstreamName: "Minerals",
                             shortcutName: "Minerals",
                             utilities: [
-                                "Crafting Table"
+                                "Crafting Table",
                             ],
                             shortcuts: [
                                 {
                                     room: "Transmitters",
                                     items: [
                                         {
-                                            name: "Redstone Dust"
-                                        }
+                                            name: "Redstone Dust",
+                                        },
                                     ]
-                                }
+                                },
                             ],
                             chests: [
                                 {
-                                    name: "Coal"
+                                    name: "Coal",
                                 },
                                 {
-                                    name: "Charcoal"
+                                    name: "Charcoal",
                                 },
                                 {
                                     name: "Emerald",
-                                    signName: "Emeralds"
+                                    signName: "Emeralds",
                                 },
                                 {
                                     name: "Diamond",
-                                    signName: "Diamonds"
+                                    signName: "Diamonds",
                                 },
                                 {
                                     name: "Iron Nugget",
-                                    signName: "Iron Nuggets"
+                                    signName: "Iron Nuggets",
                                 },
                                 {
                                     name: "Copper Nugget",
-                                    signName: "Copper Nuggets"
+                                    signName: "Copper Nuggets",
                                 },
                                 {
                                     name: "Gold Nugget",
-                                    signName: "Gold Nuggets"
+                                    signName: "Gold Nuggets",
                                 },
                                 {
-                                    name: "Raw Iron"
+                                    name: "Raw Iron",
                                 },
                                 {
-                                    name: "Raw Gold"
+                                    name: "Raw Gold",
                                 },
                                 {
-                                    name: "Raw Copper"
+                                    name: "Raw Copper",
                                 },
                                 {
                                     name: "Iron Ingot",
-                                    signName: "Iron Ingots"
+                                    signName: "Iron Ingots",
                                 },
                                 {
                                     name: "Gold Ingot",
-                                    signName: "Gold Ingots"
+                                    signName: "Gold Ingots",
                                 },
                                 {
                                     name: "Copper Ingot",
-                                    signName: "Copper Ingots"
+                                    signName: "Copper Ingots",
                                 },
                                 {
-                                    name: "Nether Quartz"
+                                    name: "Nether Quartz",
                                 },
                                 {
-                                    name: "Lapis Lazuli"
+                                    name: "Lapis Lazuli",
                                 },
                                 {
                                     name: "Netherite Scrap",
-                                    signName: "Netherite Scraps"
+                                    signName: "Netherite Scraps",
                                 },
                                 {
                                     name: "Netherite Ingot",
-                                    signName: "Netherite Ingots"
+                                    signName: "Netherite Ingots",
                                 },
                                 {
                                     name: "Amethyst Shard",
-                                    signName: "Amethyst Shards"
+                                    signName: "Amethyst Shards",
                                 },
                                 {
-                                    name: "Flint"
+                                    name: "Flint",
                                 },
                                 {
                                     name: "Resin Brick",
-                                    signName: "Resin Bricks"
-                                }
+                                    signName: "Resin Bricks",
+                                },
                             ]
                         },
                         {
@@ -8162,90 +8162,90 @@ const bank: Room = {
                                 "Water Source",
                                 "Cauldron",
                                 "Water Source",
-                                "Crafting Table"
+                                "Crafting Table",
                             ],
                             shortcuts: [
                                 {
                                     room: "Miscellaneous Items",
                                     items: [
                                         {
-                                            name: "Bone Meal"
+                                            name: "Bone Meal",
                                         },
                                         {
-                                            name: "Ink Sac"
+                                            name: "Ink Sac",
                                         },
                                         {
-                                            name: "Glow Ink Sac"
-                                        }
+                                            name: "Glow Ink Sac",
+                                        },
                                     ],
-                                    description: "Bonemeal/Ink Sacs"
+                                    description: "Bonemeal/Ink Sacs",
                                 },
                                 {
                                     room: "Vegetarian Options",
                                     items: [
                                         {
-                                            name: "Cocoa Beans"
-                                        }
+                                            name: "Cocoa Beans",
+                                        },
                                     ]
                                 },
                                 {
                                     room: "Mineral Items",
                                     items: [
                                         {
-                                            name: "Lapis Lazuli"
-                                        }
+                                            name: "Lapis Lazuli",
+                                        },
                                     ]
-                                }
+                                },
                             ],
                             chests: [
                                 {
-                                    name: "White Dye"
+                                    name: "White Dye",
                                 },
                                 {
-                                    name: "Light Gray Dye"
+                                    name: "Light Gray Dye",
                                 },
                                 {
-                                    name: "Gray Dye"
+                                    name: "Gray Dye",
                                 },
                                 {
-                                    name: "Black Dye"
+                                    name: "Black Dye",
                                 },
                                 {
-                                    name: "Red Dye"
+                                    name: "Red Dye",
                                 },
                                 {
-                                    name: "Orange Dye"
+                                    name: "Orange Dye",
                                 },
                                 {
-                                    name: "Yellow Dye"
+                                    name: "Yellow Dye",
                                 },
                                 {
-                                    name: "Lime Dye"
+                                    name: "Lime Dye",
                                 },
                                 {
-                                    name: "Green Dye"
+                                    name: "Green Dye",
                                 },
                                 {
-                                    name: "Blue Dye"
+                                    name: "Blue Dye",
                                 },
                                 {
-                                    name: "Light Blue Dye"
+                                    name: "Light Blue Dye",
                                 },
                                 {
-                                    name: "Cyan Dye"
+                                    name: "Cyan Dye",
                                 },
                                 {
-                                    name: "Purple Dye"
+                                    name: "Purple Dye",
                                 },
                                 {
-                                    name: "Magenta Dye"
+                                    name: "Magenta Dye",
                                 },
                                 {
-                                    name: "Pink Dye"
+                                    name: "Pink Dye",
                                 },
                                 {
-                                    name: "Brown Dye"
-                                }
+                                    name: "Brown Dye",
+                                },
                             ]
                         },
                         {
@@ -8254,107 +8254,107 @@ const bank: Room = {
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - 13",
-                                    signName: "13"
+                                    signName: "13",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - cat",
-                                    signName: "cat"
+                                    signName: "cat",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - blocks",
-                                    signName: "blocks"
+                                    signName: "blocks",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - chirp",
-                                    signName: "chirp"
+                                    signName: "chirp",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - far",
-                                    signName: "far"
+                                    signName: "far",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - mall",
-                                    signName: "mall"
+                                    signName: "mall",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "Samuel Ţerg - 5",
-                                    signName: "5"
+                                    signName: "5",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "Lena Raine - Pigstep",
-                                    signName: "Pigstep"
+                                    signName: "Pigstep",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - mellohi",
-                                    signName: "mellohi"
+                                    signName: "mellohi",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - stal",
-                                    signName: "stal"
+                                    signName: "stal",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - strad",
-                                    signName: "strad"
+                                    signName: "strad",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - ward",
-                                    signName: "ward"
+                                    signName: "ward",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - 11",
-                                    signName: "11"
+                                    signName: "11",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "C418 - wait",
-                                    signName: "wait"
+                                    signName: "wait",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "Lena Raine - otherside",
-                                    signName: "otherside"
+                                    signName: "otherside",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "Aaron Cherof - Relic",
-                                    signName: "Relic"
+                                    signName: "Relic",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "Aaron Cherof - Precipice",
-                                    signName: "Precipice"
+                                    signName: "Precipice",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "Aaron Cherof - Creator",
-                                    signName: "Creator"
+                                    signName: "Creator",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "Aaron Cherof - Creator (Music Box)",
-                                    signName: "Creator (Music Box)"
+                                    signName: "Creator (Music Box)",
                                 },
                                 {
                                     name: "Music Disc",
                                     modifier: "Amos Roddy - Tears",
-                                    signName: "Tears"
+                                    signName: "Tears",
                                 },
                                 {
                                     name: "Disc Fragment",
-                                    signName: "Disc Fragments"
-                                }
+                                    signName: "Disc Fragments",
+                                },
                             ]
                         },
                         {
@@ -8362,212 +8362,212 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Book",
-                                    signName: "Books"
+                                    signName: "Books",
                                 },
                                 {
                                     name: "Enchanted Book",
-                                    signName: "Enchanted Books"
+                                    signName: "Enchanted Books",
                                 },
                                 {
                                     name: "Book & Quill",
-                                    signName: "Books & Quills"
+                                    signName: "Books & Quills",
                                 },
                                 {
                                     name: "Written Book",
-                                    signName: "Written Books"
-                                }
+                                    signName: "Written Books",
+                                },
                             ]
                         },
                         {
                             name: "Banner Patterns",
                             utilities: [
-                                "Loom"
+                                "Loom",
                             ],
                             chests: [
                                 {
                                     name: "Banner Pattern",
                                     modifier: "Globe",
-                                    signName: "Globe"
+                                    signName: "Globe",
                                 },
                                 {
                                     name: "Banner Pattern",
                                     modifier: "Snout",
-                                    signName: "Snout"
+                                    signName: "Snout",
                                 },
                                 {
                                     name: "Banner Pattern",
                                     modifier: "Thing",
-                                    signName: "Thing"
+                                    signName: "Thing",
                                 },
                                 {
                                     name: "Banner Pattern",
                                     modifier: "Flower Charge",
-                                    signName: "Flower Charge"
+                                    signName: "Flower Charge",
                                 },
                                 {
                                     name: "Banner Pattern",
                                     modifier: "Skull",
-                                    signName: "Skull"
+                                    signName: "Skull",
                                 },
                                 {
                                     name: "Banner Pattern",
                                     modifier: "Creeper",
-                                    signName: "Creeper"
+                                    signName: "Creeper",
                                 },
                                 {
                                     name: "Banner Pattern",
                                     modifier: "Field Masoned",
-                                    signName: "Field Masoned"
+                                    signName: "Field Masoned",
                                 },
                                 {
                                     name: "Banner Pattern",
                                     modifier: "Bordure Indented",
-                                    signName: "Bordure Indented"
+                                    signName: "Bordure Indented",
                                 },
                                 {
                                     name: "Banner Pattern",
                                     modifier: "Flow",
-                                    signName: "Flow"
+                                    signName: "Flow",
                                 },
                                 {
                                     name: "Banner Pattern",
                                     modifier: "Guster",
-                                    signName: "Guster"
-                                }
+                                    signName: "Guster",
+                                },
                             ]
                         },
                         {
                             name: "Pottery Sherds",
                             utilities: [
-                                "Crafting Table"
+                                "Crafting Table",
                             ],
                             shortcuts: [
                                 {
                                     room: "Miscellaneous Items",
                                     items: [
                                         {
-                                            name: "Brick"
-                                        }
+                                            name: "Brick",
+                                        },
                                     ],
-                                    description: "Bricks"
-                                }
+                                    description: "Bricks",
+                                },
                             ],
                             chests: [
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Angler",
-                                    signName: "Angler"
+                                    signName: "Angler",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Archer",
-                                    signName: "Archer"
+                                    signName: "Archer",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Arms up",
-                                    signName: "Arms Up"
+                                    signName: "Arms Up",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Blade",
-                                    signName: "Blade"
+                                    signName: "Blade",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Brewer",
-                                    signName: "Brewer"
+                                    signName: "Brewer",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Burn",
-                                    signName: "Burn"
+                                    signName: "Burn",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Danger",
-                                    signName: "Danger"
+                                    signName: "Danger",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Explorer",
-                                    signName: "Explorer"
+                                    signName: "Explorer",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Friend",
-                                    signName: "Friend"
+                                    signName: "Friend",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Heart",
-                                    signName: "Heart"
+                                    signName: "Heart",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Heartbreak",
-                                    signName: "Heartbreak"
+                                    signName: "Heartbreak",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Howl",
-                                    signName: "Howl"
+                                    signName: "Howl",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Miner",
-                                    signName: "Miner"
+                                    signName: "Miner",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Mourner",
-                                    signName: "Mourner"
+                                    signName: "Mourner",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Plenty",
-                                    signName: "Plenty"
+                                    signName: "Plenty",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Prize",
-                                    signName: "Prize"
+                                    signName: "Prize",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Sheaf",
-                                    signName: "Sheaf"
+                                    signName: "Sheaf",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Shelter",
-                                    signName: "Shelter"
+                                    signName: "Shelter",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Skull",
-                                    signName: "Skull"
+                                    signName: "Skull",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Snort",
-                                    signName: "Snort"
+                                    signName: "Snort",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Flow",
-                                    signName: "Flow"
+                                    signName: "Flow",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Guster",
-                                    signName: "Guster"
+                                    signName: "Guster",
                                 },
                                 {
                                     name: "Pottery Sherd",
                                     modifier: "Scrape",
-                                    signName: "Scrape"
-                                }
+                                    signName: "Scrape",
+                                },
                             ]
                         },
                         {
@@ -8577,133 +8577,133 @@ const bank: Room = {
                             chests: [
                                 {
                                     name: "Ink Sac",
-                                    signName: "Ink Sacs"
+                                    signName: "Ink Sacs",
                                 },
                                 {
                                     name: "Glow Ink Sac",
-                                    signName: "Glow Ink Sacs"
+                                    signName: "Glow Ink Sacs",
                                 },
                                 {
                                     name: "Feather",
-                                    signName: "Feathers"
+                                    signName: "Feathers",
                                 },
                                 {
-                                    name: "Paper"
+                                    name: "Paper",
                                 },
                                 {
                                     name: "Brick",
-                                    signName: "Bricks"
+                                    signName: "Bricks",
                                 },
                                 {
                                     name: "Nether Brick",
-                                    signName: "Nether Bricks"
+                                    signName: "Nether Bricks",
                                 },
                                 {
                                     name: "Clay Ball",
-                                    signName: "Clay"
+                                    signName: "Clay",
                                 },
                                 {
                                     name: "Slimeball",
-                                    signName: "Slimeballs"
+                                    signName: "Slimeballs",
                                 },
                                 {
-                                    name: "Leather"
+                                    name: "Leather",
                                 },
                                 {
                                     name: "Rabbit Hide",
-                                    signName: "Rabbit Hides"
+                                    signName: "Rabbit Hides",
                                 },
                                 {
                                     name: "Stick",
-                                    signName: "Sticks"
+                                    signName: "Sticks",
                                 },
                                 {
                                     name: "Bowl",
-                                    signName: "Bowls"
+                                    signName: "Bowls",
                                 },
                                 {
                                     name: "Honeycomb",
-                                    signName: "Honeycombs"
+                                    signName: "Honeycombs",
                                 },
                                 {
                                     name: "Bottle o' Enchanting",
-                                    signName: "Bottles o' Enchanting"
+                                    signName: "Bottles o' Enchanting",
                                 },
                                 {
-                                    name: "String"
+                                    name: "String",
                                 },
                                 {
                                     name: "Bone",
-                                    signName: "Bones"
+                                    signName: "Bones",
                                 },
                                 {
                                     name: "Nether Star",
-                                    signName: "Nether Stars"
+                                    signName: "Nether Stars",
                                 },
                                 {
                                     name: "Eye of Ender",
-                                    signName: "Eyes of Ender"
+                                    signName: "Eyes of Ender",
                                 },
                                 {
                                     name: "Prismarine Shard",
-                                    signName: "Prismarine Shards"
+                                    signName: "Prismarine Shards",
                                 },
                                 {
                                     name: "Prismarine Crystal",
-                                    signName: "Prismarine Crystals"
+                                    signName: "Prismarine Crystals",
                                 },
                                 {
                                     name: "Turtle Scute",
-                                    signName: "Turtle Scutes"
+                                    signName: "Turtle Scutes",
                                 },
                                 {
                                     name: "Name Tag",
-                                    signName: "Name Tags"
+                                    signName: "Name Tags",
                                 },
                                 {
                                     name: "Heart of the Sea",
-                                    signName: "Hearts of the Sea"
+                                    signName: "Hearts of the Sea",
                                 },
                                 {
                                     name: "Shulker Shell",
-                                    signName: "Shulker Shells"
+                                    signName: "Shulker Shells",
                                 },
                                 {
                                     name: "Nautilus Shell",
-                                    signName: "Nautilus Shells"
+                                    signName: "Nautilus Shells",
                                 },
                                 {
                                     name: "Echo Shard",
-                                    signName: "Echo Shards"
+                                    signName: "Echo Shards",
                                 },
                                 {
                                     name: "Bone Meal",
-                                    signName: "Bonemeal"
+                                    signName: "Bonemeal",
                                 },
                                 {
                                     name: "Armadillo Scute",
-                                    signName: "Armadillo Scutes"
+                                    signName: "Armadillo Scutes",
                                 },
                                 {
                                     name: "Ominous Bottle",
-                                    signName: "Ominous Bottles"
+                                    signName: "Ominous Bottles",
                                 },
                                 {
                                     name: "Trial Key",
-                                    signName: "Trial Keys"
+                                    signName: "Trial Keys",
                                 },
                                 {
                                     name: "Ominous Trial Key",
-                                    signName: "Ominous Trial Keys"
-                                }
+                                    signName: "Ominous Trial Keys",
+                                },
                             ]
-                        }
+                        },
                     ]
-                }
+                },
             ]
-        }
+        },
     ]
-}
+};
 
 
 
