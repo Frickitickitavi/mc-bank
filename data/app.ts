@@ -7284,6 +7284,10 @@ const bank: Room = {
                                     signName: "Empty Locator Maps",
                                 },
                                 {
+                                    name: "Locked Map",
+                                    signName: "Locked Maps",
+                                },
+                                {
                                     name: "Ocean Explorer Map",
                                     signName: "Ocean Explorer Maps",
                                 },
@@ -7298,6 +7302,82 @@ const bank: Room = {
                                 {
                                     name: "Trial Explorer Map",
                                     signName: "Trial Explorer Maps",
+                                },
+                                {
+                                    name: "Swamp Explorer Map",
+                                    signName: "Swamp Explorer Maps",
+                                },
+                                {
+                                    name: "Jungle Explorer Map",
+                                    signName: "Jungle Explorer Maps",
+                                },
+                                {
+                                    name: "Snowy Village Map",
+                                    signName: "Snowy Village Maps",
+                                },
+                                {
+                                    name: "Taiga Village Map",
+                                    signName: "Taiga Village Maps",
+                                },
+                                {
+                                    name: "Plains Village Map",
+                                    signName: "Plains Village Maps",
+                                },
+                                {
+                                    name: "Savanna Village Map",
+                                    signName: "Savanna Village Maps",
+                                },
+                                {
+                                    name: "Desert Village Map",
+                                    signName: "Desert Village Maps",
+                                },
+                                {
+                                    name: "Bamboo Camp Map",
+                                    signName: "Bamboo Camp Maps",
+                                },
+                                {
+                                    name: "Birch Forest Camp Map",
+                                    signName: "Birch Forest Camp Maps",
+                                },
+                                {
+                                    name: "Cherry Grove Camp Map",
+                                    signName: "Cherry Grove Camp Maps",
+                                },
+                                {
+                                    name: "Dappled Forest Camp Map",
+                                    signName: "Dappled Forest Camp Maps",
+                                },
+                                {
+                                    name: "Windswept Forest Camp Map",
+                                    signName: "Windswept Forest Camp Maps",
+                                },
+                                {
+                                    name: "Flower Forest Camp Map",
+                                    signName: "Flower Forest Camp Maps",
+                                },
+                                {
+                                    name: "Pale Garden Camp Map",
+                                    signName: "Pale Garden Camp Maps",
+                                },
+                                {
+                                    name: "Swamp Camp Map",
+                                    signName: "Swamp Camp Maps",
+                                },
+                                {
+                                    name: "Buried Ancient City Map",
+                                    signName: "Buried Ancient City Maps",
+                                },
+                                {
+                                    name: "Buried Mineshaft Map",
+                                    signName: "Buried Mineshaft Maps",
+                                },
+                                {
+                                    name: "Desert Pyramid Map",
+                                    signName: "Desert Pyramid Maps",
+                                },
+                                {
+                                    name: "Warm Ocean Ruins Map",
+                                    signName: "Warm Ocean Ruins Maps",
                                 },
                                 {
                                     name: "Spyglass",
