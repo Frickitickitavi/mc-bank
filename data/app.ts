@@ -1723,6 +1723,76 @@ const bank: Room = {
                                     ],
                                 },
                                 {
+                                    name: "Concrete Slabs",
+                                    upstreamName: "Concrete",
+                                    chests: [
+                                        {
+                                            name: "White Concrete Slab",
+                                            signName: "White Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Light Gray Concrete Slab",
+                                            signName: "Light Gray Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Gray Concrete Slab",
+                                            signName: "Gray Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Black Concrete Slab",
+                                            signName: "Black Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Red Concrete Slab",
+                                            signName: "Red Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Orange Concrete Slab",
+                                            signName: "Orange Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Yellow Concrete Slab",
+                                            signName: "Yellow Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Lime Concrete Slab",
+                                            signName: "Lime Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Green Concrete Slab",
+                                            signName: "Green Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Blue Concrete Slab",
+                                            signName: "Blue Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Light Blue Concrete Slab",
+                                            signName: "Light Blue Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Cyan Concrete Slab",
+                                            signName: "Cyan Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Purple Concrete Slab",
+                                            signName: "Purple Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Magenta Concrete Slab",
+                                            signName: "Magenta Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Pink Concrete Slab",
+                                            signName: "Pink Concrete Slabs",
+                                        },
+                                        {
+                                            name: "Brown Concrete Slab",
+                                            signName: "Brown Concrete Slabs",
+                                        },
+                                    ],
+                                },
+                                {
                                     name: "Other Slabs",
                                     upstreamName: "Other",
                                     chests: [
@@ -2032,6 +2102,60 @@ const bank: Room = {
                                         },
                                         {
                                             name: "Brown Wool Stairs",
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: "Concrete Stairs",
+                                    upstreamName: "Concrete",
+                                    chests: [
+                                        {
+                                            name: "White Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Light Gray Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Gray Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Black Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Red Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Orange Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Yellow Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Lime Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Green Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Blue Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Light Blue Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Cyan Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Purple Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Magenta Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Pink Concrete Stairs",
+                                        },
+                                        {
+                                            name: "Brown Concrete Stairs",
                                         },
                                     ],
                                 },
