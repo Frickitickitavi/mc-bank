@@ -5134,6 +5134,14 @@ const bank: Room = {
                                     name: "Blue Ice",
                                 },
                                 {
+                                    name: "Icicle",
+                                    signName: "Icicles",
+                                },
+                                {
+                                    name: "Ice Crystal",
+                                    signName: "Ice Crystals",
+                                },
+                                {
                                     name: "Snow Block",
                                     signName: "Snow Blocks",
                                 },
@@ -6125,6 +6133,11 @@ const bank: Room = {
                                             modifier: "Instant Damage II",
                                             signName: "Harming II",
                                         },
+                                        {
+                                            name: "Potion of Freezing",
+                                            modifier: "Freezing",
+                                            signName: "Freezing",
+                                        },
                                     ],
                                 },
                             ],
@@ -6366,6 +6379,11 @@ const bank: Room = {
                                             modifier: "Instant Damage II",
                                             signName: "Harming II",
                                         },
+                                        {
+                                            name: "Splash Potion of Freezing",
+                                            modifier: "Freezing",
+                                            signName: "Freezing",
+                                        },
                                     ],
                                 },
                             ],
@@ -6606,6 +6624,11 @@ const bank: Room = {
                                             name: "Lingering Potion of Harming",
                                             modifier: "Instant Damage II",
                                             signName: "Harming II",
+                                        },
+                                        {
+                                            name: "Lingering Potion of Freezing",
+                                            modifier: "Freezing",
+                                            signName: "Freezing",
                                         },
                                     ],
                                 },
@@ -7009,6 +7032,10 @@ const bank: Room = {
                                     signName: "Snowballs",
                                 },
                                 {
+                                    name: "Ice Ball",
+                                    signName: "Ice Balls",
+                                },
+                                {
                                     name: "Fire Charge",
                                     signName: "Fire Charges",
                                 },
@@ -7242,6 +7269,11 @@ const bank: Room = {
                                                     name: "Arrow of Decay",
                                                     modifier: "Wither II",
                                                     signName: "Decay",
+                                                },
+                                                {
+                                                    name: "Arrow of Freezing",
+                                                    modifier: "Freezing",
+                                                    signName: "Freezing",
                                                 },
                                             ],
                                         },
